@@ -30,8 +30,7 @@ public class MainTest {
 
     @Test
     public void livesumTest(){
-    Main main = new Main();
-    Assert.assertEquals("Sum = " , 0 , main.livesum() );
+
     }
 
     @Test
