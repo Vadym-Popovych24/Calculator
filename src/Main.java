@@ -14,7 +14,7 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_ON.setEnabled(false);//as
     }
 
-    double num , ans;
+    double num,ans,l,t;
     String calculation;
 
 
@@ -56,9 +56,8 @@ public class Main extends javax.swing.JFrame {
                 return -1;
         }
     }
-    static void processOperator(LinkedList<Double> st, char op) {
-        double l;
-        double t;
+  public int processOperator(LinkedList<Double> st, char op) {
+
         switch (op) {
             case '+':
                 l = st.removeLast();
@@ -147,7 +146,7 @@ public class Main extends javax.swing.JFrame {
                 break;
 
         }
-
+return  0;
     }
 
     public Double eval(StringBuilder s, Double indexOf) {
@@ -205,11 +204,11 @@ public class Main extends javax.swing.JFrame {
                       jLabel1.setText("Помилка");
                     break;
                 }
-                if (c == '/' && y == '0'){
+               /* if (c == '/' && y == '0'){
                     jLabel1.setForeground(Color.red);
                     jLabel1.setText("Помилка");
                     break;
-                }
+                }*/
                 while (!op.isEmpty() && priority(op.getLast()) >= priority(c))
                 {
                     processOperator(st, op.removeLast());
@@ -421,7 +420,7 @@ return 0;
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    public void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
@@ -1501,7 +1500,7 @@ return 0;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;//
     private javax.swing.JButton jButton_0;
-    private javax.swing.JButton jButton_1;
+    javax.swing.JButton jButton_1;
     private javax.swing.JButton jButton_1x;
     private javax.swing.JButton jButton_2;
     private javax.swing.JButton jButton_3;
