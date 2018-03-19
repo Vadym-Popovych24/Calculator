@@ -14,7 +14,6 @@ public class MainTest {
     public void isOperator() {
 
 
-
     }
 
     @Test
