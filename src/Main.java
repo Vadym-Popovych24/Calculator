@@ -14,14 +14,14 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_ON.setEnabled(false);//as
     }
 
-    double num,ans,l,t;
+    double num,l,t,ans;
     String calculation;
 
 
-   public static boolean isDelim(char c) {
+    public static boolean isDelim(char c) {
         return c == ' ';
     }
-  public  boolean isOperator(char c) {
+    public  boolean isOperator(char c) {
         return c == '+' || c == '-' || c == '*' || c == '/' || c == '^'
                 || c == '√' || c == 't' || c == 's' || c == 'c' || c == 'l'
                 || c == '!' || c == 'T' || c == 'S' || c == 'C' || c == 'L';
@@ -56,8 +56,9 @@ public class Main extends javax.swing.JFrame {
                 return -1;
         }
     }
-  public int processOperator(LinkedList<Double> st, char op) {
-
+    static void processOperator(LinkedList<Double> st, char op) {
+        double l;
+        double t;
         switch (op) {
             case '+':
                 l = st.removeLast();
@@ -77,15 +78,15 @@ public class Main extends javax.swing.JFrame {
                 st.add(t * l);
                 break;
 
-    case '/':
-        l = st.removeLast();
-        t = st.removeLast();
-        try {
-        st.add(t / l);
-        break;
-}catch(Exception e){
+            case '/':
+                l = st.removeLast();
+                t = st.removeLast();
+                try {
+                    st.add(t / l);
+                    break;
+                }catch(Exception e){
 
-}
+                }
             case '^':
                 l = st.removeLast();
                 t = st.removeLast();
@@ -146,7 +147,7 @@ public class Main extends javax.swing.JFrame {
                 break;
 
         }
-return  0;
+
     }
 
     public Double eval(StringBuilder s, Double indexOf) {
@@ -164,17 +165,17 @@ return  0;
                 y =s.charAt(i);
                 i--;
             }
-             if ( i >= 0) {
+            if ( i >= 0) {
 
                 x = s.charAt(i);
-                System.out.println("i =" + i +  "x = " + x);
+               // System.out.println("i =" + i +  "x = " + x);
 
             }
             if (i >= 1){
 
                 i--;
                 x2 = s.charAt(i);
-                System.out.println("i = "+ i+ "x2 = " + x2);
+              //  System.out.println("i = "+ i+ "x2 = " + x2);
 
                 i++;
             }
@@ -194,21 +195,21 @@ return  0;
                 operand += s.charAt(i);
             }
             else if (x2 == '-' && x == '-' ){
-             //   operand += '-';
-                System.out.println("Два мінуси підряд");
+                //   operand += '-';
+             //   System.out.println("Два мінуси підряд");
             }
 
-             else if (isOperator(c) && x != '-') {
-                  if (c == '!' && Character.isDigit(y)){
-                      jLabel1.setForeground(Color.red);
-                      jLabel1.setText("Помилка");
-                    break;
-                }
-               /* if (c == '/' && y == '0'){
+            else if (isOperator(c) && x != '-') {
+                if (c == '!' && Character.isDigit(y)){
                     jLabel1.setForeground(Color.red);
                     jLabel1.setText("Помилка");
                     break;
-                }*/
+                }
+                if (c == '/' && y == '0'){
+                    jLabel1.setForeground(Color.red);
+                    jLabel1.setText("Помилка");
+                    break;
+                }
                 while (!op.isEmpty() && priority(op.getLast()) >= priority(c))
                 {
                     processOperator(st, op.removeLast());
@@ -231,7 +232,7 @@ return  0;
                 {
 
                 }
-                    while (i < s.length() && m.find() )
+                while (i < s.length() && m.find() )
                     operand += s.charAt(i++);
                 --i;
 
@@ -244,8 +245,8 @@ return  0;
 
                 if (!isOperator(c) && isOperator(y) || y =='('|| y ==')' )
                 {
-                st.add(Double.parseDouble(operand));
-                operand="";
+                    st.add(Double.parseDouble(operand));
+                    operand="";
                 }
 
 
@@ -280,7 +281,7 @@ return  0;
         }
         while ( (b = s.next()) != "null");
 
-return 0;
+        return 0;
     }
 
     public int mathematic()
@@ -420,7 +421,7 @@ return 0;
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    public void initComponents() {
+    private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
@@ -1365,7 +1366,7 @@ return 0;
 
         else if(evt.getKeyCode()==49 && (evt.isControlDown() ) ){
             jTextField1.setText(jTextField1.getText());
-           // livesum();
+            // livesum();
         }
 
     }//GEN-LAST:event_jTextField1KeyPressed
@@ -1500,7 +1501,7 @@ return 0;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;//
     private javax.swing.JButton jButton_0;
-    javax.swing.JButton jButton_1;
+    public javax.swing.JButton jButton_1;
     private javax.swing.JButton jButton_1x;
     private javax.swing.JButton jButton_2;
     private javax.swing.JButton jButton_3;

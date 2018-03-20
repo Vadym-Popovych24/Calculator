@@ -1,6 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.awt.*;
 import java.util.LinkedList;
 
 import static org.junit.Assert.*;
@@ -8,59 +9,50 @@ import static org.junit.Assert.*;
 public class MainTest {
 
     @Test
-    public void initComponent(){
-        Main but = new Main();
-//        but.initComponents();
-      String a =  but.jButton_1.getText();
-           int b = but.jButton_1.getHeight();
-        Assert.assertEquals("Height button +" , b , 33);
-        Assert.assertEquals("Text button +" , a , "1");
-      /*  Main one = new Main();
-
- assertEquals(one.jButton_1)   */ }
+    public void test_jButton_1_height(){
+        Main component = new Main();
+        int height = component.jButton_1.getHeight();
+        Assert.assertEquals("Height button +" , height , 33);
+      }
     @Test
-    public void isDelim() {
-
+    public void test_jButton_1_width(){
+        Main component = new Main();
+        int width = component.jButton_1.getWidth();
+        Assert.assertEquals("Width button +" , width , 51);
     }
-
+      @Test
+      public void test_jButton_1_text(){
+          Main jtext = new Main();
+          String text =  jtext.jButton_1.getText();
+          Assert.assertEquals("Text button +" , text , "1");
+      }
     @Test
-    public void isOperator() {
-
-
-    }
-
-    @Test
-    public void priority() {
+    public void test_jButton_1_font(){
+        Main setfont = new Main();
+        String font =  setfont.jButton_1.getFont().getFontName();
+        Assert.assertEquals("Font button +" , font , "Arial Narrow");
     }
 
     @Test(/*expected = ArithmeticException.class*/)
-    public void processOperator() {
-        Main proc = new Main();
-        double t2 = proc.t;
-        double l2 = proc.l;
-        int an = (int) (t2/0);
-       Assert.assertEquals(an,1);
-
-        /*double neb = proc.ans;
-        if (proc.calculation == "1/x"){
-            assertEquals("1/x = " , 4 , 5);
-        }*/
+    public void test_division_by_ziro() {
+        Main process = new Main();
+        double t2 = process.t;
+        double l2 = process.l;
+        int an = (int) (t2 / 0);
+        Assert.assertEquals(an, 0);
     }
-
-
-    @Test
-    public void eval() {
-
+@Test
+    public void test_division_by_zero(){
+    Main variable = new Main();
+    double division_by_one = variable.ans;
+    double num2 = variable.num;
+    num2 = 5;
+    division_by_one = 1 / num2;
+        assertEquals("Division by one = " , division_by_one,  0,3) ;
     }
-
-    @Test
-    public void livesumTest(){
-
-    }
-
     @Test
     public void mathematic() {
-        
+
     }
 
     @Test
