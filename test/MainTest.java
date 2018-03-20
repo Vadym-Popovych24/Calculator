@@ -48,7 +48,7 @@ public class MainTest {
     double num2 = variable.num;
     num2 = 5;
     division_by_one = 1 / num2;
-        assertEquals("Division by one = " , division_by_one,  0,3) ;
+        assertEquals("Division by one = " , division_by_one,  0,2) ;
     }
   /*  @Test
     public void mathematic() {
