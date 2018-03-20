@@ -50,7 +50,7 @@ public class MainTest {
     division_by_one = 1 / num2;
         assertEquals("Division by one = " , division_by_one,  0,3) ;
     }
-    @Test
+  /*  @Test
     public void mathematic() {
 
     }
@@ -66,4 +66,5 @@ public class MainTest {
     @Test
     public void main() {
     }
+    */
 }
