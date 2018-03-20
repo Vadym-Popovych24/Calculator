@@ -34,7 +34,7 @@ public class MainTest {
     }
 
     @Test(/*expected = ArithmeticException.class*/)
-    public void test_division_by_ziro() {
+    public void test_division_by_zero() {
         Main process = new Main();
         double t2 = process.t;
         double l2 = process.l;
@@ -42,7 +42,7 @@ public class MainTest {
         Assert.assertEquals(an, 0);
     }
 @Test
-    public void test_division_by_zero(){
+    public void test_division_by_one(){
     Main variable = new Main();
     double division_by_one = variable.ans;
     double num2 = variable.num;
