@@ -31,7 +31,7 @@ jacocoTestCoverageVerification {
     violationRules {
         rule {
             limit {
-                minimum = 60.5
+                minimum = 0.5
             }
         }
 
@@ -46,6 +46,15 @@ jacocoTestCoverageVerification {
                 maximum = 0.3
             }
         }
+    }
+}
+
+//  Налаштування тестового завдання
+test {
+    jacoco {
+       append = true
+    //    destinationFile = file("$build/jacoco/test.exec")
+     //   classDumpDir = file("$build/jacoco/classpathdumps")
     }
 }
 
