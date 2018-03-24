@@ -14,7 +14,7 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_ON.setEnabled(false);//as
     }
 
-    double num,l,t,ans;
+    double num,l,t,ans,mn;
     String calculation;
 
 
@@ -266,7 +266,7 @@ public class Main extends javax.swing.JFrame {
         do{
 
             StringBuilder a = new StringBuilder(b);
-            Double mn =eval(a,Double.valueOf(a.indexOf(""+'(')));
+                    mn=eval(a,Double.valueOf(a.indexOf(""+'(')));
             String formattedDouble = String.format("%.1f", mn);
             x = mn;
 

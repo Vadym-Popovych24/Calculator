@@ -30,7 +30,7 @@ public class MainTest {
     public void test_jButton_1_font(){
         Main setfont = new Main();
         String font =  setfont.jButton_1.getFont().getFontName();
-        Assert.assertEquals("Font button +" , font , "Tahoma Полужирный");//Arial Narrow
+        Assert.assertEquals("Font button +" , font , "Tahoma Bold");//Arial Narrow Полужирный
     }
 
     @Test(/*expected = ArithmeticException.class*/)
@@ -38,6 +38,7 @@ public class MainTest {
         Main process = new Main();
         double t2 = process.t;
         double l2 = process.l;
+
         int an = (int) (t2 / 0);
         Assert.assertEquals(an, 0);
     }
@@ -50,6 +51,15 @@ public class MainTest {
     division_by_one = 1 / num2;
         assertEquals("Division by one = " , division_by_one,  0,2) ;
     }
+  /*  @Test
+    public void test_division() {
+        Main processy = new Main();
+        double tt = processy.t;
+        double ll = processy.l;
+        double mn2 = processy.mn;
+        double an =  (tt / ll);
+        Assert.assertEquals("Division = ",mn2, an,0);
+    }*/
   /*  @Test
     public void mathematic() {
 
