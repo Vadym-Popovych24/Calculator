@@ -31,7 +31,7 @@ jacocoTestCoverageVerification {
     violationRules {
         rule {
             limit {
-                minimum = 0.5
+                minimum = 60.5
             }
         }
 
@@ -47,6 +47,25 @@ jacocoTestCoverageVerification {
             }
         }
     }
+}
+
+//  Налаштування тестового завдання
+test {
+    jacoco {
+        append = false
+        destinationFile = file("$build/jacoco/jacocoTest.exec")
+        classDumpDir = file("$build/jacoco/classpathdumps")
+    }
+}
+
+//плагін application для створення даних покриття коду
+jacoco {
+    applyTo run
+}
+
+task applicationCodeCoverageReport(type:JacocoReport){
+    executionData run
+    sourceSets sourceSets.main
 }
 
 mainClassName = 'Main'
