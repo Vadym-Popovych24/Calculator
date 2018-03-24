@@ -49,15 +49,6 @@ jacocoTestCoverageVerification {
     }
 }
 
-
-test {
-    jacoco {
-        append = false
-        destinationFile = file("$build/jacoco/jacocoTest.exec")
-        classDumpDir = file("$build/jacoco/classpathdumps")
-    }
-}
-
 mainClassName = 'Main'
 
 sourceSets.main.java.srcDirs = ['src']
