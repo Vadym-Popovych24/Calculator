@@ -11,13 +11,13 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-
+// Налаштування плагіна Jacoco
 jacoco {
     toolVersion = "0.8.0"
     reportsDir = file("$build\reports\tests\test")
 }
 
-
+// Конфігурація звіту JaCoCo
 jacocoTestReport {
     reports {
         xml.enabled false
@@ -26,7 +26,7 @@ jacocoTestReport {
     }
 }
 
-
+// Правила порушень показників охоплення кодом
 jacocoTestCoverageVerification {
     violationRules {
         rule {
@@ -47,6 +47,16 @@ jacocoTestCoverageVerification {
             }
         }
     }
+}
+
+//плагін application для створення даних покриття коду
+jacoco {
+    applyTo run
+}
+
+task applicationCodeCoverageReport(type:JacocoReport){
+    executionData run
+    sourceSets sourceSets.main
 }
 
 mainClassName = 'Main'
