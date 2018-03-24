@@ -58,16 +58,6 @@ test {
     }
 }
 
-
-jacoco {
-    applyTo run
-}
-
-task applicationCodeCoverageReport(type:JacocoReport){
-    executionData run
-    sourceSets sourceSets.main
-}
-
 mainClassName = 'Main'
 
 sourceSets.main.java.srcDirs = ['src']
