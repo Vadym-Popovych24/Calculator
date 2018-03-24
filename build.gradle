@@ -10,16 +10,42 @@ dependencies {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+
+// Налаштування плагіна Jacoco
 jacoco {
     toolVersion = "0.8.0"
-    reportsDir = file("$build\reports\tests\tes")
+    reportsDir = file("$build\reports\tests\test")
 }
 
+// Конфігурація звіту JaCoCo
 jacocoTestReport {
     reports {
         xml.enabled false
         csv.enabled false
         html.destination file("${build}/jacocoHtml")
+    }
+}
+
+// Правила порушень показників охоплення кодом
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.5
+            }
+        }
+
+        rule {
+            enabled = false
+            element = 'CLASS'
+            includes = ['org.gradle.*']
+
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 0.3
+            }
+        }
     }
 }
 
