@@ -30,7 +30,7 @@ public class MainTest {
     public void test_jButton_1_font(){
         Main setfont = new Main();
         String font =  setfont.jButton_1.getFont().getFontName();
-        Assert.assertEquals("Font button +" , font , "Tahoma Bold") ;//Arial Narrow Полужирный
+        Assert.assertEquals("Font button +" , font , "Tahoma Полужирный") ;//Arial Narrow Полужирный
     }
 
     @Test(/*expected = ArithmeticException.class*/)
