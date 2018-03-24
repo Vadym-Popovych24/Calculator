@@ -12,7 +12,7 @@ tasks.withType(JavaCompile) {
 }
 jacoco {
     toolVersion = "0.8.0"
-    reportsDir = file("$build\reports\tests\test")
+    reportsDir = file("$build\reports\tests\tes")
 }
 
 jacocoTestReport {
