@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\Calculator.jar
+set CLASSPATH=%APP_HOME%\lib\Calculator.jar;%APP_HOME%\lib\gradle-pitest-plugin-1.3.0.jar;%APP_HOME%\lib\org.jbundle.util.jbackup-2.0.0.jar;%APP_HOME%\lib\webtestfixtures-2.0.1.3.jar;%APP_HOME%\lib\shoal-gms-api-1.5.8.jar;%APP_HOME%\lib\util-i18n-1.0.22.jar;%APP_HOME%\lib\grizzly-lzma-1.9.19-beta5.jar;%APP_HOME%\lib\org.jbundle.util.apprunner-2.0.0.jar;%APP_HOME%\lib\commons-net-2.2-ftp.jar;%APP_HOME%\lib\commons-httpclient-3.1.jar;%APP_HOME%\lib\commons-logging-1.1.1-api.jar;%APP_HOME%\lib\commons-logging-1.1.1.jar;%APP_HOME%\lib\commons-codec-1.4.jar
 
 @rem Execute Calculator
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %CALCULATOR_OPTS%  -classpath "%CLASSPATH%" Main %CMD_LINE_ARGS%
