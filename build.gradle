@@ -10,14 +10,14 @@ dependencies {
  //   classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6"
     testCompile group: 'junit', name: 'junit', version: '4.4'
     testCompile 'junit:junit:4.12'
+    compile 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.3.0'
     compile "org.jbundle.util:org.jbundle.util.jbackup:2.0.0"
     compile "net.sf.webtestfixtures:webtestfixtures:2.0.1.3"
     compile "org.shoal:shoal-gms-api:1.5.8"
     compile "org.ow2.util:util-i18n:1.0.22"
     compile "com.sun.grizzly:grizzly-lzma:1.9.19-beta5"
  // compile "sp.sd:nexus-artifact-uploader:2.10"
-    //  compile 'org.pitest.plugins:pitest-plugin-configuration-reporter-plugin:1.3.0'
-    compile 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.3.0'
+
 }
 
 apply plugin: 'application'
@@ -25,33 +25,33 @@ apply plugin: 'java'
 apply plugin: 'jacoco'
 apply plugin: 'info.solidsoft.pitest'
 apply plugin: 'maven'
-//apply plugin: 'info.solidsoft.gradle.pitest.PitestPlugin'
 //apply plugin: 'org.sonarqube'
 
   configurations.maybeCreate('pitest')
 
 pitest {
-        verbose = true
-            targetTests = ['test']
-    targetClasses = ['src']
-    threads       = 4
-    outputFormats = ['html']
-   //    testSourceSets = ['sourceSets.test']
-  // mainSourceSets = ['sourceSets.main']
-               //     pluginConfiguration = ['pitest-plugin-configuration-reporter-plugin.key1': 'value1',
-               //                            'pitest-plugin-configuration-reporter-plugin.key2': 'value2']
-              //      features = ["-FANN", "+FINFIT(a[1] a[2])"]
+
+    verbose='true'
+    targetClasses = ['our.base.package.*']  //by default "${project.group}.*"
     pitestVersion = '1.3.0' //not needed when a default PIT version should be used
+    threads = 4
     outputFormats = ['XML', 'HTML']
-  //  timestampedReports = false
-  //    testSourceSets = [sourceSets.test]
-  //  mainSourceSets = [sourceSets.main]
-  //  jvmArgs = ['-Xmx1024m']
- //   useClasspathFile = true     //useful with bigger projects on Windows 
-  //  fileExtensionsToFilter += ['xml']
- //    targetClasses = ['src']  //by default "${project.group}.*"
- //   targetTests  = ['test']
+    timestampedReports = false
+      testSourceSets = [sourceSets.test]
+    mainSourceSets = [sourceSets.main]
+    jvmArgs = ['-Xmx1024m']
+    useClasspathFile = true     //useful with bigger projects on Windows 
+    fileExtensionsToFilter += ['xml']
+     targetClasses = ['src']  //by default "${project.group}.*"
+    targetTests  = ['test']
 }
+/*
+pitest
+{
+println sourceSets.main
+    targetClasses = ['d*']  //by default "${project.group}.*"
+    targetTests  = ['*Test*']
+}*/
 sonarqube{
     properties{
          property "sonar.projectName" , "Calculator"
@@ -136,25 +136,13 @@ sourceSets.test.java.srcDirs = ['test']
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
-/*
-uploadArchives {
-    repositories {
-        mavenDeployer {
-        file://localhost
-            repository ( url: "http://localhost:8081/nexus/content/repositories/calc")
-         pom.version = '1.0Maven'
-            pom.artifactId = 'myMavenName'
-        }
-    }
-}
-*/
+
 repositories {
      maven {
         //id "calcu-rel" 
         name "Calculator"
-        url "http://http://localhost:8081/nexus/content/repositories/calc/"
+        url "http://localhost:8081/nexus/content/repositories/calc/"
     }
-
  /*snapshotRepositories {
       //id "calcu"
  name "Calculator"
@@ -172,4 +160,3 @@ jar {
 task wrapper(type: Wrapper) {
     gradleVersion = "4.6"
 }
-
