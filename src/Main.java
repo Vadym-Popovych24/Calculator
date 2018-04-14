@@ -6,7 +6,14 @@ import java.awt.event.KeyEvent;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Main extends javax.swing.JFrame {
+public class Main extends javax.swing.JFrame  {
+
+    String calculation;
+    double num;
+    double ans;
+    double l;
+    double t;
+
 
 
     public Main() {
@@ -14,277 +21,13 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_ON.setEnabled(false);//as
     }
 
-    double num,l,t,ans,mn;
-    String calculation;
 
+    double mn;
 
-    public static boolean isDelim(char c) {
-        return c == ' ';
-    }
-    public  boolean isOperator(char c) {
-        return c == '+' || c == '-' || c == '*' || c == '/' || c == '^'
-                || c == '√' || c == 't' || c == 's' || c == 'c' || c == 'l'
-                || c == '!' || c == 'T' || c == 'S' || c == 'C' || c == 'L';
-    }
-    static int priority(char op) {
-        switch (op) {
+    Prioritet prior = new Prioritet();
+    Process process = new Process();
 
-            case '+':
-            case '-':
-
-                return 1;
-
-            case '*':
-            case '/':
-
-                return 2;
-            case 's':
-            case 'c':
-            case 't':
-            case 'l':
-            case 'T':
-            case 'S':
-            case 'C':
-            case 'L':
-            case '√':
-            case '!':
-
-                return 3;
-            case '^':
-                return 4;
-            default:
-                return -1;
-        }
-    }
-    static void processOperator(LinkedList<Double> st, char op) {
-        double l;
-        double t;
-        switch (op) {
-            case '+':
-                l = st.removeLast();
-                t = st.removeLast();
-                st.add(t + l);
-                break;
-
-            case '-':
-                l = st.removeLast();
-                t = st.removeLast();
-                st.add(t - l);
-                break;
-
-            case '*':
-                l = st.removeLast();
-                t = st.removeLast();
-                st.add(t * l);
-                break;
-
-            case '/':
-                l = st.removeLast();
-                t = st.removeLast();
-                try {
-                    st.add(t / l);
-                    break;
-                }catch(Exception e){
-
-                }
-            case '^':
-                l = st.removeLast();
-                t = st.removeLast();
-                st.add(Math.pow(t ,l));
-                break;
-
-            case '!':
-                double ret = 1.0;
-                t = st.removeLast();
-
-                for (int i = 1; i <= t; ++i) ret *= i;
-                st.add(ret);
-                break;
-
-            case '√':
-                t = st.removeLast();
-                st.add(Math.sqrt(t));
-                break;
-
-            case ('s'):
-                t = st.removeLast();
-                st.add(Math.sin(t));
-                break;
-
-            case ('S'):
-                t = st.removeLast();
-                st.add(Math.sinh(t));
-                break;
-
-            case ('c'):
-                t = st.removeLast();
-                st.add(Math.cos(t));
-                break;
-
-            case ('C'):
-                t = st.removeLast();
-                st.add(Math.cosh(t));
-                break;
-
-            case ('t'):
-                t = st.removeLast();
-                st.add(Math.tan(t));
-                break;
-
-            case ('T'):
-                t = st.removeLast();
-                st.add(Math.tanh(t));
-                break;
-
-            case ('l'):
-                t = st.removeLast();
-                st.add(Math.log(t));
-                break;
-
-            case ('L'):
-                t = st.removeLast();
-                st.add(Math.log10(t));
-                break;
-
-        }
-
-    }
-
-    public Double eval(StringBuilder s, Double indexOf) {
-        LinkedList<Double> st = new LinkedList<Double>();
-        LinkedList<Character> op = new LinkedList<Character>();
-        String operand = "";
-        char y,x,x2;
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            y = ' ';
-            x = ' ';
-            x2 = ' ' ;
-            if (i !=s.length()-1){
-                i++;
-                y =s.charAt(i);
-                i--;
-            }
-            if ( i >= 0) {
-
-                x = s.charAt(i);
-               // System.out.println("i =" + i +  "x = " + x);
-
-            }
-            if (i >= 1){
-
-                i--;
-                x2 = s.charAt(i);
-              //  System.out.println("i = "+ i+ "x2 = " + x2);
-
-                i++;
-            }
-            String t = String.valueOf(c);
-            Pattern p = Pattern.compile("^[0-9]*[,.-]?+$");
-            Matcher m = p.matcher(t);
-            if (isDelim(c))
-                continue;
-            if (c == '(')
-                op.add('(');
-            else if (c == ')') {
-                while (op.getLast() != '(') processOperator(st, op.removeLast());
-                op.removeLast();
-
-            }
-            else if (Character.isDigit(c) && (x2 == '+'  || x2 == '*' || x2 == '/') && x == '-') {
-                operand += s.charAt(i);
-            }
-            else if (x2 == '-' && x == '-' ){
-                //   operand += '-';
-             //   System.out.println("Два мінуси підряд");
-            }
-
-            else if (isOperator(c) && x != '-') {
-                if (c == '!' && Character.isDigit(y)){
-                    jLabel1.setForeground(Color.red);
-                    jLabel1.setText("Помилка");
-                    break;
-                }
-                if (c == '/' && y == '0'){
-                    jLabel1.setForeground(Color.red);
-                    jLabel1.setText("Помилка");
-                    break;
-                }
-                while (!op.isEmpty() && priority(op.getLast()) >= priority(c))
-                {
-                    processOperator(st, op.removeLast());
-                }
-
-                op.add(c);
-
-            }
-
-            else if (i == s.length()-1  ){
-                operand += s.charAt(i++);
-                st.add(Double.parseDouble(operand));
-            }
-            else  {
-                if (( x =='-' && Character.isDigit(x2)  ))
-                {
-                    op.add('+');
-                }
-                if (x == '-' && isOperator(x2))
-                {
-
-                }
-                while (i < s.length() && m.find() )
-                    operand += s.charAt(i++);
-                --i;
-
-              /*
-              if (y == '+' || y == '-' || y == '*' || y == '/'  || y == '^' || y == '(' || y == ')' || y == '!' ) {
-                    st.add(Double.parseDouble(operand));
-                    operand="";
-                }
-                */
-
-                if (!isOperator(c) && isOperator(y) || y =='('|| y ==')' )
-                {
-                    st.add(Double.parseDouble(operand));
-                    operand="";
-                }
-
-
-            }
-        }
-        while (!op.isEmpty())
-            processOperator(st, op.removeLast());
-        return st.get(0);
-    }
-
-
-    public int livesum(){
-
-        Scanner s = new Scanner(jTextField1.getText());
-        String b = s.next();
-        double x;
-        do{
-
-            StringBuilder a = new StringBuilder(b);
-                    mn=eval(a,Double.valueOf(a.indexOf(""+'(')));
-            String formattedDouble = String.format("%.1f", mn);
-            x = mn;
-
-            if (x % 1 == 0){
-                jLabel1.setText(""+eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
-            }
-
-            else {
-                jLabel1.setText(formattedDouble);
-            }
-
-        }
-        while ( (b = s.next()) != "null");
-
-        return 0;
-    }
-
-    public int mathematic()
+    public int mathematic ()
     {
         switch (calculation)
         {
@@ -320,6 +63,33 @@ public class Main extends javax.swing.JFrame {
         return 0;
 
     }
+
+    public int livesum(){
+        Calculation calc_livesum = new Calculation();
+        Scanner s = new Scanner(jTextField1.getText());
+        String b = s.next();
+        double x;
+        do{
+
+            StringBuilder a = new StringBuilder(b);
+            mn=calc_livesum.eval(a,Double.valueOf(a.indexOf(""+'(')));
+            String formattedDouble = String.format("%.1f", mn);
+            x = mn;
+
+            if (x % 1 == 0){
+                jLabel1.setText(""+calc_livesum.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+            }
+
+            else {
+                jLabel1.setText(formattedDouble);
+            }
+
+        }
+        while ( (b = s.next()) != "null");
+
+        return 0;
+    }
+
     public void vkl()
     {
         jTextField1.setEnabled(true);
@@ -419,6 +189,7 @@ public class Main extends javax.swing.JFrame {
         jButton_Bin.setEnabled(false);
         JButton_Factorial.setEnabled(false);
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -919,7 +690,7 @@ public class Main extends javax.swing.JFrame {
         jButton_Round.setPreferredSize(new java.awt.Dimension(51, 23));
         jButton_Round.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_log3ActionPerformed(evt);
+              jButton_log3ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton_Round);
@@ -955,7 +726,7 @@ public class Main extends javax.swing.JFrame {
         jButton_Bin.setPreferredSize(new java.awt.Dimension(51, 23));
         jButton_Bin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Bin_ActionPerformed(evt);
+              jButton_Bin_ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton_Bin);
@@ -983,7 +754,7 @@ public class Main extends javax.swing.JFrame {
         jButton_Hex.setPreferredSize(new java.awt.Dimension(53, 33));
         jButton_Hex.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Hex_ActionPerformed(evt);
+              jButton_Hex_ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton_Hex);
@@ -1065,6 +836,52 @@ public class Main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    public void jButton_reverse_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_reverseActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        calculation = "negative_number";
+        mathematic();
+    }//GEN-LAST:event_jButton_reverseActionPerformed
+
+    public void jButton_1x_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_1xActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        calculation = "1/x";
+        mathematic();
+    }//GEN-LAST:event_jButton_1xActionPerformed
+
+    public void jButton_log3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_log3ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        calculation = "round";
+        mathematic();
+    }//GEN-LAST:event_jButton_log3ActionPerformed
+
+
+    public void jButton_Bin_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_log4ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        calculation = "bin";
+        mathematic();
+    }//GEN-LAST:event_jButton_log4ActionPerformed
+
+    public void jButton_Octal_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_P2ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        calculation = "octal";
+        mathematic();
+    }//GEN-LAST:event_jButton_P2ActionPerformed
+
+    public void jButton_Hex_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_E2ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        calculation = "hex";
+        mathematic();
+    }//GEN-LAST:event_jButton_E2ActionPerformed
+
+    public void jMenuItem_ON_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ONActionPerformed
+        vkl();
+    }//GEN-LAST:event_jMenuItem_ONActionPerformed
+
+    public void jMenuItem_OFF_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_OFFActionPerformed
+        vykl();
+    }//GEN-LAST:event_jMenuItem_OFFActionPerformed
+
 
     private void jButton_1_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_1ActionPerformed
         jTextField1.setText(jTextField1.getText() + "1");
@@ -1163,19 +980,20 @@ public class Main extends javax.swing.JFrame {
 
     @SuppressWarnings("empty-statement")
     private void jButton_sum_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_sumActionPerformed
-
+        Calculation calc_sum_ActionPerformed = new Calculation();
         Scanner s = new Scanner(jTextField1.getText());
         String b = s.next();
         double x;
-        do{
+        do
+            {
             StringBuilder a = new StringBuilder(b);
-            Double mn =eval(a,Double.valueOf(a.indexOf(""+'(')));
+            Double mn = calc_sum_ActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'(')));
             String formattedDouble = String.format("%.1f", mn);
             x = mn;
 
             if (x % 1 == 0)
             {
-                jTextField1.setText(""+eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+                jTextField1.setText(""+calc_sum_ActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
                 jLabel1.setText("");
             }
 
@@ -1205,17 +1023,6 @@ public class Main extends javax.swing.JFrame {
         livesum();
     }//GEN-LAST:event_jButton_log5ActionPerformed
 
-    private void jButton_reverse_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_reverseActionPerformed
-        num = Double.parseDouble(jTextField1.getText());
-        calculation = "negative_number";
-        mathematic();
-    }//GEN-LAST:event_jButton_reverseActionPerformed
-
-    private void jButton_1x_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_1xActionPerformed
-        num = Double.parseDouble(jTextField1.getText());
-        calculation = "1/x";
-        mathematic();
-    }//GEN-LAST:event_jButton_1xActionPerformed
 
     private void jButton_P_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_PActionPerformed
         jTextField1.setText(jTextField1.getText() + Math.PI);
@@ -1278,7 +1085,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton_plusKeyTyped
 
     private void jTextField1_KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-
+        Calculation calc_key_pressed = new Calculation();
         char c = evt.getKeyChar();
         if (c == KeyEvent.VK_ENTER ){
             Scanner s = new Scanner(jTextField1.getText());
@@ -1286,13 +1093,13 @@ public class Main extends javax.swing.JFrame {
             double x;
             do{
                 StringBuilder a = new StringBuilder(b);
-                Double mn =eval(a,Double.valueOf(a.indexOf(""+'(')));
+                Double mn =calc_key_pressed.eval(a,Double.valueOf(a.indexOf(""+'(')));
                 String formattedDouble = String.format("%.1f", mn);
                 x = mn;
 
                 if (x % 1 == 0)
                 {
-                    jTextField1.setText(""+eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+                    jTextField1.setText(""+calc_key_pressed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
                     jLabel1.setText("");
                 }
 
@@ -1401,14 +1208,6 @@ public class Main extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_jMenuItem_closeActionPerformed
 
-    private void jMenuItem_ON_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ONActionPerformed
-        vkl();
-    }//GEN-LAST:event_jMenuItem_ONActionPerformed
-
-    private void jMenuItem_OFF_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_OFFActionPerformed
-        vykl();
-    }//GEN-LAST:event_jMenuItem_OFFActionPerformed
-
     private void jButton_E_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EActionPerformed
         jTextField1.setText(jTextField1.getText() + Math.exp(1));
     }//GEN-LAST:event_jButton_EActionPerformed
@@ -1421,19 +1220,15 @@ public class Main extends javax.swing.JFrame {
         jTextField1.setText(jTextField1.getText() + ")");
     }//GEN-LAST:event_jButton_log2ActionPerformed
 
-    private void jButton_log3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_log3ActionPerformed
-        num = Double.parseDouble(jTextField1.getText());
-        calculation = "round";
-        mathematic();
-    }//GEN-LAST:event_jButton_log3ActionPerformed
 
     private void jButton_PRC_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_P1ActionPerformed
+        Calculation calc_PRC_ActionPerformed = new Calculation();
         Scanner s = new Scanner(jTextField1.getText());
         String b = s.next();
 
         do{
             StringBuilder a = new StringBuilder(b);
-            jLabel1.setText(""+eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+            jLabel1.setText(""+calc_PRC_ActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
         }
         while ( (b = s.next()) != "null");
     }//GEN-LAST:event_jButton_P1ActionPerformed
@@ -1442,23 +1237,7 @@ public class Main extends javax.swing.JFrame {
         jTextField1.setText(jTextField1.getText() + "L");
     }//GEN-LAST:event_jButton_E1ActionPerformed
 
-    private void jButton_Bin_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_log4ActionPerformed
-        num = Double.parseDouble(jTextField1.getText());
-        calculation = "bin";
-        mathematic();
-    }//GEN-LAST:event_jButton_log4ActionPerformed
 
-    private void jButton_Octal_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_P2ActionPerformed
-        num = Double.parseDouble(jTextField1.getText());
-        calculation = "octal";
-        mathematic();
-    }//GEN-LAST:event_jButton_P2ActionPerformed
-
-    private void jButton_Hex_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_E2ActionPerformed
-        num = Double.parseDouble(jTextField1.getText());
-        calculation = "hex";
-        mathematic();
-    }//GEN-LAST:event_jButton_E2ActionPerformed
 
     public static void main(String args[]) {
 
@@ -1498,63 +1277,63 @@ public class Main extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;//
-    private javax.swing.JButton jButton_0;
+    public javax.swing.ButtonGroup buttonGroup1;
+    public javax.swing.ButtonGroup buttonGroup2;//
+    public javax.swing.JButton jButton_0;
     public javax.swing.JButton jButton_1;
-    private javax.swing.JButton jButton_1x;
-    private javax.swing.JButton jButton_2;
-    private javax.swing.JButton jButton_3;
-    private javax.swing.JButton jButton_4;
-    private javax.swing.JButton jButton_5;
-    private javax.swing.JButton jButton_6;
-    private javax.swing.JButton jButton_7;
-    private javax.swing.JButton jButton_8;
-    private javax.swing.JButton jButton_9;
-    private javax.swing.JButton jButton_C;
-    private javax.swing.JButton jButton_E;
-    private javax.swing.JButton jButton_Log10;
-    private javax.swing.JButton jButton_Hex;
-    private javax.swing.JButton jButton_P;
-    private javax.swing.JButton jButton_PRC;
-    private javax.swing.JButton jButton_Octal;
-    private javax.swing.JButton jButton_clean;
-    private javax.swing.JButton jButton_cos;
-    private javax.swing.JButton jButton_cosh;
-    private javax.swing.JButton jButton_division;
-    private javax.swing.JButton jButton_korin;
-    private javax.swing.JButton jButton_log;
-    private javax.swing.JButton jButton_Bracket_front;
-    private javax.swing.JButton jButton_Bracket_end;
-    private javax.swing.JButton jButton_Round;
-    private javax.swing.JButton jButton_Bin;
-    private javax.swing.JButton JButton_Factorial;
-    private javax.swing.JButton jButton_minus;
-    private javax.swing.JButton jButton_multiplication;
-    private javax.swing.JButton jButton_plus;
-    private javax.swing.JButton jButton_point;
-    private javax.swing.JButton jButton_power;
-    private javax.swing.JButton jButton_reverse;
-    private javax.swing.JButton jButton_sin;
-    private javax.swing.JButton jButton_sinh;
-    private javax.swing.JButton jButton_sum;
-    private javax.swing.JButton jButton_tan;
-    private javax.swing.JButton jButton_tanh;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
-    private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem_OFF;
-    private javax.swing.JMenuItem jMenuItem_ON;
-    private javax.swing.JMenuItem jMenuItem_close;
-    private javax.swing.JMenuItem jMenuItem_info;
-    private javax.swing.JMenuItem jMenuItem_sientific;
-    private javax.swing.JMenuItem jMenuItem_standart;
-    private javax.swing.JMenu jMenu_Kalculator;
-    private javax.swing.JMenu jMenu_infa;
-    private javax.swing.JMenu jMenu_view;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    public javax.swing.JButton jButton_1x;
+    public javax.swing.JButton jButton_2;
+    public javax.swing.JButton jButton_3;
+    public javax.swing.JButton jButton_4;
+    public javax.swing.JButton jButton_5;
+    public javax.swing.JButton jButton_6;
+    public javax.swing.JButton jButton_7;
+    public javax.swing.JButton jButton_8;
+    public javax.swing.JButton jButton_9;
+    public javax.swing.JButton jButton_C;
+    public javax.swing.JButton jButton_E;
+    public javax.swing.JButton jButton_Log10;
+    public javax.swing.JButton jButton_Hex;
+    public javax.swing.JButton jButton_P;
+    public javax.swing.JButton jButton_PRC;
+    public javax.swing.JButton jButton_Octal;
+    public javax.swing.JButton jButton_clean;
+    public javax.swing.JButton jButton_cos;
+    public javax.swing.JButton jButton_cosh;
+    public javax.swing.JButton jButton_division;
+    public javax.swing.JButton jButton_korin;
+    public javax.swing.JButton jButton_log;
+    public javax.swing.JButton jButton_Bracket_front;
+    public javax.swing.JButton jButton_Bracket_end;
+    public javax.swing.JButton jButton_Round;
+    public javax.swing.JButton jButton_Bin;
+    public javax.swing.JButton JButton_Factorial;
+    public javax.swing.JButton jButton_minus;
+    public javax.swing.JButton jButton_multiplication;
+    public javax.swing.JButton jButton_plus;
+    public javax.swing.JButton jButton_point;
+    public javax.swing.JButton jButton_power;
+    public javax.swing.JButton jButton_reverse;
+    public javax.swing.JButton jButton_sin;
+    public javax.swing.JButton jButton_sinh;
+    public javax.swing.JButton jButton_sum;
+    public javax.swing.JButton jButton_tan;
+    public javax.swing.JButton jButton_tanh;
+    public javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    public javax.swing.JInternalFrame jInternalFrame1;
+    public  javax.swing.JLabel jLabel1;
+    public javax.swing.JMenuBar jMenuBar1;
+    public javax.swing.JMenuItem jMenuItem_OFF;
+    public javax.swing.JMenuItem jMenuItem_ON;
+    public javax.swing.JMenuItem jMenuItem_close;
+    public javax.swing.JMenuItem jMenuItem_info;
+    public javax.swing.JMenuItem jMenuItem_sientific;
+    public javax.swing.JMenuItem jMenuItem_standart;
+    public javax.swing.JMenu jMenu_Kalculator;
+    public javax.swing.JMenu jMenu_infa;
+    public javax.swing.JMenu jMenu_view;
+    public  javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 
     private String eval(StringBuilder a, int indexOf) {
