@@ -139,7 +139,6 @@ targetCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
      maven {
-        //id "calcu-rel" 
         name "Calculator"
         url "http://localhost:8081/nexus/content/repositories/calc/"
     }
@@ -158,4 +157,31 @@ jar {
 
 task wrapper(type: Wrapper) {
     gradleVersion = "4.6"
+}
+
+/**
+ * Task executed by Jenkins on Pull Requests to confirm the contribution has appropriately
+ * incremented the gradle 'version' field above.
+ */
+task confirmProjectVersionIncremented() {
+    doLast {
+        def grgit = org.ajoberstar.grgit.Grgit.open(project.rootDir)
+
+        def describe = grgit.describe()
+        def lastVersion = com.github.zafarkhaja.semver.Version.valueOf(describe)
+        if(!''.equals(lastVersion.getPreReleaseVersion())) {
+            // git describe produced something like '0.20.7-1-gfbe61fd'
+            // split on '-' and recreate last as the first token
+            lastVersion = com.github.zafarkhaja.semver.Version.valueOf(describe.split('-')[0])
+        }
+
+        // read 'version' field from build.gradle
+        def currentVersion = com.github.zafarkhaja.semver.Version.valueOf(getVersion());
+        if ( currentVersion.greaterThan(lastVersion) ) {
+            // success, the project version is greater than the last one available via git describe
+            println "Version test successful: proposed version is " + currentVersion + " greater than last.released.version " + lastVersion
+        } else {
+            throw new GradleException("version field in build.gradle with current value " + currentVersion + " must be incremented past " + lastVersion)
+        }
+    }
 }
