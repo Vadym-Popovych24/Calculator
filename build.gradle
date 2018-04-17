@@ -13,11 +13,11 @@ dependencies {
    //   compile 'org.sonarqube.gradle:gradle-sonarqube-plugin:2.6'
     //classpath 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.3.0'
     compile 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.3.0'
-    compile "org.jbundle.util:org.jbundle.util.jbackup:2.0.0"
-    compile "net.sf.webtestfixtures:webtestfixtures:2.0.1.3"
-    compile "org.shoal:shoal-gms-api:1.5.8"
-    compile "org.ow2.util:util-i18n:1.0.22"
-    compile "com.sun.grizzly:grizzly-lzma:1.9.19-beta5"
+   // compile "org.jbundle.util:org.jbundle.util.jbackup:2.0.0"
+   // compile "net.sf.webtestfixtures:webtestfixtures:2.0.1.3"
+  //  compile "org.shoal:shoal-gms-api:1.5.8"
+  //  compile "org.ow2.util:util-i18n:1.0.22"
+ //   compile "com.sun.grizzly:grizzly-lzma:1.9.19-beta5"
    // compile "org.pitest.classinfo.ClassInfo"
  // compile "sp.sd:nexus-artifact-uploader:2.10"
 
@@ -27,7 +27,7 @@ apply plugin: 'application'
 apply plugin: 'java'
 apply plugin: 'jacoco'
 apply plugin: 'info.solidsoft.pitest'
-apply plugin: 'maven'
+//apply plugin: 'maven'
 //apply plugin: "com.zoltu.git-versioning"
 //apply plugin: 'org.sonarqube'
 
@@ -46,9 +46,9 @@ pitest {
    timestampedReports = false
    //   testSourceSets = [sourceSets.test]
  //   mainSourceSets = [sourceSets.main]
-    jvmArgs = ['-Xmx1024m']
-   useClasspathFile = true     //useful with bigger projects on Windows 
-    fileExtensionsToFilter += ['xml']
+  //  jvmArgs = ['-Xmx1024m']
+ //  useClasspathFile = true     //useful with bigger projects on Windows 
+  //  fileExtensionsToFilter += ['xml']
   
          
 }
