@@ -36,6 +36,7 @@ apply plugin: 'maven'
 pitest {
 
    targetClasses = ['Main,Calculation,Prioritet,Process']  //by default "${project.group}.*"
+        targetTests  = ['MainTest']
         outputFormats = ['XML', 'HTML']
           timestampedReports = false
           
@@ -49,7 +50,6 @@ pitest {
  //   useClasspathFile = true     //useful with bigger projects on Windows 
  //   fileExtensionsToFilter += ['xml']
   
-    targetTests  = ['MainTest']
             //        outputFormats = ['pluginConfigurationReporter']
 }
 test.dependsOn 'pitest'
