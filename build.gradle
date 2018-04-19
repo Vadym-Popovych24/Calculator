@@ -20,23 +20,8 @@ apply plugin: 'jacoco'
 apply plugin: 'info.solidsoft.pitest'
 
 
-  configurations.maybeCreate('pitest')
 
-pitest {
 
-   targetClasses = ['Main,Calculation,Prioritet,Process'] 
-        targetTests  = ['MainTest']
-        outputFormats = ['XML', 'HTML']
-          timestampedReports = false
-          
-  
-   pitestVersion = '1.3.0' 
-    timestampedReports = false
-   threads = 4
-  
-         
-}
-test.dependsOn 'pitest'
 
 sonarqube{
     properties{
@@ -145,3 +130,20 @@ task wrapper(type: Wrapper) {
     gradleVersion = "4.6"
 }
 
+ // configurations.maybeCreate('pitest')
+
+pitest {
+
+   targetClasses = ['Main,Calculation,Prioritet,Process'] 
+        targetTests  = ['MainTest']
+        outputFormats = ['XML', 'HTML']
+          timestampedReports = false
+     testSourceSets = [sourceSets.test]
+   mainSourceSets = [sourceSets.main]
+   pitestVersion = '1.3.0' 
+    timestampedReports = false
+   threads = 4
+  
+}
+
+test.dependsOn 'pitest'
