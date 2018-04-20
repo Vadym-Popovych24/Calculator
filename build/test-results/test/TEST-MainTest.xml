@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-04-20T06:31:04" hostname="Vadym" time="7.045">
+  <properties/>
+  <testcase name="test_jButton_1_height" classname="MainTest" time="6.761"/>
+  <testcase name="test_division_by_one" classname="MainTest" time="0.083"/>
+  <testcase name="test_jButton_1_width" classname="MainTest" time="0.053"/>
+  <testcase name="test_jButton_1_font" classname="MainTest" time="0.055"/>
+  <testcase name="test_jButton_1_text" classname="MainTest" time="0.05"/>
+  <testcase name="test_division_by_zero" classname="MainTest" time="0.039"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
