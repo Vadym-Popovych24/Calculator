@@ -22,23 +22,6 @@ apply plugin: 'info.solidsoft.pitest'
 
 
 
-
-sonarqube{
-    properties{
-         property "sonar.projectName" , "Calculator"
-         property "sonar.projectKey" , "myProject1"
-         property "sonar.jacoco.reportPath" ,"${Calculator.build}/jacoco/test/exec"
-    }
-}
-
-subprojects {
-    sonarqube {
-        properties {
-            property "sonar.sources", "src"
-        }
-    }
-}
-
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
@@ -108,6 +91,7 @@ sourceSets.test.java.srcDirs = ['test']
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
+
 repositories {
      maven {
         name "Calculator"
@@ -147,3 +131,20 @@ pitest {
 }
 
 test.dependsOn 'pitest'
+
+
+sonarqube{
+    properties{
+         property "sonar.projectName" , "Calculator"
+         property "sonar.projectKey" , "myProject1"
+         property "sonar.jacoco.reportPath" ,"${Calculator.build}/jacoco/test/exec"
+    }
+}
+
+subprojects {
+    sonarqube {
+        properties {
+            property "sonar.sources", "src"
+        }
+    }
+}
