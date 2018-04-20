@@ -91,25 +91,6 @@ sourceSets.test.java.srcDirs = ['test']
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
-
-repositories {
-     maven {
-        name "Calculator"
-        url "http://localhost:8081/nexus/content/repositories/calc/"
-    }
- /*snapshotRepositories {
-      //id "calcu"
- name "Calculator"
-        url "http://localhost:8081/nexus/content/repositories/calcu/"
- }
- */
-    mavenCentral()
-}
-
-jar {
-    manifest.attributes("Main-Class": mainClassName);
-}
-
 task wrapper(type: Wrapper) {
     gradleVersion = "4.6"
 }
@@ -147,4 +128,22 @@ subprojects {
             property "sonar.sources", "src"
         }
     }
+}
+
+repositories {
+     maven {
+        name "Calculator"
+        url "http://localhost:8081/nexus/content/repositories/calc/"
+    }
+ /*snapshotRepositories {
+      //id "calcu"
+ name "Calculator"
+        url "http://localhost:8081/nexus/content/repositories/calcu/"
+ }
+ */
+    mavenCentral()
+}
+
+jar {
+    manifest.attributes("Main-Class": mainClassName);
 }
