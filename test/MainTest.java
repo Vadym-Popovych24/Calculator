@@ -32,7 +32,12 @@ public class MainTest {
         String font =  setfont.jButton_1.getFont().getFontName();
      //   Assert.assertEquals("Font button +" , font , "Tahoma Bold") ;//Arial Narrow Полужирный
     }
-
+     @Test
+  public void test_jButton_2_font(){
+        Main setfont2 = new Main();
+        String font2 =  setfont2.jButton_2.getFont().getFontName();
+     //   Assert.assertEquals("Font button +" , font , "Tahoma Bold") ;//Arial Narrow Полужирный
+    }
    @Test/*expected = ArithmeticException.class)*/
     public void test_division_by_zero() {
         Main process = new Main();
