@@ -11,31 +11,31 @@ public class MainTest {
     @Test
     public void test_jButton_1_height(){
         Main component = new Main();
-        int height = component.jButton_1.getHeight();
+        int height = component.jButton1.getHeight();
         Assert.assertEquals("Height button +" , height , 33);
       }
     @Test
     public void test_jButton_1_width(){
         Main component = new Main();
-        int width = component.jButton_1.getWidth();
+        int width = component.jButton1.getWidth();
         Assert.assertEquals("Width button +" , width , 51);
     }
       @Test
       public void test_jButton_1_text(){
           Main jtext = new Main();
-          String text =  jtext.jButton_1.getText();
+          String text =  jtext.jButton1.getText();
           Assert.assertEquals("Text button +" , text , "1");
       }
     @Test
     public void test_jButton_1_font(){
         Main setfont = new Main();
-        String font =  setfont.jButton_1.getFont().getFontName();
+        String font =  setfont.jButton1.getFont().getFontName();
      //   Assert.assertEquals("Font button +" , font , "Tahoma Bold") ;//Arial Narrow Полужирный
     }
      @Test
   public void test_jButton_2_font(){
         Main setfont2 = new Main();
-        String font2 =  setfont2.jButton_2.getFont().getFontName();
+        String font2 =  setfont2.jButton2.getFont().getFontName();
      //   Assert.assertEquals("Font button +" , font , "Tahoma Bold") ;//Arial Narrow Полужирный
     }
    @Test/*expected = ArithmeticException.class)*/

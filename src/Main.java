@@ -1,8 +1,10 @@
 import javax.swing.*;
+import javax.swing.event.AncestorEvent;
+import javax.swing.event.AncestorListener;
 import java.awt.*;
 
+import java.awt.event.*;
 import java.util.Scanner;
-import java.awt.event.KeyEvent;
 
 public class Main extends javax.swing.JFrame  {
 
@@ -16,7 +18,7 @@ public class Main extends javax.swing.JFrame  {
 
     public Main() {
         initComponents();
-        jMenuItem_ON.setEnabled(false);//as
+        jMenuItemON.setEnabled(false);//as
     }
 
 
@@ -99,751 +101,751 @@ public class Main extends javax.swing.JFrame  {
     public void vkl()
     {
         jTextField1.setEnabled(true);
-        jMenu_infa.setEnabled(true);
+        jMenuinfa.setEnabled(true);
 
-        jMenuItem_ON.setEnabled(false);
-        jMenuItem_OFF.setEnabled(true);
+        jMenuItemON.setEnabled(false);
+        jMenuItemOFF.setEnabled(true);
 
-        jButton_clean.setEnabled(true);
-        jButton_C.setEnabled(true);
-        jButton_1.setEnabled(true);
-        jButton_plus.setEnabled(true);
-        jButton_2.setEnabled(true);
-        jButton_3.setEnabled(true);
-        jButton_minus.setEnabled(true);
-        jButton_4.setEnabled(true);
-        jButton_5.setEnabled(true);
-        jButton_6.setEnabled(true);
-        jButton_multiplication.setEnabled(true);
-        jButton_7.setEnabled(true);
-        jButton_8.setEnabled(true);
-        jButton_9.setEnabled(true);
-        jButton_division.setEnabled(true);
-        jButton_0.setEnabled(true);
-        jButton_point.setEnabled(true);
-        jButton_sum.setEnabled(true);
-        jButton_power.setEnabled(true);
-        jButton_korin.setEnabled(true);
-        jButton_reverse.setEnabled(true);
-        jButton_1x.setEnabled(true);
-        jButton_P.setEnabled(true);
-        jButton_PRC.setEnabled(true);
-        jButton_Octal.setEnabled(true);
-        jButton_E.setEnabled(true);
-        jButton_Log10.setEnabled(true);
-        jButton_Hex.setEnabled(true);
-        jButton_sinh.setEnabled(true);
-        jButton_cos.setEnabled(true);
-        jButton_sin.setEnabled(true);
-        jButton_cosh.setEnabled(true);
-        jButton_tan.setEnabled(true);
-        jButton_tanh.setEnabled(true);
-        jButton_log.setEnabled(true);
-        jButton_Bracket_front.setEnabled(true);
-        jButton_Bracket_end.setEnabled(true);
-        jButton_Round.setEnabled(true);
-        jButton_Bin.setEnabled(true);
-        JButton_Factorial.setEnabled(true);
+        jButtonclean.setEnabled(true);
+        jButtonC.setEnabled(true);
+        jButton1.setEnabled(true);
+        jButtonplus.setEnabled(true);
+        jButton2.setEnabled(true);
+        jButton3.setEnabled(true);
+        jButtonminus.setEnabled(true);
+        jButton4.setEnabled(true);
+        jButton5.setEnabled(true);
+        jButton6.setEnabled(true);
+        jButtonmultiplication.setEnabled(true);
+        jButton7.setEnabled(true);
+        jButton8.setEnabled(true);
+        jButton9.setEnabled(true);
+        jButtondivision.setEnabled(true);
+        jButton0.setEnabled(true);
+        jButtonpoint.setEnabled(true);
+        jButtonsum.setEnabled(true);
+        jButtonpower.setEnabled(true);
+        jButtonkorin.setEnabled(true);
+        jButtonreverse.setEnabled(true);
+        jButton1x.setEnabled(true);
+        jButtonP.setEnabled(true);
+        jButtonPRC.setEnabled(true);
+        jButtonOctal.setEnabled(true);
+        jButtonE.setEnabled(true);
+        jButtonLog10.setEnabled(true);
+        jButtonHex.setEnabled(true);
+        jButtonsinh.setEnabled(true);
+        jButtoncos.setEnabled(true);
+        jButtonsin.setEnabled(true);
+        jButtoncosh.setEnabled(true);
+        jButtontan.setEnabled(true);
+        jButtontanh.setEnabled(true);
+        jButtonlog.setEnabled(true);
+        jButtonBracketfront.setEnabled(true);
+        jButtonBracketend.setEnabled(true);
+        jButtonRound.setEnabled(true);
+        jButtonBin.setEnabled(true);
+        JButtonFactorial.setEnabled(true);
     }
 
     public void vykl()
     {
         jTextField1.setEnabled(false);
-        jMenu_infa.setEnabled(false);
+        jMenuinfa.setEnabled(false);
 
-        jMenuItem_OFF.setEnabled(false);
-        jMenuItem_ON.setEnabled(true);
+        jMenuItemOFF.setEnabled(false);
+        jMenuItemON.setEnabled(true);
 
-        jButton_clean.setEnabled(false);
-        jButton_C.setEnabled(false);
-        jButton_1.setEnabled(false);
-        jButton_plus.setEnabled(false);
-        jButton_2.setEnabled(false);
-        jButton_3.setEnabled(false);
-        jButton_minus.setEnabled(false);
-        jButton_4.setEnabled(false);
-        jButton_5.setEnabled(false);
-        jButton_6.setEnabled(false);
-        jButton_multiplication.setEnabled(false);
-        jButton_7.setEnabled(false);
-        jButton_8.setEnabled(false);
-        jButton_9.setEnabled(false);
-        jButton_division.setEnabled(false);
-        jButton_0.setEnabled(false);
-        jButton_point.setEnabled(false);
-        jButton_sum.setEnabled(false);
-        jButton_power.setEnabled(false);
-        jButton_korin.setEnabled(false);
-        jButton_reverse.setEnabled(false);
-        jButton_1x.setEnabled(false);
-        jButton_P.setEnabled(false);
-        jButton_PRC.setEnabled(false);
-        jButton_Octal.setEnabled(false);
-        jButton_E.setEnabled(false);
-        jButton_Log10.setEnabled(false);
-        jButton_Hex.setEnabled(false);
-        jButton_sinh.setEnabled(false);
-        jButton_cos.setEnabled(false);
-        jButton_sin.setEnabled(false);
-        jButton_cosh.setEnabled(false);
-        jButton_tan.setEnabled(false);
-        jButton_tanh.setEnabled(false);
-        jButton_log.setEnabled(false);
-        jButton_Bracket_front.setEnabled(false);
-        jButton_Bracket_end.setEnabled(false);
-        jButton_Round.setEnabled(false);
-        jButton_Bin.setEnabled(false);
-        JButton_Factorial.setEnabled(false);
+        jButtonclean.setEnabled(false);
+        jButtonC.setEnabled(false);
+        jButton1.setEnabled(false);
+        jButtonplus.setEnabled(false);
+        jButton2.setEnabled(false);
+        jButton3.setEnabled(false);
+        jButtonminus.setEnabled(false);
+        jButton4.setEnabled(false);
+        jButton5.setEnabled(false);
+        jButton6.setEnabled(false);
+        jButtonmultiplication.setEnabled(false);
+        jButton7.setEnabled(false);
+        jButton8.setEnabled(false);
+        jButton9.setEnabled(false);
+        jButtondivision.setEnabled(false);
+        jButton0.setEnabled(false);
+        jButtonpoint.setEnabled(false);
+        jButtonsum.setEnabled(false);
+        jButtonpower.setEnabled(false);
+        jButtonkorin.setEnabled(false);
+        jButtonreverse.setEnabled(false);
+        jButton1x.setEnabled(false);
+        jButtonP.setEnabled(false);
+        jButtonPRC.setEnabled(false);
+        jButtonOctal.setEnabled(false);
+        jButtonE.setEnabled(false);
+        jButtonLog10.setEnabled(false);
+        jButtonHex.setEnabled(false);
+        jButtonsinh.setEnabled(false);
+        jButtoncos.setEnabled(false);
+        jButtonsin.setEnabled(false);
+        jButtoncosh.setEnabled(false);
+        jButtontan.setEnabled(false);
+        jButtontanh.setEnabled(false);
+        jButtonlog.setEnabled(false);
+        jButtonBracketfront.setEnabled(false);
+        jButtonBracketend.setEnabled(false);
+        jButtonRound.setEnabled(false);
+        jButtonBin.setEnabled(false);
+        JButtonFactorial.setEnabled(false);
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
-        buttonGroup2 = new javax.swing.ButtonGroup();
-        jTextField1 = new javax.swing.JTextField();
-        jButton_clean = new javax.swing.JButton();
-        jButton_C = new javax.swing.JButton();
-        jButton_1 = new javax.swing.JButton();
-        jButton_plus = new javax.swing.JButton();
-        jButton_2 = new javax.swing.JButton();
-        jButton_3 = new javax.swing.JButton();
-        jButton_minus = new javax.swing.JButton();
-        jButton_4 = new javax.swing.JButton();
-        jButton_5 = new javax.swing.JButton();
-        jButton_6 = new javax.swing.JButton();
-        jButton_multiplication = new javax.swing.JButton();
-        jButton_7 = new javax.swing.JButton();
-        jButton_8 = new javax.swing.JButton();
-        jButton_9 = new javax.swing.JButton();
-        jButton_division = new javax.swing.JButton();
-        jButton_0 = new javax.swing.JButton();
-        jButton_point = new javax.swing.JButton();
-        jButton_sum = new javax.swing.JButton();
+        buttonGroup1 = new ButtonGroup();
+        jCheckBoxMenuItem1 = new JCheckBoxMenuItem();
+        buttonGroup2 = new ButtonGroup();
+        jTextField1 = new JTextField();
+        jButtonclean = new JButton();
+        jButtonC = new JButton();
+        jButton1 = new JButton();
+        jButtonplus = new JButton();
+        jButton2 = new JButton();
+        jButton3 = new JButton();
+        jButtonminus = new JButton();
+        jButton4 = new JButton();
+        jButton5 = new JButton();
+        jButton6 = new JButton();
+        jButtonmultiplication = new JButton();
+        jButton7 = new JButton();
+        jButton8 = new JButton();
+        jButton9 = new JButton();
+        jButtondivision = new JButton();
+        jButton0 = new JButton();
+        jButtonpoint = new JButton();
+        jButtonsum = new JButton();
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabel1 = new JLabel();
         //jLabel1 label = new javax.swing.JLabel();
 
-        jButton_power = new javax.swing.JButton();
-        jButton_korin = new javax.swing.JButton();
-        jButton_reverse = new javax.swing.JButton();
-        jButton_1x = new javax.swing.JButton();
-        jButton_P = new javax.swing.JButton();
-        jButton_cos = new javax.swing.JButton();
-        jButton_sinh = new javax.swing.JButton();
-        jButton_log = new javax.swing.JButton();
-        jButton_tan = new javax.swing.JButton();
-        jButton_tanh = new javax.swing.JButton();
-        jButton_sin = new javax.swing.JButton();
-        jButton_cosh = new javax.swing.JButton();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
-        jTextField2 = new javax.swing.JTextField();
-        jButton_E = new javax.swing.JButton();
-        jButton_Bracket_front = new javax.swing.JButton();
-        jButton_Bracket_end = new javax.swing.JButton();
-        jButton_Round = new javax.swing.JButton();
-        jButton_PRC = new javax.swing.JButton();
-        jButton_Log10 = new javax.swing.JButton();
-        jButton_Bin = new javax.swing.JButton();
-        jButton_Octal = new javax.swing.JButton();
-        jButton_Hex = new javax.swing.JButton();
-        JButton_Factorial = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu_Kalculator = new javax.swing.JMenu();
-        jMenuItem_ON = new javax.swing.JMenuItem();
-        jMenuItem_OFF = new javax.swing.JMenuItem();
-        jMenuItem_close = new javax.swing.JMenuItem();
-        jMenu_view = new javax.swing.JMenu();
-        jMenuItem_standart = new javax.swing.JMenuItem();
-        jMenuItem_sientific = new javax.swing.JMenuItem();
-        jMenu_infa = new javax.swing.JMenu();
-        jMenuItem_info = new javax.swing.JMenuItem();
+        jButtonpower = new JButton();
+        jButtonkorin = new JButton();
+        jButtonreverse = new JButton();
+        jButton1x = new JButton();
+        jButtonP = new JButton();
+        jButtoncos = new JButton();
+        jButtonsinh = new JButton();
+        jButtonlog = new JButton();
+        jButtontan = new JButton();
+        jButtontanh = new JButton();
+        jButtonsin = new JButton();
+        jButtoncosh = new JButton();
+        jInternalFrame1 = new JInternalFrame();
+        jTextField2 = new JTextField();
+        jButtonE = new JButton();
+        jButtonBracketfront = new JButton();
+        jButtonBracketend = new JButton();
+        jButtonRound = new JButton();
+        jButtonPRC = new JButton();
+        jButtonLog10 = new JButton();
+        jButtonBin = new JButton();
+        jButtonOctal = new JButton();
+        jButtonHex = new JButton();
+        JButtonFactorial = new JButton();
+        jMenuBar1 = new JMenuBar();
+        jMenuKalculator = new JMenu();
+        jMenuItemON = new JMenuItem();
+        jMenuItemOFF = new JMenuItem();
+        jMenuItemclose = new JMenuItem();
+        jMenuview = new JMenu();
+        jMenuItemstandart = new JMenuItem();
+        jMenuItemsientific = new JMenuItem();
+        jMenuinfa = new JMenu();
+        jMenuItemON = new JMenuItem();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Калькулятор");
         setFocusable(false);
-        setLocation(new java.awt.Point(500, 250));
-        setType(java.awt.Window.Type.UTILITY);
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowActivated(java.awt.event.WindowEvent evt) {
-                formWindowActivated(evt);
+        setLocation(new Point(500, 250));
+        setType(Type.UTILITY);
+        addWindowListener(new WindowAdapter() {
+            public void windowActivated(WindowEvent evt) {
+                formWindowActivated();
             }
-            public void windowClosed(java.awt.event.WindowEvent evt) {
-                formWindowClosed(evt);
+            public void windowClosed(WindowEvent evt) {
+                formWindowClosed();
             }
         });
         getContentPane().setLayout(null);
 
-        jTextField1.setFont(new java.awt.Font("Times New Roman", 3, 23)); // NOI18N
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        jTextField1.setMaximumSize(new java.awt.Dimension(488, 45));
-        jTextField1.setMinimumSize(new java.awt.Dimension(221, 45));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1_ActionPerformed(evt);
+        jTextField1.setFont(new Font("Times New Roman", 3, 23)); // NOI18N
+        jTextField1.setHorizontalAlignment(JTextField.RIGHT);
+        jTextField1.setMaximumSize(new Dimension(488, 45));
+        jTextField1.setMinimumSize(new Dimension(221, 45));
+        jTextField1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jTextField1ActionPerformed();
             }
         });
-        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField1_KeyPressed(evt);
+        jTextField1.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent evt) {
+                jTextField1KeyPressed(evt);
             }
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField1_KeyReleased(evt);
+            public void keyReleased(KeyEvent evt) {
+                jTextField1KeyReleased();
             }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                jTextField1_KeyTyped(evt);
+            public void keyTyped(KeyEvent evt) {
+                jTextField1KeyTyped(evt);
             }
         });
         getContentPane().add(jTextField1);
         jTextField1.setBounds(10, 11, 220, 45);
 
-        jButton_clean.setFont(new java.awt.Font("Thames", 1, 16)); // NOI18N
-        jButton_clean.setText("<--");
-        jButton_clean.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_clean_ActionPerformed(evt);
+        jButtonclean.setFont(new Font("Thames", 1, 16)); // NOI18N
+        jButtonclean.setText("<--");
+        jButtonclean.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtoncleanActionPerformed();
             }
         });
-        getContentPane().add(jButton_clean);
-        jButton_clean.setBounds(67, 90, 51, 56);
+        getContentPane().add(jButtonclean);
+        jButtonclean.setBounds(67, 90, 51, 56);
 
-        jButton_C.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_C.setText("C");
-        jButton_C.setToolTipText("CTRL+C");
-        jButton_C.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_C_ActionPerformed(evt);
+        jButtonC.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonC.setText("C");
+        jButtonC.setToolTipText("CTRL+C");
+        jButtonC.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonCActionPerformed();
             }
         });
-        getContentPane().add(jButton_C);
-        jButton_C.setBounds(124, 90, 51, 56);
+        getContentPane().add(jButtonC);
+        jButtonC.setBounds(124, 90, 51, 56);
 
-        jButton_1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_1.setText("1");
-        jButton_1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_1_ActionPerformed(evt);
+        jButton1.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton1.setText("1");
+        jButton1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton1ActionPerformed();
             }
         });
-        getContentPane().add(jButton_1);
-        jButton_1.setBounds(10, 152, 51, 33);
+        getContentPane().add(jButton1);
+        jButton1.setBounds(10, 152, 51, 33);
 
-        jButton_plus.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_plus.setText("+");
-        jButton_plus.setToolTipText("");
-        jButton_plus.setRequestFocusEnabled(false);
-        jButton_plus.setRolloverEnabled(false);
-        jButton_plus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_plus_ActionPerformed(evt);
+        jButtonplus.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonplus.setText("+");
+        jButtonplus.setToolTipText("");
+        jButtonplus.setRequestFocusEnabled(false);
+        jButtonplus.setRolloverEnabled(false);
+        jButtonplus.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonplusActionPerformed();
             }
         });
-        jButton_plus.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jButton_plus_KeyPressed(evt);
+        jButtonplus.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent evt) {
+                jButtonplusKeyPressed();
             }
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                jButton_plus_KeyReleased(evt);
+            public void keyReleased(KeyEvent evt) {
+                jButtonplusKeyReleased();
             }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                jButton_plus_KeyTyped(evt);
+            public void keyTyped(KeyEvent evt) {
+                jButtonplusKeyTyped();
             }
         });
-        getContentPane().add(jButton_plus);
-        jButton_plus.setBounds(181, 90, 51, 56);
+        getContentPane().add(jButtonplus);
+        jButtonplus.setBounds(181, 90, 51, 56);
 
-        jButton_2.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_2.setText("2");
-        jButton_2.setToolTipText("");
-        jButton_2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_2_ActionPerformed(evt);
+        jButton2.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton2.setText("2");
+        jButton2.setToolTipText("");
+        jButton2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton2ActionPerformed();
             }
         });
-        getContentPane().add(jButton_2);
-        jButton_2.setBounds(67, 152, 51, 33);
+        getContentPane().add(jButton2);
+        jButton2.setBounds(67, 152, 51, 33);
 
-        jButton_3.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_3.setText("3");
-        jButton_3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_3_ActionPerformed(evt);
+        jButton3.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton3.setText("3");
+        jButton3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton3ActionPerformed();
             }
         });
-        getContentPane().add(jButton_3);
-        jButton_3.setBounds(124, 152, 51, 33);
+        getContentPane().add(jButton3);
+        jButton3.setBounds(124, 152, 51, 33);
 
-        jButton_minus.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_minus.setText("-");
-        jButton_minus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_minus_ActionPerformed(evt);
+        jButtonminus.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonminus.setText("-");
+        jButtonminus.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonminusActionPerformed();
             }
         });
-        getContentPane().add(jButton_minus);
-        jButton_minus.setBounds(181, 152, 51, 33);
+        getContentPane().add(jButtonminus);
+        jButtonminus.setBounds(181, 152, 51, 33);
 
-        jButton_4.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_4.setText("4");
-        jButton_4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_4_ActionPerformed(evt);
+        jButton4.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton4.setText("4");
+        jButton4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton4ActionPerformed();
             }
         });
-        getContentPane().add(jButton_4);
-        jButton_4.setBounds(10, 191, 51, 33);
+        getContentPane().add(jButton4);
+        jButton4.setBounds(10, 191, 51, 33);
 
-        jButton_5.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_5.setText("5");
-        jButton_5.setToolTipText("");
-        jButton_5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_5_ActionPerformed(evt);
+        jButton5.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton5.setText("5");
+        jButton5.setToolTipText("");
+        jButton5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton5ActionPerformed();
             }
         });
-        getContentPane().add(jButton_5);
-        jButton_5.setBounds(67, 191, 51, 33);
+        getContentPane().add(jButton5);
+        jButton5.setBounds(67, 191, 51, 33);
 
-        jButton_6.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_6.setText("6");
-        jButton_6.setToolTipText("");
-        jButton_6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_6_ActionPerformed(evt);
+        jButton6.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton6.setText("6");
+        jButton6.setToolTipText("");
+        jButton6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton6ActionPerformed();
             }
         });
-        getContentPane().add(jButton_6);
-        jButton_6.setBounds(124, 191, 51, 33);
+        getContentPane().add(jButton6);
+        jButton6.setBounds(124, 191, 51, 33);
 
-        jButton_multiplication.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_multiplication.setText("*");
-        jButton_multiplication.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_multiplication_ActionPerformed(evt);
+        jButtonmultiplication.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonmultiplication.setText("*");
+        jButtonmultiplication.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonmultiplicationActionPerformed();
             }
         });
-        getContentPane().add(jButton_multiplication);
-        jButton_multiplication.setBounds(181, 191, 51, 33);
+        getContentPane().add(jButtonmultiplication);
+        jButtonmultiplication.setBounds(181, 191, 51, 33);
 
-        jButton_7.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_7.setText("7");
-        jButton_7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_7_ActionPerformed(evt);
+        jButton7.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton7.setText("7");
+        jButton7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton7ActionPerformed();
             }
         });
-        getContentPane().add(jButton_7);
-        jButton_7.setBounds(10, 230, 51, 33);
+        getContentPane().add(jButton7);
+        jButton7.setBounds(10, 230, 51, 33);
 
-        jButton_8.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_8.setText("8");
-        jButton_8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_8_ActionPerformed(evt);
+        jButton8.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton8.setText("8");
+        jButton8.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton8ActionPerformed();
             }
         });
-        getContentPane().add(jButton_8);
-        jButton_8.setBounds(67, 230, 51, 33);
+        getContentPane().add(jButton8);
+        jButton8.setBounds(67, 230, 51, 33);
 
-        jButton_9.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_9.setText("9");
-        jButton_9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_9_ActionPerformed(evt);
+        jButton9.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton9.setText("9");
+        jButton9.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton9ActionPerformed();
             }
         });
-        getContentPane().add(jButton_9);
-        jButton_9.setBounds(124, 230, 51, 33);
+        getContentPane().add(jButton9);
+        jButton9.setBounds(124, 230, 51, 33);
 
-        jButton_division.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_division.setText("/");
-        jButton_division.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_division_ActionPerformed(evt);
+        jButtondivision.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtondivision.setText("/");
+        jButtondivision.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtondivisionActionPerformed();
             }
         });
-        getContentPane().add(jButton_division);
-        jButton_division.setBounds(181, 230, 51, 33);
+        getContentPane().add(jButtondivision);
+        jButtondivision.setBounds(181, 230, 51, 33);
 
-        jButton_0.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_0.setText("0");
-        jButton_0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_0_ActionPerformed(evt);
+        jButton0.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton0.setText("0");
+        jButton0.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButton0ActionPerformed();
             }
         });
-        getContentPane().add(jButton_0);
-        jButton_0.setBounds(10, 269, 51, 33);
+        getContentPane().add(jButton0);
+        jButton0.setBounds(10, 269, 51, 33);
 
-        jButton_point.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_point.setText(".");
-        jButton_point.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_point_ActionPerformed(evt);
+        jButtonpoint.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonpoint.setText(".");
+        jButtonpoint.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonpointActionPerformed();
             }
         });
-        getContentPane().add(jButton_point);
-        jButton_point.setBounds(67, 269, 51, 33);
+        getContentPane().add(jButtonpoint);
+        jButtonpoint.setBounds(67, 269, 51, 33);
 
-        jButton_sum.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_sum.setText("=");
-        jButton_sum.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_sum_ActionPerformed(evt);
+        jButtonsum.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonsum.setText("=");
+        jButtonsum.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonsumActionPerformed();
             }
         });
-        getContentPane().add(jButton_sum);
-        jButton_sum.setBounds(124, 269, 109, 33);
+        getContentPane().add(jButtonsum);
+        jButtonsum.setBounds(124, 269, 109, 33);
         jLabel1.setForeground(Color.black);
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setFont(new Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(SwingConstants.RIGHT);
         jLabel1.setText("0");
-        jLabel1.addAncestorListener(new javax.swing.event.AncestorListener() {
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+        jLabel1.addAncestorListener(new AncestorListener() {
+            public void ancestorMoved(AncestorEvent evt) {
             }
-            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
-                jLabel1_AncestorAdded(evt);
+            public void ancestorAdded(AncestorEvent evt) {
+                jLabel1AncestorAdded();
             }
-            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            public void ancestorRemoved(AncestorEvent evt) {
             }
         });
         getContentPane().add(jLabel1);
         jLabel1.setBounds(10, 62, 220, 22);
 
-        jButton_power.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_power.setText("^");
-        jButton_power.setToolTipText("Shift+S");
-        jButton_power.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_power_ActionPerformed(evt);
+        jButtonpower.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonpower.setText("^");
+        jButtonpower.setToolTipText("Shift+S");
+        jButtonpower.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonpowerActionPerformed();
             }
         });
-        getContentPane().add(jButton_power);
-        jButton_power.setBounds(376, 222, 70, 37);
+        getContentPane().add(jButtonpower);
+        jButtonpower.setBounds(376, 222, 70, 37);
 
-        jButton_korin.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_korin.setText("√");
-        jButton_korin.setToolTipText("Shift+K");
-        jButton_korin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_korin_ActionPerformed(evt);
+        jButtonkorin.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonkorin.setText("√");
+        jButtonkorin.setToolTipText("Shift+K");
+        jButtonkorin.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonkorinActionPerformed();
             }
         });
-        getContentPane().add(jButton_korin);
-        jButton_korin.setBounds(450, 222, 61, 37);
+        getContentPane().add(jButtonkorin);
+        jButtonkorin.setBounds(450, 222, 61, 37);
 
-        jButton_reverse.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_reverse.setText("±");
-        jButton_reverse.setToolTipText("Shift+F");
-        jButton_reverse.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_reverse_ActionPerformed();
+        jButtonreverse.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonreverse.setText("±");
+        jButtonreverse.setToolTipText("Shift+F");
+        jButtonreverse.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonreverseActionPerformed();
             }
         });
-        getContentPane().add(jButton_reverse);
-        jButton_reverse.setBounds(376, 265, 70, 37);
+        getContentPane().add(jButtonreverse);
+        jButtonreverse.setBounds(376, 265, 70, 37);
 
-        jButton_1x.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        jButton_1x.setText("1/x");
-        jButton_1x.setToolTipText("Shift+D");
-        jButton_1x.setAlignmentY(0.0F);
-        jButton_1x.setMaximumSize(new java.awt.Dimension(49, 33));
-        jButton_1x.setMinimumSize(new java.awt.Dimension(49, 33));
-        jButton_1x.setPreferredSize(new java.awt.Dimension(49, 33));
-        jButton_1x.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton1x.setFont(new Font("Tahoma", 1, 10)); // NOI18N
+        jButton1x.setText("1/x");
+        jButton1x.setToolTipText("Shift+D");
+        jButton1x.setAlignmentY(0.0F);
+        jButton1x.setMaximumSize(new Dimension(49, 33));
+        jButton1x.setMinimumSize(new Dimension(49, 33));
+        jButton1x.setPreferredSize(new Dimension(49, 33));
+        jButton1x.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 jButton1xActionPerformed();
             }
         });
-        getContentPane().add(jButton_1x);
-        jButton_1x.setBounds(450, 265, 61, 37);
+        getContentPane().add(jButton1x);
+        jButton1x.setBounds(450, 265, 61, 37);
 
-        jButton_P.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_P.setText("П");
-        jButton_P.setToolTipText("Ctrl+P");
-        jButton_P.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_P_ActionPerformed(evt);
+        jButtonP.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonP.setText("П");
+        jButtonP.setToolTipText("Ctrl+P");
+        jButtonP.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonPActionPerformed();
             }
         });
-        getContentPane().add(jButton_P);
-        jButton_P.setBounds(450, 179, 61, 37);
+        getContentPane().add(jButtonP);
+        jButtonP.setBounds(450, 179, 61, 37);
 
-        jButton_cos.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_cos.setText("cos");
-        jButton_cos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_cos_ActionPerformed(evt);
+        jButtoncos.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtoncos.setText("cos");
+        jButtoncos.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtoncosActionPerformed();
             }
         });
-        getContentPane().add(jButton_cos);
-        jButton_cos.setBounds(239, 222, 65, 37);
+        getContentPane().add(jButtoncos);
+        jButtoncos.setBounds(239, 222, 65, 37);
 
-        jButton_sinh.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_sinh.setText("sinh");
-        jButton_sinh.setMaximumSize(new java.awt.Dimension(60, 23));
-        jButton_sinh.setMinimumSize(new java.awt.Dimension(60, 23));
-        jButton_sinh.setPreferredSize(new java.awt.Dimension(51, 23));
-        jButton_sinh.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_sinh_ActionPerformed(evt);
+        jButtonsinh.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonsinh.setText("sinh");
+        jButtonsinh.setMaximumSize(new Dimension(60, 23));
+        jButtonsinh.setMinimumSize(new Dimension(60, 23));
+        jButtonsinh.setPreferredSize(new Dimension(51, 23));
+        jButtonsinh.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonsinhActionPerformed();
             }
         });
-        getContentPane().add(jButton_sinh);
-        jButton_sinh.setBounds(310, 179, 60, 37);
+        getContentPane().add(jButtonsinh);
+        jButtonsinh.setBounds(310, 179, 60, 37);
 
-        jButton_log.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_log.setText("log");
-        jButton_log.setPreferredSize(new java.awt.Dimension(51, 23));
-        jButton_log.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_log_ActionPerformed(evt);
+        jButtonlog.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonlog.setText("log");
+        jButtonlog.setPreferredSize(new Dimension(51, 23));
+        jButtonlog.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonlogActionPerformed();
             }
         });
-        getContentPane().add(jButton_log);
-        jButton_log.setBounds(310, 131, 60, 42);
+        getContentPane().add(jButtonlog);
+        jButtonlog.setBounds(310, 131, 60, 42);
 
-        jButton_tan.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_tan.setText("tan");
-        jButton_tan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_tan_ActionPerformed(evt);
+        jButtontan.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtontan.setText("tan");
+        jButtontan.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtontanActionPerformed();
             }
         });
-        getContentPane().add(jButton_tan);
-        jButton_tan.setBounds(239, 265, 65, 37);
+        getContentPane().add(jButtontan);
+        jButtontan.setBounds(239, 265, 65, 37);
 
-        jButton_tanh.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_tanh.setText("tanh");
-        jButton_tanh.setPreferredSize(new java.awt.Dimension(60, 23));
-        jButton_tanh.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_tanh_ActionPerformed(evt);
+        jButtontanh.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtontanh.setText("tanh");
+        jButtontanh.setPreferredSize(new Dimension(60, 23));
+        jButtontanh.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtontanhActionPerformed();
             }
         });
-        getContentPane().add(jButton_tanh);
-        jButton_tanh.setBounds(310, 265, 60, 37);
+        getContentPane().add(jButtontanh);
+        jButtontanh.setBounds(310, 265, 60, 37);
 
-        jButton_sin.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_sin.setText("sin");
-        jButton_sin.setPreferredSize(new java.awt.Dimension(51, 23));
-        jButton_sin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_sin_ActionPerformed(evt);
+        jButtonsin.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonsin.setText("sin");
+        jButtonsin.setPreferredSize(new Dimension(51, 23));
+        jButtonsin.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonsinActionPerformed();
             }
         });
-        getContentPane().add(jButton_sin);
-        jButton_sin.setBounds(239, 179, 65, 37);
+        getContentPane().add(jButtonsin);
+        jButtonsin.setBounds(239, 179, 65, 37);
 
-        jButton_cosh.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_cosh.setText("cosh");
-        jButton_cosh.setMaximumSize(new java.awt.Dimension(60, 23));
-        jButton_cosh.setPreferredSize(new java.awt.Dimension(51, 23));
-        jButton_cosh.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_cosh_ActionPerformed(evt);
+        jButtoncosh.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtoncosh.setText("cosh");
+        jButtoncosh.setMaximumSize(new Dimension(60, 23));
+        jButtoncosh.setPreferredSize(new Dimension(51, 23));
+        jButtoncosh.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtoncoshActionPerformed();
             }
         });
-        getContentPane().add(jButton_cosh);
-        jButton_cosh.setBounds(310, 222, 60, 37);
+        getContentPane().add(jButtoncosh);
+        jButtoncosh.setBounds(310, 222, 60, 37);
 
         jInternalFrame1.setVisible(true);
         getContentPane().add(jInternalFrame1);
         jInternalFrame1.setBounds(0, 0, 0, 0);
 
-        jButton_E.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton_E.setText("e");
-        jButton_E.setToolTipText("Ctrl+E");
-        jButton_E.setMaximumSize(new java.awt.Dimension(49, 33));
-        jButton_E.setMinimumSize(new java.awt.Dimension(49, 33));
-        jButton_E.setPreferredSize(new java.awt.Dimension(49, 33));
-        jButton_E.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_E_ActionPerformed(evt);
+        jButtonE.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonE.setText("e");
+        jButtonE.setToolTipText("Ctrl+E");
+        jButtonE.setMaximumSize(new Dimension(49, 33));
+        jButtonE.setMinimumSize(new Dimension(49, 33));
+        jButtonE.setPreferredSize(new Dimension(49, 33));
+        jButtonE.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonEActionPerformed();
             }
         });
-        getContentPane().add(jButton_E);
-        jButton_E.setBounds(376, 179, 70, 37);
+        getContentPane().add(jButtonE);
+        jButtonE.setBounds(376, 179, 70, 37);
 
-        jButton_Bracket_front.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_Bracket_front.setText("(");
-        jButton_Bracket_front.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Bracket_front_ActionPerformed(evt);
+        jButtonBracketfront.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonBracketfront.setText("(");
+        jButtonBracketfront.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonBracketfrontActionPerformed();
             }
         });
-        getContentPane().add(jButton_Bracket_front);
-        jButton_Bracket_front.setBounds(10, 90, 51, 27);
+        getContentPane().add(jButtonBracketfront);
+        jButtonBracketfront.setBounds(10, 90, 51, 27);
 
-        jButton_Bracket_end.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_Bracket_end.setText(")");
-        jButton_Bracket_end.setMinimumSize(new java.awt.Dimension(37, 27));
-        jButton_Bracket_end.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Bracket_endActionPerformed(evt);
+        jButtonBracketend.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonBracketend.setText(")");
+        jButtonBracketend.setMinimumSize(new Dimension(37, 27));
+        jButtonBracketend.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonBracketendActionPerformed();
             }
         });
-        getContentPane().add(jButton_Bracket_end);
-        jButton_Bracket_end.setBounds(10, 123, 51, 23);
+        getContentPane().add(jButtonBracketend);
+        jButtonBracketend.setBounds(10, 123, 51, 23);
 
-        jButton_Round.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_Round.setText("round");
-        jButton_Round.setPreferredSize(new java.awt.Dimension(51, 23));
-        jButton_Round.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButtonRound.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonRound.setText("round");
+        jButtonRound.setPreferredSize(new Dimension(51, 23));
+        jButtonRound.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
               jButtonlog3ActionPerformed();
             }
         });
-        getContentPane().add(jButton_Round);
-        jButton_Round.setBounds(239, 131, 65, 42);
+        getContentPane().add(jButtonRound);
+        jButtonRound.setBounds(239, 131, 65, 42);
 
-        jButton_PRC.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_PRC.setText("PRC");
-        jButton_PRC.setToolTipText("Точність суми");
-        jButton_PRC.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_PRC_ActionPerformed(evt);
+        jButtonPRC.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonPRC.setText("PRC");
+        jButtonPRC.setToolTipText("Точність суми");
+        jButtonPRC.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonPRCActionPerformed();
             }
         });
-        getContentPane().add(jButton_PRC);
-        jButton_PRC.setBounds(450, 131, 61, 42);
+        getContentPane().add(jButtonPRC);
+        jButtonPRC.setBounds(450, 131, 61, 42);
 
-        jButton_Log10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_Log10.setText("log10");
-        jButton_Log10.setToolTipText("");
-        jButton_Log10.setMaximumSize(new java.awt.Dimension(49, 33));
-        jButton_Log10.setMinimumSize(new java.awt.Dimension(49, 33));
-        jButton_Log10.setPreferredSize(new java.awt.Dimension(49, 33));
-        jButton_Log10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Log10_ActionPerformed(evt);
+        jButtonLog10.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonLog10.setText("log10");
+        jButtonLog10.setToolTipText("");
+        jButtonLog10.setMaximumSize(new Dimension(49, 33));
+        jButtonLog10.setMinimumSize(new Dimension(49, 33));
+        jButtonLog10.setPreferredSize(new Dimension(49, 33));
+        jButtonLog10.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonLog10ActionPerformed();
             }
         });
-        getContentPane().add(jButton_Log10);
-        jButton_Log10.setBounds(376, 131, 70, 42);
+        getContentPane().add(jButtonLog10);
+        jButtonLog10.setBounds(376, 131, 70, 42);
 
-        jButton_Bin.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_Bin.setText("bin");
-        jButton_Bin.setPreferredSize(new java.awt.Dimension(51, 23));
-        jButton_Bin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-              jButton_Bin_ActionPerformed(evt);
+        jButtonBin.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonBin.setText("bin");
+        jButtonBin.setPreferredSize(new Dimension(51, 23));
+        jButtonBin.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+              jButtonBinActionPerformed();
             }
         });
-        getContentPane().add(jButton_Bin);
-        jButton_Bin.setBounds(310, 90, 60, 35);
+        getContentPane().add(jButtonBin);
+        jButtonBin.setBounds(310, 90, 60, 35);
 
-        jButton_Octal.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_Octal.setText("octal");
-        jButton_Octal.setToolTipText("");
-        jButton_Octal.setMaximumSize(new java.awt.Dimension(53, 23));
-        jButton_Octal.setMinimumSize(new java.awt.Dimension(53, 23));
-        jButton_Octal.setPreferredSize(new java.awt.Dimension(53, 23));
-        jButton_Octal.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Octal_ActionPerformed(evt);
+        jButtonOctal.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonOctal.setText("octal");
+        jButtonOctal.setToolTipText("");
+        jButtonOctal.setMaximumSize(new Dimension(53, 23));
+        jButtonOctal.setMinimumSize(new Dimension(53, 23));
+        jButtonOctal.setPreferredSize(new Dimension(53, 23));
+        jButtonOctal.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonOctalActionPerformed();
             }
         });
-        getContentPane().add(jButton_Octal);
-        jButton_Octal.setBounds(380, 90, 60, 35);
+        getContentPane().add(jButtonOctal);
+        jButtonOctal.setBounds(380, 90, 60, 35);
 
-        jButton_Hex.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton_Hex.setText("hex");
-        jButton_Hex.setToolTipText("");
-        jButton_Hex.setMaximumSize(new java.awt.Dimension(53, 33));
-        jButton_Hex.setMinimumSize(new java.awt.Dimension(53, 33));
-        jButton_Hex.setPreferredSize(new java.awt.Dimension(53, 33));
-        jButton_Hex.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-              jButton_Hex_ActionPerformed(evt);
+        jButtonHex.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonHex.setText("hex");
+        jButtonHex.setToolTipText("");
+        jButtonHex.setMaximumSize(new Dimension(53, 33));
+        jButtonHex.setMinimumSize(new Dimension(53, 33));
+        jButtonHex.setPreferredSize(new Dimension(53, 33));
+        jButtonHex.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+              jButtonHexActionPerformed();
             }
         });
-        getContentPane().add(jButton_Hex);
-        jButton_Hex.setBounds(450, 90, 60, 33);
+        getContentPane().add(jButtonHex);
+        jButtonHex.setBounds(450, 90, 60, 33);
 
-        JButton_Factorial.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        JButton_Factorial.setText("!n");
-        JButton_Factorial.setPreferredSize(new java.awt.Dimension(51, 23));
-        JButton_Factorial.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Factorial_ActionPerformed(evt);
+        JButtonFactorial.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        JButtonFactorial.setText("!n");
+        JButtonFactorial.setPreferredSize(new Dimension(51, 23));
+        JButtonFactorial.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonFactorialActionPerformed();
             }
         });
-        getContentPane().add(JButton_Factorial);
-        JButton_Factorial.setBounds(239, 90, 65, 35);
+        getContentPane().add(JButtonFactorial);
+        JButtonFactorial.setBounds(239, 90, 65, 35);
 
-        jMenu_Kalculator.setText("Калькулятор");
+        jMenuKalculator.setText("Калькулятор");
 
-        jMenuItem_ON.setText("Вкл");
-        jMenuItem_ON.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem_ON_ActionPerformed(evt);
+        jMenuItemON.setText("Вкл");
+        jMenuItemON.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jMenuItemONActionPerformed();
             }
         });
-        jMenu_Kalculator.add(jMenuItem_ON);
+        jMenuKalculator.add(jMenuItemON);
 
-        jMenuItem_OFF.setText("Викл");
-        jMenuItem_OFF.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem_OFF_ActionPerformed(evt);
+        jMenuItemOFF.setText("Викл");
+        jMenuItemOFF.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jMenuItemOFFActionPerformed();
             }
         });
-        jMenu_Kalculator.add(jMenuItem_OFF);
+        jMenuKalculator.add(jMenuItemOFF);
 
-        jMenuItem_close.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem_close.setText("Закрити");
-        jMenuItem_close.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem_close_ActionPerformed(evt);
+        jMenuItemclose.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F4, InputEvent.ALT_MASK));
+        jMenuItemclose.setText("Закрити");
+        jMenuItemclose.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jMenuItemcloseActionPerformed();
             }
         });
-        jMenu_Kalculator.add(jMenuItem_close);
+        jMenuKalculator.add(jMenuItemclose);
 
-        jMenuBar1.add(jMenu_Kalculator);
+        jMenuBar1.add(jMenuKalculator);
 
-        jMenu_view.setText("Вид");
+        jMenuview.setText("Вид");
 
-        jMenuItem_standart.setText("Стандартний");
-        jMenuItem_standart.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem_standart_ActionPerformed(evt);
+        jMenuItemstandart.setText("Стандартний");
+        jMenuItemstandart.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jMenuItemstandartActionPerformed();
             }
         });
-        jMenu_view.add(jMenuItem_standart);
+        jMenuview.add(jMenuItemstandart);
 
-        jMenuItem_sientific.setText("Науковий");
-        jMenuItem_sientific.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem_sientific_ActionPerformed(evt);
+        jMenuItemsientific.setText("Науковий");
+        jMenuItemsientific.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jMenuItemsientificActionPerformed();
             }
         });
-        jMenu_view.add(jMenuItem_sientific);
+        jMenuview.add(jMenuItemsientific);
 
-        jMenuBar1.add(jMenu_view);
+        jMenuBar1.add(jMenuview);
 
-        jMenu_infa.setText("Інфо");
+        jMenuinfa.setText("Інфо");
 
-        jMenuItem_info.setText("Про програму");
-        jMenuItem_info.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem_info_ActionPerformed(evt);
+        jMenuItemON.setText("Про програму");
+        jMenuItemON.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jMenuIteminfoActionPerformed();
             }
         });
-        jMenu_infa.add(jMenuItem_info);
+        jMenuinfa.add(jMenuItemON);
 
-        jMenuBar1.add(jMenu_infa);
+        jMenuBar1.add(jMenuinfa);
 
         setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void jButton_reverse_ActionPerformed() {//GEN-FIRST:event_jButton_reverseActionPerformed
+    public void jButtonreverseActionPerformed() {//GEN-FIRST:event_jButton_reverseActionPerformed
         num = Double.parseDouble(jTextField1.getText());
         calculation = "negative_number";
         mathematic();
@@ -862,110 +864,110 @@ public class Main extends javax.swing.JFrame  {
     }//GEN-LAST:event_jButton_log3ActionPerformed
 
 
-    public void jButton_Bin_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_log4ActionPerformed
+    public void jButtonBinActionPerformed() {//GEN-FIRST:event_jButton_log4ActionPerformed
         num = Double.parseDouble(jTextField1.getText());
         calculation = "bin";
         mathematic();
     }//GEN-LAST:event_jButton_log4ActionPerformed
 
-    public void jButton_Octal_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_P2ActionPerformed
+    public void jButtonOctalActionPerformed() {//GEN-FIRST:event_jButton_P2ActionPerformed
         num = Double.parseDouble(jTextField1.getText());
         calculation = "octal";
         mathematic();
     }//GEN-LAST:event_jButton_P2ActionPerformed
 
-    public void jButton_Hex_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_E2ActionPerformed
+    public void jButtonHexActionPerformed() {//GEN-FIRST:event_jButton_E2ActionPerformed
         num = Double.parseDouble(jTextField1.getText());
         calculation = "hex";
         mathematic();
     }//GEN-LAST:event_jButton_E2ActionPerformed
 
-    public void jMenuItem_ON_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ONActionPerformed
+    public void jMenuItemONActionPerformed() {//GEN-FIRST:event_jMenuItem_ONActionPerformed
         vkl();
     }//GEN-LAST:event_jMenuItem_ONActionPerformed
 
-    public void jMenuItem_OFF_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_OFFActionPerformed
+    public void jMenuItemOFFActionPerformed() {//GEN-FIRST:event_jMenuItem_OFFActionPerformed
         vykl();
     }//GEN-LAST:event_jMenuItem_OFFActionPerformed
 
 
-    private void jButton_1_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_1ActionPerformed
+    private void jButton1ActionPerformed() {//GEN-FIRST:event_jButton_1ActionPerformed
         jTextField1.setText(jTextField1.getText() + "1");
         livesum();
     }//GEN-LAST:event_jButton_1ActionPerformed
 
-    private void jButton_2_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_2ActionPerformed
+    private void jButton2ActionPerformed() {//GEN-FIRST:event_jButton_2ActionPerformed
         jTextField1.setText(jTextField1.getText() + "2");
         livesum();
     }//GEN-LAST:event_jButton_2ActionPerformed
 
-    private void jButton_3_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_3ActionPerformed
+    private void jButton3ActionPerformed() {//GEN-FIRST:event_jButton_3ActionPerformed
         jTextField1.setText(jTextField1.getText() + "3");
         livesum();
     }//GEN-LAST:event_jButton_3ActionPerformed
 
-    private void jButton_4_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_4ActionPerformed
+    private void jButton4ActionPerformed() {//GEN-FIRST:event_jButton_4ActionPerformed
         jTextField1.setText(jTextField1.getText() + "4");
         livesum();
     }//GEN-LAST:event_jButton_4ActionPerformed
 
-    private void jButton_5_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_5ActionPerformed
+    private void jButton5ActionPerformed() {//GEN-FIRST:event_jButton_5ActionPerformed
         jTextField1.setText(jTextField1.getText() + "5");
         livesum();
     }//GEN-LAST:event_jButton_5ActionPerformed
 
-    private void jButton_6_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_6ActionPerformed
+    private void jButton6ActionPerformed() {//GEN-FIRST:event_jButton_6ActionPerformed
         jTextField1.setText(jTextField1.getText() + "6");
         livesum();
     }//GEN-LAST:event_jButton_6ActionPerformed
 
-    private void jButton_7_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_7ActionPerformed
+    private void jButton7ActionPerformed() {//GEN-FIRST:event_jButton_7ActionPerformed
         jTextField1.setText(jTextField1.getText() + "7");
         livesum();
     }//GEN-LAST:event_jButton_7ActionPerformed
 
-    private void jButton_8_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_8ActionPerformed
+    private void jButton8ActionPerformed() {//GEN-FIRST:event_jButton_8ActionPerformed
         jTextField1.setText(jTextField1.getText() + "8");
         livesum();
     }//GEN-LAST:event_jButton_8ActionPerformed
 
-    private void jButton_9_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_9ActionPerformed
+    private void jButton9ActionPerformed() {//GEN-FIRST:event_jButton_9ActionPerformed
         jTextField1.setText(jTextField1.getText() + "9");
         livesum();
     }//GEN-LAST:event_jButton_9ActionPerformed
 
-    private void jButton_0_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_0ActionPerformed
+    private void jButton0ActionPerformed() {//GEN-FIRST:event_jButton_0ActionPerformed
         jTextField1.setText(jTextField1.getText() + "0");
         livesum();
     }//GEN-LAST:event_jButton_0ActionPerformed
 
-    private void jButton_point_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_pointActionPerformed
+    private void jButtonpointActionPerformed() {//GEN-FIRST:event_jButton_pointActionPerformed
         jTextField1.setText(jTextField1.getText() + ".");
     }//GEN-LAST:event_jButton_pointActionPerformed
 
-    private void jButton_division_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_divisionActionPerformed
+    private void jButtondivisionActionPerformed() {//GEN-FIRST:event_jButton_divisionActionPerformed
         jTextField1.setText(jTextField1.getText() + "/");
     }//GEN-LAST:event_jButton_divisionActionPerformed
 
-    private void jButton_multiplication_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_multiplicationActionPerformed
+    private void jButtonmultiplicationActionPerformed() {//GEN-FIRST:event_jButton_multiplicationActionPerformed
         jTextField1.setText(jTextField1.getText() + "*");
     }//GEN-LAST:event_jButton_multiplicationActionPerformed
 
-    private void jButton_minus_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_minusActionPerformed
+    private void jButtonminusActionPerformed() {//GEN-FIRST:event_jButton_minusActionPerformed
         jTextField1.setText(jTextField1.getText() + "-");
     }//GEN-LAST:event_jButton_minusActionPerformed
 
-    private void jButton_plus_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_plusActionPerformed
+    private void jButtonplusActionPerformed() {//GEN-FIRST:event_jButton_plusActionPerformed
         jTextField1.setText(jTextField1.getText() + "+");
     }//GEN-LAST:event_jButton_plusActionPerformed
 
-    private void jButton_C_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CActionPerformed
+    private void jButtonCActionPerformed() {//GEN-FIRST:event_jButton_CActionPerformed
         jTextField1.setText("");
         jLabel1.setText("");
         jLabel1.setForeground(Color.black);
     }//GEN-LAST:event_jButton_CActionPerformed
 
-    private void jButton_clean_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_cleanActionPerformed
+    private void jButtoncleanActionPerformed() {//GEN-FIRST:event_jButton_cleanActionPerformed
         int length = jTextField1.getText().length();
         int number = jTextField1.getText().length() - 1;
         if (jTextField1.getText().length() == 1)
@@ -985,7 +987,7 @@ public class Main extends javax.swing.JFrame  {
     }//GEN-LAST:event_jButton_cleanActionPerformed
 
     @SuppressWarnings("empty-statement")
-    private void jButton_sum_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_sumActionPerformed
+    private void jButtonsumActionPerformed() {//GEN-FIRST:event_jButton_sumActionPerformed
         Calculation calc_sum_ActionPerformed = new Calculation();
         try {
         s = new Scanner(jTextField1.getText());
@@ -1021,85 +1023,85 @@ public class Main extends javax.swing.JFrame  {
             }
     }//GEN-LAST:event_jButton_sumActionPerformed
 
-    private void jTextField1_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jTextField1ActionPerformed() {//GEN-FIRST:event_jTextField1ActionPerformed
 
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButton_power_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_powerActionPerformed
+    private void jButtonpowerActionPerformed() {//GEN-FIRST:event_jButton_powerActionPerformed
         jTextField1.setText(jTextField1.getText() + "^");
     }//GEN-LAST:event_jButton_powerActionPerformed
 
-    private void jButton_korin_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_korinActionPerformed
+    private void jButtonkorinActionPerformed() {//GEN-FIRST:event_jButton_korinActionPerformed
         jTextField1.setText(jTextField1.getText() + "√");
     }//GEN-LAST:event_jButton_korinActionPerformed
 
-    private void jButton_Factorial_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_log5ActionPerformed
+    private void jButtonFactorialActionPerformed() {//GEN-FIRST:event_jButton_log5ActionPerformed
         jTextField1.setText(jTextField1.getText() + "!");
         livesum();
     }//GEN-LAST:event_jButton_log5ActionPerformed
 
 
-    private void jButton_P_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_PActionPerformed
+    private void jButtonPActionPerformed() {//GEN-FIRST:event_jButton_PActionPerformed
         jTextField1.setText(jTextField1.getText() + Math.PI);
     }//GEN-LAST:event_jButton_PActionPerformed
 
-    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+    private void formWindowActivated() {//GEN-FIRST:event_formWindowActivated
         this.setResizable(true);
         this.setSize(255, 380);
 
     }//GEN-LAST:event_formWindowActivated
 
-    private void jButton_log_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_logActionPerformed
+    private void jButtonlogActionPerformed() {//GEN-FIRST:event_jButton_logActionPerformed
         jTextField1.setText(jTextField1.getText() + "l");
     }//GEN-LAST:event_jButton_logActionPerformed
 
-    private void jButton_tan_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_tanActionPerformed
+    private void jButtontanActionPerformed() {//GEN-FIRST:event_jButton_tanActionPerformed
         jTextField1.setText(jTextField1.getText() + "t");
     }//GEN-LAST:event_jButton_tanActionPerformed
 
-    private void jButton_tanh_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_tanhActionPerformed
+    private void jButtontanhActionPerformed() {//GEN-FIRST:event_jButton_tanhActionPerformed
         jTextField1.setText(jTextField1.getText() + "T");
     }//GEN-LAST:event_jButton_tanhActionPerformed
 
-    private void jButton_sin_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_sinActionPerformed
+    private void jButtonsinActionPerformed() {//GEN-FIRST:event_jButton_sinActionPerformed
         jTextField1.setText(jTextField1.getText() + "s");
     }//GEN-LAST:event_jButton_sinActionPerformed
 
-    private void jButton_cosh_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_coshActionPerformed
+    private void jButtoncoshActionPerformed() {//GEN-FIRST:event_jButton_coshActionPerformed
         jTextField1.setText(jTextField1.getText() + "C");
     }//GEN-LAST:event_jButton_coshActionPerformed
 
-    private void jButton_sinh_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_sinhActionPerformed
+    private void jButtonsinhActionPerformed() {//GEN-FIRST:event_jButton_sinhActionPerformed
         jTextField1.setText(jTextField1.getText() + "S");
     }//GEN-LAST:event_jButton_sinhActionPerformed
 
-    private void jButton_cos_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_cosActionPerformed
+    private void jButtoncosActionPerformed() {//GEN-FIRST:event_jButton_cosActionPerformed
         jTextField1.setText(jTextField1.getText() + "c");
     }//GEN-LAST:event_jButton_cosActionPerformed
 
-    private void jTextField1_KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
+    private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
         char non =evt.getKeyChar();
         if((Character.isDigit(non)) ){
             evt.consume();
         }
     }//GEN-LAST:event_jTextField1KeyTyped
 
-    private void jLabel1_AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jLabel1AncestorAdded
+    private void jLabel1AncestorAdded() {//GEN-FIRST:event_jLabel1AncestorAdded
 
     }//GEN-LAST:event_jLabel1AncestorAdded
 
-    private void jButton_plus_KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton_plusKeyPressed
+    private void jButtonplusKeyPressed() {//GEN-FIRST:event_jButton_plusKeyPressed
 
     }//GEN-LAST:event_jButton_plusKeyPressed
 
-    private void jButton_plus_KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton_plusKeyReleased
+    private void jButtonplusKeyReleased() {//GEN-FIRST:event_jButton_plusKeyReleased
 
     }//GEN-LAST:event_jButton_plusKeyReleased
 
-    private void jButton_plus_KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton_plusKeyTyped
+    private void jButtonplusKeyTyped() {//GEN-FIRST:event_jButton_plusKeyTyped
     }//GEN-LAST:event_jButton_plusKeyTyped
 
-    private void jTextField1_KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         Calculation calc_key_pressed = new Calculation();
         char c = evt.getKeyChar();
         if (c == KeyEvent.VK_ENTER ){
@@ -1198,14 +1200,14 @@ public class Main extends javax.swing.JFrame  {
         }
 
     }//GEN-LAST:event_jTextField1KeyPressed
-    private void jTextField1_KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
+    private void jTextField1KeyReleased() {//GEN-FIRST:event_jTextField1KeyReleased
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1KeyReleased
 
-    private void jMenuItem_info_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_infoActionPerformed
+    private void jMenuIteminfoActionPerformed() {//GEN-FIRST:event_jMenuItem_infoActionPerformed
     }//GEN-LAST:event_jMenuItem_infoActionPerformed
 
-    private void jMenuItem_standart_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_standartActionPerformed
+    private void jMenuItemstandartActionPerformed() {//GEN-FIRST:event_jMenuItem_standartActionPerformed
         this.setResizable(true);
         this.setSize(255, 380);
         jTextField1.setSize(220,45);
@@ -1213,7 +1215,7 @@ public class Main extends javax.swing.JFrame  {
 
     }//GEN-LAST:event_jMenuItem_standartActionPerformed
 
-    private void jMenuItem_sientific_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_sientificActionPerformed
+    private void jMenuItemsientificActionPerformed() {//GEN-FIRST:event_jMenuItem_sientificActionPerformed
         this.setResizable(true);
         this.setSize(538, 380);
         jTextField1.setSize(503,45);
@@ -1221,29 +1223,29 @@ public class Main extends javax.swing.JFrame  {
 
     }//GEN-LAST:event_jMenuItem_sientificActionPerformed
 
-    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+    private void formWindowClosed() {//GEN-FIRST:event_formWindowClosed
 
     }//GEN-LAST:event_formWindowClosed
 
-    private void jMenuItem_close_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_closeActionPerformed
+    private void jMenuItemcloseActionPerformed() {//GEN-FIRST:event_jMenuItem_closeActionPerformed
         setVisible(false);
     }//GEN-LAST:event_jMenuItem_closeActionPerformed
 
-    private void jButton_E_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EActionPerformed
+    private void jButtonEActionPerformed() {//GEN-FIRST:event_jButton_EActionPerformed
         jTextField1.setText(jTextField1.getText() + Math.exp(1));
     }//GEN-LAST:event_jButton_EActionPerformed
 
-    private void jButton_Bracket_front_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_log1ActionPerformed
+    private void jButtonBracketfrontActionPerformed() {//GEN-FIRST:event_jButton_log1ActionPerformed
         jTextField1.setText(jTextField1.getText() + "(");
     }//GEN-LAST:event_jButton_log1ActionPerformed
 
-    private void jButton_Bracket_endActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_log2ActionPerformed
+    private void jButtonBracketendActionPerformed() {//GEN-FIRST:event_jButton_log2ActionPerformed
         jTextField1.setText(jTextField1.getText() + ")");
     }//GEN-LAST:event_jButton_log2ActionPerformed
 
 
-    private void jButton_PRC_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_P1ActionPerformed
-        Calculation calc_PRC_ActionPerformed = new Calculation();
+    private void jButtonPRCActionPerformed() {//GEN-FIRST:event_jButton_P1ActionPerformed
+        Calculation calcPRCActionPerformed = new Calculation();
         try{
          s = new Scanner(jTextField1.getText());
         
@@ -1251,7 +1253,7 @@ public class Main extends javax.swing.JFrame  {
 
         do{
             StringBuilder a = new StringBuilder(b);
-            jLabel1.setText(""+calc_PRC_ActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+            jLabel1.setText(""+calcPRCActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
         }
         while ( (b = s.next()) != "null");
     }
@@ -1264,7 +1266,7 @@ public class Main extends javax.swing.JFrame  {
             }
     }//GEN-LAST:event_jButton_P1ActionPerformed
 
-    private void jButton_Log10_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_E1ActionPerformed
+    private void jButtonLog10ActionPerformed() {//GEN-FIRST:event_jButton_E1ActionPerformed
         jTextField1.setText(jTextField1.getText() + "L");
     }//GEN-LAST:event_jButton_E1ActionPerformed
 
@@ -1310,59 +1312,59 @@ public class Main extends javax.swing.JFrame  {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.ButtonGroup buttonGroup1;
     public javax.swing.ButtonGroup buttonGroup2;//
-    public javax.swing.JButton jButton_0;
-    public javax.swing.JButton jButton_1;
-    public javax.swing.JButton jButton_1x;
-    public javax.swing.JButton jButton_2;
-    public javax.swing.JButton jButton_3;
-    public javax.swing.JButton jButton_4;
-    public javax.swing.JButton jButton_5;
-    public javax.swing.JButton jButton_6;
-    public javax.swing.JButton jButton_7;
-    public javax.swing.JButton jButton_8;
-    public javax.swing.JButton jButton_9;
-    public javax.swing.JButton jButton_C;
-    public javax.swing.JButton jButton_E;
-    public javax.swing.JButton jButton_Log10;
-    public javax.swing.JButton jButton_Hex;
-    public javax.swing.JButton jButton_P;
-    public javax.swing.JButton jButton_PRC;
-    public javax.swing.JButton jButton_Octal;
-    public javax.swing.JButton jButton_clean;
-    public javax.swing.JButton jButton_cos;
-    public javax.swing.JButton jButton_cosh;
-    public javax.swing.JButton jButton_division;
-    public javax.swing.JButton jButton_korin;
-    public javax.swing.JButton jButton_log;
-    public javax.swing.JButton jButton_Bracket_front;
-    public javax.swing.JButton jButton_Bracket_end;
-    public javax.swing.JButton jButton_Round;
-    public javax.swing.JButton jButton_Bin;
-    public javax.swing.JButton JButton_Factorial;
-    public javax.swing.JButton jButton_minus;
-    public javax.swing.JButton jButton_multiplication;
-    public javax.swing.JButton jButton_plus;
-    public javax.swing.JButton jButton_point;
-    public javax.swing.JButton jButton_power;
-    public javax.swing.JButton jButton_reverse;
-    public javax.swing.JButton jButton_sin;
-    public javax.swing.JButton jButton_sinh;
-    public javax.swing.JButton jButton_sum;
-    public javax.swing.JButton jButton_tan;
-    public javax.swing.JButton jButton_tanh;
+    public javax.swing.JButton jButton0;
+    public javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton1x;
+    public javax.swing.JButton jButton2;
+    public javax.swing.JButton jButton3;
+    public javax.swing.JButton jButton4;
+    public javax.swing.JButton jButton5;
+    public javax.swing.JButton jButton6;
+    public javax.swing.JButton jButton7;
+    public javax.swing.JButton jButton8;
+    public javax.swing.JButton jButton9;
+    public javax.swing.JButton jButtonC;
+    public javax.swing.JButton jButtonE;
+    public javax.swing.JButton jButtonLog10;
+    public javax.swing.JButton jButtonHex;
+    public javax.swing.JButton jButtonP;
+    public javax.swing.JButton jButtonPRC;
+    public javax.swing.JButton jButtonOctal;
+    public javax.swing.JButton jButtonclean;
+    public javax.swing.JButton jButtoncos;
+    public javax.swing.JButton jButtoncosh;
+    public javax.swing.JButton jButtondivision;
+    public javax.swing.JButton jButtonkorin;
+    public javax.swing.JButton jButtonlog;
+    public javax.swing.JButton jButtonBracketfront;
+    public javax.swing.JButton jButtonBracketend;
+    public javax.swing.JButton jButtonRound;
+    public javax.swing.JButton jButtonBin;
+    public javax.swing.JButton JButtonFactorial;
+    public javax.swing.JButton jButtonminus;
+    public javax.swing.JButton jButtonmultiplication;
+    public javax.swing.JButton jButtonplus;
+    public javax.swing.JButton jButtonpoint;
+    public javax.swing.JButton jButtonpower;
+    public javax.swing.JButton jButtonreverse;
+    public javax.swing.JButton jButtonsin;
+    public javax.swing.JButton jButtonsinh;
+    public javax.swing.JButton jButtonsum;
+    public javax.swing.JButton jButtontan;
+    public javax.swing.JButton jButtontanh;
     public javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     public javax.swing.JInternalFrame jInternalFrame1;
     public  javax.swing.JLabel jLabel1;
     public javax.swing.JMenuBar jMenuBar1;
-    public javax.swing.JMenuItem jMenuItem_OFF;
-    public javax.swing.JMenuItem jMenuItem_ON;
-    public javax.swing.JMenuItem jMenuItem_close;
-    public javax.swing.JMenuItem jMenuItem_info;
-    public javax.swing.JMenuItem jMenuItem_sientific;
-    public javax.swing.JMenuItem jMenuItem_standart;
-    public javax.swing.JMenu jMenu_Kalculator;
-    public javax.swing.JMenu jMenu_infa;
-    public javax.swing.JMenu jMenu_view;
+    public javax.swing.JMenuItem jMenuItemOFF;
+    public javax.swing.JMenuItem jMenuItemON;
+    public javax.swing.JMenuItem jMenuItemclose;
+    public javax.swing.JMenuItem jMenuIteminfo;
+    public javax.swing.JMenuItem jMenuItemsientific;
+    public javax.swing.JMenuItem jMenuItemstandart;
+    public javax.swing.JMenu jMenuKalculator;
+    public javax.swing.JMenu jMenuinfa;
+    public javax.swing.JMenu jMenuview;
     public  javax.swing.JTextField jTextField1;
     public javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
