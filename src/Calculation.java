@@ -90,7 +90,7 @@ public class Calculation extends Main{
                 while (i < s.length() && m.find() )
                     operand += s.charAt(i++);
                 --i;
-                
+
 
                 if (!process.isOperator(c) && process.isOperator(y) || y =='('|| y ==')' )
                 {

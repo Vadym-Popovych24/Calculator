@@ -1,10 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.LinkedList;
+
 import java.util.Scanner;
 import java.awt.event.KeyEvent;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Main extends javax.swing.JFrame  {
 
@@ -58,7 +56,9 @@ public class Main extends javax.swing.JFrame  {
             case "octal":
                 jLabel1.setText(Integer.toString(Integer.parseInt(jTextField1.getText()),8));
                 break;
-
+            default :
+                System.out.println("ERROR");
+             break;
         }
         return 0;
 
@@ -542,7 +542,7 @@ public class Main extends javax.swing.JFrame  {
         jButton_reverse.setToolTipText("Shift+F");
         jButton_reverse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_reverse_ActionPerformed(evt);
+                jButton_reverse_ActionPerformed();
             }
         });
         getContentPane().add(jButton_reverse);
@@ -557,7 +557,7 @@ public class Main extends javax.swing.JFrame  {
         jButton_1x.setPreferredSize(new java.awt.Dimension(49, 33));
         jButton_1x.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_1x_ActionPerformed(evt);
+                jButton1xActionPerformed();
             }
         });
         getContentPane().add(jButton_1x);
@@ -843,13 +843,13 @@ public class Main extends javax.swing.JFrame  {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void jButton_reverse_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_reverseActionPerformed
+    public void jButton_reverse_ActionPerformed() {//GEN-FIRST:event_jButton_reverseActionPerformed
         num = Double.parseDouble(jTextField1.getText());
         calculation = "negative_number";
         mathematic();
     }//GEN-LAST:event_jButton_reverseActionPerformed
 
-    public void jButton_1x_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_1xActionPerformed
+    public void jButton1xActionPerformed() {//GEN-FIRST:event_jButton_1xActionPerformed
         num = Double.parseDouble(jTextField1.getText());
         calculation = "1/x";
         mathematic();
