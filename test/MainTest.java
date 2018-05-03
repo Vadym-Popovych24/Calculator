@@ -72,7 +72,9 @@ public class MainTest {
 
         String titleFrame = jf.jMenuItemsientific.getText();
         assertEquals("Науковий", titleFrame);
+
     }
+
   /*  @Test
     public void mathematic() {
 
@@ -90,3 +92,4 @@ public class MainTest {
     public void main() {
     }
    * */
+    }
