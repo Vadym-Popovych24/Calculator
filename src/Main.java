@@ -13,7 +13,7 @@ public class Main extends javax.swing.JFrame  {
     double ans;
     double l;
     double t;
-
+    Scanner s = new Scanner("");
 
 
     public Main() {
@@ -66,7 +66,6 @@ public class Main extends javax.swing.JFrame  {
 
     public int livesum(){
         Calculation calc_livesum = new Calculation();
-        Scanner s = null;
         try {
              s = new Scanner(jTextField1.getText());
             String b = s.next();
