@@ -1360,7 +1360,7 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JMenuItem jMenuItemON;
     private javax.swing.JMenuItem jMenuItemclose;
     private javax.swing.JMenuItem jMenuIteminfo;
-    private javax.swing.JMenuItem jMenuItemsientific;
+    public javax.swing.JMenuItem jMenuItemsientific;
     private javax.swing.JMenuItem jMenuItemstandart;
     private javax.swing.JMenu jMenuKalculator;
     private javax.swing.JMenu jMenuinfa;

@@ -65,6 +65,14 @@ public class MainTest {
         an =0;
         Assert.assertEquals("Division = ",mn2, an,0);
     }
+
+    @Test
+    public void testTitleFrame() {
+        Main jf = new Main();
+
+        String titleFrame = jf.jMenuItemsientific.getText();
+        assertEquals("Науковий", titleFrame);
+    }
   /*  @Test
     public void mathematic() {
 
@@ -82,4 +90,3 @@ public class MainTest {
     public void main() {
     }
    * */
-}
