@@ -1,15 +1,16 @@
 import java.awt.*;
 import java.util.LinkedList;
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Calculation extends Main{
     public Double eval(StringBuilder s, Double indexOf) {
-        LinkedList<Double> st = new LinkedList<Double>();
-        LinkedList<Character> op = new LinkedList<Character>();
+        LinkedList<Double> st = new LinkedList<>();
+        LinkedList<Character> op = new LinkedList<>();
         String operand = "";
-        char y,x,x2;
+        char y;
+        char x;
+        char x2;
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             y = ' ';
@@ -23,14 +24,14 @@ public class Calculation extends Main{
             if ( i >= 0) {
 
                 x = s.charAt(i);
-                // System.out.println("i =" + i +  "x = " + x);
+
 
             }
             if (i >= 1){
 
                 i--;
                 x2 = s.charAt(i);
-                //  System.out.println("i = "+ i+ "x2 = " + x2);
+
 
                 i++;
             }
@@ -50,8 +51,7 @@ public class Calculation extends Main{
                 operand += s.charAt(i);
             }
             else if (x2 == '-' && x == '-' ){
-                //   operand += '-';
-                //   System.out.println("Два мінуси підряд");
+
             }
 
             else if (process.isOperator(c) && x != '-') {
@@ -90,13 +90,7 @@ public class Calculation extends Main{
                 while (i < s.length() && m.find() )
                     operand += s.charAt(i++);
                 --i;
-
-              /*
-              if (y == '+' || y == '-' || y == '*' || y == '/'  || y == '^' || y == '(' || y == ')' || y == '!' ) {
-                    st.add(Double.parseDouble(operand));
-                    operand="";
-                }
-                */
+                
 
                 if (!process.isOperator(c) && process.isOperator(y) || y =='('|| y ==')' )
                 {
