@@ -1310,8 +1310,8 @@ public class Main extends javax.swing.JFrame  {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.ButtonGroup buttonGroup1;
-    public javax.swing.ButtonGroup buttonGroup2;//
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;//
     public javax.swing.JButton jButton0;
     public javax.swing.JButton jButton1;
     public javax.swing.JButton jButton1x;
@@ -1351,22 +1351,22 @@ public class Main extends javax.swing.JFrame  {
     public javax.swing.JButton jButtonsinh;
     public javax.swing.JButton jButtonsum;
     public javax.swing.JButton jButtontan;
-    public javax.swing.JButton jButtontanh;
-    public javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
-    public javax.swing.JInternalFrame jInternalFrame1;
+    private javax.swing.JButton jButtontanh;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JInternalFrame jInternalFrame1;
     public  javax.swing.JLabel jLabel1;
-    public javax.swing.JMenuBar jMenuBar1;
-    public javax.swing.JMenuItem jMenuItemOFF;
-    public javax.swing.JMenuItem jMenuItemON;
-    public javax.swing.JMenuItem jMenuItemclose;
-    public javax.swing.JMenuItem jMenuIteminfo;
-    public javax.swing.JMenuItem jMenuItemsientific;
-    public javax.swing.JMenuItem jMenuItemstandart;
-    public javax.swing.JMenu jMenuKalculator;
-    public javax.swing.JMenu jMenuinfa;
-    public javax.swing.JMenu jMenuview;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItemOFF;
+    private javax.swing.JMenuItem jMenuItemON;
+    private javax.swing.JMenuItem jMenuItemclose;
+    private javax.swing.JMenuItem jMenuIteminfo;
+    private javax.swing.JMenuItem jMenuItemsientific;
+    private javax.swing.JMenuItem jMenuItemstandart;
+    private javax.swing.JMenu jMenuKalculator;
+    private javax.swing.JMenu jMenuinfa;
+    private javax.swing.JMenu jMenuview;
     public  javax.swing.JTextField jTextField1;
-    public javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 
     private String eval(StringBuilder a, int indexOf) {
