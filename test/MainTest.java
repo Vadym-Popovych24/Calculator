@@ -28,13 +28,13 @@ public class MainTest {
     public void test_jButton_1_font(){
         Main setfont = new Main();
         String font =  setfont.jButton1.getFont().getFontName();
-     //  Assert.assertEquals("Font button +" , font , "Tahoma Bold") ;//Arial Narrow Полужирный
+       Assert.assertEquals("Font button +" , font , "Полужирный") ;//Arial Narrow Полужирный
     }
      @Test
   public void test_jButton_2_font(){
         Main setfont2 = new Main();
         String font2 =  setfont2.jButton2.getFont().getFontName();
-     //   Assert.assertEquals("Font button +" , font , "Tahoma Bold") ;//Arial Narrow Полужирный
+        Assert.assertEquals("Font button +" , font2 , "Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
     }
    @Test/*expected = ArithmeticException.class)*/
     public void test_division_by_zero() {
@@ -61,7 +61,7 @@ public class MainTest {
         double ll = processy.l;
         double mn2 = processy.mn;
         double an =  (tt / ll);
-        
+
         an =0;
         Assert.assertEquals("Division = ",mn2, an,0);
     }
