@@ -1,8 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.awt.*;
-import java.util.LinkedList;
 
 import static org.junit.Assert.*;
 
@@ -30,7 +28,7 @@ public class MainTest {
     public void test_jButton_1_font(){
         Main setfont = new Main();
         String font =  setfont.jButton1.getFont().getFontName();
-     //   Assert.assertEquals("Font button +" , font , "Tahoma Bold") ;//Arial Narrow Полужирный
+     //  Assert.assertEquals("Font button +" , font , "Tahoma Bold") ;//Arial Narrow Полужирный
     }
      @Test
   public void test_jButton_2_font(){
@@ -56,7 +54,7 @@ public class MainTest {
     division_by_one = 1 / num2;
         assertEquals("Division by one = " , division_by_one,  0,2) ;
     }
-  /*  @Test
+    @Test
     public void test_division() {
         Main processy = new Main();
         double tt = processy.t;
@@ -64,7 +62,7 @@ public class MainTest {
         double mn2 = processy.mn;
         double an =  (tt / ll);
         Assert.assertEquals("Division = ",mn2, an,0);
-    }*/
+    }
   /*  @Test
     public void mathematic() {
 
