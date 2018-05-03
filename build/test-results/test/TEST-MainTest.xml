@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MainTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-04-27T20:44:24" hostname="Vadym" time="10.328">
+<testsuite name="MainTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-05-03T15:42:13" hostname="Vadym" time="3.516">
   <properties/>
-  <testcase name="test_jButton_1_height" classname="MainTest" time="10.095"/>
-  <testcase name="test_division_by_one" classname="MainTest" time="0.039"/>
-  <testcase name="test_jButton_1_width" classname="MainTest" time="0.054"/>
-  <testcase name="test_jButton_1_font" classname="MainTest" time="0.041"/>
-  <testcase name="test_jButton_1_text" classname="MainTest" time="0.04"/>
-  <testcase name="test_jButton_2_font" classname="MainTest" time="0.03"/>
+  <testcase name="test_jButton_1_height" classname="MainTest" time="3.261"/>
+  <testcase name="test_division_by_one" classname="MainTest" time="0.048"/>
+  <testcase name="test_jButton_1_width" classname="MainTest" time="0.036"/>
+  <testcase name="test_jButton_1_font" classname="MainTest" time="0.069"/>
+  <testcase name="test_jButton_1_text" classname="MainTest" time="0.045"/>
+  <testcase name="test_jButton_2_font" classname="MainTest" time="0.028"/>
   <testcase name="test_division_by_zero" classname="MainTest" time="0.026"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

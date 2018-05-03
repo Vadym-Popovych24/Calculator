@@ -66,26 +66,33 @@ public class Main extends javax.swing.JFrame  {
 
     public int livesum(){
         Calculation calc_livesum = new Calculation();
-        Scanner s = new Scanner(jTextField1.getText());
-        String b = s.next();
-        double x;
-        do{
+        Scanner s = null;
+        try {
+             s = new Scanner(jTextField1.getText());
+            String b = s.next();
+            double x;
+            do {
 
-            StringBuilder a = new StringBuilder(b);
-            mn=calc_livesum.eval(a,Double.valueOf(a.indexOf(""+'(')));
-            String formattedDouble = String.format("%.1f", mn);
-            x = mn;
+                StringBuilder a = new StringBuilder(b);
+                mn = calc_livesum.eval(a, Double.valueOf(a.indexOf("" + '(')));
+                String formattedDouble = String.format("%.1f", mn);
+                x = mn;
 
-            if (x % 1 == 0){
-                jLabel1.setText(""+calc_livesum.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+                if (x % 1 == 0) {
+                    jLabel1.setText("" + calc_livesum.eval(a, Double.valueOf(a.indexOf("" + '('))));
+                } else {
+                    jLabel1.setText(formattedDouble);
+                }
             }
-
-            else {
-                jLabel1.setText(formattedDouble);
+                while ((b = s.next()) != "null") ;
+            
             }
-
-        }
-        while ( (b = s.next()) != "null");
+        catch(Exception e){
+                System.out.println("Exception");
+            }
+        finally{
+                s.close();
+            }
 
         return 0;
     }
