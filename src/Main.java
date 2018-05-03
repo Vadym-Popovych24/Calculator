@@ -696,7 +696,7 @@ public class Main extends javax.swing.JFrame  {
         jButton_Round.setPreferredSize(new java.awt.Dimension(51, 23));
         jButton_Round.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-              jButton_log3ActionPerformed(evt);
+              jButtonlog3ActionPerformed();
             }
         });
         getContentPane().add(jButton_Round);
@@ -855,7 +855,7 @@ public class Main extends javax.swing.JFrame  {
         mathematic();
     }//GEN-LAST:event_jButton_1xActionPerformed
 
-    public void jButton_log3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_log3ActionPerformed
+    public void jButtonlog3ActionPerformed() {//GEN-FIRST:event_jButton_log3ActionPerformed
         num = Double.parseDouble(jTextField1.getText());
         calculation = "round";
         mathematic();
