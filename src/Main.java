@@ -11,8 +11,8 @@ public class Main extends javax.swing.JFrame  {
     String calculation;
     double num;
     double ans;
-    double l;
-    double t;
+    double l = 0;
+    double t = 0;
     Scanner s = new Scanner("");
 
 
