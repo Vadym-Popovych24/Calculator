@@ -987,7 +987,8 @@ public class Main extends javax.swing.JFrame  {
     @SuppressWarnings("empty-statement")
     private void jButton_sum_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_sumActionPerformed
         Calculation calc_sum_ActionPerformed = new Calculation();
-        Scanner s = new Scanner(jTextField1.getText());
+        try {
+        s = new Scanner(jTextField1.getText());
         String b = s.next();
         double x;
         do
@@ -1009,7 +1010,15 @@ public class Main extends javax.swing.JFrame  {
             }
 
         }
+
         while ( (b = s.next()) != "null");
+    }
+     catch(Exception e){
+                System.out.println("Exception");
+            }
+        finally{
+                s.close();
+            }
     }//GEN-LAST:event_jButton_sumActionPerformed
 
     private void jTextField1_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -1094,7 +1103,8 @@ public class Main extends javax.swing.JFrame  {
         Calculation calc_key_pressed = new Calculation();
         char c = evt.getKeyChar();
         if (c == KeyEvent.VK_ENTER ){
-            Scanner s = new Scanner(jTextField1.getText());
+           try{
+             s = new Scanner(jTextField1.getText());
             String b = s.next();
             double x;
             do{
@@ -1116,9 +1126,14 @@ public class Main extends javax.swing.JFrame  {
 
             }
             while ( (b = s.next()) != "null");
-
         }
-
+ catch(Exception e){
+                System.out.println("Exception");
+            }
+        finally{
+                s.close();
+        }
+}
         else if((evt.getKeyCode()==67 && (evt.isControlDown() ) )){
             jTextField1.setText("");
             jLabel1.setText("");
@@ -1229,7 +1244,9 @@ public class Main extends javax.swing.JFrame  {
 
     private void jButton_PRC_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_P1ActionPerformed
         Calculation calc_PRC_ActionPerformed = new Calculation();
-        Scanner s = new Scanner(jTextField1.getText());
+        try{
+         s = new Scanner(jTextField1.getText());
+        
         String b = s.next();
 
         do{
@@ -1237,6 +1254,14 @@ public class Main extends javax.swing.JFrame  {
             jLabel1.setText(""+calc_PRC_ActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
         }
         while ( (b = s.next()) != "null");
+    }
+
+      catch(Exception e){
+                System.out.println("Exception");
+            }
+        finally{
+                s.close();
+            }
     }//GEN-LAST:event_jButton_P1ActionPerformed
 
     private void jButton_Log10_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_E1ActionPerformed
