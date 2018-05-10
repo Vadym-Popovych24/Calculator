@@ -36,15 +36,7 @@ public class MainTest {
         String font2 =  setfont2.jButton2.getFont().getFontName();
         Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
     }
-   @Test/*expected = ArithmeticException.class)*/
-    public void test_division_by_zero() {
-        Main process = new Main();
-        double t2 = process.t;
-        double l2 = process.l;
 
-        int an = (int) (t2 / 0);
-        Assert.assertEquals(an, 0);
-    }
    @Test
     public void test_division_by_one(){
    Main variable = new Main();
@@ -53,18 +45,6 @@ public class MainTest {
     num2 = 5;
     division_by_one = 1 / num2;
         assertEquals("Division by one = " , division_by_one,  0,2) ;
-    }
-    @Test
-    public void test_division() {
-        Main processy = new Main();
-        double tt = processy.t;
-        double ll = processy.l;
-        double mn2 = processy.mn;
-        double an =  (tt / ll);
-
-        an =0;
-
-        Assert.assertEquals("Division = ",mn2, an,0);
     }
 
     @Test

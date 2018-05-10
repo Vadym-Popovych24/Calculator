@@ -2,8 +2,9 @@ import java.util.LinkedList;
 
 public class Process {
     Process() {
-
     }
+    double l;
+    double t;
     public static boolean isDelim(char c) {
         return c == ' ';
     }
@@ -13,10 +14,8 @@ public class Process {
                 || c == '!' || c == 'T' || c == 'S' || c == 'C' || c == 'L';
     }
 
-   public static void processOperator(LinkedList<Double> st, char op) {
+   public void processOperator(LinkedList<Double> st, char op) {
 
-       double l;
-       double t;
         switch (op) {
             case '+':
                 l = st.removeLast();

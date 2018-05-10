@@ -4,13 +4,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Calculation extends Main{
+    char y;
+    char x;
+    char x2;
     public Double eval(StringBuilder s, Double indexOf) {
         LinkedList<Double> st = new LinkedList<>();
         LinkedList<Character> op = new LinkedList<>();
         String operand = "";
-        char y;
-        char x;
-        char x2;
+
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             y = ' ';
