@@ -1,7 +1,9 @@
 import java.util.LinkedList;
 
 public class Process {
+    Process() {
 
+    }
     public static boolean isDelim(char c) {
         return c == ' ';
     }
@@ -38,12 +40,9 @@ public class Process {
             case '/':
                 l = st.removeLast();
                 t = st.removeLast();
-                try {
                     st.add(t / l);
                     break;
-                }catch(Exception e){
 
-                }
             case '^':
                 l = st.removeLast();
                 t = st.removeLast();
@@ -102,7 +101,9 @@ public class Process {
                 t = st.removeLast();
                 st.add(Math.log10(t));
                 break;
-
+            default :
+                System.out.println("ERROR");
+                break;
         }
 
     }

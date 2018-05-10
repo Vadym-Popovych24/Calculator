@@ -1316,34 +1316,34 @@ public class Main extends javax.swing.JFrame  {
     public javax.swing.JButton jButton1;
     private javax.swing.JButton jButton1x;
     public javax.swing.JButton jButton2;
-    public javax.swing.JButton jButton3;
-    public javax.swing.JButton jButton4;
-    public javax.swing.JButton jButton5;
-    public javax.swing.JButton jButton6;
-    public javax.swing.JButton jButton7;
-    public javax.swing.JButton jButton8;
-    public javax.swing.JButton jButton9;
-    public javax.swing.JButton jButtonC;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButtonC;
     private javax.swing.JButton jButtonE;
     private javax.swing.JButton jButtonLog10;
-    public javax.swing.JButton jButtonHex;
-    public javax.swing.JButton jButtonP;
+    private javax.swing.JButton jButtonHex;
+    private javax.swing.JButton jButtonP;
     private javax.swing.JButton jButtonPRC;
-    public javax.swing.JButton jButtonOctal;
-    public javax.swing.JButton jButtonclean;
+    private javax.swing.JButton jButtonOctal;
+    private javax.swing.JButton jButtonclean;
     private javax.swing.JButton jButtoncos;
     private javax.swing.JButton jButtoncosh;
-    public javax.swing.JButton jButtondivision;
+    private javax.swing.JButton jButtondivision;
     private javax.swing.JButton jButtonkorin;
     private javax.swing.JButton jButtonlog;
-    public javax.swing.JButton jButtonBracketfront;
-    public javax.swing.JButton jButtonBracketend;
+    private javax.swing.JButton jButtonBracketfront;
+    private javax.swing.JButton jButtonBracketend;
     private javax.swing.JButton jButtonRound;
-    public javax.swing.JButton jButtonBin;
+    private javax.swing.JButton jButtonBin;
     private javax.swing.JButton JButtonFactorial;
-    public javax.swing.JButton jButtonminus;
-    public javax.swing.JButton jButtonmultiplication;
-    public javax.swing.JButton jButtonplus;
+    private javax.swing.JButton jButtonminus;
+    private javax.swing.JButton jButtonmultiplication;
+    private javax.swing.JButton jButtonplus;
     private javax.swing.JButton jButtonpoint;
     private javax.swing.JButton jButtonpower;
     private javax.swing.JButton jButtonreverse;
@@ -1365,12 +1365,9 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JMenu jMenuKalculator;
     private javax.swing.JMenu jMenuinfa;
     private javax.swing.JMenu jMenuview;
-    public  javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private  javax.swing.JTextField jTextField1;
+    private static javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 
-    private String eval(StringBuilder a, int indexOf) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
 
