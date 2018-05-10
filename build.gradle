@@ -117,7 +117,7 @@ test.dependsOn 'pitest'
 sonarqube{
     properties{
          property "sonar.projectName" , "Calculator"
-         property "sonar.projectKey" , "myProject1"
+         property "sonar.projectKey" , "Calculator"
          property "sonar.jacoco.reportPath" ,"${Calculator.build}/jacoco/test/exec"
     }
 }
