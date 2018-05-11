@@ -97,10 +97,10 @@ task wrapper(type: Wrapper) {
 }
 
  // configurations.maybeCreate('pitest')
-
+/*
 pitest {
 
-   targetClasses =['Main']
+   targetClasses =['unnamed package']
         targetTests  = ['MainTest']
         outputFormats = ['XML', 'HTML']
      testSourceSets = [sourceSets.test]
@@ -112,7 +112,7 @@ pitest {
 }
 
 test.dependsOn 'pitest'
-
+*/
 
 sonarqube{
     properties{
