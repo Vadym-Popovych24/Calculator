@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ProcessTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-05-11T11:38:07" hostname="Vadym" time="0.021">
+<testsuite name="ProcessTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-05-11T12:14:10" hostname="Vadym" time="0.023">
   <properties/>
-  <testcase name="test_division" classname="ProcessTest" time="0.0"/>
+  <testcase name="test_division" classname="ProcessTest" time="0.001"/>
   <testcase name="test_division_by_zero" classname="ProcessTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
