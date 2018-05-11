@@ -96,11 +96,11 @@ task wrapper(type: Wrapper) {
     gradleVersion = "4.6"
 }
 
- // configurations.maybeCreate('pitest')
-/*
+  configurations.maybeCreate('pitest')
+
 pitest {
 
-   targetClasses =['unnamed package']
+   targetClasses =['Calculator']
         targetTests  = ['MainTest']
         outputFormats = ['XML', 'HTML']
      testSourceSets = [sourceSets.test]
@@ -112,7 +112,7 @@ pitest {
 }
 
 test.dependsOn 'pitest'
-*/
+
 
 sonarqube{
     properties{

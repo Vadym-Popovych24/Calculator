@@ -34,7 +34,7 @@ public class MainTest {
   public void test_jButton_2_font(){
         Main setfont2 = new Main();
         String font2 =  setfont2.jButton2.getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный ") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
    @Test
