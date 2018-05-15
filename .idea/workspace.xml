@@ -7,74 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d08a7e54-159f-402c-ba35-a480fdc4ee1c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/PrioritetTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Calculation.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Calculation.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$1.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$10.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$10.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$11.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$11.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$12.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$12.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$13.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$13.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$14.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$14.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$15.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$15.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$16.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$16.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$17.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$17.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$18.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$18.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$19.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$19.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$2.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$20.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$20.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$21.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$21.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$22.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$22.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$23.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$23.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$24.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$24.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$25.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$25.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$26.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$26.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$27.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$27.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$28.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$28.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$29.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$29.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$3.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$30.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$30.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$31.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$31.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$32.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$32.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$33.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$33.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$34.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$34.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$35.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$35.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$36.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$36.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$37.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$37.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$38.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$38.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$39.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$39.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$4.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$4.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$40.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$40.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$41.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$41.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$42.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$42.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$43.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$43.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$44.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$44.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$45.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$45.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$46.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$46.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$47.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$47.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$48.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$48.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$49.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$49.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$5.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$5.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$50.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$50.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$51.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$51.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$52.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$52.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$6.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$6.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$7.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$7.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$8.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$8.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main$9.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main$9.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Main.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Prioritet.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Prioritet.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/Process.class" afterPath="$PROJECT_DIR$/out/production/Calculator/Process.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/Calculator/CalculationTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/CalculationTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/Calculator/MainTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/MainTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/Calculator/ProcessTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/ProcessTest.class" />
-      <change beforePath="$PROJECT_DIR$/src/Calculation.java" afterPath="$PROJECT_DIR$/src/Calculation.java" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/Prioritet.java" afterPath="$PROJECT_DIR$/src/Prioritet.java" />
-      <change beforePath="$PROJECT_DIR$/src/Process.java" afterPath="$PROJECT_DIR$/src/Process.java" />
-      <change beforePath="$PROJECT_DIR$/test/CalculationTest.java" afterPath="$PROJECT_DIR$/test/CalculationTest.java" />
       <change beforePath="$PROJECT_DIR$/test/MainTest.java" afterPath="$PROJECT_DIR$/test/MainTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/ProcessTest.java" afterPath="$PROJECT_DIR$/test/ProcessTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -156,8 +89,8 @@
       <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+            <state relative-caret-position="119">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -282,7 +215,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-28" />
     <option name="y" value="10" />
     <option name="width" value="1091" />
@@ -720,7 +653,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-8" width="1319" height="784" extended-state="7" />
+    <frame x="55" y="-8" width="1319" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -731,9 +664,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34277198" sideWeight="0.39217192" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34277198" sideWeight="0.6078281" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34277198" sideWeight="0.6078281" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.4940429" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23100537" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36991557" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.49722" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1173,8 +1106,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+        <state relative-caret-position="119">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
