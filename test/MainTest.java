@@ -1,21 +1,22 @@
-import mainpaket.Main;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 
+import java.awt.*;
+
 import static org.junit.Assert.*;
 
 public class MainTest {
+    Main component = new Main();
 
     @Test
     public void test_jButton_1_height(){
-        Main component = new Main();
         int height = component.jButton1.getHeight();
         Assert.assertEquals("Height button +" , height , 33);
       }
     @Test
     public void test_jButton_1_width(){
-        Main component = new Main();
         int width = component.jButton1.getWidth();
         Assert.assertEquals("Width button +" , width , 51);
     }

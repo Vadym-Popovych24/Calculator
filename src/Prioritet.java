@@ -1,7 +1,5 @@
-package mainpaket;
-
 public class Prioritet {
-    static int priority(char op) {
+    public int priority(char op) {
         switch (op) {
 
             case '+':

@@ -1,5 +1,5 @@
-import mainpaket.Main;
-import mainpaket.Process;
+
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -18,16 +18,4 @@ public class ProcessTest  {
         int an=(int)(t2/0);
         Assert.assertEquals(an,0);
         }
-/*
-    @Test
-    public void test_division() {
-            pro.t =5;
-            pro.l =2;
-         main.mn =  (pro.t / pro.l);
-
-        double an =0;
-
-        Assert.assertEquals("Division = ",main.mn, 2.5,0);
-    }
-*/
 }

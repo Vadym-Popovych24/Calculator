@@ -1,4 +1,3 @@
-package mainpaket;
 
 import javax.swing.*;
 import javax.swing.event.AncestorEvent;
@@ -1206,8 +1205,9 @@ public class Main extends javax.swing.JFrame  {
 
     private void jMenuIteminfoActionPerformed() {//GEN-FIRST:event_jMenuItem_infoActionPerformed
     }//GEN-LAST:event_jMenuItem_infoActionPerformed
-
-    private void jMenuItemstandartActionPerformed() {//GEN-FIRST:event_jMenuItem_standartActionPerformed
+        String jT;
+    public void jMenuItemstandartActionPerformed() {//GEN-FIRST:event_jMenuItem_standartActionPerformed
+        jT = "jMenuItemstandartActionPerformed";
         this.setResizable(true);
         this.setSize(255, 380);
         jTextField1.setSize(220,45);
@@ -1215,12 +1215,15 @@ public class Main extends javax.swing.JFrame  {
 
     }//GEN-LAST:event_jMenuItem_standartActionPerformed
 
-    private void jMenuItemsientificActionPerformed() {//GEN-FIRST:event_jMenuItem_sientificActionPerformed
+    public boolean jMenuItemsientificActionPerformed() {//GEN-FIRST:event_jMenuItem_sientificActionPerformed
+       jT = "jMenuItemsientificActionPerformed";
         this.setResizable(true);
         this.setSize(538, 380);
         jTextField1.setSize(503,45);
         jLabel1.setSize(503,22);
 
+
+        return false;
     }//GEN-LAST:event_jMenuItem_sientificActionPerformed
 
     private void formWindowClosed() {//GEN-FIRST:event_formWindowClosed
@@ -1365,7 +1368,7 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JMenu jMenuKalculator;
     private javax.swing.JMenu jMenuinfa;
     private javax.swing.JMenu jMenuview;
-    private  javax.swing.JTextField jTextField1;
+    public  javax.swing.JTextField jTextField1;
     private static javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 

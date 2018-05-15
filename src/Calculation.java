@@ -1,4 +1,3 @@
-package mainpaket;
 
 import java.awt.*;
 import java.util.LinkedList;

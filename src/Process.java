@@ -1,4 +1,4 @@
-package mainpaket;
+
 
 import java.util.LinkedList;
 
@@ -7,7 +7,7 @@ public class Process {
     }
     public double l;
     public double t;
-    public static boolean isDelim(char c) {
+    public  boolean isDelim(char c) {
         return c == ' ';
     }
     public boolean isOperator(char c) {
