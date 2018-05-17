@@ -96,7 +96,7 @@ task wrapper(type: Wrapper) {
     gradleVersion = "4.6"
 }
 
-configurations.maybeCreate('pitest')
+//configurations.maybeCreate('pitest')
 /*
 pitest {
     targetClasses = ['mainpaket.*']
@@ -156,4 +156,4 @@ repositories {
 jar {
     manifest.attributes("Main-Class": mainClassName);
 }
-test.dependsOn 'pitest'
+//test.dependsOn 'pitest'
