@@ -97,7 +97,7 @@ task wrapper(type: Wrapper) {
 }
 
 //configurations.maybeCreate('pitest')
-/*
+
 pitest {
     targetClasses = ['mainpaket.*']
     targetTests  = ['testpacket.*']
@@ -110,7 +110,7 @@ pitest {
   
  
 }
-*/
+
 sonarqube{
     properties{
          property "sonar.projectName" , "Calculator"
