@@ -97,7 +97,7 @@ task wrapper(type: Wrapper) {
 }
 
 configurations.maybeCreate('pitest')
-
+/*
 pitest {
     targetClasses = ['mainpaket.*']
     targetTests  = ['testpacket.*']
@@ -107,7 +107,7 @@ pitest {
   // mainSourceSets = [sourceSets.main]
    //   testSourceSets = [sourceSets.test]
  
-}
+}*/
 /*
 pitest {
 
