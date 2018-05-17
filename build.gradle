@@ -144,4 +144,4 @@ repositories {
 jar {
     manifest.attributes("Main-Class": mainClassName);
 }
-test.dependsOn 'pitest'
+//test.dependsOn 'pitest'
