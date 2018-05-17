@@ -11,7 +11,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.3.0'
   //compile "sp.sd:nexus-artifact-uploader:2.10"
-  // classpath 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.3.0'
+  compile 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.3.0'
 
 }
 
@@ -96,20 +96,31 @@ task wrapper(type: Wrapper) {
     gradleVersion = "4.6"
 }
 
- // configurations.maybeCreate('pitest')
-/*
+configurations.maybeCreate('pitest')
+
 pitest {
     targetClasses = ['mainpaket.*']
-      targetTests  = ['testpaket.*']
-  outputFormats = ['XML', 'HTML']
+    targetTests  = ['testpacket.*']
+    outputFormats = ['XML', 'HTML']
     timestampedReports = false
-     pitestVersion = '1.3.0' 
- //  mainSourceSets = [sourceSets.main]
-  //    testSourceSets = [sourceSets.test]
-  threads = 4
+  //   pitestVersion = '1.3.0' 
+  // mainSourceSets = [sourceSets.main]
+   //   testSourceSets = [sourceSets.test]
+ 
 }
+/*
+pitest {
 
-
+   targetClasses =['mainpaket.*']
+     //   targetTests  = ['MainTest']
+        outputFormats = ['XML', 'HTML']
+   //  testSourceSets = [sourceSets.test]
+   //mainSourceSets = [sourceSets.main]
+ //  pitestVersion = '1.3.0' 
+    timestampedReports = false
+  // threads = 4
+  
+}
 */
 
 sonarqube{
@@ -145,4 +156,4 @@ repositories {
 jar {
     manifest.attributes("Main-Class": mainClassName);
 }
-// test.dependsOn 'pitest'
+test.dependsOn 'pitest'
