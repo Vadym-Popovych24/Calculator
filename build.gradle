@@ -99,9 +99,6 @@ task wrapper(type: Wrapper) {
 //configurations.maybeCreate('pitest')
 
 
-
-
-
 repositories {
      maven {
         name "Calculator"
@@ -119,15 +116,17 @@ repositories {
 jar {
     manifest.attributes("Main-Class": mainClassName);
 }
+
 pitest {
     targetClasses = ['mainpaket.*']
     targetTests  = ['testpacket.*']
     outputFormats = ['XML', 'HTML']
     timestampedReports = false
-  //   pitestVersion = '1.3.0' 
+    pitestVersion = '1.3.1' 
   // mainSourceSets = [sourceSets.main]
    //   testSourceSets = [sourceSets.test]
   // threads = 4
   }
 
  test.dependsOn 'pitest'
+ 
