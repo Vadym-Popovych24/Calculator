@@ -1,11 +1,12 @@
-package testpacket;
-import mainpaket.Main;
+package testpackage;
+import mainpackage.Main;
 import org.junit.Assert;
 import org.junit.Test;
 
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.Scanner;
 
 import static org.junit.Assert.*;
 
@@ -21,11 +22,13 @@ public void KeyPressed(){
     }
     Assert.assertEquals("VK_ENTER = ",gt ,"0.0");
 }
+
     @Test
     public void test_jButton_1_height(){
         int height = component.jButton1.getHeight();
         Assert.assertEquals("Height button +" , height , 33);
       }
+      
     @Test
     public void test_jButton_1_width(){
         int width = component.jButton1.getWidth();
@@ -56,8 +59,31 @@ public void KeyPressed(){
         assertEquals("Науковий", titleFrame);
 
     }
+/*
+    @Test
+    public void testmath() {
+        component.calculation = "negative_number";
+        double an = component.ans;
+        if (component.calculation == "negative_number") {
+            an = component.num * -1;
+        } else {
+            an = 0.0;
+        }
+        assertEquals(an, -0.0, 0);
+        String mess;
+if (component.mathematic() == 0){
+    mess = "Seccesfull";
+}
+else {
+    mess = "Error";
+}
+assertEquals("mess = " , mess , "Seccesfull");
+    }*/
 
-  /*  @Test
+/*
+    @Test
+
+
     public void mathematic() {
 
     }

@@ -1,4 +1,4 @@
-package mainpaket;
+package mainpackage;
 
 public class Prioritet {
     public int priority(char op) {

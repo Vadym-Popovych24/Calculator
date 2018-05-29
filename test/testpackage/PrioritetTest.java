@@ -1,12 +1,12 @@
-package testpacket;
+package testpackage;
 
-import mainpaket.Prioritet;
+import mainpackage.Prioritet;
 import org.junit.Test;
 import org.junit.Assert;
 import static org.junit.Assert.*;
 
 public class PrioritetTest {
-    Prioritet prior = new Prioritet();
+ Prioritet prior = new Prioritet();
 
     @Test
     public void prioritet() {

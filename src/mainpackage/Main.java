@@ -1,4 +1,4 @@
-package mainpaket;
+package mainpackage;
 
 import javax.swing.*;
 import javax.swing.event.AncestorEvent;
@@ -10,10 +10,10 @@ import java.util.Scanner;
 
 public class Main extends javax.swing.JFrame  {
 
-    String calculation;
+   public String calculation;
     public double num;
     public double ans;
-    Scanner s = new Scanner("");
+   public Scanner s = new Scanner("");
 
 
     public Main() {

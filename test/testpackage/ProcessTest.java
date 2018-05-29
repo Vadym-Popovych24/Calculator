@@ -1,7 +1,7 @@
-package testpacket;
+package testpackage;
 
-import mainpaket.Main;
-import mainpaket.Process;
+import mainpackage.Main;
+import mainpackage.Process;
 import org.junit.Assert;
 import org.junit.Test;
 

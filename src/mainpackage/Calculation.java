@@ -1,4 +1,4 @@
-package mainpaket;
+package mainpackage;
 import java.awt.*;
 import java.util.LinkedList;
 import java.util.regex.Matcher;
@@ -35,7 +35,6 @@ public class Calculation extends Main{
                 i--;
                 x2 = s.charAt(i);
 
-
                 i++;
             }
             String t = String.valueOf(c);
@@ -45,11 +44,12 @@ public class Calculation extends Main{
                 continue;
             if (c == '(')
                 op.add('(');
+
             else if (c == ')') {
                 while (op.getLast() != '(') process.processOperator(st, op.removeLast());
                 op.removeLast();
-
             }
+
             else if (Character.isDigit(c) && (x2 == '+'  || x2 == '*' || x2 == '/') && x == '-') {
                 operand += s.charAt(i);
             }
