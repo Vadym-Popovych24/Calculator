@@ -345,7 +345,7 @@ public class Main extends javax.swing.JFrame  {
                 jButtonplusActionPerformed();
             }
         });
-        
+
         jButtonplus.addKeyListener(new KeyAdapter() {
         	@Override
             public void keyPressed(KeyEvent evt) {
@@ -360,6 +360,7 @@ public class Main extends javax.swing.JFrame  {
                 jButtonplusKeyTyped();
             }
         });
+        
         getContentPane().add(jButtonplus);
         jButtonplus.setBounds(181, 90, 51, 56);
 
