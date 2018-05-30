@@ -345,10 +345,13 @@ public class Main extends javax.swing.JFrame  {
                 jButtonplusActionPerformed();
             }
         });
+        
         jButtonplus.addKeyListener(new KeyAdapter() {
+        	@Override
             public void keyPressed(KeyEvent evt) {
                 jButtonplusKeyPressed();
             }
+            @Override
             public void keyReleased(KeyEvent evt) {
                 jButtonplusKeyReleased();
             }
