@@ -18,7 +18,7 @@ public class Main extends javax.swing.JFrame  {
 
     public Main() {
         initComponents();
-        jMenuItemON.setEnabled(false);//as
+        jMenuItemON.setEnabled(false);
     }
 
 
