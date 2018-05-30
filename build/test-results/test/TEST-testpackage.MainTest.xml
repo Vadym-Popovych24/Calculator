@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.MainTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-29T18:39:40" hostname="Vadym" time="0.207">
+<testsuite name="testpackage.MainTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-30T06:02:47" hostname="Vadym" time="0.248">
   <properties/>
   <testcase name="test_jButton_1_height" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="test_division_by_one" classname="testpackage.MainTest" time="0.023"/>
+  <testcase name="test_division_by_one" classname="testpackage.MainTest" time="0.028"/>
   <testcase name="test_jButton_1_width" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="test_jButton_1_text" classname="testpackage.MainTest" time="0.021"/>
-  <testcase name="testTitleFrame" classname="testpackage.MainTest" time="0.02"/>
-  <testcase name="KeyPressed" classname="testpackage.MainTest" time="0.029"/>
+  <testcase name="test_jButton_1_text" classname="testpackage.MainTest" time="0.027"/>
+  <testcase name="testTitleFrame" classname="testpackage.MainTest" time="0.025"/>
+  <testcase name="KeyPressed" classname="testpackage.MainTest" time="0.019"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

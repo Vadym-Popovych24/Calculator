@@ -352,6 +352,7 @@ public class Main extends javax.swing.JFrame  {
             public void keyReleased(KeyEvent evt) {
                 jButtonplusKeyReleased();
             }
+            @Override
             public void keyTyped(KeyEvent evt) {
                 jButtonplusKeyTyped();
             }

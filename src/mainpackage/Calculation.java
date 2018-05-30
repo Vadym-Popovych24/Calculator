@@ -9,7 +9,7 @@ public class Calculation extends Main{
     public char x;
     public char x2;
     char c;
-    LinkedList<Double> st = new LinkedList<>();
+   public LinkedList<Double> st = new LinkedList<>();
     public LinkedList<Character> op = new LinkedList<>();
     public Double eval(StringBuilder s, Double indexOf) {
 

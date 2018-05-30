@@ -7,99 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d08a7e54-159f-402c-ba35-a480fdc4ee1c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junitsrc.xml" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.img/Thumbs.db" afterPath="$PROJECT_DIR$/.img/Thumbs.db" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Calculation.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$10.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$11.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$12.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$13.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$14.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$15.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$16.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$17.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$18.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$19.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$20.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$21.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$22.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$23.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$24.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$25.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$26.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$27.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$28.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$29.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$30.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$31.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$32.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$33.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$34.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$35.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$36.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$37.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$38.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$39.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$40.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$41.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$42.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$43.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$44.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$45.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$46.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$47.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$48.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$49.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$5.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$50.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$51.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$52.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$6.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$7.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$8.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main$9.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Prioritet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mainpaket/Process.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/testpacket/CalculationTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/testpacket/MainTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/testpacket/PrioritetTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/testpacket/ProcessTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/Calculator.tar" afterPath="$PROJECT_DIR$/build/distributions/Calculator.tar" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/Calculator.zip" afterPath="$PROJECT_DIR$/build/distributions/Calculator.zip" />
-      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Calculator.jar" afterPath="$PROJECT_DIR$/build/libs/Calculator.jar" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/testpacket.CalculationTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/testpacket.MainTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/testpacket.PrioritetTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/testpacket.ProcessTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/testpacket.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-testpacket.CalculationTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-testpacket.MainTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-testpacket.PrioritetTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-testpacket.ProcessTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
-      <change beforePath="$PROJECT_DIR$/run/Main.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/test/Calculator/testpackage/ProcessTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/testpackage/ProcessTest.class" />
       <change beforePath="$PROJECT_DIR$/src/mainpackage/Calculation.java" afterPath="$PROJECT_DIR$/src/mainpackage/Calculation.java" />
-      <change beforePath="$PROJECT_DIR$/src/mainpackage/Main.java" afterPath="$PROJECT_DIR$/src/mainpackage/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/mainpackage/Prioritet.java" afterPath="$PROJECT_DIR$/src/mainpackage/Prioritet.java" />
-      <change beforePath="$PROJECT_DIR$/src/mainpackage/Process.java" afterPath="$PROJECT_DIR$/src/mainpackage/Process.java" />
-      <change beforePath="$PROJECT_DIR$/test/testpackage/CalculationTest.java" afterPath="$PROJECT_DIR$/test/testpackage/CalculationTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/testpackage/MainTest.java" afterPath="$PROJECT_DIR$/test/testpackage/MainTest.java" />
       <change beforePath="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" afterPath="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" />
       <change beforePath="$PROJECT_DIR$/test/testpackage/ProcessTest.java" afterPath="$PROJECT_DIR$/test/testpackage/ProcessTest.java" />
     </list>
@@ -135,8 +45,8 @@
     <SUITE FILE_PATH="coverage/Calculato$Whole_project.coverage" NAME="Whole project Coverage Results" MODIFIED="1527535086998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testpackage.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Calculator$All_in_Calculator.coverage" NAME="All in Calculator Coverage Results" MODIFIED="1527587737390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Calculator$testpackage_in_Calculator.coverage" NAME="testpackage in Calculator Coverage Results" MODIFIED="1527587810374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Calculator$All_in_Calculator.coverage" NAME="All in Calculator Coverage Results" MODIFIED="1527628528290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Calculator$testpackage_in_Calculator.coverage" NAME="testpackage in Calculator Coverage Results" MODIFIED="1527627483190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testpackage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Calculato$testpackage.coverage" NAME="testpackage Coverage Results" MODIFIED="1527535664065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -167,27 +77,27 @@
         <entry file="file://$PROJECT_DIR$/test/testpackage/CalculationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
-              <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+              <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/testpackage/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="835">
-              <caret line="80" column="7" lean-forward="false" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+            <state relative-caret-position="1105">
+              <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mainpackage/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="28" />
+            <state relative-caret-position="153">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,11 +105,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ProcessTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/testpackage/ProcessTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrioritetTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/testpackage/PrioritetTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Prioritet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mainpackage/Prioritet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-272">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Calculation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mainpackage/Calculation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1052">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="-1491">
+              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,18 +150,8 @@
       <file leaf-file-name="Process.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mainpackage/Process.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-355">
-              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Prioritet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mainpackage/Prioritet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -290,13 +220,13 @@
         <option value="$PROJECT_DIR$/test/MainTest.java" />
         <option value="$PROJECT_DIR$/src/mainpaket/Main.java" />
         <option value="$PROJECT_DIR$/src/mainpackage/Prioritet.java" />
+        <option value="$PROJECT_DIR$/src/mainpackage/Main.java" />
+        <option value="$PROJECT_DIR$/test/testpackage/CalculationTest.java" />
+        <option value="$PROJECT_DIR$/test/testpackage/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/mainpackage/Calculation.java" />
         <option value="$PROJECT_DIR$/src/mainpackage/Process.java" />
         <option value="$PROJECT_DIR$/test/testpackage/ProcessTest.java" />
         <option value="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" />
-        <option value="$PROJECT_DIR$/src/mainpackage/Main.java" />
-        <option value="$PROJECT_DIR$/src/mainpackage/Calculation.java" />
-        <option value="$PROJECT_DIR$/test/testpackage/CalculationTest.java" />
-        <option value="$PROJECT_DIR$/test/testpackage/MainTest.java" />
       </list>
     </option>
   </component>
@@ -395,6 +325,7 @@
       </pane>
       <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -406,7 +337,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -447,7 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testpackage in Calculator">
+  <component name="RunManager" selected="JUnit.All in Calculator">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -457,7 +387,7 @@
     </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="mainpaket.Main" />
+      <option name="MAIN_CLASS_NAME" value="mainpackage.Main" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -752,8 +682,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.testpackage in Calculator" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Calculator" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Calculator" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.testpackage in Calculator" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.CalculationTest (1)" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CalculationTest" />
@@ -785,34 +715,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Calculator - 2018.05.29 at 11h 56m 31s.xml">
+    <history-entry file="All_in_Calculator - 2018.05.30 at 00h 00m 21s.xml">
       <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Calculator - 2018.05.29 at 12h 41m 32s.xml">
+    <history-entry file="All_in_Calculator - 2018.05.30 at 00h 00m 49s.xml">
       <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Calculator - 2018.05.29 at 12h 55m 42s.xml">
+    <history-entry file="All_in_Calculator - 2018.05.30 at 00h 14m 40s.xml">
       <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.05.29 at 11h 56m 01s.xml">
+    <history-entry file="All_in_Calculator - 2018.05.30 at 00h 15m 25s.xml">
+      <configuration name="All in Calculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Calculator - 2018.05.30 at 00h 15m 34s.xml">
+      <configuration name="All in Calculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testpackage_in_Calculator - 2018.05.30 at 00h 00m 12s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.05.29 at 12h 41m 19s.xml">
+    <history-entry file="testpackage_in_Calculator - 2018.05.30 at 00h 00m 42s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.05.29 at 12h 50m 10s.xml">
+    <history-entry file="testpackage_in_Calculator - 2018.05.30 at 00h 13m 44s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.05.29 at 12h 55m 08s.xml">
+    <history-entry file="testpackage_in_Calculator - 2018.05.30 at 00h 14m 32s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.05.29 at 12h 55m 30s.xml">
-      <configuration name="testpackage in Calculator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.05.29 at 12h 56m 46s.xml">
-      <configuration name="testpackage in Calculator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.05.29 at 12h 56m 55s.xml">
+    <history-entry file="testpackage_in_Calculator - 2018.05.30 at 00h 15m 10s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -839,11 +769,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34277198" sideWeight="0.5886416" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.4940429" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22947045" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="539" y="163" width="350" height="441" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22947045" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="539" y="163" width="350" height="441" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.49722" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24558711" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2018419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13343924" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -974,72 +904,72 @@
     <entry file="file://$PROJECT_DIR$/src/mainpaket/Prioritet.java" />
     <entry file="file://$PROJECT_DIR$/src/mainpaket/Process.java" />
     <entry file="file://$PROJECT_DIR$/src/mainpaket/Calculation.java" />
-    <entry file="file://$PROJECT_DIR$/src/mainpackage/Prioritet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/PrioritetTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/testpackage/ProcessTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testpackage/PrioritetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="true" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/testpackage/CalculationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testpackage/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mainpackage/Process.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mainpackage/Calculation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1052">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="-1491">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mainpackage/Process.java">
+    <entry file="file://$PROJECT_DIR$/test/testpackage/ProcessTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-355">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        <state relative-caret-position="206">
+          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mainpackage/Prioritet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testpackage/PrioritetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mainpackage/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="28" />
+        <state relative-caret-position="153">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testpackage/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="80" column="7" lean-forward="false" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
