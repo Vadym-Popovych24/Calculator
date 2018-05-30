@@ -67,7 +67,7 @@ public class Main extends javax.swing.JFrame  {
     }
 
     public int livesum(){
-        Calculation calc_livesum = new Calculation();
+        Calculation calclivesum = new Calculation();
         try {
             s = new Scanner(jTextField1.getText());
             String b = s.next();
@@ -75,13 +75,13 @@ public class Main extends javax.swing.JFrame  {
             do {
 
                 StringBuilder a = new StringBuilder(b);
-                meansum = calc_livesum.eval(a, Double.valueOf(a.indexOf("" + '(')));
+                meansum = calclivesum.eval(a, Double.valueOf(a.indexOf("" + '(')));
                 String formattedDouble = String.format("%.1f", meansum);
                 x = meansum;
 
                 if (x % 1 == 0) {
 
-                    jLabel1.setText("" + calc_livesum.eval(a, Double.valueOf(a.indexOf("" + '('))));
+                    jLabel1.setText("" + calclivesum.eval(a, Double.valueOf(a.indexOf("" + '('))));
                 } else {
                     jLabel1.setText(formattedDouble);
                 }
@@ -90,11 +90,11 @@ public class Main extends javax.swing.JFrame  {
 
         }
         catch(Exception e){
-            StrictMath logger = null;
-            logger.log(0);
+            System.err.println("Caught IOException: " + e.getMessage());
         }
         finally{
             s.close();
+
         }
 
         return s.nextInt();
@@ -1024,8 +1024,7 @@ public class Main extends javax.swing.JFrame  {
             while ( (b = s.next()) != "null");
         }
         catch(Exception e){
-            StrictMath logger = null;
-            logger.log(0);
+            System.err.println("Caught IOException: " + e.getMessage());
         }
         finally{
             s.close();
@@ -1140,8 +1139,7 @@ public class Main extends javax.swing.JFrame  {
                 while ( (b = s.next()) != "null");
             }
             catch(Exception e){
-                StrictMath logger = null;
-                logger.log(0);
+                System.err.println("Caught IOException: " + e.getMessage());
             }
             finally{
                 s.close();
@@ -1271,8 +1269,7 @@ public class Main extends javax.swing.JFrame  {
         }
 
         catch(Exception e){
-            StrictMath logger = null;
-            logger.log(0);
+            System.err.println("Caught IOException: " + e.getMessage());
         }
         finally{
             s.close();
