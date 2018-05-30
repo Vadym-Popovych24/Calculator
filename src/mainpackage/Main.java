@@ -539,22 +539,14 @@ public class Main extends javax.swing.JFrame  {
         jButtonkorin.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtonkorin.setText("√");
         jButtonkorin.setToolTipText("Shift+K");
-        jButtonkorin.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonkorinActionPerformed();
-            }
-        });
+        jButtonkorin.addActionListener(evt -> jButtonkorinActionPerformed());
         getContentPane().add(jButtonkorin);
         jButtonkorin.setBounds(450, 222, 61, 37);
 
         jButtonreverse.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtonreverse.setText("±");
         jButtonreverse.setToolTipText("Shift+F");
-        jButtonreverse.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonreverseActionPerformed();
-            }
-        });
+        jButtonreverse.addActionListener(evt -> jButtonreverseActionPerformed());
         getContentPane().add(jButtonreverse);
         jButtonreverse.setBounds(376, 265, 70, 37);
 
@@ -565,32 +557,20 @@ public class Main extends javax.swing.JFrame  {
         jButton1x.setMaximumSize(new Dimension(49, 33));
         jButton1x.setMinimumSize(new Dimension(49, 33));
         jButton1x.setPreferredSize(new Dimension(49, 33));
-        jButton1x.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton1xActionPerformed();
-            }
-        });
+        jButton1x.addActionListener(evt -> jButton1xActionPerformed());
         getContentPane().add(jButton1x);
         jButton1x.setBounds(450, 265, 61, 37);
 
         jButtonP.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtonP.setText("П");
         jButtonP.setToolTipText("Ctrl+P");
-        jButtonP.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonPActionPerformed();
-            }
-        });
+        jButtonP.addActionListener(evt -> jButtonPActionPerformed());
         getContentPane().add(jButtonP);
         jButtonP.setBounds(450, 179, 61, 37);
 
         jButtoncos.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtoncos.setText("cos");
-        jButtoncos.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtoncosActionPerformed();
-            }
-        });
+        jButtoncos.addActionListener(evt -> jButtoncosActionPerformed());
         getContentPane().add(jButtoncos);
         jButtoncos.setBounds(239, 222, 65, 37);
 
@@ -599,22 +579,14 @@ public class Main extends javax.swing.JFrame  {
         jButtonsinh.setMaximumSize(new Dimension(60, 23));
         jButtonsinh.setMinimumSize(new Dimension(60, 23));
         jButtonsinh.setPreferredSize(new Dimension(51, 23));
-        jButtonsinh.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonsinhActionPerformed();
-            }
-        });
+        jButtonsinh.addActionListener(evt -> jButtonsinhActionPerformed());
         getContentPane().add(jButtonsinh);
         jButtonsinh.setBounds(310, 179, 60, 37);
 
         jButtonlog.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtonlog.setText("log");
         jButtonlog.setPreferredSize(new Dimension(51, 23));
-        jButtonlog.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonlogActionPerformed();
-            }
-        });
+        jButtonlog.addActionListener(evt -> jButtonlogActionPerformed());
         getContentPane().add(jButtonlog);
         jButtonlog.setBounds(310, 131, 60, 42);
 
@@ -1361,14 +1333,13 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JMenuItem jMenuItemOFF;
     private javax.swing.JMenuItem jMenuItemON;
     private javax.swing.JMenuItem jMenuItemclose;
-   // private javax.swing.JMenuItem jMenuIteminfo;
     public javax.swing.JMenuItem jMenuItemsientific;
     private javax.swing.JMenuItem jMenuItemstandart;
     private javax.swing.JMenu jMenuKalculator;
     private javax.swing.JMenu jMenuinfa;
     private javax.swing.JMenu jMenuview;
     public  javax.swing.JTextField jTextField1;
-   // private static javax.swing.JTextField jTextField2;
+
     // End of variables declaration//GEN-END:variables
 
 }
