@@ -22,7 +22,7 @@ public class Main extends javax.swing.JFrame  {
     }
 
 
-    public double mn;
+    public double meansum;
 
     Prioritet prior = new Prioritet();
     Process process = new Process();
@@ -75,11 +75,12 @@ public class Main extends javax.swing.JFrame  {
             do {
 
                 StringBuilder a = new StringBuilder(b);
-                mn = calc_livesum.eval(a, Double.valueOf(a.indexOf("" + '(')));
-                String formattedDouble = String.format("%.1f", mn);
-                x = mn;
+                meansum = calc_livesum.eval(a, Double.valueOf(a.indexOf("" + '(')));
+                String formattedDouble = String.format("%.1f", meansum);
+                x = meansum;
 
                 if (x % 1 == 0) {
+
                     jLabel1.setText("" + calc_livesum.eval(a, Double.valueOf(a.indexOf("" + '('))));
                 } else {
                     jLabel1.setText(formattedDouble);
@@ -89,7 +90,8 @@ public class Main extends javax.swing.JFrame  {
 
         }
         catch(Exception e){
-            System.out.println("Exception");
+            StrictMath logger = null;
+            logger.log(0);
         }
         finally{
             s.close();
@@ -145,7 +147,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonBracketend.setEnabled(true);
         jButtonRound.setEnabled(true);
         jButtonBin.setEnabled(true);
-        JButtonFactorial.setEnabled(true);
+        jButtonFactorial.setEnabled(true);
     }
 
     public void vykl()
@@ -195,16 +197,14 @@ public class Main extends javax.swing.JFrame  {
         jButtonBracketend.setEnabled(false);
         jButtonRound.setEnabled(false);
         jButtonBin.setEnabled(false);
-        JButtonFactorial.setEnabled(false);
+        jButtonFactorial.setEnabled(false);
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new ButtonGroup();
         jCheckBoxMenuItem1 = new JCheckBoxMenuItem();
-        buttonGroup2 = new ButtonGroup();
         jTextField1 = new JTextField();
         jButtonclean = new JButton();
         jButtonC = new JButton();
@@ -241,7 +241,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonsin = new JButton();
         jButtoncosh = new JButton();
         jInternalFrame1 = new JInternalFrame();
-        jTextField2 = new JTextField();
+        //jTextField2 = new JTextField();
         jButtonE = new JButton();
         jButtonBracketfront = new JButton();
         jButtonBracketend = new JButton();
@@ -251,7 +251,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonBin = new JButton();
         jButtonOctal = new JButton();
         jButtonHex = new JButton();
-        JButtonFactorial = new JButton();
+        jButtonFactorial = new JButton();
         jMenuBar1 = new JMenuBar();
         jMenuKalculator = new JMenu();
         jMenuItemON = new JMenuItem();
@@ -272,10 +272,13 @@ public class Main extends javax.swing.JFrame  {
         setLocation(new Point(500, 250));
         setType(Type.UTILITY);
         addWindowListener(new WindowAdapter() {
+        	@Override
             public void windowActivated(WindowEvent evt) {
                 formWindowActivated();
             }
+            @Override
             public void windowClosed(WindowEvent evt) {
+    
                 formWindowClosed();
             }
         });
@@ -291,12 +294,15 @@ public class Main extends javax.swing.JFrame  {
             }
         });
         jTextField1.addKeyListener(new KeyAdapter() {
+            @Override
             public void keyPressed(KeyEvent evt) {
                 jTextField1KeyPressed(evt);
             }
+            @Override
             public void keyReleased(KeyEvent evt) {
                 jTextField1KeyReleased();
             }
+            @Override
             public void keyTyped(KeyEvent evt) {
                 jTextField1KeyTyped(evt);
             }
@@ -347,7 +353,7 @@ public class Main extends javax.swing.JFrame  {
         });
 
         jButtonplus.addKeyListener(new KeyAdapter() {
-        	@Override
+        /*	@Override
             public void keyPressed(KeyEvent evt) {
                 jButtonplusKeyPressed();
             }
@@ -356,11 +362,12 @@ public class Main extends javax.swing.JFrame  {
                 jButtonplusKeyReleased();
             }
             @Override
+ 
             public void keyTyped(KeyEvent evt) {
                 jButtonplusKeyTyped();
-            }
+            }*/
         });
-        
+
         getContentPane().add(jButtonplus);
         jButtonplus.setBounds(181, 90, 51, 56);
 
@@ -525,11 +532,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonpower.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtonpower.setText("^");
         jButtonpower.setToolTipText("Shift+S");
-        jButtonpower.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonpowerActionPerformed();
-            }
-        });
+        jButtonpower.addActionListener(evt -> jButtonpowerActionPerformed());
         getContentPane().add(jButtonpower);
         jButtonpower.setBounds(376, 222, 70, 37);
 
@@ -773,16 +776,16 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButtonHex);
         jButtonHex.setBounds(450, 90, 60, 33);
 
-        JButtonFactorial.setFont(new Font("Tahoma", 1, 11)); // NOI18N
-        JButtonFactorial.setText("!n");
-        JButtonFactorial.setPreferredSize(new Dimension(51, 23));
-        JButtonFactorial.addActionListener(new ActionListener() {
+        jButtonFactorial.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonFactorial.setText("!n");
+        jButtonFactorial.setPreferredSize(new Dimension(51, 23));
+        jButtonFactorial.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 jButtonFactorialActionPerformed();
             }
         });
-        getContentPane().add(JButtonFactorial);
-        JButtonFactorial.setBounds(239, 90, 65, 35);
+        getContentPane().add(jButtonFactorial);
+        jButtonFactorial.setBounds(239, 90, 65, 35);
 
         jMenuKalculator.setText("Калькулятор");
 
@@ -1001,9 +1004,9 @@ public class Main extends javax.swing.JFrame  {
             do
             {
                 StringBuilder a = new StringBuilder(b);
-                Double mn = calc_sum_ActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'(')));
-                String formattedDouble = String.format("%.1f", mn);
-                x = mn;
+                Double summean = calc_sum_ActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'(')));
+                String formattedDouble = String.format("%.1f", summean);
+                x = summean;
 
                 if (x % 1 == 0)
                 {
@@ -1021,7 +1024,8 @@ public class Main extends javax.swing.JFrame  {
             while ( (b = s.next()) != "null");
         }
         catch(Exception e){
-            System.out.println("Exception");
+            StrictMath logger = null;
+            logger.log(0);
         }
         finally{
             s.close();
@@ -1095,7 +1099,7 @@ public class Main extends javax.swing.JFrame  {
 
     }//GEN-LAST:event_jLabel1AncestorAdded
 
-    private void jButtonplusKeyPressed() {//GEN-FIRST:event_jButton_plusKeyPressed
+ /*   private void jButtonplusKeyPressed() {//GEN-FIRST:event_jButton_plusKeyPressed
 
     }//GEN-LAST:event_jButton_plusKeyPressed
 
@@ -1104,11 +1108,11 @@ public class Main extends javax.swing.JFrame  {
     }//GEN-LAST:event_jButton_plusKeyReleased
 
     private void jButtonplusKeyTyped() {//GEN-FIRST:event_jButton_plusKeyTyped
-    }//GEN-LAST:event_jButton_plusKeyTyped
+    }//GEN-LAST:event_jButton_plusKeyTyped*/
     public char cc;
     public double mny;
     public void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-        Calculation calc_key_pressed = new Calculation();
+        Calculation calckeypressed = new Calculation();
         cc = evt.getKeyChar();
         if (cc == KeyEvent.VK_ENTER ){
             try{
@@ -1117,13 +1121,13 @@ public class Main extends javax.swing.JFrame  {
                 double x;
                 do{
                     StringBuilder a = new StringBuilder(b);
-                    mny =calc_key_pressed.eval(a,Double.valueOf(a.indexOf(""+'(')));
-                    String formattedDouble = String.format("%.1f", mn);
+                    mny =calckeypressed.eval(a,Double.valueOf(a.indexOf(""+'(')));
+                    String formattedDouble = String.format("%.1f", meansum);
                     x = mny;
 
                     if (x % 1 == 0)
                     {
-                        jTextField1.setText(""+calc_key_pressed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+                        jTextField1.setText(""+calckeypressed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
                         jLabel1.setText("");
                     }
 
@@ -1136,7 +1140,8 @@ public class Main extends javax.swing.JFrame  {
                 while ( (b = s.next()) != "null");
             }
             catch(Exception e){
-                System.out.println("Exception");
+                StrictMath logger = null;
+                logger.log(0);
             }
             finally{
                 s.close();
@@ -1202,12 +1207,11 @@ public class Main extends javax.swing.JFrame  {
 
         else if(evt.getKeyCode()==49 && (evt.isControlDown() ) ){
             jTextField1.setText(jTextField1.getText());
-            // livesum();
+             livesum();
         }
 
     }//GEN-LAST:event_jTextField1KeyPressed
     private void jTextField1KeyReleased() {//GEN-FIRST:event_jTextField1KeyReleased
-        // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1KeyReleased
 
     private void jMenuIteminfoActionPerformed() {//GEN-FIRST:event_jMenuItem_infoActionPerformed
@@ -1228,8 +1232,6 @@ public class Main extends javax.swing.JFrame  {
         this.setSize(538, 380);
         jTextField1.setSize(503,45);
         jLabel1.setSize(503,22);
-
-
         return false;
     }//GEN-LAST:event_jMenuItem_sientificActionPerformed
 
@@ -1269,7 +1271,8 @@ public class Main extends javax.swing.JFrame  {
         }
 
         catch(Exception e){
-            System.out.println("Exception");
+            StrictMath logger = null;
+            logger.log(0);
         }
         finally{
             s.close();
@@ -1282,7 +1285,7 @@ public class Main extends javax.swing.JFrame  {
 
 
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
 
         /* Set the Nimbus look and feel */
@@ -1297,13 +1300,7 @@ public class Main extends javax.swing.JFrame  {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | UnsupportedLookAndFeelException | IllegalAccessException ex ) {
             java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
@@ -1320,8 +1317,6 @@ public class Main extends javax.swing.JFrame  {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;//
     public javax.swing.JButton jButton0;
     public javax.swing.JButton jButton1;
     private javax.swing.JButton jButton1x;
@@ -1350,7 +1345,7 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JButton jButtonBracketend;
     private javax.swing.JButton jButtonRound;
     private javax.swing.JButton jButtonBin;
-    private javax.swing.JButton JButtonFactorial;
+    private javax.swing.JButton jButtonFactorial;
     private javax.swing.JButton jButtonminus;
     private javax.swing.JButton jButtonmultiplication;
     private javax.swing.JButton jButtonplus;
@@ -1369,14 +1364,14 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JMenuItem jMenuItemOFF;
     private javax.swing.JMenuItem jMenuItemON;
     private javax.swing.JMenuItem jMenuItemclose;
-    private javax.swing.JMenuItem jMenuIteminfo;
+   // private javax.swing.JMenuItem jMenuIteminfo;
     public javax.swing.JMenuItem jMenuItemsientific;
     private javax.swing.JMenuItem jMenuItemstandart;
     private javax.swing.JMenu jMenuKalculator;
     private javax.swing.JMenu jMenuinfa;
     private javax.swing.JMenu jMenuview;
     public  javax.swing.JTextField jTextField1;
-    private static javax.swing.JTextField jTextField2;
+   // private static javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 
 }
