@@ -104,10 +104,8 @@ public class Main extends javax.swing.JFrame  {
     {
         jTextField1.setEnabled(true);
         jMenuinfa.setEnabled(true);
-
         jMenuItemON.setEnabled(false);
         jMenuItemOFF.setEnabled(true);
-
         jButtonclean.setEnabled(true);
         jButtonC.setEnabled(true);
         jButton1.setEnabled(true);
@@ -965,14 +963,14 @@ public class Main extends javax.swing.JFrame  {
             jTextField1.setText(store);
         }
     }//GEN-LAST:event_jButton_cleanActionPerformed
-
+  public double x;
     @SuppressWarnings("empty-statement")
     private void jButtonsumActionPerformed() {//GEN-FIRST:event_jButton_sumActionPerformed
         Calculation calc_sum_ActionPerformed = new Calculation();
         try {
             s = new Scanner(jTextField1.getText());
             String b = s.next();
-            double x;
+
             do
             {
                 StringBuilder a = new StringBuilder(b);

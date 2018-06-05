@@ -2,12 +2,13 @@ package testpackage;
 import mainpackage.Main;
 import org.junit.Assert;
 import org.junit.Test;
-
+import static org.hamcrest.CoreMatchers.is;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.Scanner;
 
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class MainTest {
@@ -59,7 +60,36 @@ public void KeyPressed(){
         assertEquals("Науковий", titleFrame);
 
     }
-/*
+    @Test
+    public void testfw(){
+ component.x = 5;
+String str;
+        if (component.x  == 5){
+            str = "Norm";
+        }
+        else{
+            str = "Error";
+        }
+assertEquals("tr = " , str , "Norm");
+    }
+@Test
+    public void testenablejt() {
+    component.jTextField1.setText("2-1");
+    String str = component.jTextField1.getText();
+    assertEquals(str, "2-1");
+}
+@Test
+    public void testenab(){
+    String str = " ";
+    if (component.jButton2.isEnabled()){
+        str = "is enabled";
+    }
+    else {
+        str = "is disabled";
+    }
+    assertEquals("Enabled : "  , str , "is enabled");
+}
+    /*
     @Test
     public void testmath() {
         component.calculation = "negative_number";
