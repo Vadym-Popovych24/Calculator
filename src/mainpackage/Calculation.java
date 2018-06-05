@@ -54,7 +54,7 @@ public class Calculation extends Main{
                 operand += s.charAt(i);
             }
             else if (x2 == '-' && x == '-' ){
-
+               op.add('-');
             }
 
             else if (process.isOperator(c) && x != '-') {
@@ -66,7 +66,7 @@ public class Calculation extends Main{
                 if (c == '/' && y == '0'){
                     jLabel1.setForeground(Color.red);
                     jLabel1.setText("Помилка");
-                    break;
+
                 }
                 while (!op.isEmpty() && prior.priority(op.getLast()) >= prior.priority(c))
                 {
@@ -86,10 +86,7 @@ public class Calculation extends Main{
                 {
                     op.add('+');
                 }
-                if (x == '-' && process.isOperator(x2))
-                {
 
-                }
                 while (i < s.length() && m.find() )
                     operand += s.charAt(i++);
                 --i;

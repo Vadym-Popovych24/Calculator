@@ -72,23 +72,15 @@ String str;
         }
 assertEquals("tr = " , str , "Norm");
     }
-@Test
-    public void testenablejt() {
+   @Test
+    public void testenablejt(){
     component.jTextField1.setText("2-1");
-    String str = component.jTextField1.getText();
-    assertEquals(str, "2-1");
-}
-@Test
-    public void testenab(){
-    String str = " ";
-    if (component.jButton2.isEnabled()){
-        str = "is enabled";
+    String str =component.jTextField1.getText();
+    assertEquals(str , "2-1");
     }
-    else {
-        str = "is disabled";
-    }
-    assertEquals("Enabled : "  , str , "is enabled");
-}
+
+ 
+
     /*
     @Test
     public void testmath() {

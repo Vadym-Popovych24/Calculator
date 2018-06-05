@@ -130,5 +130,5 @@ pitest {
   // threads = 4
   }
 
-  test.dependsOn 'pitest'
+  test.dependsOn 'pitest'*/
 // test.finalizedBy jacocoTestReport*446682547789*/

@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 public class Process {
     public Process() {
+        /* Do nothing because of X and Y. */
     }
     public double l;
     public double t;
@@ -103,7 +104,8 @@ public class Process {
                 st.add(Math.log10(t));
                 break;
             default :
-                System.out.println("ERROR");
+       t = 0.0;
+       l = 0.0;
                 break;
         }
 

@@ -90,7 +90,7 @@ public class Main extends javax.swing.JFrame  {
 
         }
         catch(Exception e){
-            System.err.println("Caught IOException: " + e.getMessage());
+          e.getMessage();
         }
         finally{
             s.close();
@@ -844,7 +844,7 @@ public class Main extends javax.swing.JFrame  {
             while ( (b = s.next()) != "null");
         }
         catch(Exception e){
-            System.err.println("Caught IOException: " + e.getMessage());
+           e.getMessage();
         }
         finally{
             s.close();
@@ -959,7 +959,7 @@ public class Main extends javax.swing.JFrame  {
                 while ( (b = s.next()) != "null");
             }
             catch(Exception e){
-                System.err.println("Caught IOException: " + e.getMessage());
+              e.getMessage();
             }
             finally{
                 s.close();
@@ -1076,7 +1076,7 @@ public class Main extends javax.swing.JFrame  {
 
     private void jButtonPRCActionPerformed() {//GEN-FIRST:event_jButton_P1ActionPerformed
         Calculation calcPRCActionPerformed = new Calculation();
-        try{
+        try {
             s = new Scanner(jTextField1.getText());
 
             String b = s.next();
