@@ -237,7 +237,7 @@ public class Main extends javax.swing.JFrame  {
         jButtontanh = new JButton();
         jButtonsin = new JButton();
         jButtoncosh = new JButton();
-        jInternalFrame1 = new JInternalFrame();
+        JInternalFrame jInternalFrame1 = new JInternalFrame();
 
         jButtonE = new JButton();
         jButtonBracketfront = new JButton();
@@ -249,13 +249,13 @@ public class Main extends javax.swing.JFrame  {
         jButtonOctal = new JButton();
         jButtonHex = new JButton();
         jButtonFactorial = new JButton();
-        jMenuBar1 = new JMenuBar();
-        jMenuKalculator = new JMenu();
+        JMenuBar jMenuBar1 = new JMenuBar();
+        JMenu jMenuKalculator = new JMenu();
         jMenuItemON = new JMenuItem();
         jMenuItemOFF = new JMenuItem();
-        jMenuItemclose = new JMenuItem();
-        jMenuview = new JMenu();
-        jMenuItemstandart = new JMenuItem();
+        JMenuItem jMenuItemclose = new JMenuItem();
+        JMenu jMenuview = new JMenu();
+        JMenuItem jMenuItemstandart = new JMenuItem();
         jMenuItemsientific = new JMenuItem();
         jMenuinfa = new JMenu();
         jMenuItemON = new JMenuItem();
@@ -285,11 +285,7 @@ public class Main extends javax.swing.JFrame  {
         jTextField1.setHorizontalAlignment(JTextField.RIGHT);
         jTextField1.setMaximumSize(new Dimension(488, 45));
         jTextField1.setMinimumSize(new Dimension(221, 45));
-        jTextField1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jTextField1ActionPerformed();
-            }
-        });
+        jTextField1.addActionListener(evt -> jTextField1ActionPerformed());
         jTextField1.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent evt) {
@@ -309,32 +305,20 @@ public class Main extends javax.swing.JFrame  {
 
         jButtonclean.setFont(new Font("Thames", 1, 16)); // NOI18N
         jButtonclean.setText("<--");
-        jButtonclean.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtoncleanActionPerformed();
-            }
-        });
+        jButtonclean.addActionListener(evt -> jButtoncleanActionPerformed());
         getContentPane().add(jButtonclean);
         jButtonclean.setBounds(67, 90, 51, 56);
 
         jButtonC.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtonC.setText("C");
         jButtonC.setToolTipText("CTRL+C");
-        jButtonC.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonCActionPerformed();
-            }
-        });
+        jButtonC.addActionListener(evt -> jButtonCActionPerformed());
         getContentPane().add(jButtonC);
         jButtonC.setBounds(124, 90, 51, 56);
 
         jButton1.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton1.setText("1");
-        jButton1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton1ActionPerformed();
-            }
-        });
+        jButton1.addActionListener(evt -> jButton1ActionPerformed());
         getContentPane().add(jButton1);
         jButton1.setBounds(10, 152, 51, 33);
 
@@ -343,11 +327,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonplus.setToolTipText("");
         jButtonplus.setRequestFocusEnabled(false);
         jButtonplus.setRolloverEnabled(false);
-        jButtonplus.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonplusActionPerformed();
-            }
-        });
+        jButtonplus.addActionListener(evt -> jButtonplusActionPerformed());
 
         jButtonplus.addKeyListener(new KeyAdapter() {
         /*	@Override
@@ -371,113 +351,69 @@ public class Main extends javax.swing.JFrame  {
         jButton2.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton2.setText("2");
         jButton2.setToolTipText("");
-        jButton2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton2ActionPerformed();
-            }
-        });
+        jButton2.addActionListener(evt -> jButton2ActionPerformed());
         getContentPane().add(jButton2);
         jButton2.setBounds(67, 152, 51, 33);
 
         jButton3.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton3.setText("3");
-        jButton3.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton3ActionPerformed();
-            }
-        });
+        jButton3.addActionListener(evt -> jButton3ActionPerformed());
         getContentPane().add(jButton3);
         jButton3.setBounds(124, 152, 51, 33);
 
         jButtonminus.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtonminus.setText("-");
-        jButtonminus.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonminusActionPerformed();
-            }
-        });
+        jButtonminus.addActionListener(evt -> jButtonminusActionPerformed());
         getContentPane().add(jButtonminus);
         jButtonminus.setBounds(181, 152, 51, 33);
 
         jButton4.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton4.setText("4");
-        jButton4.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton4ActionPerformed();
-            }
-        });
+        jButton4.addActionListener(evt -> jButton4ActionPerformed());
         getContentPane().add(jButton4);
         jButton4.setBounds(10, 191, 51, 33);
 
         jButton5.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton5.setText("5");
         jButton5.setToolTipText("");
-        jButton5.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton5ActionPerformed();
-            }
-        });
+        jButton5.addActionListener(evt -> jButton5ActionPerformed());
         getContentPane().add(jButton5);
         jButton5.setBounds(67, 191, 51, 33);
 
         jButton6.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton6.setText("6");
         jButton6.setToolTipText("");
-        jButton6.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton6ActionPerformed();
-            }
-        });
+        jButton6.addActionListener(evt -> jButton6ActionPerformed());
         getContentPane().add(jButton6);
         jButton6.setBounds(124, 191, 51, 33);
 
         jButtonmultiplication.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtonmultiplication.setText("*");
-        jButtonmultiplication.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonmultiplicationActionPerformed();
-            }
-        });
+        jButtonmultiplication.addActionListener(evt -> jButtonmultiplicationActionPerformed());
         getContentPane().add(jButtonmultiplication);
         jButtonmultiplication.setBounds(181, 191, 51, 33);
 
         jButton7.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton7.setText("7");
-        jButton7.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton7ActionPerformed();
-            }
-        });
+        jButton7.addActionListener(evt -> jButton7ActionPerformed());
         getContentPane().add(jButton7);
         jButton7.setBounds(10, 230, 51, 33);
 
         jButton8.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton8.setText("8");
-        jButton8.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton8ActionPerformed();
-            }
-        });
+        jButton8.addActionListener(evt -> jButton8ActionPerformed());
         getContentPane().add(jButton8);
         jButton8.setBounds(67, 230, 51, 33);
 
         jButton9.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton9.setText("9");
-        jButton9.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton9ActionPerformed();
-            }
-        });
+        jButton9.addActionListener(evt -> jButton9ActionPerformed());
         getContentPane().add(jButton9);
         jButton9.setBounds(124, 230, 51, 33);
 
         jButtondivision.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtondivision.setText("/");
-        jButtondivision.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtondivisionActionPerformed();
-            }
-        });
+        jButtondivision.addActionListener(evt -> jButtondivisionActionPerformed());
         getContentPane().add(jButtondivision);
         jButtondivision.setBounds(181, 230, 51, 33);
 
@@ -496,21 +432,13 @@ public class Main extends javax.swing.JFrame  {
 
         jButtonpoint.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtonpoint.setText(".");
-        jButtonpoint.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonpointActionPerformed();
-            }
-        });
+        jButtonpoint.addActionListener(evt -> jButtonpointActionPerformed());
         getContentPane().add(jButtonpoint);
         jButtonpoint.setBounds(67, 269, 51, 33);
 
         jButtonsum.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButtonsum.setText("=");
-        jButtonsum.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonsumActionPerformed();
-            }
-        });
+        jButtonsum.addActionListener(evt -> jButtonsumActionPerformed());
         getContentPane().add(jButtonsum);
         jButtonsum.setBounds(124, 269, 109, 33);
         jLabel1.setForeground(Color.black);
@@ -1242,17 +1170,11 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JButton jButtonsum;
     private javax.swing.JButton jButtontan;
     private javax.swing.JButton jButtontanh;
-    private javax.swing.JInternalFrame jInternalFrame1;
     public  javax.swing.JLabel jLabel1;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItemOFF;
     private javax.swing.JMenuItem jMenuItemON;
-    private javax.swing.JMenuItem jMenuItemclose;
     public javax.swing.JMenuItem jMenuItemsientific;
-    private javax.swing.JMenuItem jMenuItemstandart;
-    private javax.swing.JMenu jMenuKalculator;
     private javax.swing.JMenu jMenuinfa;
-    private javax.swing.JMenu jMenuview;
     public  javax.swing.JTextField jTextField1;
 
     // End of variables declaration//GEN-END:variables
