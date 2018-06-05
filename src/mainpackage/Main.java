@@ -26,7 +26,6 @@ public class Main extends javax.swing.JFrame  {
 
     Prioritet prior = new Prioritet();
     Process process = new Process();
-
     public int mathematic ()
     {
         switch (calculation)
@@ -1130,10 +1129,10 @@ public class Main extends javax.swing.JFrame  {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton jButton0;
+    private javax.swing.JButton jButton0;
     public javax.swing.JButton jButton1;
     private javax.swing.JButton jButton1x;
-    public javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -1170,10 +1169,10 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JButton jButtonsum;
     private javax.swing.JButton jButtontan;
     private javax.swing.JButton jButtontanh;
-    public  javax.swing.JLabel jLabel1;
+    public   javax.swing.JLabel jLabel1;
     private javax.swing.JMenuItem jMenuItemOFF;
     private javax.swing.JMenuItem jMenuItemON;
-    public javax.swing.JMenuItem jMenuItemsientific;
+    private javax.swing.JMenuItem jMenuItemsientific;
     private javax.swing.JMenu jMenuinfa;
     public  javax.swing.JTextField jTextField1;
 

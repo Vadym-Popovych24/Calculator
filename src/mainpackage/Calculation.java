@@ -5,9 +5,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Calculation extends Main{
-    public char y;
-    public char x;
-    public char x2;
+    char y ;
+     char x;
+    char x2;
     char c;
    public LinkedList<Double> st = new LinkedList<>();
     public LinkedList<Character> op = new LinkedList<>();

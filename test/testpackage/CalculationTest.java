@@ -10,9 +10,9 @@ import static org.junit.Assert.*;
 
 public class CalculationTest {
     Calculation calc = new Calculation();
-
+/*
     char nx = calc.x;
-    char ny = calc.y;
+   char ny = calc.y;
     char nx2 = calc.x2;
 
     Process pro = new Process();
@@ -60,6 +60,7 @@ public class CalculationTest {
         Assert.assertEquals("correctness delimiter is :", b, "One delimeter");
 
     }
+    */
     @Test
     public void testeval(){
         int a;

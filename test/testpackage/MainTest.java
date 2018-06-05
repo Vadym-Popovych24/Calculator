@@ -51,7 +51,7 @@ public void KeyPressed(){
     division_by_one = 1 / num2;
         assertEquals("Division by one = " , division_by_one,  0,2) ;
     }
-
+/*
     @Test
     public void testTitleFrame() {
         Main jf = new Main();
@@ -60,6 +60,7 @@ public void KeyPressed(){
         assertEquals("Науковий", titleFrame);
 
     }
+    */
     @Test
     public void testfw(){
  component.xt = 5;
