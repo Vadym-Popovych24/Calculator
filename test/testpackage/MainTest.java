@@ -41,7 +41,7 @@ public void KeyPressed(){
           String text =  jtext.jButton1.getText();
           Assert.assertEquals("Text button +" , text , "1");
       }
-
+/*
    @Test
     public void test_division_by_one(){
    Main variable = new Main();
@@ -50,7 +50,7 @@ public void KeyPressed(){
     num2 = 5;
     division_by_one = 1 / num2;
         assertEquals("Division by one = " , division_by_one,  0,2) ;
-    }
+    }*/
 /*
     @Test
     public void testTitleFrame() {
@@ -61,6 +61,7 @@ public void KeyPressed(){
 
     }
     */
+/*
     @Test
     public void testfw(){
  component.xt = 5;
@@ -72,7 +73,7 @@ String str;
             str = "Error";
         }
 assertEquals("tr = " , str , "Norm");
-    }
+    }*/
    @Test
     public void testenablejt(){
     component.jTextField1.setText("2-1");

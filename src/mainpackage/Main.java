@@ -10,9 +10,9 @@ import java.util.Scanner;
 
 public class Main extends javax.swing.JFrame  {
 
-   public String calculation;
-    public double num;
-    public double ans;
+    String calculation;
+    double num;
+    double ans;
    public Scanner s = new Scanner("");
 
 
@@ -22,7 +22,7 @@ public class Main extends javax.swing.JFrame  {
     }
 
 
-    public double meansum;
+    double meansum;
 
     Prioritet prior = new Prioritet();
     Process process = new Process();
@@ -812,7 +812,7 @@ public class Main extends javax.swing.JFrame  {
             jTextField1.setText(store);
         }
     }//GEN-LAST:event_jButton_cleanActionPerformed
-    public double xt;
+     double xt;
     @SuppressWarnings("empty-statement")
     private void jButtonsumActionPerformed() {//GEN-FIRST:event_jButton_sumActionPerformed
         Calculation calcsumActionPerformed = new Calculation();
