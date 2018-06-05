@@ -41,7 +41,7 @@ public class Main extends javax.swing.JFrame  {
                 jLabel1.setText(Double.toString(ans));
                 break;
 
-            case "round":
+            case "roun":
                 ans = Math.round(num);
                 jLabel1.setText(Double.toString(ans));
                 break;
@@ -55,7 +55,7 @@ public class Main extends javax.swing.JFrame  {
                 break;
 
 
-            case "octal":
+            case "oct":
                 jLabel1.setText(Integer.toString(Integer.parseInt(jTextField1.getText()),8));
                 break;
             default :
@@ -202,7 +202,7 @@ public class Main extends javax.swing.JFrame  {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jCheckBoxMenuItem1 = new JCheckBoxMenuItem();
+        JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem();
         jTextField1 = new JTextField();
         jButtonclean = new JButton();
         jButtonC = new JButton();
@@ -224,7 +224,6 @@ public class Main extends javax.swing.JFrame  {
         jButtonsum = new JButton();
 
         jLabel1 = new JLabel();
-        //jLabel1 label = new javax.swing.JLabel();
 
         jButtonpower = new JButton();
         jButtonkorin = new JButton();
@@ -239,7 +238,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonsin = new JButton();
         jButtoncosh = new JButton();
         jInternalFrame1 = new JInternalFrame();
-        //jTextField2 = new JTextField();
+
         jButtonE = new JButton();
         jButtonBracketfront = new JButton();
         jButtonBracketend = new JButton();
@@ -485,6 +484,9 @@ public class Main extends javax.swing.JFrame  {
         jButton0.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton0.setText("0");
         jButton0.addActionListener(new ActionListener() {
+            /**
+             * @param evt
+             */
             public void actionPerformed(ActionEvent evt) {
                 jButton0ActionPerformed();
             }
@@ -590,33 +592,21 @@ public class Main extends javax.swing.JFrame  {
 
         jButtontan.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtontan.setText("tan");
-        jButtontan.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtontanActionPerformed();
-            }
-        });
+        jButtontan.addActionListener(evt -> jButtontanActionPerformed());
         getContentPane().add(jButtontan);
         jButtontan.setBounds(239, 265, 65, 37);
 
         jButtontanh.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtontanh.setText("tanh");
         jButtontanh.setPreferredSize(new Dimension(60, 23));
-        jButtontanh.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtontanhActionPerformed();
-            }
-        });
+        jButtontanh.addActionListener(evt -> jButtontanhActionPerformed());
         getContentPane().add(jButtontanh);
         jButtontanh.setBounds(310, 265, 60, 37);
 
         jButtonsin.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtonsin.setText("sin");
         jButtonsin.setPreferredSize(new Dimension(51, 23));
-        jButtonsin.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonsinActionPerformed();
-            }
-        });
+        jButtonsin.addActionListener(evt -> jButtonsinActionPerformed());
         getContentPane().add(jButtonsin);
         jButtonsin.setBounds(239, 179, 65, 37);
 
@@ -624,11 +614,7 @@ public class Main extends javax.swing.JFrame  {
         jButtoncosh.setText("cosh");
         jButtoncosh.setMaximumSize(new Dimension(60, 23));
         jButtoncosh.setPreferredSize(new Dimension(51, 23));
-        jButtoncosh.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtoncoshActionPerformed();
-            }
-        });
+        jButtoncosh.addActionListener(evt -> jButtoncoshActionPerformed());
         getContentPane().add(jButtoncosh);
         jButtoncosh.setBounds(310, 222, 60, 37);
 
@@ -642,54 +628,34 @@ public class Main extends javax.swing.JFrame  {
         jButtonE.setMaximumSize(new Dimension(49, 33));
         jButtonE.setMinimumSize(new Dimension(49, 33));
         jButtonE.setPreferredSize(new Dimension(49, 33));
-        jButtonE.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonEActionPerformed();
-            }
-        });
+        jButtonE.addActionListener(evt -> jButtonEActionPerformed());
         getContentPane().add(jButtonE);
         jButtonE.setBounds(376, 179, 70, 37);
 
         jButtonBracketfront.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtonBracketfront.setText("(");
-        jButtonBracketfront.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonBracketfrontActionPerformed();
-            }
-        });
+        jButtonBracketfront.addActionListener(evt -> jButtonBracketfrontActionPerformed());
         getContentPane().add(jButtonBracketfront);
         jButtonBracketfront.setBounds(10, 90, 51, 27);
 
         jButtonBracketend.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtonBracketend.setText(")");
         jButtonBracketend.setMinimumSize(new Dimension(37, 27));
-        jButtonBracketend.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonBracketendActionPerformed();
-            }
-        });
+        jButtonBracketend.addActionListener(evt -> jButtonBracketendActionPerformed());
         getContentPane().add(jButtonBracketend);
         jButtonBracketend.setBounds(10, 123, 51, 23);
 
         jButtonRound.setFont(new Font("Tahoma", 1, 11)); // NOI18N
-        jButtonRound.setText("round");
+        jButtonRound.setText("roun");
         jButtonRound.setPreferredSize(new Dimension(51, 23));
-        jButtonRound.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonlog3ActionPerformed();
-            }
-        });
+        jButtonRound.addActionListener(evt -> jButtonlog3ActionPerformed());
         getContentPane().add(jButtonRound);
         jButtonRound.setBounds(239, 131, 65, 42);
 
         jButtonPRC.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtonPRC.setText("PRC");
         jButtonPRC.setToolTipText("Точність суми");
-        jButtonPRC.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonPRCActionPerformed();
-            }
-        });
+        jButtonPRC.addActionListener(evt -> jButtonPRCActionPerformed());
         getContentPane().add(jButtonPRC);
         jButtonPRC.setBounds(450, 131, 61, 42);
 
@@ -699,36 +665,24 @@ public class Main extends javax.swing.JFrame  {
         jButtonLog10.setMaximumSize(new Dimension(49, 33));
         jButtonLog10.setMinimumSize(new Dimension(49, 33));
         jButtonLog10.setPreferredSize(new Dimension(49, 33));
-        jButtonLog10.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonLog10ActionPerformed();
-            }
-        });
+        jButtonLog10.addActionListener(evt -> jButtonLog10ActionPerformed());
         getContentPane().add(jButtonLog10);
         jButtonLog10.setBounds(376, 131, 70, 42);
 
         jButtonBin.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtonBin.setText("bin");
         jButtonBin.setPreferredSize(new Dimension(51, 23));
-        jButtonBin.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonBinActionPerformed();
-            }
-        });
+        jButtonBin.addActionListener(evt -> jButtonBinActionPerformed());
         getContentPane().add(jButtonBin);
         jButtonBin.setBounds(310, 90, 60, 35);
 
         jButtonOctal.setFont(new Font("Tahoma", 1, 11)); // NOI18N
-        jButtonOctal.setText("octal");
+        jButtonOctal.setText("oct");
         jButtonOctal.setToolTipText("");
         jButtonOctal.setMaximumSize(new Dimension(53, 23));
         jButtonOctal.setMinimumSize(new Dimension(53, 23));
         jButtonOctal.setPreferredSize(new Dimension(53, 23));
-        jButtonOctal.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonOctalActionPerformed();
-            }
-        });
+        jButtonOctal.addActionListener(evt -> jButtonOctalActionPerformed());
         getContentPane().add(jButtonOctal);
         jButtonOctal.setBounds(380, 90, 60, 35);
 
@@ -738,50 +692,30 @@ public class Main extends javax.swing.JFrame  {
         jButtonHex.setMaximumSize(new Dimension(53, 33));
         jButtonHex.setMinimumSize(new Dimension(53, 33));
         jButtonHex.setPreferredSize(new Dimension(53, 33));
-        jButtonHex.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonHexActionPerformed();
-            }
-        });
+        jButtonHex.addActionListener(evt -> jButtonHexActionPerformed());
         getContentPane().add(jButtonHex);
         jButtonHex.setBounds(450, 90, 60, 33);
 
         jButtonFactorial.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtonFactorial.setText("!n");
         jButtonFactorial.setPreferredSize(new Dimension(51, 23));
-        jButtonFactorial.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonFactorialActionPerformed();
-            }
-        });
+        jButtonFactorial.addActionListener(evt -> jButtonFactorialActionPerformed());
         getContentPane().add(jButtonFactorial);
         jButtonFactorial.setBounds(239, 90, 65, 35);
 
         jMenuKalculator.setText("Калькулятор");
 
         jMenuItemON.setText("Вкл");
-        jMenuItemON.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jMenuItemONActionPerformed();
-            }
-        });
+        jMenuItemON.addActionListener(evt -> jMenuItemONActionPerformed());
         jMenuKalculator.add(jMenuItemON);
 
         jMenuItemOFF.setText("Викл");
-        jMenuItemOFF.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jMenuItemOFFActionPerformed();
-            }
-        });
+        jMenuItemOFF.addActionListener(evt -> jMenuItemOFFActionPerformed());
         jMenuKalculator.add(jMenuItemOFF);
 
         jMenuItemclose.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F4, InputEvent.ALT_MASK));
         jMenuItemclose.setText("Закрити");
-        jMenuItemclose.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jMenuItemcloseActionPerformed();
-            }
-        });
+        jMenuItemclose.addActionListener(evt -> jMenuItemcloseActionPerformed());
         jMenuKalculator.add(jMenuItemclose);
 
         jMenuBar1.add(jMenuKalculator);
@@ -789,19 +723,11 @@ public class Main extends javax.swing.JFrame  {
         jMenuview.setText("Вид");
 
         jMenuItemstandart.setText("Стандартний");
-        jMenuItemstandart.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jMenuItemstandartActionPerformed();
-            }
-        });
+        jMenuItemstandart.addActionListener(evt -> jMenuItemstandartActionPerformed());
         jMenuview.add(jMenuItemstandart);
 
         jMenuItemsientific.setText("Науковий");
-        jMenuItemsientific.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jMenuItemsientificActionPerformed();
-            }
-        });
+        jMenuItemsientific.addActionListener(evt -> jMenuItemsientificActionPerformed());
         jMenuview.add(jMenuItemsientific);
 
         jMenuBar1.add(jMenuview);
@@ -809,11 +735,7 @@ public class Main extends javax.swing.JFrame  {
         jMenuinfa.setText("Інфо");
 
         jMenuItemON.setText("Про програму");
-        jMenuItemON.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jMenuIteminfoActionPerformed();
-            }
-        });
+        jMenuItemON.addActionListener(evt -> jMenuIteminfoActionPerformed());
         jMenuinfa.add(jMenuItemON);
 
         jMenuBar1.add(jMenuinfa);
@@ -837,7 +759,7 @@ public class Main extends javax.swing.JFrame  {
 
     public void jButtonlog3ActionPerformed() {//GEN-FIRST:event_jButton_log3ActionPerformed
         num = Double.parseDouble(jTextField1.getText());
-        calculation = "round";
+        calculation = "roun";
         mathematic();
     }//GEN-LAST:event_jButton_log3ActionPerformed
 
@@ -850,7 +772,7 @@ public class Main extends javax.swing.JFrame  {
 
     public void jButtonOctalActionPerformed() {//GEN-FIRST:event_jButton_P2ActionPerformed
         num = Double.parseDouble(jTextField1.getText());
-        calculation = "octal";
+        calculation = "oct";
         mathematic();
     }//GEN-LAST:event_jButton_P2ActionPerformed
 
@@ -963,10 +885,10 @@ public class Main extends javax.swing.JFrame  {
             jTextField1.setText(store);
         }
     }//GEN-LAST:event_jButton_cleanActionPerformed
-  public double x;
+    public double xt;
     @SuppressWarnings("empty-statement")
     private void jButtonsumActionPerformed() {//GEN-FIRST:event_jButton_sumActionPerformed
-        Calculation calc_sum_ActionPerformed = new Calculation();
+        Calculation calcsumActionPerformed = new Calculation();
         try {
             s = new Scanner(jTextField1.getText());
             String b = s.next();
@@ -974,13 +896,13 @@ public class Main extends javax.swing.JFrame  {
             do
             {
                 StringBuilder a = new StringBuilder(b);
-                Double summean = calc_sum_ActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'(')));
+                Double summean = calcsumActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'(')));
                 String formattedDouble = String.format("%.1f", summean);
-                x = summean;
+                xt = summean;
 
-                if (x % 1 == 0)
+                if (xt % 1 == 0)
                 {
-                    jTextField1.setText(""+calc_sum_ActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+                    jTextField1.setText(""+calcsumActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
                     jLabel1.setText("");
                 }
 
@@ -1087,14 +1009,14 @@ public class Main extends javax.swing.JFrame  {
             try{
                 s = new Scanner(jTextField1.getText());
                 String b = s.next();
-                double x;
+                double xl;
                 do{
                     StringBuilder a = new StringBuilder(b);
                     mny =calckeypressed.eval(a,Double.valueOf(a.indexOf(""+'(')));
                     String formattedDouble = String.format("%.1f", meansum);
-                    x = mny;
+                    xl = mny;
 
-                    if (x % 1 == 0)
+                    if (xl % 1 == 0)
                     {
                         jTextField1.setText(""+calckeypressed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
                         jLabel1.setText("");
@@ -1274,11 +1196,7 @@ public class Main extends javax.swing.JFrame  {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Main().setVisible(true);
-            }
-        });
+        java.awt.EventQueue.invokeLater(() -> new Main().setVisible(true));
 
     }
 
@@ -1324,7 +1242,6 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JButton jButtonsum;
     private javax.swing.JButton jButtontan;
     private javax.swing.JButton jButtontanh;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JInternalFrame jInternalFrame1;
     public  javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;

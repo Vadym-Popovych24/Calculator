@@ -62,9 +62,9 @@ public void KeyPressed(){
     }
     @Test
     public void testfw(){
- component.x = 5;
+ component.xt = 5;
 String str;
-        if (component.x  == 5){
+        if (component.xt  == 5){
             str = "Norm";
         }
         else{
