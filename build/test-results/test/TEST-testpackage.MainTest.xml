@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.MainTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-06-05T21:49:39" hostname="Vadym" time="0.205">
+<testsuite name="testpackage.MainTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-06-06T06:20:34" hostname="Vadym" time="0.943">
   <properties/>
-  <testcase name="testenablejt" classname="testpackage.MainTest" time="0.07"/>
+  <testcase name="testenablejt" classname="testpackage.MainTest" time="0.699"/>
   <testcase name="test_jButton_1_height" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="test_jButton_1_width" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="test_jButton_1_text" classname="testpackage.MainTest" time="0.025"/>
+  <testcase name="test_jButton_1_width" classname="testpackage.MainTest" time="0.001"/>
+  <testcase name="test_jButton_1_text" classname="testpackage.MainTest" time="0.042"/>
   <testcase name="KeyPressed" classname="testpackage.MainTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

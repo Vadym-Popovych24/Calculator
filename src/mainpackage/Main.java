@@ -329,19 +329,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonplus.addActionListener(evt -> jButtonplusActionPerformed());
 
         jButtonplus.addKeyListener(new KeyAdapter() {
-        /*	@Override
-            public void keyPressed(KeyEvent evt) {
-                jButtonplusKeyPressed();
-            }
-            @Override
-            public void keyReleased(KeyEvent evt) {
-                jButtonplusKeyReleased();
-            }
-            @Override
- 
-            public void keyTyped(KeyEvent evt) {
-                jButtonplusKeyTyped();
-            }*/
+      
         });
 
         getContentPane().add(jButtonplus);
@@ -445,6 +433,7 @@ public class Main extends javax.swing.JFrame  {
         jLabel1.setHorizontalAlignment(SwingConstants.RIGHT);
         jLabel1.setText("0");
         jLabel1.addAncestorListener(new AncestorListener() {
+
             public void ancestorMoved(AncestorEvent evt) {
             }
             public void ancestorAdded(AncestorEvent evt) {
@@ -1088,7 +1077,7 @@ public class Main extends javax.swing.JFrame  {
         }
 
         catch(Exception e){
-            System.err.println("Caught IOException: " + e.getMessage());
+            e.getMessage();
         }
         finally{
             s.close();
