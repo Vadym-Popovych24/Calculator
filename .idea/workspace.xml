@@ -8,7 +8,22 @@
   <component name="ChangeListManager">
     <list default="true" id="d08a7e54-159f-402c-ba35-a480fdc4ee1c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/mainpackage/Main.java" afterPath="$PROJECT_DIR$/src/mainpackage/Main.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Calculation.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Calculation.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$1.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$2.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$3.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$4.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$5.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$5.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Process.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Process.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/Calculator/testpackage/CalculationTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/testpackage/CalculationTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/Calculator/testpackage/MainTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/testpackage/MainTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/Calculator/testpackage/PrioritetTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/testpackage/PrioritetTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/Calculator/testpackage/ProcessTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/testpackage/ProcessTest.class" />
+      <change beforePath="$PROJECT_DIR$/test/testpackage/CalculationTest.java" afterPath="$PROJECT_DIR$/test/testpackage/CalculationTest.java" />
+      <change beforePath="$PROJECT_DIR$/test/testpackage/MainTest.java" afterPath="$PROJECT_DIR$/test/testpackage/MainTest.java" />
+      <change beforePath="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" afterPath="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" />
+      <change beforePath="$PROJECT_DIR$/test/testpackage/ProcessTest.java" afterPath="$PROJECT_DIR$/test/testpackage/ProcessTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +57,8 @@
     <SUITE FILE_PATH="coverage/Calculato$Whole_project.coverage" NAME="Whole project Coverage Results" MODIFIED="1527535086998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testpackage.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Calculator$All_in_Calculator.coverage" NAME="All in Calculator Coverage Results" MODIFIED="1527835441360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Calculator$testpackage_in_Calculator.coverage" NAME="testpackage in Calculator Coverage Results" MODIFIED="1527627483190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Calculator$All_in_Calculator.coverage" NAME="All in Calculator Coverage Results" MODIFIED="1528272371707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Calculator$testpackage_in_Calculator.coverage" NAME="testpackage in Calculator Coverage Results" MODIFIED="1528271673436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testpackage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Calculato$testpackage.coverage" NAME="testpackage Coverage Results" MODIFIED="1527535664065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -70,16 +85,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mainpackage/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="443" column="11" lean-forward="true" selection-start-line="443" selection-start-column="11" selection-end-line="443" selection-end-column="11" />
+            <state relative-caret-position="3740">
+              <caret line="238" column="13" lean-forward="false" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#15450#15451#0" expanded="true" />
                 <element signature="e#15504#15505#0" expanded="true" />
-                <element signature="e#42146#42233#0" expanded="true" />
+                <element signature="e#42147#42234#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,8 +115,28 @@
       <file leaf-file-name="CalculationTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/testpackage/CalculationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="257">
+              <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrioritetTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/testpackage/PrioritetTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/testpackage/ProcessTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -110,8 +145,8 @@
       <file leaf-file-name="Process.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mainpackage/Process.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="102">
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -120,8 +155,8 @@
       <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/testpackage/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="63" column="2" lean-forward="false" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+            <state relative-caret-position="716">
+              <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,14 +232,14 @@
         <option value="$PROJECT_DIR$/test/CalculationTest.java" />
         <option value="$PROJECT_DIR$/test/MainTest.java" />
         <option value="$PROJECT_DIR$/src/mainpaket/Main.java" />
-        <option value="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" />
         <option value="$PROJECT_DIR$/src/mainpackage/Prioritet.java" />
-        <option value="$PROJECT_DIR$/test/testpackage/ProcessTest.java" />
         <option value="$PROJECT_DIR$/src/mainpackage/Process.java" />
-        <option value="$PROJECT_DIR$/test/testpackage/CalculationTest.java" />
         <option value="$PROJECT_DIR$/src/mainpackage/Calculation.java" />
-        <option value="$PROJECT_DIR$/test/testpackage/MainTest.java" />
         <option value="$PROJECT_DIR$/src/mainpackage/Main.java" />
+        <option value="$PROJECT_DIR$/test/testpackage/MainTest.java" />
+        <option value="$PROJECT_DIR$/test/testpackage/CalculationTest.java" />
+        <option value="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" />
+        <option value="$PROJECT_DIR$/test/testpackage/ProcessTest.java" />
       </list>
     </option>
   </component>
@@ -263,6 +298,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,6 +337,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -312,8 +349,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -355,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
+  <component name="RunManager" selected="JUnit.All in Calculator">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -480,35 +515,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CalculationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <shortenClasspath name="MANIFEST" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" track_test_folders="true" runner="jacoco">
-        <pattern>
-          <option name="PATTERN" value="testpacket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Calculator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="testpackage" />
-      <option name="MAIN_CLASS_NAME" value="testpacket.CalculationTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method>
-        <option name="Make" enabled="false" />
-      </method>
-    </configuration>
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -568,6 +574,32 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="mainpackage in Calculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="mainpackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Calculator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mainpackage" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
@@ -653,18 +685,18 @@
       <item index="3" class="java.lang.String" itemvalue="JUnit.Unnamed" />
       <item index="4" class="java.lang.String" itemvalue="PIT Runner.PIT" />
       <item index="5" class="java.lang.String" itemvalue="JUnit.All in Calculator" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.CalculationTest" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.CalculationTest (1)" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.MainTest" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.testpackage in Calculator" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.CalculationTest (1)" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.MainTest" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.testpackage in Calculator" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.mainpackage in Calculator" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in Calculator" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.testpackage in Calculator" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CalculationTest (1)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CalculationTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.mainpackage in Calculator" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CalculationTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -693,34 +725,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Calculator - 2018.06.05 at 19h 13m 13s.xml">
+    <history-entry file="All_in_Calculator - 2018.06.06 at 10h 59m 08s.xml">
       <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Calculator - 2018.06.05 at 19h 32m 49s.xml">
+    <history-entry file="All_in_Calculator - 2018.06.06 at 11h 00m 47s.xml">
       <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Calculator - 2018.06.05 at 19h 53m 03s.xml">
+    <history-entry file="All_in_Calculator - 2018.06.06 at 11h 03m 52s.xml">
       <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Calculator - 2018.06.05 at 20h 03m 58s.xml">
+    <history-entry file="All_in_Calculator - 2018.06.06 at 11h 04m 30s.xml">
       <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.06.01 at 00h 00m 27s.xml">
+    <history-entry file="All_in_Calculator - 2018.06.06 at 11h 04m 40s.xml">
+      <configuration name="All in Calculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Calculator - 2018.06.06 at 11h 06m 16s.xml">
+      <configuration name="All in Calculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 11h 00m 40s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.06.01 at 09h 34m 46s.xml">
+    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 11h 03m 20s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.06.01 at 09h 35m 29s.xml">
+    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 11h 04m 21s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.06.01 at 09h 42m 40s.xml">
-      <configuration name="testpackage in Calculator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.06.01 at 09h 43m 11s.xml">
-      <configuration name="testpackage in Calculator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.06.01 at 09h 43m 50s.xml">
+    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 11h 06m 09s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -739,13 +771,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.49722" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32637855" sideWeight="0.4382195" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34277198" sideWeight="0.41135842" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34277198" sideWeight="0.5886416" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34277198" sideWeight="0.5886416" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.4940429" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2893323" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="539" y="163" width="350" height="441" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.49722" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -760,9 +794,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32637855" sideWeight="0.4382195" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2893323" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="539" y="163" width="350" height="441" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.49424404" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -918,32 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/testpackage/PrioritetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testpackage/ProcessTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/event/ActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mainpackage/Process.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,10 +967,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/mainpackage/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3740">
+          <caret line="238" column="13" lean-forward="false" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#15450#15451#0" expanded="true" />
+            <element signature="e#15504#15505#0" expanded="true" />
+            <element signature="e#42147#42234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/testpackage/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="63" column="2" lean-forward="false" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+        <state relative-caret-position="716">
+          <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -969,22 +992,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/testpackage/CalculationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="257">
+          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mainpackage/Main.java">
+    <entry file="file://$PROJECT_DIR$/test/testpackage/PrioritetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="443" column="11" lean-forward="true" selection-start-line="443" selection-start-column="11" selection-end-line="443" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#15450#15451#0" expanded="true" />
-            <element signature="e#15504#15505#0" expanded="true" />
-            <element signature="e#42146#42233#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="104">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mainpackage/Process.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testpackage/ProcessTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

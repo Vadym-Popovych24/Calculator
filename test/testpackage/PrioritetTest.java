@@ -15,7 +15,6 @@ public class PrioritetTest {
         if (prior.priority('^') == 4
                 && prior.priority('!') == 3
 
-
                 && prior.priority('*') ==2 &&prior.priority('/') ==2
                 && prior.priority('+') ==1 && prior.priority('-') ==1)  {
             mess = "Prioritet is not correct";
