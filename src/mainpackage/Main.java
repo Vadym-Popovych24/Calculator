@@ -510,7 +510,7 @@ public class Main extends javax.swing.JFrame  {
         jButtontan.setText("tan");
         jButtontan.addActionListener(evt -> jButtontanActionPerformed());
         getContentPane().add(jButtontan);
-        jButtontan.setBounds(239, 265, 65, 37);
+        jButtontan.setBounds(239, 265, 65, 37); 
 
         jButtontanh.setFont(new Font("Tahoma", 1, 11)); // NOI18N
         jButtontanh.setText("tanh");
