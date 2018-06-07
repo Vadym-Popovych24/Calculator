@@ -7,23 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d08a7e54-159f-402c-ba35-a480fdc4ee1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Calculation.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Calculation.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$1.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$2.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$3.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$4.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$4.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$5.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main$5.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Process.class" afterPath="$PROJECT_DIR$/out/production/Calculator/mainpackage/Process.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/Calculator/testpackage/CalculationTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/testpackage/CalculationTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/Calculator/testpackage/MainTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/testpackage/MainTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/Calculator/testpackage/PrioritetTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/testpackage/PrioritetTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/Calculator/testpackage/ProcessTest.class" afterPath="$PROJECT_DIR$/out/test/Calculator/testpackage/ProcessTest.class" />
-      <change beforePath="$PROJECT_DIR$/test/testpackage/CalculationTest.java" afterPath="$PROJECT_DIR$/test/testpackage/CalculationTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/mainpackage/Main.java" afterPath="$PROJECT_DIR$/src/mainpackage/Main.java" />
       <change beforePath="$PROJECT_DIR$/test/testpackage/MainTest.java" afterPath="$PROJECT_DIR$/test/testpackage/MainTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" afterPath="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/testpackage/ProcessTest.java" afterPath="$PROJECT_DIR$/test/testpackage/ProcessTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +42,7 @@
     <SUITE FILE_PATH="coverage/Calculato$Whole_project.coverage" NAME="Whole project Coverage Results" MODIFIED="1527535086998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testpackage.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Calculator$All_in_Calculator.coverage" NAME="All in Calculator Coverage Results" MODIFIED="1528272371707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Calculator$All_in_Calculator.coverage" NAME="All in Calculator Coverage Results" MODIFIED="1528278057031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Calculator$testpackage_in_Calculator.coverage" NAME="testpackage in Calculator Coverage Results" MODIFIED="1528271673436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testpackage.*</FILTER>
     </SUITE>
@@ -85,16 +70,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mainpackage/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3740">
-              <caret line="238" column="13" lean-forward="false" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="831" column="22" lean-forward="true" selection-start-line="831" selection-start-column="22" selection-end-line="831" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5989#6078#0" expanded="true" />
                 <element signature="e#15450#15451#0" expanded="true" />
                 <element signature="e#15504#15505#0" expanded="true" />
-                <element signature="e#42147#42234#0" expanded="true" />
+                <element signature="e#42146#42233#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +89,7 @@
       <file leaf-file-name="Calculation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mainpackage/Calculation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="17">
               <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -132,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcessTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProcessTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/testpackage/ProcessTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="391">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,7 +131,7 @@
       <file leaf-file-name="Process.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mainpackage/Process.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="17">
               <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
             </state>
@@ -155,8 +141,8 @@
       <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/testpackage/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+            <state relative-caret-position="223">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -235,11 +221,11 @@
         <option value="$PROJECT_DIR$/src/mainpackage/Prioritet.java" />
         <option value="$PROJECT_DIR$/src/mainpackage/Process.java" />
         <option value="$PROJECT_DIR$/src/mainpackage/Calculation.java" />
-        <option value="$PROJECT_DIR$/src/mainpackage/Main.java" />
-        <option value="$PROJECT_DIR$/test/testpackage/MainTest.java" />
         <option value="$PROJECT_DIR$/test/testpackage/CalculationTest.java" />
         <option value="$PROJECT_DIR$/test/testpackage/PrioritetTest.java" />
         <option value="$PROJECT_DIR$/test/testpackage/ProcessTest.java" />
+        <option value="$PROJECT_DIR$/test/testpackage/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/mainpackage/Main.java" />
       </list>
     </option>
   </component>
@@ -249,7 +235,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="55" />
     <option name="y" value="-8" />
     <option name="width" value="1319" />
@@ -390,7 +376,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in Calculator">
+  <component name="RunManager" selected="JUnit.testpackage in Calculator">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -692,8 +678,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Calculator" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.testpackage in Calculator" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.testpackage in Calculator" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Calculator" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.mainpackage in Calculator" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CalculationTest (1)" />
@@ -725,34 +711,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Calculator - 2018.06.06 at 10h 59m 08s.xml">
-      <configuration name="All in Calculator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Calculator - 2018.06.06 at 11h 00m 47s.xml">
-      <configuration name="All in Calculator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Calculator - 2018.06.06 at 11h 03m 52s.xml">
-      <configuration name="All in Calculator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Calculator - 2018.06.06 at 11h 04m 30s.xml">
-      <configuration name="All in Calculator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Calculator - 2018.06.06 at 11h 04m 40s.xml">
-      <configuration name="All in Calculator" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_Calculator - 2018.06.06 at 11h 06m 16s.xml">
       <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 11h 00m 40s.xml">
-      <configuration name="testpackage in Calculator" configurationId="JUnit" />
+    <history-entry file="All_in_Calculator - 2018.06.06 at 12h 37m 07s.xml">
+      <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 11h 03m 20s.xml">
-      <configuration name="testpackage in Calculator" configurationId="JUnit" />
+    <history-entry file="All_in_Calculator - 2018.06.06 at 12h 39m 52s.xml">
+      <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 11h 04m 21s.xml">
-      <configuration name="testpackage in Calculator" configurationId="JUnit" />
+    <history-entry file="All_in_Calculator - 2018.06.06 at 12h 41m 03s.xml">
+      <configuration name="All in Calculator" configurationId="JUnit" />
     </history-entry>
     <history-entry file="testpackage_in_Calculator - 2018.06.06 at 11h 06m 09s.xml">
+      <configuration name="testpackage in Calculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 12h 36m 23s.xml">
+      <configuration name="testpackage in Calculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 12h 36m 54s.xml">
+      <configuration name="testpackage in Calculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 12h 39m 42s.xml">
+      <configuration name="testpackage in Calculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 12h 40m 54s.xml">
+      <configuration name="testpackage in Calculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testpackage_in_Calculator - 2018.06.06 at 12h 41m 42s.xml">
       <configuration name="testpackage in Calculator" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -766,7 +752,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-8" width="1319" height="784" extended-state="7" />
+    <frame x="55" y="-8" width="1319" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -777,7 +763,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34277198" sideWeight="0.41135842" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34277198" sideWeight="0.5886416" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34277198" sideWeight="0.5886416" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.4940429" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2893323" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="539" y="163" width="350" height="441" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.49722" order="9" side_tool="false" content_ui="tabs" />
@@ -957,33 +943,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/testpackage/PrioritetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mainpackage/Calculation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="17">
           <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mainpackage/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3740">
-          <caret line="238" column="13" lean-forward="false" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#15450#15451#0" expanded="true" />
-            <element signature="e#15504#15505#0" expanded="true" />
-            <element signature="e#42147#42234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testpackage/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -998,27 +969,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/testpackage/PrioritetTest.java">
+    <entry file="file://$PROJECT_DIR$/test/testpackage/ProcessTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mainpackage/Process.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="17">
           <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/testpackage/ProcessTest.java">
+    <entry file="file://$PROJECT_DIR$/test/testpackage/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="223">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mainpackage/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="831" column="22" lean-forward="true" selection-start-line="831" selection-start-column="22" selection-end-line="831" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5989#6078#0" expanded="true" />
+            <element signature="e#15450#15451#0" expanded="true" />
+            <element signature="e#15504#15505#0" expanded="true" />
+            <element signature="e#42146#42233#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

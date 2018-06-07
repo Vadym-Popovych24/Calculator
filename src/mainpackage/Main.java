@@ -818,7 +818,7 @@ public class Main extends javax.swing.JFrame  {
 
                 if (xt % 1 == 0)
                 {
-                    jTextField1.setText(""+calcsumActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+                    jTextField1.setText(""+calcsumActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'(')))) ;
                     jLabel1.setText("");
                 }
 
