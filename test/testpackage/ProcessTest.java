@@ -24,7 +24,15 @@ public class ProcessTest {
         int an = (int) (t2 / 0);
         Assert.assertEquals(an, 0);
     }
+    @Test
+    public void testchase_plus() {
+        pro.l = 4;
+        pro.t = 6;
 
+        double sum = pro.l + pro.t;
+        assertEquals("sum = ", sum, 10, 1);
+
+    }
     @Test
     public void testisDelim() {
         {

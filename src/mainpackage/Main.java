@@ -10,9 +10,9 @@ import java.util.Scanner;
 
 public class Main extends javax.swing.JFrame  {
 
-    String calculation;
-    double num;
-    double ans;
+  public String calculation;
+   public double num;
+    public double ans;
    public Scanner s = new Scanner("");
 
 
@@ -780,7 +780,7 @@ public class Main extends javax.swing.JFrame  {
     private void jButtonCActionPerformed() {//GEN-FIRST:event_jButton_CActionPerformed
         jTextField1.setText("");
         jLabel1.setText("");
-        jLabel1.setForeground(Color.black);
+       jLabel1.setForeground(Color.black);
     }//GEN-LAST:event_jButton_CActionPerformed
 
     private void jButtoncleanActionPerformed() {//GEN-FIRST:event_jButton_cleanActionPerformed
@@ -801,7 +801,7 @@ public class Main extends javax.swing.JFrame  {
             jTextField1.setText(store);
         }
     }//GEN-LAST:event_jButton_cleanActionPerformed
-     double xt;
+    public double xt;
     @SuppressWarnings("empty-statement")
     private void jButtonsumActionPerformed() {//GEN-FIRST:event_jButton_sumActionPerformed
         Calculation calcsumActionPerformed = new Calculation();
@@ -1159,8 +1159,8 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JButton jButtontan;
     private javax.swing.JButton jButtontanh;
     public   javax.swing.JLabel jLabel1;
-    private javax.swing.JMenuItem jMenuItemOFF;
-    private javax.swing.JMenuItem jMenuItemON;
+    public  javax.swing.JMenuItem jMenuItemOFF;
+    public javax.swing.JMenuItem jMenuItemON;
     private javax.swing.JMenuItem jMenuItemsientific;
     private javax.swing.JMenu jMenuinfa;
     public  javax.swing.JTextField jTextField1;
