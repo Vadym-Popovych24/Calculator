@@ -118,7 +118,7 @@ jacoco {
     toolVersion = "0.8.0"
     reportsDir = file("$build\reports\tests\test")
 }
-
+/*
 pitest {
    targetClasses = ['mainpaсkage.*']
     targetTests  = ['testpackage.*']
@@ -128,9 +128,9 @@ pitest {
   // mainSourceSets = [sourceSets.main]
    //   testSourceSets = [sourceSets.test]
   // threads = 4
-  }
+  }*/
 
  
 
  // test.dependsOn jacocoTestReport
-test.finalizedBy 'pitest'
+// test.finalizedBy 'pitest'
