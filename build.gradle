@@ -130,12 +130,7 @@ pitest {
   // threads = 4
   }
 
- // test.finalizedBy 'pitest'
-  test.dependsOn 'pitest'
+ 
 
- // test.dependsOn 'pitest'*/
-
-// test.finalizedBy 'pitest'
-
- test.dependsOn jacocoTestReport
+ // test.dependsOn jacocoTestReport
 test.finalizedBy 'pitest'
