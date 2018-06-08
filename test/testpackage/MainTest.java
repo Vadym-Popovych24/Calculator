@@ -102,6 +102,113 @@ else {
 }
 assertEquals("mess = " , mess , "Seccesfull");
     }
+     @Test
+      public void test1x() {
+          component.calculation = "1/x";
+          double an = component.ans;
+          component.num = 5;
+          if (component.calculation == "1/x") {
+              an = 1 / component.num;
+          } else {
+              an = 0.0;
+          }
+          assertEquals(an, 0.2, 0);
+          String mess;
+          if (component.mathematic() == 0){
+              mess = "Seccesfull";
+          }
+          else {
+              mess = "Error";
+          }
+          assertEquals("mess = " , mess , "Seccesfull");
+      }
+
+      @Test
+      public void testroun() {
+          component.calculation = "roun";
+          double an = component.ans;
+          component.num = 3.7;
+          if (component.calculation == "roun") {
+              an =Math.round(component.num);
+          } else {
+              an = 0.0;
+          }
+          assertEquals(an, 4, 0);
+          String mess;
+          if (component.mathematic() == 0){
+              mess = "Seccesfull";
+          }
+          else {
+              mess = "Error";
+          }
+          assertEquals("mess = " , mess , "Seccesfull");
+      }
+      @Test
+      public void testbin() {
+          component.calculation = "bin";
+          String an ;
+          component.jTextField1.setText("15");
+          if (component.calculation == "bin") {
+           component.jLabel1.setText(Integer.toString(Integer.parseInt(component.jTextField1.getText()),2));
+          an = "bin";
+          } else {
+          an = "error";
+              component.jLabel1.setText("0");
+          }
+          assertEquals(an , "bin");
+          String mess;
+          if (component.mathematic() == 0){
+              mess = "Seccesfull";
+          }
+          else {
+              mess = "Error";
+          }
+          assertEquals("mess = " , mess , "Seccesfull");
+      }
+      @Test
+      public void testhex() {
+          component.calculation = "hex";
+          String an ;
+          component.jTextField1.setText("15");
+          if (component.calculation == "hex") {
+              component.jLabel1.setText(Integer.toString(Integer.parseInt(component.jTextField1.getText()),2));
+              an = "hex";
+          } else {
+              an = "error";
+              component.jLabel1.setText("0");
+          }
+          assertEquals(an , "hex");
+          String mess;
+          if (component.mathematic() == 0){
+              mess = "Seccesfull";
+          }
+          else {
+              mess = "Error";
+          }
+          assertEquals("mess = " , mess , "Seccesfull");
+      }
+      @Test
+      public void testoctal() {
+          component.calculation = "octal";
+          String an ;
+          component.jTextField1.setText("15");
+          if (component.calculation == "octal") {
+              component.jLabel1.setText(Integer.toString(Integer.parseInt(component.jTextField1.getText()),2));
+              an = "octal";
+          } else {
+              an = "error";
+              component.jLabel1.setText("0");
+          }
+          assertEquals(an , "octal");
+          String mess;
+          if (component.mathematic() == 0){
+              mess = "Seccesfull";
+          }
+          else {
+              mess = "Error";
+          }
+          assertEquals("mess = " , mess , "Seccesfull");
+      }
 @Test
 public void testans(){
         component.num = 5;
