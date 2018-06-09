@@ -209,6 +209,26 @@ assertEquals("mess = " , mess , "Seccesfull");
           }
           assertEquals("mess = " , mess , "Seccesfull");
       }
+        @Test
+      public void testvkl() {
+          String vkl;
+          if (component.vkl() == 0) {
+              vkl = "on";
+          } else {
+              vkl = "off";
+          }
+          String b;
+          component.jMenuItemON.setEnabled(true);
+          component.jMenuItemOFF.setEnabled(false);
+          if (component.jMenuItemON.isEnabled()){
+              b = "ON";
+          }
+          else {
+              b ="OFF";
+          }
+
+          assertEquals(b , "ON");
+      }
 @Test
 public void testans(){
         component.num = 5;
