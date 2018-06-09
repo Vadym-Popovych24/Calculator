@@ -99,7 +99,7 @@ public class Main extends javax.swing.JFrame  {
         return s.nextInt();
     }
 
-    public void vkl()
+    public int vkl()
     {
         jTextField1.setEnabled(true);
         jMenuinfa.setEnabled(true);
@@ -145,7 +145,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonRound.setEnabled(true);
         jButtonBin.setEnabled(true);
         jButtonFactorial.setEnabled(true);
-   
+   return 0;
     }
 
     public void vykl()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.ProcessTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-08T16:10:32" hostname="Vadym" time="0.069">
+<testsuite name="testpackage.ProcessTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-09T11:33:16" hostname="Vadym" time="0.077">
   <properties/>
   <testcase name="testchase_plus" classname="testpackage.ProcessTest" time="0.0"/>
   <testcase name="testisDelim" classname="testpackage.ProcessTest" time="0.0"/>
