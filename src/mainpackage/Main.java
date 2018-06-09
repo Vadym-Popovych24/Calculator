@@ -99,7 +99,7 @@ public class Main extends javax.swing.JFrame  {
         return s.nextInt();
     }
 
-    public void vkl()
+    public int vkl()
     {
         jTextField1.setEnabled(true);
         jMenuinfa.setEnabled(true);
@@ -145,9 +145,10 @@ public class Main extends javax.swing.JFrame  {
         jButtonRound.setEnabled(true);
         jButtonBin.setEnabled(true);
         jButtonFactorial.setEnabled(true);
+      return 0;
     }
 
-    public void vykl()
+    public int vykl()
     {
         jTextField1.setEnabled(false);
         jMenuinfa.setEnabled(false);
@@ -195,6 +196,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonRound.setEnabled(false);
         jButtonBin.setEnabled(false);
         jButtonFactorial.setEnabled(false);
+      return 0;
     }
 
     @SuppressWarnings("unchecked")
