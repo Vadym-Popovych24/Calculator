@@ -63,10 +63,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\Calculator.jar
+set CLASSPATH=%APP_HOME%\lib\Calculator.jar;%APP_HOME%\lib\gradle-pitest-plugin-1.3.0.jar
 
 @rem Execute Calculator
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %CALCULATOR_OPTS%  -classpath "%CLASSPATH%" Main %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %CALCULATOR_OPTS%  -classpath "%CLASSPATH%" mainpackage.Main %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

@@ -1,31 +1,136 @@
-apply plugin: 'application'
-apply plugin: 'java'
+plugins {
+   
+     id "org.sonarqube" version "2.6"
+     id "jacoco"
+     id "java" 
+     id 'info.solidsoft.pitest' version '1.3.0'
+}
 
 dependencies {
+
     testCompile group: 'junit', name: 'junit', version: '4.4'
-	testCompile 'junit:junit:4.12'
+    testCompile 'junit:junit:4.12'
+    compile 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.3.0'
+  //compile "sp.sd:nexus-artifact-uploader:2.10"
+
+
 }
+
+apply plugin: 'application'
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: "info.solidsoft.pitest"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = "mainpackage.Main"
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-mainClassName = 'Main'
+
+// Конфігурація звіту JaCoCo
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${build}/jacocoHtml")
+    }
+}
+
+// Правила порушень показників охоплення кодом
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.5
+            }
+        }
+
+        rule {
+            enabled = false
+            element = 'CLASS'
+            includes = ['org.gradle.*']
+
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 0.3
+            }
+        }
+    }
+}
+
+//  Налаштування тестового завдання
+test {
+    jacoco {
+       append = true
+       // destinationFile = file("$build/jacoco/test.exec")
+    //    classDumpDir = file("$build/jacoco/classpathdumps")
+    }
+}
+
+//плагін application для створення даних покриття коду
+jacoco {
+    applyTo run
+}
+
+task applicationCodeCoverageReport(type:JacocoReport){
+    executionData run
+    sourceSets sourceSets.main
+}
+
 
 sourceSets.main.java.srcDirs = ['src']
 sourceSets.test.java.srcDirs = ['test']
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+//sourceCompatibility = JavaVersion.VERSION_1_8
+//targetCompatibility = JavaVersion.VERSION_1_8
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "4.6"
+}
+
+//configurations.maybeCreate('pitest')
+
 
 repositories {
-	mavenCentral()
+     maven {
+        name "Calculator"
+        url "http://localhost:8081/nexus/content/repositories/calc/"
+    }
+ /*snapshotRepositories {
+      //id "calcu"
+ name "Calculator"
+        url "http://localhost:8081/nexus/content/repositories/calcu/"
+ }
+ */
+    mavenCentral()
 }
 
 jar {
-	manifest.attributes("Main-Class": mainClassName);
+    manifest.attributes("Main-Class": mainClassName);
 }
+// Налаштування плагіна Jacoco
+jacoco {
+    toolVersion = "0.8.0"
+    reportsDir = file("$build\reports\tests\test")
+}
+/*
+pitest {
+   targetClasses = ['mainpaсkage.*']
+    targetTests  = ['testpackage.*']
+    outputFormats = ['XML', 'HTML']
+    timestampedReports = false
+  //  pitestVersion = '1.3.0' 
+  // mainSourceSets = [sourceSets.main]
+   //   testSourceSets = [sourceSets.test]
+  // threads = 4
+  }*/
 
-task wrapper(type: Wrapper) {
-	gradleVersion = "4.6"
-}
+ 
+
+ // test.dependsOn jacocoTestReport
+// test.finalizedBy 'pitest'

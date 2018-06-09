@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testpackage.MainTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2018-06-08T16:10:31" hostname="Vadym" time="0.512">
+  <properties/>
+  <testcase name="testenablejt" classname="testpackage.MainTest" time="0.222"/>
+  <testcase name="test_jButton_1_height" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="testans" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="testenab" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="testmath" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="jButtonCActionPerformed" classname="testpackage.MainTest" time="0.002"/>
+  <testcase name="testfw" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="test_division_by_one" classname="testpackage.MainTest" time="0.017"/>
+  <testcase name="test_jButton_1_width" classname="testpackage.MainTest" time="0.001"/>
+  <testcase name="onoff" classname="testpackage.MainTest" time="0.001"/>
+  <testcase name="test_jButton_1_text" classname="testpackage.MainTest" time="0.016"/>
+  <testcase name="KeyPressed" classname="testpackage.MainTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
