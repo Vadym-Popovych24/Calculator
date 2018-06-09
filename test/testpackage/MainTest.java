@@ -209,26 +209,7 @@ assertEquals("mess = " , mess , "Seccesfull");
           }
           assertEquals("mess = " , mess , "Seccesfull");
       }
-        @Test
-      public void testvkl() {
-          String vkl;
-          if (component.vkl() == 0) {
-              vkl = "on";
-          } else {
-              vkl = "off";
-          }
-          String b;
-          component.jMenuItemON.setEnabled(true);
-          component.jMenuItemOFF.setEnabled(false);
-          if (component.jMenuItemON.isEnabled()){
-              b = "ON";
-          }
-          else {
-              b ="OFF";
-          }
-
-          assertEquals(b , "ON");
-      }
+    
 @Test
 public void testans(){
         component.num = 5;
@@ -250,21 +231,6 @@ assertEquals("ans = " , component.ans , 0,2);
      assertEquals("color = " ,  Color.black ,component.jLabel1.getForeground() );
     
     }
-    /*
-    @Test
-    public void onoff(){
-String b;
-component.jMenuItemON.setEnabled(true);
-component.jMenuItemOFF.setEnabled(false);
-    	if (component.jMenuItemON.isEnabled()){
-    		b = "ON";
-    	}
-    	else {
-    		b ="OFF";
-    	}
-
-     assertEquals(b , "ON");
-
-    }*/
+    
 
   }
