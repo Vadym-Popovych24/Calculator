@@ -13,7 +13,9 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
   public class MainTest {
+
     Main component = new Main();
+
     @Test
     public void KeyPressed(){
       String gt = component.jTextField1.getText();
@@ -63,18 +65,7 @@ import static org.junit.Assert.*;
             assertEquals("Науковий", titleFrame);
         }
         */
-    @Test
-    public void testfw(){
-      component.xt = 5;
-      String str;
-      if (component.xt  == 5){
-        str = "Norm";
-      }
-      else{
-        str = "Error";
-      }
-      assertEquals("tr = " , str , "Norm");
-    }
+
     @Test
     public void testenablejt(){
       component.jTextField1.setText("2-1");
@@ -219,7 +210,6 @@ assertEquals("mess = " , mess , "Seccesfull");
           }
           String b;
           component.jMenuItemON.setEnabled(true);
-          component.jMenuItemOFF.setEnabled(false);
           if (component.jMenuItemON.isEnabled()){
               b = "ON";
           }

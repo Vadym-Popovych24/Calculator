@@ -13,7 +13,7 @@ public class Main extends javax.swing.JFrame  {
   public String calculation;
    public double num;
     public double ans;
-   public Scanner s = new Scanner("");
+   Scanner s = new Scanner("");
 
 
     public Main() {
@@ -803,7 +803,7 @@ public class Main extends javax.swing.JFrame  {
             jTextField1.setText(store);
         }
     }//GEN-LAST:event_jButton_cleanActionPerformed
-    public double xt;
+    double xt;
     @SuppressWarnings("empty-statement")
     private void jButtonsumActionPerformed() {//GEN-FIRST:event_jButton_sumActionPerformed
         Calculation calcsumActionPerformed = new Calculation();
@@ -1160,8 +1160,8 @@ public class Main extends javax.swing.JFrame  {
     private javax.swing.JButton jButtonsum;
     private javax.swing.JButton jButtontan;
     private javax.swing.JButton jButtontanh;
-    public   javax.swing.JLabel jLabel1;
-    public  javax.swing.JMenuItem jMenuItemOFF;
+   public javax.swing.JLabel jLabel1;
+  private javax.swing.JMenuItem jMenuItemOFF;
     public javax.swing.JMenuItem jMenuItemON;
     private javax.swing.JMenuItem jMenuItemsientific;
     private javax.swing.JMenu jMenuinfa;

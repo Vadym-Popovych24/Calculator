@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.CalculationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-06-09T11:33:12" hostname="Vadym" time="0.102">
+<testsuite name="testpackage.CalculationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-06-09T12:35:21" hostname="Vadym" time="0.094">
   <properties/>
-  <testcase name="correctness_char" classname="testpackage.CalculationTest" time="0.0"/>
-  <testcase name="test_eval" classname="testpackage.CalculationTest" time="0.0"/>
-  <testcase name="testeval" classname="testpackage.CalculationTest" time="0.001"/>
+  <testcase name="correctness_char" classname="testpackage.CalculationTest" time="0.001"/>
+  <testcase name="test_eval" classname="testpackage.CalculationTest" time="0.001"/>
+  <testcase name="testeval" classname="testpackage.CalculationTest" time="0.0"/>
   <testcase name="delimeter" classname="testpackage.CalculationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

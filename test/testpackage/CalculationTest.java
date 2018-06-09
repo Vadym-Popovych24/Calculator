@@ -15,6 +15,7 @@ public class CalculationTest {
     char ny = calc.y;
     char nx2 = calc.x2;
     Process pro = new Process();
+
     @Test
     public void test_eval(){
         LinkedList<Character> c2 =calc.op;

@@ -9,8 +9,8 @@ public class Calculation extends Main{
     public  char x;
     public char x2;
     char c;
-   public LinkedList<Double> st = new LinkedList<>();
-    public LinkedList<Character> op = new LinkedList<>();
+  LinkedList<Double> st = new LinkedList<>();
+  public LinkedList<Character> op = new LinkedList<>();
     public Double eval(StringBuilder s, Double indexOf) {
 
         String operand = "";
