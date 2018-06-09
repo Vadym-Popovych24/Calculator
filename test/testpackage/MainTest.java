@@ -250,6 +250,7 @@ assertEquals("ans = " , component.ans , 0,2);
      assertEquals("color = " ,  Color.black ,component.jLabel1.getForeground() );
     
     }
+    /*
     @Test
     public void onoff(){
 String b;
@@ -264,6 +265,6 @@ component.jMenuItemOFF.setEnabled(false);
 
      assertEquals(b , "ON");
 
-    }
+    }*/
 
   }
