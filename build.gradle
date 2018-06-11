@@ -134,3 +134,4 @@ pitest {
 
  // test.dependsOn jacocoTestReport
  test.finalizedBy 'pitest'
+*/
