@@ -919,7 +919,7 @@ public class Main extends javax.swing.JFrame  {
     private void jButtonplusKeyTyped() {//GEN-FIRST:event_jButton_plusKeyTyped
     }//GEN-LAST:event_jButton_plusKeyTyped*/
      char cc;
-    public double mny;
+     double mny;
     public void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         Calculation calckeypressed = new Calculation();
         cc = evt.getKeyChar();

@@ -133,5 +133,4 @@ pitest {
  
 
  // test.dependsOn jacocoTestReport
- test.finalizedBy 'pitest'
-*/
+ test.finalizedBy 'pitest'*/
