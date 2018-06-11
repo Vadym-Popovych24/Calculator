@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
   public class MainTest {
 
     Main component = new Main();
-
+/*
     @Test
     public void KeyPressed(){
       String gt = component.jTextField1.getText();
@@ -28,8 +28,8 @@ import static org.junit.Assert.*;
           component.jTextField1.setText("3");
       }
       Assert.assertEquals("VK_2 = " ,component.jTextField1.getText() , "2");
-    }
-
+    }*/
+/*
     @Test
     public void test_jButton_1_height(){
       int height = component.jButton1.getHeight();
@@ -47,7 +47,8 @@ import static org.junit.Assert.*;
       String text =  jtext.jButton1.getText();
       Assert.assertEquals("Text button +" , text , "1");
     }
-
+*/
+/*
     @Test
     public void test_division_by_one(){
       Main variable = new Main();
@@ -56,7 +57,7 @@ import static org.junit.Assert.*;
       num2 = 5;
       division_by_one = 1 / num2;
       assertEquals("Division by one = " , division_by_one,  0,2) ;
-    }
+    }*/
     /*
         @Test
         public void testTitleFrame() {
@@ -225,13 +226,13 @@ public void testans(){
     component.ans = 1 / component.num;
 assertEquals("ans = " , component.ans , 0,2);
 }
+/*
     @Test
     public void testenab(){
        component.jButton1.setEnabled(true);
  assertEquals("b is " , component.jButton1.isEnabled() , true);
-    
     }
-
+*/
     @Test
       public void jButtonCActionPerformed(){
       component.jTextField1.setText(" ");

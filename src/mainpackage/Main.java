@@ -918,7 +918,7 @@ public class Main extends javax.swing.JFrame  {
 
     private void jButtonplusKeyTyped() {//GEN-FIRST:event_jButton_plusKeyTyped
     }//GEN-LAST:event_jButton_plusKeyTyped*/
-    public char cc;
+     char cc;
     public double mny;
     public void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         Calculation calckeypressed = new Calculation();
@@ -1121,7 +1121,7 @@ public class Main extends javax.swing.JFrame  {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton0;
-    public javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton1x;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;

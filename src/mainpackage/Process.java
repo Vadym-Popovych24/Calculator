@@ -6,8 +6,8 @@ public class Process {
     public Process() {
         /* Do nothing because of X and Y. */
     }
-    public double l;
-    public double t;
+     double l;
+     double t;
     public  boolean isDelim(char c) {
         return c == ' ';
     }
