@@ -10,9 +10,32 @@ import java.util.Scanner;
 
 public class Main extends javax.swing.JFrame  {
 
-  public String calculation;
-   public double num;
-    public double ans;
+   String calculation;
+    public String getCalculation() {
+        return calculation;
+    }
+
+    public void setjCalculation(String calculation) {
+        this.calculation=calculation;
+    }
+
+     double num;
+    public double getNum() {
+        return num;
+    }
+
+    public void setNum(double num ) {
+        this.num = num;
+    }
+
+    double ans;
+    public double getAns() {
+        return ans;
+    }
+
+    public void setAns(double ans) {
+        this.ans= ans;
+    }
    Scanner s = new Scanner("");
 
 
@@ -918,12 +941,16 @@ public class Main extends javax.swing.JFrame  {
 
     private void jButtonplusKeyTyped() {//GEN-FIRST:event_jButton_plusKeyTyped
     }//GEN-LAST:event_jButton_plusKeyTyped*/
-    public char cc;
+    char key;
+    public char getKey(){return key; }
+    public void setKey(char key){
+        this.key =key;
+    }
      double mny;
     public int jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         Calculation calckeypressed = new Calculation();
-        cc = evt.getKeyChar();
-        if (cc == KeyEvent.VK_ENTER ){
+        key = evt.getKeyChar();
+        if (key == KeyEvent.VK_ENTER ){
             try{
                 s = new Scanner(jTextField1.getText());
                 String b = s.next();
@@ -972,43 +999,43 @@ public class Main extends javax.swing.JFrame  {
             jTextField1.setText(jTextField1.getText() + "√");
         }
 
-        else  if(cc ==KeyEvent.VK_1 ){
+        else  if(key ==KeyEvent.VK_1 ){
             jTextField1.setText(jTextField1.getText() + "1");
             livesum();
         }
-        else if(cc ==KeyEvent.VK_2 ){
+        else if(key ==KeyEvent.VK_2 ){
             jTextField1.setText(jTextField1.getText() + "2");
             livesum();
         }
-        else if(cc ==KeyEvent.VK_3 ){
+        else if(key ==KeyEvent.VK_3 ){
             jTextField1.setText(jTextField1.getText() + "3");
             livesum();
         }
-        else if(cc ==KeyEvent.VK_4 ){
+        else if(key ==KeyEvent.VK_4 ){
             jTextField1.setText(jTextField1.getText() + "4");
             livesum();
         }
-        else if(cc ==KeyEvent.VK_5 ){
+        else if(key ==KeyEvent.VK_5 ){
             jTextField1.setText(jTextField1.getText() + "5");
             livesum();
         }
-        else if(cc ==KeyEvent.VK_6 ){
+        else if(key ==KeyEvent.VK_6 ){
             jTextField1.setText(jTextField1.getText() + "6");
             livesum();
         }
-        else if(cc ==KeyEvent.VK_7 ){
+        else if(key ==KeyEvent.VK_7 ){
             jTextField1.setText(jTextField1.getText() + "7");
             livesum();
         }
-        else if(cc ==KeyEvent.VK_8 ){
+        else if(key ==KeyEvent.VK_8 ){
             jTextField1.setText(jTextField1.getText() + "8");
             livesum();
         }
-        else if(cc ==KeyEvent.VK_9 ){
+        else if(key ==KeyEvent.VK_9 ){
             jTextField1.setText(jTextField1.getText() + "9");
             livesum();
         }
-        else if(cc ==KeyEvent.VK_0 ){
+        else if(key ==KeyEvent.VK_0 ){
             jTextField1.setText(jTextField1.getText() + "0");
             livesum();
         }
@@ -1123,19 +1150,53 @@ return 0;
 
 
     private javax.swing.JButton jButton1;
-    
-  public javax.swing.JButton getjButton1() {
-        return jButton1; 
+    public javax.swing.JButton getjButton1() {
+        return jButton1;
     }
 
     public void setjButton1(javax.swing.JButton button1) {
+
         this.jButton1 = button1;
     }
+
     private javax.swing.JButton jButton1x;
-    public javax.swing.JButton jButton2;
-    public javax.swing.JButton jButton3;
-    public javax.swing.JButton jButton4;
-    public javax.swing.JButton jButton5;
+
+    private javax.swing.JButton jButton2;
+    public javax.swing.JButton getjButton2() {
+        return jButton2;
+    }
+
+    public void setjButton2(javax.swing.JButton button2) {
+
+        this.jButton2 = button2;
+    }
+
+    private javax.swing.JButton jButton3;
+    public javax.swing.JButton getjButton3() {
+        return jButton3;
+    }
+
+    public void setjButton3(javax.swing.JButton button3) {
+
+        this.jButton3 = button3;
+    }
+    private javax.swing.JButton jButton4;
+    public javax.swing.JButton getjButton4() {
+        return jButton4;
+    }
+
+    public void setjButton4(javax.swing.JButton button4) {
+
+        this.jButton4 = button4;
+    }
+    private javax.swing.JButton jButton5;
+    public javax.swing.JButton getjButton5() { return jButton5;
+    }
+
+    public void setjButton5(javax.swing.JButton button5) {
+
+        this.jButton5 = button5;
+    }
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -1169,9 +1230,25 @@ return 0;
     private javax.swing.JButton jButtonsum;
     private javax.swing.JButton jButtontan;
     private javax.swing.JButton jButtontanh;
-   public javax.swing.JLabel jLabel1;
+   private javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public void setjLabel1(javax.swing.JLabel label1) {
+
+        this.jLabel1 = label1;
+    }
   private javax.swing.JMenuItem jMenuItemOFF;
-    public javax.swing.JMenuItem jMenuItemON;
+    private javax.swing.JMenuItem jMenuItemON;
+    public javax.swing.JMenuItem getjMenuItemON() {
+        return jMenuItemON;
+    }
+
+    public void setjMenuItemON(javax.swing.JMenuItem jmenuItemOn) {
+
+        this.jMenuItemON = jmenuItemOn;
+    }
     private javax.swing.JMenuItem jMenuItemsientific;
     private javax.swing.JMenu jMenuinfa;
     private  javax.swing.JTextField jTextField1;

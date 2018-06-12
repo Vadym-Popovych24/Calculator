@@ -6,8 +6,16 @@ public class Process {
     public Process() {
         /* Do nothing because of X and Y. */
     }
-    public double l;
-    public double t;
+     double firstOperand;
+    public double getFirstOperand(){return firstOperand; }
+    public void setFirstOperand(double firstOperand){
+        this.firstOperand =firstOperand;
+    }
+    double secondOperand;
+    public double getSecondOperand(){return secondOperand; }
+    public void setSecondOperand(double secondOperand){
+        this.secondOperand =secondOperand;
+    }
     public  boolean isDelim(char c) {
         return c == ' ';
     }
@@ -21,91 +29,91 @@ public class Process {
 
         switch (op) {
             case '+':
-                l = st.removeLast();
-                t = st.removeLast();
-                st.add(t + l);
+                firstOperand = st.removeLast();
+                secondOperand = st.removeLast();
+                st.add(secondOperand + firstOperand);
 
                 break;
 
             case '-':
-                l = st.removeLast();
-                t = st.removeLast();
-                st.add(t - l);
+                firstOperand = st.removeLast();
+                secondOperand = st.removeLast();
+                st.add(secondOperand - firstOperand);
                 break;
 
             case '*':
-                l = st.removeLast();
-                t = st.removeLast();
-                st.add(t * l);
+                firstOperand = st.removeLast();
+                secondOperand = st.removeLast();
+                st.add(secondOperand * firstOperand);
                 break;
 
             case '/':
-                l = st.removeLast();
-                t = st.removeLast();
-                st.add(t / l);
+                firstOperand = st.removeLast();
+                secondOperand = st.removeLast();
+                st.add(secondOperand / firstOperand);
                 break;
 
             case '^':
-                l = st.removeLast();
-                t = st.removeLast();
-                st.add(Math.pow(t ,l));
+                firstOperand = st.removeLast();
+                secondOperand = st.removeLast();
+                st.add(Math.pow(secondOperand ,firstOperand));
                 break;
 
             case '!':
                 double ret = 1.0;
-                t = st.removeLast();
+                secondOperand = st.removeLast();
 
-                for (int i = 1; i <= t; ++i) ret *= i;
+                for (int i = 1; i <= secondOperand; ++i) ret *= i;
                 st.add(ret);
                 break;
 
             case '√':
-                t = st.removeLast();
-                st.add(Math.sqrt(t));
+                secondOperand = st.removeLast();
+                st.add(Math.sqrt(secondOperand));
                 break;
 
             case ('s'):
-                t = st.removeLast();
-                st.add(Math.sin(t));
+                secondOperand = st.removeLast();
+                st.add(Math.sin(secondOperand));
                 break;
 
             case ('S'):
-                t = st.removeLast();
-                st.add(Math.sinh(t));
+                secondOperand = st.removeLast();
+                st.add(Math.sinh(secondOperand));
                 break;
 
             case ('c'):
-                t = st.removeLast();
-                st.add(Math.cos(t));
+                secondOperand = st.removeLast();
+                st.add(Math.cos(secondOperand));
                 break;
 
             case ('C'):
-                t = st.removeLast();
-                st.add(Math.cosh(t));
+                secondOperand = st.removeLast();
+                st.add(Math.cosh(secondOperand));
                 break;
 
             case ('t'):
-                t = st.removeLast();
-                st.add(Math.tan(t));
+                secondOperand = st.removeLast();
+                st.add(Math.tan(secondOperand));
                 break;
 
             case ('T'):
-                t = st.removeLast();
-                st.add(Math.tanh(t));
+                secondOperand = st.removeLast();
+                st.add(Math.tanh(secondOperand));
                 break;
 
             case ('l'):
-                t = st.removeLast();
-                st.add(Math.log(t));
+                secondOperand = st.removeLast();
+                st.add(Math.log(secondOperand));
                 break;
 
             case ('L'):
-                t = st.removeLast();
-                st.add(Math.log10(t));
+                secondOperand = st.removeLast();
+                st.add(Math.log10(secondOperand));
                 break;
             default :
-       t = 0.0;
-       l = 0.0;
+       secondOperand = 0.0;
+       firstOperand = 0.0;
                 break;
         }
 

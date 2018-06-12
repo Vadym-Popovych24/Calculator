@@ -15,13 +15,13 @@ import static org.junit.Assert.*;
   public class MainTest {
 
     Main component = new Main();
-      private Object evt;
+
 
       @Test
       public void KeyPressedVK2(){
           String gt = component.getjTextFiel1().getText();
-          component.cc = KeyEvent.VK_2;
-          if (component.cc == KeyEvent.VK_2){
+          component.setKey((char) KeyEvent.VK_2);
+          if (component.getKey() == KeyEvent.VK_2){
               component.getjTextFiel1().setText("2");
 
           }
@@ -48,89 +48,118 @@ import static org.junit.Assert.*;
       String text =  jtext.getjButton1().getText();
       Assert.assertEquals("Text button +" , text , "1");
     }
+    @Test
+    public  void testfontjButton1(){
+        Main setfont1 = new Main();
+        String font2 =  setfont1.getjButton1().getFont().getFontName();
+        Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
+    }
 
 
       @Test
       public void test_jButton_2_height(){
-          int height = component.jButton2.getHeight();
+          int height = component.getjButton2().getHeight();
           Assert.assertEquals("Height button +" , height , 33);
       }
 
       @Test
       public void test_jButton_2_width(){
-          int width = component.jButton2.getWidth();
+          int width = component.getjButton2().getWidth();
           Assert.assertEquals("Width button +" , width , 51);
       }
       @Test
       public void test_jButton_2_text(){
           Main jtext = new Main();
-          String text =  jtext.jButton2.getText();
+          String text =  jtext.getjButton2().getText();
           Assert.assertEquals("Text button +" , text , "2");
       }
-
+      @Test
+      public  void testfontjButton2(){
+          Main setfont1 = new Main();
+          String font2 =  setfont1.getjButton2().getFont().getFontName();
+          Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
+      }
 
 
       @Test
       public void test_jButton_3_height(){
-          int height = component.jButton3.getHeight();
+          int height = component.getjButton3().getHeight();
           Assert.assertEquals("Height button +" , height , 33);
       }
 
       @Test
       public void test_jButton_3_width(){
-          int width = component.jButton3.getWidth();
+          int width = component.getjButton3().getWidth();
           Assert.assertEquals("Width button +" , width , 51);
       }
       @Test
       public void test_jButton_3_text(){
           Main jtext = new Main();
-          String text =  jtext.jButton3.getText();
+          String text =  jtext.getjButton3().getText();
           Assert.assertEquals("Text button +" , text , "3");
+      }
+      @Test
+      public  void testfontjButton3(){
+          Main setfont1 = new Main();
+          String font2 =  setfont1.getjButton3().getFont().getFontName();
+          Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
       }
 
       @Test
       public void test_jButton_4_height(){
-          int height = component.jButton4.getHeight();
+          int height = component.getjButton3().getHeight();
           Assert.assertEquals("Height button +" , height , 33);
       }
 
       @Test
       public void test_jButton_4_width(){
-          int width = component.jButton4.getWidth();
+          int width = component.getjButton4().getWidth();
           Assert.assertEquals("Width button +" , width , 51);
       }
       @Test
       public void test_jButton_4_text(){
           Main jtext = new Main();
-          String text =  jtext.jButton4.getText();
+          String text =  jtext.getjButton4().getText();
           Assert.assertEquals("Text button +" , text , "4");
+      }
+      @Test
+      public  void testfontjButton4(){
+          Main setfont1 = new Main();
+          String font2 =  setfont1.getjButton4().getFont().getFontName();
+          Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
       }
 
       @Test
       public void test_jButton_5_height(){
-          int height = component.jButton5.getHeight();
+          int height = component.getjButton5().getHeight();
           Assert.assertEquals("Height button +" , height , 33);
       }
 
       @Test
       public void test_jButton_5_width(){
-          int width = component.jButton5.getWidth();
+          int width = component.getjButton5().getWidth();
           Assert.assertEquals("Width button +" , width , 51);
       }
       @Test
       public void test_jButton_5_text(){
           Main jtext = new Main();
-          String text =  jtext.jButton5.getText();
+          String text =  jtext.getjButton5().getText();
           Assert.assertEquals("Text button +" , text , "5");
+      }
+      @Test
+      public  void testfontjButton5(){
+          Main setfont1 = new Main();
+          String font2 =  setfont1.getjButton5().getFont().getFontName();
+          Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
       }
 
       @Test
     public void test_division_by_one(){
       Main variable = new Main();
-      double division_by_one = variable.ans;
-      double num2 = variable.num;
-      num2 = 5;
-      division_by_one = 1 / num2;
+       variable.setNum(5.0);
+       double d = variable.getNum();
+          double division_by_one = 0;
+      division_by_one = 1 / d;
       assertEquals("Division by one = " , division_by_one,  0,2) ;
     }
     /*
@@ -152,10 +181,10 @@ import static org.junit.Assert.*;
 
     @Test
     public void testmath() {
-        component.calculation = "negative_number";
-        double an = component.ans;
-        if (component.calculation == "negative_number") {
-            an = component.num * -1;
+        component.setjCalculation("negative_number");
+        double an = component.getAns();
+        if (component.getCalculation() == "negative_number") {
+            an = component.getNum() * -1;
         } else {
             an = 0.0;
         }
@@ -171,11 +200,11 @@ assertEquals("mess = " , mess , "Seccesfull");
     }
      @Test
       public void test1x() {
-          component.calculation = "1/x";
-          double an = component.ans;
-          component.num = 5;
-          if (component.calculation == "1/x") {
-              an = 1 / component.num;
+          component.setjCalculation("1/x");
+          double an = component.getAns();
+          component.setNum(5.0);
+          if (component.getCalculation() == "1/x") {
+              an = 1 / component.getNum();
           } else {
               an = 0.0;
           }
@@ -192,11 +221,11 @@ assertEquals("mess = " , mess , "Seccesfull");
 
       @Test
       public void testroun() {
-          component.calculation = "roun";
-          double an = component.ans;
-          component.num = 3.7;
-          if (component.calculation == "roun") {
-              an =Math.round(component.num);
+          component.setjCalculation("roun");
+          double an = component.getAns();
+          component.setNum(3.7);
+          if (component.getCalculation() == "roun") {
+              an =Math.round(component.getNum());
           } else {
               an = 0.0;
           }
@@ -212,15 +241,15 @@ assertEquals("mess = " , mess , "Seccesfull");
       }
       @Test
       public void testbin() {
-          component.calculation = "bin";
+          component.setjCalculation("bin");
           String an ;
           component.getjTextFiel1().setText("15");
-          if (component.calculation == "bin") {
-           component.jLabel1.setText(Integer.toString(Integer.parseInt(component.getjTextFiel1().getText()),2));
+          if (component.getCalculation() == "bin") {
+           component.getjLabel1().setText(Integer.toString(Integer.parseInt(component.getjTextFiel1().getText()),2));
           an = "bin";
           } else {
           an = "error";
-              component.jLabel1.setText("0");
+              component.getjLabel1().setText("0");
           }
           assertEquals(an , "bin");
           String mess;
@@ -234,15 +263,15 @@ assertEquals("mess = " , mess , "Seccesfull");
       }
       @Test
       public void testhex() {
-          component.calculation = "hex";
+          component.setjCalculation("hex");
           String an ;
           component.getjTextFiel1().setText("15");
-          if (component.calculation == "hex") {
-              component.jLabel1.setText(Integer.toString(Integer.parseInt(component.getjTextFiel1().getText()),2));
+          if (component.getCalculation() == "hex") {
+              component.getjLabel1().setText(Integer.toString(Integer.parseInt(component.getjTextFiel1().getText()),2));
               an = "hex";
           } else {
               an = "error";
-              component.jLabel1.setText("0");
+              component.getjLabel1().setText("0");
           }
           assertEquals(an , "hex");
           String mess;
@@ -256,15 +285,15 @@ assertEquals("mess = " , mess , "Seccesfull");
       }
       @Test
       public void testoctal() {
-          component.calculation = "octal";
+          component.setjCalculation("octal");
           String an ;
           component.getjTextFiel1().setText("15");
-          if (component.calculation == "octal") {
-              component.jLabel1.setText(Integer.toString(Integer.parseInt(component.getjTextFiel1().getText()),2));
+          if (component.getCalculation() == "octal") {
+              component.getjLabel1().setText(Integer.toString(Integer.parseInt(component.getjTextFiel1().getText()),2));
               an = "octal";
           } else {
               an = "error";
-              component.jLabel1.setText("0");
+              component.getjLabel1().setText("0");
           }
           assertEquals(an , "octal");
           String mess;
@@ -285,8 +314,8 @@ assertEquals("mess = " , mess , "Seccesfull");
               vkl = "off";
           }
           String b;
-          component.jMenuItemON.setEnabled(true);
-          if (component.jMenuItemON.isEnabled()){
+          component.getjMenuItemON().setEnabled(true);
+          if (component.getjMenuItemON().isEnabled()){
               b = "ON";
           }
           else {
@@ -297,9 +326,9 @@ assertEquals("mess = " , mess , "Seccesfull");
       }
 @Test
 public void testans(){
-        component.num = 5;
-    component.ans = 1 / component.num;
-assertEquals("ans = " , component.ans , 0,2);
+        component.setNum(5.0);
+   component.setAns(1 / component.getNum());
+assertEquals("ans = " , component.getAns() , 0,2);
 }
 /*
     @Test
@@ -311,9 +340,9 @@ assertEquals("ans = " , component.ans , 0,2);
     @Test
       public void jButtonCActionPerformed(){
       component.getjTextFiel1().setText(" ");
-      component.jLabel1.getForeground();
-     component.jLabel1.getText();
-     assertEquals("color = " ,  Color.black ,component.jLabel1.getForeground() );
+      component.getjLabel1().getForeground();
+     component.getjLabel1().getText();
+     assertEquals("color = " ,  Color.black ,component.getjLabel1().getForeground() );
     
     }
     

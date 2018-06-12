@@ -19,8 +19,8 @@ public class ProcessTest {
 
     @Test /*expected = ArithmeticException.class)*/
     public void test_division_by_zero() {
-       double t2 = pro.t;
-        double l2 = pro.l;
+       double t2 = pro.getFirstOperand();
+        double l2 = pro.getSecondOperand();
 
         int an = (int) (t2 / 0);
         Assert.assertEquals(an, 0);
@@ -28,10 +28,10 @@ public class ProcessTest {
 
     @Test
     public void testchase_plus() {
-        pro.l = 4;
-        pro.t = 6;
+        pro.setFirstOperand(4);
+        pro.setSecondOperand(6);
 
-        double sum = pro.l + pro.t;
+        double sum = pro.getFirstOperand() + pro.getSecondOperand();
         assertEquals("sum = ", sum, 10, 1);
 
     }

@@ -11,14 +11,14 @@ import static org.junit.Assert.*;
 public class CalculationTest {
     Calculation calc = new Calculation();
 
-    char nx = calc.x;
-    char ny = calc.y;
-    char nx2 = calc.x2;
+    char nx = calc.getFirstFront();
+    char ny = calc.getBeforeFirst();
+    char nx2 = calc.getSecondFront();
     Process pro = new Process();
 
     @Test
     public void test_eval(){
-        LinkedList<Character> c2 =calc.op;
+        LinkedList<Character> c2 =calc.getOp();
         c2.add('+');
         String e = "aasd";
         char bracket = ')';
@@ -54,12 +54,12 @@ public class CalculationTest {
     @Test
     public void testeval(){
         int a;
-        calc.op.add('+');
-        calc.op.add('/');
-        calc.op.add('*');
-        calc.op.add('(');
-        calc.op.add('-');
-        if (calc.op.getLast() == ')' ){
+        calc.getOp().add('+');
+        calc.getOp().add('/');
+        calc.getOp().add('*');
+        calc.getOp().add('(');
+        calc.getOp().add('-');
+        if (calc.getOp().getLast() == ')' ){
             a = 1;
         }
         else {

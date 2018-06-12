@@ -5,35 +5,51 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Calculation extends Main{
-   public char y ;
-    public  char x;
-    public char x2;
+    char beforeFirst;
+    public char getBeforeFirst(){return beforeFirst; }
+    public void setBeforeFirst(char beforeFirst){
+        this.beforeFirst =beforeFirst;
+    }
+    char firstFront;
+    public char getFirstFront(){return firstFront; }
+    public void setFirstFront(char firstFront){
+        this.firstFront =firstFront;
+    }
+     char secondFront;
+    public char getSecondFront(){return secondFront; }
+    public void setSecondFront(char secondFront){
+        this.secondFront =secondFront;
+    }
     char c;
   LinkedList<Double> st = new LinkedList<>();
-  public LinkedList<Character> op = new LinkedList<>();
+ LinkedList<Character> op = new LinkedList<>();
+    public LinkedList<Character> getOp(){return op; }
+    public void setOp(LinkedList<Character>  op){
+        this.op =op;
+    }
     public Double eval(StringBuilder s, Double indexOf) {
 
         String operand = "";
 
         for (int i = 0; i < s.length(); i++) {
              c = s.charAt(i);
-            y = ' ';
-            x = ' ';
-            x2 = ' ';
+            beforeFirst = ' ';
+            firstFront = ' ';
+            secondFront = ' ';
             if (i !=s.length()-1){
                 i++;
-                y =s.charAt(i);
+                beforeFirst =s.charAt(i);
                 i--;
             }
             if ( i >= 0) {
 
-                x = s.charAt(i);
+                firstFront = s.charAt(i);
 
             }
             if (i >= 1){
 
                 i--;
-                x2 = s.charAt(i);
+                secondFront = s.charAt(i);
 
                 i++;
             }
@@ -50,22 +66,22 @@ public class Calculation extends Main{
                 op.removeLast();
             }
 
-            else if (Character.isDigit(c) && (x2 == '+'  || x2 == '*' || x2 == '/') && x == '-') {
+            else if (Character.isDigit(c) && (secondFront == '+'  || secondFront == '*' || secondFront == '/') && firstFront == '-') {
                 operand += s.charAt(i);
             }
-            else if (x2 == '-' && x == '-' ){
+            else if (secondFront == '-' && firstFront == '-' ){
                op.add('-');
             }
 
-            else if (process.isOperator(c) && x != '-') {
-                if (c == '!' && Character.isDigit(y)){
-                    jLabel1.setForeground(Color.red);
-                    jLabel1.setText("Помилка");
+            else if (process.isOperator(c) && firstFront != '-') {
+                if (c == '!' && Character.isDigit(beforeFirst)){
+                    getjLabel1().setForeground(Color.red);
+                    getjLabel1().setText("Помилка");
                     break;
                 }
-                if (c == '/' && y == '0'){
-                    jLabel1.setForeground(Color.red);
-                    jLabel1.setText("Помилка");
+                if (c == '/' && beforeFirst == '0'){
+                    getjLabel1().setForeground(Color.red);
+                    getjLabel1().setText("Помилка");
 
                 }
                 while (!op.isEmpty() && prior.priority(op.getLast()) >= prior.priority(c))
@@ -82,7 +98,7 @@ public class Calculation extends Main{
                 st.add(Double.parseDouble(operand));
             }
             else  {
-                if (( x =='-' && Character.isDigit(x2)  ))
+                if (( firstFront =='-' && Character.isDigit(secondFront)  ))
                 {
                     op.add('+');
                 }
@@ -92,7 +108,7 @@ public class Calculation extends Main{
                 --i;
 
 
-                if (!process.isOperator(c) && process.isOperator(y) || y =='('|| y ==')' )
+                if (!process.isOperator(c) && process.isOperator(beforeFirst) || beforeFirst =='('|| beforeFirst ==')' )
                 {
                     st.add(Double.parseDouble(operand));
                     operand="";
