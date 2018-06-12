@@ -24,7 +24,7 @@ public class Calculation extends Main{
   LinkedList<Double> st = new LinkedList<>();
  LinkedList<Character> op = new LinkedList<>();
     public LinkedList<Character> getOp(){return op; }
-    public void setOp(LinkedList<Character>  op){
+    public void setOp(LinkedList<Character> op){
         this.op =op;
     }
     public Double eval(StringBuilder s, Double indexOf) {

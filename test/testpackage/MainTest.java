@@ -2,6 +2,7 @@ package testpackage;
 import jdk.nashorn.internal.AssertsEnabled;
 import mainpackage.Main;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 
@@ -31,127 +32,6 @@ import static org.junit.Assert.*;
           Assert.assertEquals("VK_2 = " ,component.getjTextFiel1().getText() , "2");
       }
 
-    @Test
-    public void test_jButton_1_height(){
-      int height = component.getjButton1().getHeight();
-      Assert.assertEquals("Height button +" , height , 33);
-    }
-
-    @Test
-    public void test_jButton_1_width(){
-      int width = component.getjButton1().getWidth();
-      Assert.assertEquals("Width button +" , width , 51);
-    }
-    @Test
-    public void test_jButton_1_text(){
-      Main jtext = new Main();
-      String text =  jtext.getjButton1().getText();
-      Assert.assertEquals("Text button +" , text , "1");
-    }
-    @Test
-    public  void testfontjButton1(){
-        Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton1().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
-    }
-
-
-      @Test
-      public void test_jButton_2_height(){
-          int height = component.getjButton2().getHeight();
-          Assert.assertEquals("Height button +" , height , 33);
-      }
-
-      @Test
-      public void test_jButton_2_width(){
-          int width = component.getjButton2().getWidth();
-          Assert.assertEquals("Width button +" , width , 51);
-      }
-      @Test
-      public void test_jButton_2_text(){
-          Main jtext = new Main();
-          String text =  jtext.getjButton2().getText();
-          Assert.assertEquals("Text button +" , text , "2");
-      }
-      @Test
-      public  void testfontjButton2(){
-          Main setfont1 = new Main();
-          String font2 =  setfont1.getjButton2().getFont().getFontName();
-          Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
-      }
-
-
-      @Test
-      public void test_jButton_3_height(){
-          int height = component.getjButton3().getHeight();
-          Assert.assertEquals("Height button +" , height , 33);
-      }
-
-      @Test
-      public void test_jButton_3_width(){
-          int width = component.getjButton3().getWidth();
-          Assert.assertEquals("Width button +" , width , 51);
-      }
-      @Test
-      public void test_jButton_3_text(){
-          Main jtext = new Main();
-          String text =  jtext.getjButton3().getText();
-          Assert.assertEquals("Text button +" , text , "3");
-      }
-      @Test
-      public  void testfontjButton3(){
-          Main setfont1 = new Main();
-          String font2 =  setfont1.getjButton3().getFont().getFontName();
-          Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
-      }
-
-      @Test
-      public void test_jButton_4_height(){
-          int height = component.getjButton3().getHeight();
-          Assert.assertEquals("Height button +" , height , 33);
-      }
-
-      @Test
-      public void test_jButton_4_width(){
-          int width = component.getjButton4().getWidth();
-          Assert.assertEquals("Width button +" , width , 51);
-      }
-      @Test
-      public void test_jButton_4_text(){
-          Main jtext = new Main();
-          String text =  jtext.getjButton4().getText();
-          Assert.assertEquals("Text button +" , text , "4");
-      }
-      @Test
-      public  void testfontjButton4(){
-          Main setfont1 = new Main();
-          String font2 =  setfont1.getjButton4().getFont().getFontName();
-          Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
-      }
-
-      @Test
-      public void test_jButton_5_height(){
-          int height = component.getjButton5().getHeight();
-          Assert.assertEquals("Height button +" , height , 33);
-      }
-
-      @Test
-      public void test_jButton_5_width(){
-          int width = component.getjButton5().getWidth();
-          Assert.assertEquals("Width button +" , width , 51);
-      }
-      @Test
-      public void test_jButton_5_text(){
-          Main jtext = new Main();
-          String text =  jtext.getjButton5().getText();
-          Assert.assertEquals("Text button +" , text , "5");
-      }
-      @Test
-      public  void testfontjButton5(){
-          Main setfont1 = new Main();
-          String font2 =  setfont1.getjButton5().getFont().getFontName();
-          Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
-      }
 
       @Test
     public void test_division_by_one(){

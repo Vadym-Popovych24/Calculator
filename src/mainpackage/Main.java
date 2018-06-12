@@ -81,7 +81,7 @@ public class Main extends javax.swing.JFrame  {
                 jLabel1.setText(Integer.toString(Integer.parseInt(jTextField1.getText()),8));
                 break;
             default :
-                System.out.println("ERROR");
+                jLabel1.setText("");
                 break;
         }
         return 0;
@@ -431,14 +431,14 @@ public class Main extends javax.swing.JFrame  {
 
         jButton0.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton0.setText("0");
-        jButton0.addActionListener(new ActionListener() {
+        jButton0.addActionListener(evt -> jButton0ActionPerformed());
             /**
              * @param evt
              */
-            public void actionPerformed(ActionEvent evt) {
+         /*   public void actionPerformed(ActionEvent evt) {
                 jButton0ActionPerformed();
             }
-        });
+        });*/
         getContentPane().add(jButton0);
         jButton0.setBounds(10, 269, 51, 33);
 
@@ -732,7 +732,7 @@ public class Main extends javax.swing.JFrame  {
     }//GEN-LAST:event_jMenuItem_OFFActionPerformed
 
 
-    private void jButton1ActionPerformed() {//GEN-FIRST:event_jButton_1ActionPerformed
+    public void jButton1ActionPerformed() {//GEN-FIRST:event_jButton_1ActionPerformed
         jTextField1.setText(jTextField1.getText() + "1");
         livesum();
     }//GEN-LAST:event_jButton_1ActionPerformed
@@ -1147,7 +1147,13 @@ return 0;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton0;
+    public javax.swing.JButton getjButton0() { return jButton0;
+    }
 
+    public void setjButton0(javax.swing.JButton button0) {
+
+        this.jButton0 = button0;
+    }
 
     private javax.swing.JButton jButton1;
     public javax.swing.JButton getjButton1() {
@@ -1198,10 +1204,45 @@ return 0;
         this.jButton5 = button5;
     }
     private javax.swing.JButton jButton6;
+    public javax.swing.JButton getjButton6() { return jButton6;
+    }
+
+    public void setjButton6(javax.swing.JButton button6) {
+
+        this.jButton6 = button6;
+    }
     private javax.swing.JButton jButton7;
+    public javax.swing.JButton getjButton7() { return jButton7;
+    }
+
+    public void setjButton7(javax.swing.JButton button7) {
+
+        this.jButton7 = button7;
+    }
     private javax.swing.JButton jButton8;
+    public javax.swing.JButton getjButton8() { return jButton8;
+    }
+
+    public void setjButton8(javax.swing.JButton button8) {
+
+        this.jButton8 = button8;
+    }
     private javax.swing.JButton jButton9;
+    public javax.swing.JButton getjButton9() { return jButton9;
+    }
+
+    public void setjButton9(javax.swing.JButton button9) {
+
+        this.jButton9 = button9;
+    }
     private javax.swing.JButton jButtonC;
+    public javax.swing.JButton getjButtonC() { return jButtonC;
+    }
+
+    public void setjButtonC(javax.swing.JButton buttonC) {
+
+        this.jButtonC = buttonC;
+    }
     private javax.swing.JButton jButtonE;
     private javax.swing.JButton jButtonLog10;
     private javax.swing.JButton jButtonHex;
@@ -1209,10 +1250,31 @@ return 0;
     private javax.swing.JButton jButtonPRC;
     private javax.swing.JButton jButtonOctal;
     private javax.swing.JButton jButtonclean;
+    public javax.swing.JButton getjButtonClean() { return jButtonclean;
+    }
+
+    public void setjButtonClean(javax.swing.JButton buttonClean) {
+
+        this.jButtonclean = buttonClean;
+    }
     private javax.swing.JButton jButtoncos;
     private javax.swing.JButton jButtoncosh;
     private javax.swing.JButton jButtondivision;
+    public javax.swing.JButton getjButtonDivision() { return jButtondivision;
+    }
+
+    public void setjButtonDivision(javax.swing.JButton buttondivision) {
+
+        this.jButtondivision = buttondivision;
+    }
     private javax.swing.JButton jButtonkorin;
+    public javax.swing.JButton getjButtonKorin() { return jButtonkorin;
+    }
+
+    public void setjButtonKorin(javax.swing.JButton buttonKorin) {
+
+        this.jButtonkorin = buttonKorin;
+    }
     private javax.swing.JButton jButtonlog;
     private javax.swing.JButton jButtonBracketfront;
     private javax.swing.JButton jButtonBracketend;
@@ -1220,14 +1282,56 @@ return 0;
     private javax.swing.JButton jButtonBin;
     private javax.swing.JButton jButtonFactorial;
     private javax.swing.JButton jButtonminus;
+    public javax.swing.JButton getjButtonMinus() { return jButtonminus;
+    }
+
+    public void setjButtonMinus(javax.swing.JButton buttonMinus) {
+
+        this.jButtonminus = buttonMinus;
+    }
     private javax.swing.JButton jButtonmultiplication;
+    public javax.swing.JButton getjButtonmultiplication() { return jButtonmultiplication;
+    }
+
+    public void setjButtonmultiplication(javax.swing.JButton buttonmultiplication) {
+
+        this.jButtonmultiplication = buttonmultiplication;
+    }
     private javax.swing.JButton jButtonplus;
+    public javax.swing.JButton getjButtonPlus() { return jButtonplus;
+    }
+
+    public void setjButtonPlus(javax.swing.JButton buttonPlus) {
+
+        this.jButtonplus = buttonPlus;
+    }
     private javax.swing.JButton jButtonpoint;
+    public javax.swing.JButton getjButtonPoint() { return jButtonpoint;
+    }
+
+    public void setjButtonPoint(javax.swing.JButton buttonPoint) {
+
+        this.jButtonpoint= buttonPoint;
+    }
     private javax.swing.JButton jButtonpower;
+    public javax.swing.JButton getjButtonPower() { return jButtonpower;
+    }
+
+    public void setjButtonPower(javax.swing.JButton buttonPower) {
+
+        this.jButtonpower= buttonPower;
+    }
     private javax.swing.JButton jButtonreverse;
     private javax.swing.JButton jButtonsin;
     private javax.swing.JButton jButtonsinh;
     private javax.swing.JButton jButtonsum;
+    public javax.swing.JButton getjButtonSum() { return jButtonsum;
+    }
+
+    public void setjButtonSum(javax.swing.JButton buttonSum) {
+
+        this.jButtonsum = buttonSum;
+    }
     private javax.swing.JButton jButtontan;
     private javax.swing.JButton jButtontanh;
    private javax.swing.JLabel jLabel1;
