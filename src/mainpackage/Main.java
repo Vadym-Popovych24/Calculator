@@ -1091,7 +1091,6 @@ return 0;
     }//GEN-LAST:event_jButton_E1ActionPerformed
 
 
-
     public static void main(String[] args) {
 
 
@@ -1121,16 +1120,7 @@ return 0;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton0;
-
-    private javax.swing.JButton jButton1;
-
-    public javax.swing.JButton getjButton1() { return jButton1;
-    }
-
-    public void setjButton1(javax.swing.JButton button) {
-
-    }
-
+    public javax.swing.JButton jButton1;
     private javax.swing.JButton jButton1x;
     public javax.swing.JButton jButton2;
     public javax.swing.JButton jButton3;
@@ -1177,11 +1167,11 @@ return 0;
     private  javax.swing.JTextField jTextField1;
 
     public javax.swing.JTextField getjTextFiel1() {
-        return jTextField1;
+        return jTextField1; 
     }
 
-    public void setjTextField1(javax.swing.JTextField field) {
-
+    public void setjTextFiled1(javax.swing.jTextField1 field) {
+        this.jTextField1 = field;
     }
     // End of variables declaration//GEN-END:variables
 
