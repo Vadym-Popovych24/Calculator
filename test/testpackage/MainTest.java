@@ -52,7 +52,7 @@ import static org.junit.Assert.*;
     public  void testfontjButton1(){
         Main setfont1 = new Main();
         String font2 =  setfont1.getjButton1().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
+        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -77,7 +77,7 @@ import static org.junit.Assert.*;
       public  void testfontjButton2(){
           Main setfont1 = new Main();
           String font2 =  setfont1.getjButton2().getFont().getFontName();
-          Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
+          Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
       }
 
 
@@ -102,7 +102,7 @@ import static org.junit.Assert.*;
       public  void testfontjButton3(){
           Main setfont1 = new Main();
           String font2 =  setfont1.getjButton3().getFont().getFontName();
-          Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
+          Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
       }
 
       @Test
@@ -126,7 +126,7 @@ import static org.junit.Assert.*;
       public  void testfontjButton4(){
           Main setfont1 = new Main();
           String font2 =  setfont1.getjButton4().getFont().getFontName();
-          Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
+          Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
       }
 
       @Test
@@ -150,7 +150,7 @@ import static org.junit.Assert.*;
       public  void testfontjButton5(){
           Main setfont1 = new Main();
           String font2 =  setfont1.getjButton5().getFont().getFontName();
-          Assert.assertEquals("Font button +" , font2 , "Tahoma Bold") ;//Arial Narrow Полужирный Tahoma Bold
+          Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
       }
 
       @Test

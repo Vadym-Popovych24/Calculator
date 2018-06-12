@@ -129,8 +129,8 @@ pitest {
    //   testSourceSets = [sourceSets.test]
   // threads = 4
   }
-*/
+
  
 
  // test.dependsOn jacocoTestReport
- test.finalizedBy 'pitest'
+ test.finalizedBy 'pitest'*/
