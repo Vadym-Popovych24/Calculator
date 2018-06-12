@@ -16,8 +16,9 @@ public class ProcessTest {
     Process pro = new Process();
     Calculation calc = new Calculation();
     Main main = new Main();
-/*
-    @Test expected = ArithmeticException.class) public void test_division_by_zero() {
+
+    @Test /*expected = ArithmeticException.class)*/
+    public void test_division_by_zero() {
        double t2 = pro.t;
         double l2 = pro.l;
 
@@ -34,7 +35,7 @@ public class ProcessTest {
         assertEquals("sum = ", sum, 10, 1);
 
     }
-    */
+
     @Test
     public void testisDelim() {
         {

@@ -15,41 +15,116 @@ import static org.junit.Assert.*;
   public class MainTest {
 
     Main component = new Main();
-/*
-    @Test
-    public void KeyPressed(){
-      String gt = component.jTextField1.getText();
-      component.cc = KeyEvent.VK_2;
-      if (component.cc == KeyEvent.VK_2){
-          component.jTextField1.setText("2");
+      private Object evt;
 
+      @Test
+      public void KeyPressedVK2(){
+          String gt = component.getjTextFiel1().getText();
+          component.cc = KeyEvent.VK_2;
+          if (component.cc == KeyEvent.VK_2){
+              component.getjTextFiel1().setText("2");
+
+          }
+          else {
+              component.getjTextFiel1().setText("3");
+          }
+          Assert.assertEquals("VK_2 = " ,component.getjTextFiel1().getText() , "2");
       }
-      else {
-          component.jTextField1.setText("3");
-      }
-      Assert.assertEquals("VK_2 = " ,component.jTextField1.getText() , "2");
-    }*/
-/*
+
     @Test
     public void test_jButton_1_height(){
-      int height = component.jButton1.getHeight();
+      int height = component.getjButton1().getHeight();
       Assert.assertEquals("Height button +" , height , 33);
     }
 
     @Test
     public void test_jButton_1_width(){
-      int width = component.jButton1.getWidth();
+      int width = component.getjButton1().getWidth();
       Assert.assertEquals("Width button +" , width , 51);
     }
     @Test
     public void test_jButton_1_text(){
       Main jtext = new Main();
-      String text =  jtext.jButton1.getText();
+      String text =  jtext.getjButton1().getText();
       Assert.assertEquals("Text button +" , text , "1");
     }
-*/
-/*
-    @Test
+
+
+      @Test
+      public void test_jButton_2_height(){
+          int height = component.jButton2.getHeight();
+          Assert.assertEquals("Height button +" , height , 33);
+      }
+
+      @Test
+      public void test_jButton_2_width(){
+          int width = component.jButton2.getWidth();
+          Assert.assertEquals("Width button +" , width , 51);
+      }
+      @Test
+      public void test_jButton_2_text(){
+          Main jtext = new Main();
+          String text =  jtext.jButton2.getText();
+          Assert.assertEquals("Text button +" , text , "2");
+      }
+
+
+
+      @Test
+      public void test_jButton_3_height(){
+          int height = component.jButton3.getHeight();
+          Assert.assertEquals("Height button +" , height , 33);
+      }
+
+      @Test
+      public void test_jButton_3_width(){
+          int width = component.jButton3.getWidth();
+          Assert.assertEquals("Width button +" , width , 51);
+      }
+      @Test
+      public void test_jButton_3_text(){
+          Main jtext = new Main();
+          String text =  jtext.jButton3.getText();
+          Assert.assertEquals("Text button +" , text , "3");
+      }
+
+      @Test
+      public void test_jButton_4_height(){
+          int height = component.jButton4.getHeight();
+          Assert.assertEquals("Height button +" , height , 33);
+      }
+
+      @Test
+      public void test_jButton_4_width(){
+          int width = component.jButton4.getWidth();
+          Assert.assertEquals("Width button +" , width , 51);
+      }
+      @Test
+      public void test_jButton_4_text(){
+          Main jtext = new Main();
+          String text =  jtext.jButton4.getText();
+          Assert.assertEquals("Text button +" , text , "4");
+      }
+
+      @Test
+      public void test_jButton_5_height(){
+          int height = component.jButton5.getHeight();
+          Assert.assertEquals("Height button +" , height , 33);
+      }
+
+      @Test
+      public void test_jButton_5_width(){
+          int width = component.jButton5.getWidth();
+          Assert.assertEquals("Width button +" , width , 51);
+      }
+      @Test
+      public void test_jButton_5_text(){
+          Main jtext = new Main();
+          String text =  jtext.jButton5.getText();
+          Assert.assertEquals("Text button +" , text , "5");
+      }
+
+      @Test
     public void test_division_by_one(){
       Main variable = new Main();
       double division_by_one = variable.ans;
@@ -57,7 +132,7 @@ import static org.junit.Assert.*;
       num2 = 5;
       division_by_one = 1 / num2;
       assertEquals("Division by one = " , division_by_one,  0,2) ;
-    }*/
+    }
     /*
         @Test
         public void testTitleFrame() {
@@ -69,8 +144,8 @@ import static org.junit.Assert.*;
 
     @Test
     public void testenablejt(){
-      component.jTextField1.setText("2-1");
-      String str =component.jTextField1.getText();
+      component.getjTextFiel1().setText("2-1");
+      String str =component.getjTextFiel1().getText();
       assertEquals(str , "2-1");
     }
 
@@ -139,9 +214,9 @@ assertEquals("mess = " , mess , "Seccesfull");
       public void testbin() {
           component.calculation = "bin";
           String an ;
-          component.jTextField1.setText("15");
+          component.getjTextFiel1().setText("15");
           if (component.calculation == "bin") {
-           component.jLabel1.setText(Integer.toString(Integer.parseInt(component.jTextField1.getText()),2));
+           component.jLabel1.setText(Integer.toString(Integer.parseInt(component.getjTextFiel1().getText()),2));
           an = "bin";
           } else {
           an = "error";
@@ -161,9 +236,9 @@ assertEquals("mess = " , mess , "Seccesfull");
       public void testhex() {
           component.calculation = "hex";
           String an ;
-          component.jTextField1.setText("15");
+          component.getjTextFiel1().setText("15");
           if (component.calculation == "hex") {
-              component.jLabel1.setText(Integer.toString(Integer.parseInt(component.jTextField1.getText()),2));
+              component.jLabel1.setText(Integer.toString(Integer.parseInt(component.getjTextFiel1().getText()),2));
               an = "hex";
           } else {
               an = "error";
@@ -183,9 +258,9 @@ assertEquals("mess = " , mess , "Seccesfull");
       public void testoctal() {
           component.calculation = "octal";
           String an ;
-          component.jTextField1.setText("15");
+          component.getjTextFiel1().setText("15");
           if (component.calculation == "octal") {
-              component.jLabel1.setText(Integer.toString(Integer.parseInt(component.jTextField1.getText()),2));
+              component.jLabel1.setText(Integer.toString(Integer.parseInt(component.getjTextFiel1().getText()),2));
               an = "octal";
           } else {
               an = "error";
@@ -235,7 +310,7 @@ assertEquals("ans = " , component.ans , 0,2);
 */
     @Test
       public void jButtonCActionPerformed(){
-      component.jTextField1.setText(" ");
+      component.getjTextFiel1().setText(" ");
       component.jLabel1.getForeground();
      component.jLabel1.getText();
      assertEquals("color = " ,  Color.black ,component.jLabel1.getForeground() );

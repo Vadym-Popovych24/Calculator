@@ -918,9 +918,9 @@ public class Main extends javax.swing.JFrame  {
 
     private void jButtonplusKeyTyped() {//GEN-FIRST:event_jButton_plusKeyTyped
     }//GEN-LAST:event_jButton_plusKeyTyped*/
-     char cc;
+    public char cc;
      double mny;
-    public void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+    public int jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         Calculation calckeypressed = new Calculation();
         cc = evt.getKeyChar();
         if (cc == KeyEvent.VK_ENTER ){
@@ -1017,7 +1017,7 @@ public class Main extends javax.swing.JFrame  {
             jTextField1.setText(jTextField1.getText());
              livesum();
         }
-
+return 0;
     }//GEN-LAST:event_jTextField1KeyPressed
     private void jTextField1KeyReleased() {//GEN-FIRST:event_jTextField1KeyReleased
     }//GEN-LAST:event_jTextField1KeyReleased
@@ -1121,12 +1121,21 @@ public class Main extends javax.swing.JFrame  {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton0;
+
     private javax.swing.JButton jButton1;
+
+    public javax.swing.JButton getjButton1() { return jButton1;
+    }
+
+    public void setjButton1(javax.swing.JButton button) {
+
+    }
+
     private javax.swing.JButton jButton1x;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    public javax.swing.JButton jButton2;
+    public javax.swing.JButton jButton3;
+    public javax.swing.JButton jButton4;
+    public javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -1165,8 +1174,15 @@ public class Main extends javax.swing.JFrame  {
     public javax.swing.JMenuItem jMenuItemON;
     private javax.swing.JMenuItem jMenuItemsientific;
     private javax.swing.JMenu jMenuinfa;
-    public  javax.swing.JTextField jTextField1;
+    private  javax.swing.JTextField jTextField1;
 
+    public javax.swing.JTextField getjTextFiel1() {
+        return jTextField1;
+    }
+
+    public void setjTextField1(javax.swing.JTextField field) {
+
+    }
     // End of variables declaration//GEN-END:variables
 
 }
