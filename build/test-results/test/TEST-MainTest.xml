@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MainTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-06-12T10:41:20" hostname="Vadym" time="0.01">
+<testsuite name="MainTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-06-12T12:23:27" hostname="Vadym" time="0.008">
   <properties/>
   <testcase name="isOperator" classname="MainTest" time="0.003"/>
-  <testcase name="priority" classname="MainTest" time="0.001"/>
+  <testcase name="priority" classname="MainTest" time="0.0"/>
   <testcase name="livesumTest" classname="MainTest" time="0.0"/>
   <testcase name="vkl" classname="MainTest" time="0.0"/>
-  <testcase name="eval" classname="MainTest" time="0.0"/>
-  <testcase name="main" classname="MainTest" time="0.001"/>
-  <testcase name="vykl" classname="MainTest" time="0.0"/>
+  <testcase name="eval" classname="MainTest" time="0.001"/>
+  <testcase name="main" classname="MainTest" time="0.0"/>
+  <testcase name="vykl" classname="MainTest" time="0.001"/>
   <testcase name="processOperator" classname="MainTest" time="0.0"/>
-  <testcase name="mathematic" classname="MainTest" time="0.003"/>
+  <testcase name="mathematic" classname="MainTest" time="0.0"/>
   <testcase name="isDelim" classname="MainTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
