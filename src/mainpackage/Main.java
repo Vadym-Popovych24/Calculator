@@ -1,8 +1,6 @@
 package mainpackage;
 
 import javax.swing.*;
-import javax.swing.event.AncestorEvent;
-import javax.swing.event.AncestorListener;
 import java.awt.*;
 
 import java.awt.event.*;
@@ -785,15 +783,15 @@ public class Main extends javax.swing.JFrame  {
         jTextField1.setText(jTextField1.getText() + "-");
     }//GEN-LAST:event_jButton_minusActionPerformed
 
-    private void jButtonplusActionPerformed() {//GEN-FIRST:event_jButton_plusActionPerformed
+    public int jButtonplusActionPerformed() {//GEN-FIRST:event_jButton_plusActionPerformed
         jTextField1.setText(jTextField1.getText() + "+");
-    }//GEN-LAST:event_jButton_plusActionPerformed
+    return 0;}//GEN-LAST:event_jButton_plusActionPerformed
 
-    private void jButtonCActionPerformed() {//GEN-FIRST:event_jButton_CActionPerformed
+    public int jButtonCActionPerformed() {//GEN-FIRST:event_jButton_CActionPerformed
         jTextField1.setText("");
         jLabel1.setText("");
        jLabel1.setForeground(Color.black);
-    }//GEN-LAST:event_jButton_CActionPerformed
+   return 0; }//GEN-LAST:event_jButton_CActionPerformed
 
     private void jButtoncleanActionPerformed() {//GEN-FIRST:event_jButton_cleanActionPerformed
         int length = jTextField1.getText().length();
@@ -913,10 +911,6 @@ public class Main extends javax.swing.JFrame  {
             evt.consume();
         }
     }//GEN-LAST:event_jTextField1KeyTyped
-
-    private void jLabel1AncestorAdded() {//GEN-FIRST:event_jLabel1AncestorAdded
-
-    }//GEN-LAST:event_jLabel1AncestorAdded
 
  /*   private void jButtonplusKeyPressed() {//GEN-FIRST:event_jButton_plusKeyPressed
 

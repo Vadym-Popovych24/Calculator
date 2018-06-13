@@ -15,7 +15,7 @@ public class PitView {
         int height = component.getjButton0().getHeight();
         Assert.assertEquals("Height button +" , height , 33);
     }
-
+/*
     @Test
     public void test_jButton_0_width(){
         int width = component.getjButton0().getWidth();
@@ -1159,5 +1159,5 @@ public class PitView {
     public void testenab(){
      //   component.getjButton1().setEnabled(true);
         Assert.assertEquals("b is " , component.getjButton1().isEnabled() , true);
-    }
+    }*/
 }
