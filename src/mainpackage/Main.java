@@ -88,6 +88,7 @@ public class Main extends javax.swing.JFrame  {
 
     }
 
+    
     public int livesum(){
         Calculation calclivesum = new Calculation();
         try {
