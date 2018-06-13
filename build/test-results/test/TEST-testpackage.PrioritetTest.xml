@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.PrioritetTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-06-13T13:03:38" hostname="Vadym" time="0.0">
+<testsuite name="testpackage.PrioritetTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-06-13T15:06:58" hostname="Vadym" time="0.0">
   <properties/>
   <testcase name="prioritet" classname="testpackage.PrioritetTest" time="0.0"/>
   <testcase name="priority" classname="testpackage.PrioritetTest" time="0.0"/>

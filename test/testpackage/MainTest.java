@@ -233,13 +233,7 @@ public void testans(){
    component.setAns(1 / component.getNum());
 assertEquals("ans = " , component.getAns() , 0,2);
 }
-/*
-    @Test
-    public void testenab(){
-       component.jButton1.setEnabled(true);
- assertEquals("b is " , component.jButton1.isEnabled() , true);
-    }
-*/
+
     @Test
       public void jButtonCActionPerformed(){
       component.getjTextFiel1().setText(" ");

@@ -48,7 +48,7 @@ public class Main extends javax.swing.JFrame  {
     double meansum;
 
     Prioritet prior = new Prioritet();
-    Process process = new Process();
+
     public int mathematic ()
     {
         switch (calculation)
@@ -434,13 +434,7 @@ public class Main extends javax.swing.JFrame  {
         jButton0.setFont(new Font("Tahoma", 1, 20)); // NOI18N
         jButton0.setText("0");
         jButton0.addActionListener(evt -> jButton0ActionPerformed());
-            /**
-             * @param evt
-             */
-         /*   public void actionPerformed(ActionEvent evt) {
-                jButton0ActionPerformed();
-            }
-        });*/
+
         getContentPane().add(jButton0);
         jButton0.setBounds(10, 269, 51, 33);
 
@@ -459,16 +453,7 @@ public class Main extends javax.swing.JFrame  {
         jLabel1.setFont(new Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(SwingConstants.RIGHT);
         jLabel1.setText("0");
-        jLabel1.addAncestorListener(new AncestorListener() {
 
-            public void ancestorMoved(AncestorEvent evt) {
-            }
-            public void ancestorAdded(AncestorEvent evt) {
-                jLabel1AncestorAdded();
-            }
-            public void ancestorRemoved(AncestorEvent evt) {
-            }
-        });
         getContentPane().add(jLabel1);
         jLabel1.setBounds(10, 62, 220, 22);
 
@@ -1516,29 +1501,6 @@ return 0;
     }
 
 
-
-    private javax.swing.JMenuItem jMenuItemstandart;
-    public javax.swing.JMenuItem getjMenuItemStandart() {
-        return jMenuItemstandart;
-    }
-    public void setjMenuItemStandart(javax.swing.JMenuItem jMenuItemstandart) {
-
-        this.jMenuItemstandart = jMenuItemstandart;
-    }
-
-
-    private javax.swing.JMenuItem jMenuItemclose;
-    public javax.swing.JMenuItem getjMenuItemclose() {
-        return jMenuItemclose;
-    }
-
-    public void setjMenuItemclose(javax.swing.JMenuItem jMenuItemclose) {
-
-        this.jMenuItemclose = jMenuItemclose;
-    }
-
-
-
     private javax.swing.JMenu jMenuinfa;
     public javax.swing.JMenu getjMenuInfa() {
         return jMenuinfa;
@@ -1548,8 +1510,6 @@ return 0;
 
         this.jMenuinfa = jMenuInfa;
     }
-
-
 
     private  javax.swing.JTextField jTextField1;
 
@@ -1561,15 +1521,5 @@ return 0;
         this.jTextField1 = field;
     }
 
-    // End of variables declaration//GEN-END:variables
-    private javax.swing.JMenu jMenuKalculator;
-    public javax.swing.JMenu getjMenuKalculator() {
-        return jMenuKalculator;
-    }
-
-    public void setjMenuKalculator(javax.swing.JMenu calculator) {
-
-        this.jMenuKalculator = calculator;
-    }
 }
 

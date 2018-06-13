@@ -20,6 +20,8 @@ public class Process {
         return c == ' ';
     }
     public boolean isOperator(char c) {
+
+
         return c == '+' || c == '-' || c == '*' || c == '/' || c == '^'
                 || c == '√' || c == 't' || c == 's' || c == 'c' || c == 'l'
                 || c == '!' || c == 'T' || c == 'S' || c == 'C' || c == 'L';

@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Calculation extends Main{
+public class Calculation {
     char beforeFirst;
     public char getBeforeFirst(){return beforeFirst; }
     public void setBeforeFirst(char beforeFirst){
@@ -20,6 +20,9 @@ public class Calculation extends Main{
     public void setSecondFront(char secondFront){
         this.secondFront =secondFront;
     }
+    Process process = new Process();
+
+    Prioritet prior = new Prioritet();
     char c;
   LinkedList<Double> st = new LinkedList<>();
  LinkedList<Character> op = new LinkedList<>();
@@ -28,7 +31,7 @@ public class Calculation extends Main{
         this.op =op;
     }
     public Double eval(StringBuilder s, Double indexOf) {
-
+        Main main = new Main();
         String operand = "";
 
         for (int i = 0; i < s.length(); i++) {
@@ -75,13 +78,15 @@ public class Calculation extends Main{
 
             else if (process.isOperator(c) && firstFront != '-') {
                 if (c == '!' && Character.isDigit(beforeFirst)){
-                    getjLabel1().setForeground(Color.red);
-                    getjLabel1().setText("Помилка");
+
+                    main.getjLabel1().setForeground(Color.red);
+                    main.getjLabel1().setText("Помилка");
                     break;
                 }
                 if (c == '/' && beforeFirst == '0'){
-                    getjLabel1().setForeground(Color.red);
-                    getjLabel1().setText("Помилка");
+
+                    main.getjLabel1().setForeground(Color.red);
+                    main.getjLabel1().setText("Помилка");
 
                 }
                 while (!op.isEmpty() && prior.priority(op.getLast()) >= prior.priority(c))

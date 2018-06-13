@@ -1130,12 +1130,6 @@ public class PitView {
     }
 
 
-    @Ignore
-    public void test_jMenu_text(){
-        Main jtext = new Main();
-        String text =  jtext.getjMenuKalculator().getText();
-        Assert.assertEquals("Text button +" , text , "Калькулятор");
-    }
     @Test
     public void test_jButton_jMenuItemOn_text(){
         Main jtext = new Main();
@@ -1154,22 +1148,16 @@ public class PitView {
         String text =  jtext.getjMenuItemSientific().getText();
         Assert.assertEquals("Text button +" , text , "Науковий");
     }
-    @Ignore
-    public void test_jButton_jMenuStandart_text(){
-        Main jtext = new Main();
-        String text =  jtext.getjMenuItemStandart().getText();
-        Assert.assertEquals("Text button +" , text , "Стандартний");
-    }
-    @Ignore
-    public void test_jButton_jMenuItemclose_text(){
-        Main jtext = new Main();
-        String text =  jtext.getjMenuItemclose().getText();
-        Assert.assertEquals("Text button +" , text , "Закрити");
-    }
+
     @Test
     public void test_jButton_jMenuInfa_text(){
         Main jtext = new Main();
         String text =  jtext.getjMenuInfa().getText();
         Assert.assertEquals("Text button +" , text , "Інфо");
+    }
+    @Test
+    public void testenab(){
+     //   component.getjButton1().setEnabled(true);
+        Assert.assertEquals("b is " , component.getjButton1().isEnabled() , true);
     }
 }
