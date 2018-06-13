@@ -536,7 +536,7 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButtonsin);
         jButtonsin.setBounds(239, 179, 65, 37);
 
-        jButtoncosh.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtoncosh.setFont(new Font("Tahoma", 1, 11)); 
         jButtoncosh.setText("cosh");
         jButtoncosh.setMaximumSize(new Dimension(60, 23));
         jButtoncosh.setPreferredSize(new Dimension(51, 23));
