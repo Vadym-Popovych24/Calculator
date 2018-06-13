@@ -234,31 +234,6 @@ public void testans(){
 assertEquals("ans = " , component.getAns() , 0,2);
 }
 
-    @Test
-      public void jButtontestCActionPerformed(){
-        String str;
-       if (component.jButtonCActionPerformed()==0){
-         component.getjTextFiel1().setText("");
-           component.getjLabel1().getForeground();
-           component.getjLabel1().getText();
-       }
-       else{
-           component.getjTextFiel1().setText("Error");
-       }
-    Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "");
-    
-    }
 
-      @Test
-      public void jButtontestplusActionPerformed(){
-          if (component.jButtonplusActionPerformed()==0){
-              component.getjTextFiel1().setText("+");
-          }
-          else{
-              component.getjTextFiel1().setText("Error");
-          }
-          Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "+");
-
-      }
 
   }

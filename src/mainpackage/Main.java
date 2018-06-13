@@ -762,24 +762,24 @@ public class Main extends javax.swing.JFrame  {
         livesum();
     }//GEN-LAST:event_jButton_9ActionPerformed
 
-    private void jButton0ActionPerformed() {//GEN-FIRST:event_jButton_0ActionPerformed
+    public void jButton0ActionPerformed() {//GEN-FIRST:event_jButton_0ActionPerformed
         jTextField1.setText(jTextField1.getText() + "0");
         livesum();
     }//GEN-LAST:event_jButton_0ActionPerformed
 
-    private void jButtonpointActionPerformed() {//GEN-FIRST:event_jButton_pointActionPerformed
+    public void jButtonpointActionPerformed() {//GEN-FIRST:event_jButton_pointActionPerformed
         jTextField1.setText(jTextField1.getText() + ".");
     }//GEN-LAST:event_jButton_pointActionPerformed
 
-    private void jButtondivisionActionPerformed() {//GEN-FIRST:event_jButton_divisionActionPerformed
+    public void jButtondivisionActionPerformed() {//GEN-FIRST:event_jButton_divisionActionPerformed
         jTextField1.setText(jTextField1.getText() + "/");
     }//GEN-LAST:event_jButton_divisionActionPerformed
 
-    private void jButtonmultiplicationActionPerformed() {//GEN-FIRST:event_jButton_multiplicationActionPerformed
+    public void jButtonmultiplicationActionPerformed() {//GEN-FIRST:event_jButton_multiplicationActionPerformed
         jTextField1.setText(jTextField1.getText() + "*");
     }//GEN-LAST:event_jButton_multiplicationActionPerformed
 
-    private void jButtonminusActionPerformed() {//GEN-FIRST:event_jButton_minusActionPerformed
+    public void jButtonminusActionPerformed() {//GEN-FIRST:event_jButton_minusActionPerformed
         jTextField1.setText(jTextField1.getText() + "-");
     }//GEN-LAST:event_jButton_minusActionPerformed
 
@@ -793,7 +793,7 @@ public class Main extends javax.swing.JFrame  {
        jLabel1.setForeground(Color.black);
    return 0; }//GEN-LAST:event_jButton_CActionPerformed
 
-    private void jButtoncleanActionPerformed() {//GEN-FIRST:event_jButton_cleanActionPerformed
+    public int jButtoncleanActionPerformed() {//GEN-FIRST:event_jButton_cleanActionPerformed
         int length = jTextField1.getText().length();
         int number = jTextField1.getText().length() - 1;
         if (jTextField1.getText().length() == 1)
@@ -809,11 +809,12 @@ public class Main extends javax.swing.JFrame  {
             back.deleteCharAt(number);
             store = back.toString();
             jTextField1.setText(store);
+
         }
-    }//GEN-LAST:event_jButton_cleanActionPerformed
+        return 0; }//GEN-LAST:event_jButton_cleanActionPerformed
     double xt;
     @SuppressWarnings("empty-statement")
-    private void jButtonsumActionPerformed() {//GEN-FIRST:event_jButton_sumActionPerformed
+    public void jButtonsumActionPerformed() {//GEN-FIRST:event_jButton_sumActionPerformed
         Calculation calcsumActionPerformed = new Calculation();
         try {
             s = new Scanner(jTextField1.getText());
@@ -849,25 +850,25 @@ public class Main extends javax.swing.JFrame  {
         }
     }//GEN-LAST:event_jButton_sumActionPerformed
 
-    private void jTextField1ActionPerformed() {//GEN-FIRST:event_jTextField1ActionPerformed
+    public void jTextField1ActionPerformed() {//GEN-FIRST:event_jTextField1ActionPerformed
 
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButtonpowerActionPerformed() {//GEN-FIRST:event_jButton_powerActionPerformed
+    public void jButtonpowerActionPerformed() {//GEN-FIRST:event_jButton_powerActionPerformed
         jTextField1.setText(jTextField1.getText() + "^");
     }//GEN-LAST:event_jButton_powerActionPerformed
 
-    private void jButtonkorinActionPerformed() {//GEN-FIRST:event_jButton_korinActionPerformed
+    public void jButtonkorinActionPerformed() {//GEN-FIRST:event_jButton_korinActionPerformed
         jTextField1.setText(jTextField1.getText() + "√");
     }//GEN-LAST:event_jButton_korinActionPerformed
 
-    private void jButtonFactorialActionPerformed() {//GEN-FIRST:event_jButton_log5ActionPerformed
+    public void jButtonFactorialActionPerformed() {//GEN-FIRST:event_jButton_log5ActionPerformed
         jTextField1.setText(jTextField1.getText() + "!");
         livesum();
     }//GEN-LAST:event_jButton_log5ActionPerformed
 
 
-    private void jButtonPActionPerformed() {//GEN-FIRST:event_jButton_PActionPerformed
+    public void jButtonPActionPerformed() {//GEN-FIRST:event_jButton_PActionPerformed
         jTextField1.setText(jTextField1.getText() + Math.PI);
     }//GEN-LAST:event_jButton_PActionPerformed
 
@@ -877,35 +878,35 @@ public class Main extends javax.swing.JFrame  {
 
     }//GEN-LAST:event_formWindowActivated
 
-    private void jButtonlogActionPerformed() {//GEN-FIRST:event_jButton_logActionPerformed
+    public void jButtonlogActionPerformed() {//GEN-FIRST:event_jButton_logActionPerformed
         jTextField1.setText(jTextField1.getText() + "l");
     }//GEN-LAST:event_jButton_logActionPerformed
 
-    private void jButtontanActionPerformed() {//GEN-FIRST:event_jButton_tanActionPerformed
+    public void jButtontanActionPerformed() {//GEN-FIRST:event_jButton_tanActionPerformed
         jTextField1.setText(jTextField1.getText() + "t");
     }//GEN-LAST:event_jButton_tanActionPerformed
 
-    private void jButtontanhActionPerformed() {//GEN-FIRST:event_jButton_tanhActionPerformed
+    public void jButtontanhActionPerformed() {//GEN-FIRST:event_jButton_tanhActionPerformed
         jTextField1.setText(jTextField1.getText() + "T");
     }//GEN-LAST:event_jButton_tanhActionPerformed
 
-    private void jButtonsinActionPerformed() {//GEN-FIRST:event_jButton_sinActionPerformed
+    public void jButtonsinActionPerformed() {//GEN-FIRST:event_jButton_sinActionPerformed
         jTextField1.setText(jTextField1.getText() + "s");
     }//GEN-LAST:event_jButton_sinActionPerformed
 
-    private void jButtoncoshActionPerformed() {//GEN-FIRST:event_jButton_coshActionPerformed
+    public void jButtoncoshActionPerformed() {//GEN-FIRST:event_jButton_coshActionPerformed
         jTextField1.setText(jTextField1.getText() + "C");
     }//GEN-LAST:event_jButton_coshActionPerformed
 
-    private void jButtonsinhActionPerformed() {//GEN-FIRST:event_jButton_sinhActionPerformed
+    public void jButtonsinhActionPerformed() {//GEN-FIRST:event_jButton_sinhActionPerformed
         jTextField1.setText(jTextField1.getText() + "S");
     }//GEN-LAST:event_jButton_sinhActionPerformed
 
-    private void jButtoncosActionPerformed() {//GEN-FIRST:event_jButton_cosActionPerformed
+    public void jButtoncosActionPerformed() {//GEN-FIRST:event_jButton_cosActionPerformed
         jTextField1.setText(jTextField1.getText() + "c");
     }//GEN-LAST:event_jButton_cosActionPerformed
 
-    private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
+    public void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
         char non =evt.getKeyChar();
         if((Character.isDigit(non)) ){
             evt.consume();
@@ -1027,23 +1028,20 @@ public class Main extends javax.swing.JFrame  {
         }
 return 0;
     }//GEN-LAST:event_jTextField1KeyPressed
-    private void jTextField1KeyReleased() {//GEN-FIRST:event_jTextField1KeyReleased
+    public void jTextField1KeyReleased() {//GEN-FIRST:event_jTextField1KeyReleased
     }//GEN-LAST:event_jTextField1KeyReleased
 
-    private void jMenuIteminfoActionPerformed() {//GEN-FIRST:event_jMenuItem_infoActionPerformed
+    public void jMenuIteminfoActionPerformed() {//GEN-FIRST:event_jMenuItem_infoActionPerformed
     }//GEN-LAST:event_jMenuItem_infoActionPerformed
-        String jT;
+
     public void jMenuItemstandartActionPerformed() {//GEN-FIRST:event_jMenuItem_standartActionPerformed
-        jT = "jMenuItemstandartActionPerformed";
         this.setResizable(true);
         this.setSize(255, 380);
         jTextField1.setSize(220,45);
         jLabel1.setSize(220,22);
-
     }//GEN-LAST:event_jMenuItem_standartActionPerformed
 
     public boolean jMenuItemsientificActionPerformed() {//GEN-FIRST:event_jMenuItem_sientificActionPerformed
-       jT = "jMenuItemsientificActionPerformed";
         this.setResizable(true);
         this.setSize(538, 380);
         jTextField1.setSize(503,45);
@@ -1051,23 +1049,23 @@ return 0;
         return false;
     }//GEN-LAST:event_jMenuItem_sientificActionPerformed
 
-    private void formWindowClosed() {//GEN-FIRST:event_formWindowClosed
+    public void formWindowClosed() {//GEN-FIRST:event_formWindowClosed
 
     }//GEN-LAST:event_formWindowClosed
 
-    private void jMenuItemcloseActionPerformed() {//GEN-FIRST:event_jMenuItem_closeActionPerformed
+    public void jMenuItemcloseActionPerformed() {//GEN-FIRST:event_jMenuItem_closeActionPerformed
         setVisible(false);
     }//GEN-LAST:event_jMenuItem_closeActionPerformed
 
-    private void jButtonEActionPerformed() {//GEN-FIRST:event_jButton_EActionPerformed
+    public void jButtonEActionPerformed() {//GEN-FIRST:event_jButton_EActionPerformed
         jTextField1.setText(jTextField1.getText() + Math.exp(1));
     }//GEN-LAST:event_jButton_EActionPerformed
 
-    private void jButtonBracketfrontActionPerformed() {//GEN-FIRST:event_jButton_log1ActionPerformed
+    public void jButtonBracketfrontActionPerformed() {//GEN-FIRST:event_jButton_log1ActionPerformed
         jTextField1.setText(jTextField1.getText() + "(");
     }//GEN-LAST:event_jButton_log1ActionPerformed
 
-    private void jButtonBracketendActionPerformed() {//GEN-FIRST:event_jButton_log2ActionPerformed
+    public void jButtonBracketendActionPerformed() {//GEN-FIRST:event_jButton_log2ActionPerformed
         jTextField1.setText(jTextField1.getText() + ")");
     }//GEN-LAST:event_jButton_log2ActionPerformed
 
@@ -1094,7 +1092,7 @@ return 0;
         }
     }//GEN-LAST:event_jButton_P1ActionPerformed
 
-    private void jButtonLog10ActionPerformed() {//GEN-FIRST:event_jButton_E1ActionPerformed
+    public void jButtonLog10ActionPerformed() {//GEN-FIRST:event_jButton_E1ActionPerformed
         jTextField1.setText(jTextField1.getText() + "L");
     }//GEN-LAST:event_jButton_E1ActionPerformed
 

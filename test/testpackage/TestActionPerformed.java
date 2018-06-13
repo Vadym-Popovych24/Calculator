@@ -1,0 +1,165 @@
+package testpackage;
+
+import mainpackage.Main;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.awt.*;
+
+public class TestActionPerformed {
+    Main component = new Main();
+    @Test
+    public void testjButtonCActionPerformed(){
+        if (component.jButtonCActionPerformed()==0){
+            component.getjTextFiel1().setText("");
+            component.getjLabel1().getForeground();
+            component.getjLabel1().getText();
+        }
+        else{
+            component.getjTextFiel1().setText("Error");
+        }
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "");
+
+    }
+
+    @Test
+    public void testjButtonplusActionPerformed(){
+        component.jButtonplusActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "+");
+
+    }
+    @Test
+    public void testjButtonminusActionPerformed(){
+        component.jButtonminusActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "-");
+    }
+    @Test
+    public void testjButtonmultiplicationActionPerformed(){
+        component.jButtonmultiplicationActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "*");
+    }
+    @Test
+    public void testjButtondivisionActionPerformed(){
+        component.jButtondivisionActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "/");
+    }
+    @Test
+    public void testjButtonpointActionPerformed(){
+        component.jButtonpointActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), ".");
+    }
+    @Test
+    public void testjButtoncleanActionPerformed(){
+        component.jButtoncleanActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "");
+    }
+    @Test
+    public void testjButtonsumActionPerformed(){
+        component.jButtonsumActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "");
+    }
+    @Test
+    public void testjTextField1ActionPerformed(){
+        component.jTextField1ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "");
+    }
+    @Test
+    public void testjButtonpowerActionPerformed(){
+        component.jButtonpowerActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "^");
+    }
+    @Test
+    public void testjButtonkorinActionPerformed(){
+        component.jButtonkorinActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "√");
+    }
+    @Test
+    public void testjButtonPActionPerformed(){
+        component.jButtonPActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "3.141592653589793");
+    }
+    @Test
+    public void testjButtonlogActionPerformed(){
+        component.jButtonlogActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "l");
+    }
+    @Test
+    public void testjButtontanActionPerformed(){
+        component.jButtontanActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "t");
+    }
+    @Test
+    public void testjButtontanhActionPerformed(){
+        component.jButtontanhActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "T");
+    }
+    @Test
+    public void testjButtonsinActionPerformed(){
+        component.jButtonsinActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "s");
+    }
+    @Test
+    public void testjButtoncoshActionPerformed(){
+        component.jButtoncoshActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "C");
+    }
+    @Test
+    public void testjButtonsinhActionPerformed(){
+        component.jButtonsinhActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "S");
+    }
+    @Test
+    public void testjButtoncosActionPerformed(){
+        component.jButtoncosActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "c");
+    }
+    @Test
+    public void testjTextField1KeyReleased(){
+        component.jTextField1KeyReleased();
+    }
+    @Test
+    public void testjMenuIteminfoActionPerformed(){
+        component.jMenuIteminfoActionPerformed();
+    }
+    @Test
+    public void testjMenuItemstandartActionPerformed(){
+        component.jMenuItemstandartActionPerformed();
+       Assert.assertEquals("size jTextField1 = " , component.getjTextFiel1().getSize(), new Dimension(220,45));
+        Assert.assertEquals("size jLabel1 = " , component.getjLabel1().getSize(), new Dimension(220,22) );
+     }
+    @Test
+    public void testjMenuItemsientificActionPerformed(){
+        component.jMenuItemsientificActionPerformed();
+        Dimension arr = component.getjTextFiel1().getSize();
+          Assert.assertEquals("size jTextField1 = " , component.getjTextFiel1().getSize(), new Dimension(503,45));
+          Assert.assertEquals("size jLabel1 = " , component.getjLabel1().getSize(), new Dimension(503,22) );
+    }
+    @Test
+    public void testjformWindowClosed(){
+        component.formWindowClosed();
+    }
+    @Test
+    public void testjMenuItemcloseActionPerformed(){
+        component.jMenuItemcloseActionPerformed();
+    }
+    @Test
+    public void testjButtonEActionPerformed(){
+        component.jButtonEActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "2.718281828459045");
+    }
+    @Test
+    public void testjButtonBracketfrontActionPerformed(){
+        component.jButtonBracketfrontActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "(");
+    }
+    @Test
+    public void testjButtonBracketendActionPerformed(){
+        component.jButtonBracketendActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), ")");
+    }
+    @Test
+    public void testjButtonLog10ActionPerformed(){
+        component.jButtonLog10ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "L");
+    }
+}
