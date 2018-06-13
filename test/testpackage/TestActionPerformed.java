@@ -162,4 +162,66 @@ public class TestActionPerformed {
         component.jButtonLog10ActionPerformed();
         Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "L");
     }
+    @Test
+    public void testjButton0ActionPerformed(){
+        component.jButton0ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "0");
+    }
+    @Test
+    public void testjButton9ActionPerformed(){
+        component.jButton9ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "9");
+    }
+    @Test
+    public void testjButton8ActionPerformed(){
+        component.jButton8ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "8");
+    }
+    @Test
+    public void testjButton7ActionPerformed(){
+        component.jButton7ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "7");
+    }
+    @Test
+    public void testjButton6ActionPerformed(){
+        component.jButton6ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "6");
+    }
+    @Test
+    public void testjButton5ActionPerformed(){
+        component.jButton5ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "5");
+    }
+    @Test
+    public void testjButton4ActionPerformed(){
+        component.jButton4ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "4");
+    }
+    @Test
+    public void testjButton3ActionPerformed(){
+        component.jButton3ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "3");
+    }
+    @Test
+    public void testjButton2ActionPerformed(){
+        component.jButton2ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "2");
+    }
+    @Test
+    public void testjButton1ActionPerformed(){
+        component.jButton1ActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "1");
+    }
+    @Test
+    public void testjMenuItemOFFActionPerformed(){
+        component.jMenuItemOFFActionPerformed();
+    }
+    @Test
+    public void testjMenuItemONActionPerformed(){
+        component.jMenuItemONActionPerformed();
+    }
+
+
 }
+
+

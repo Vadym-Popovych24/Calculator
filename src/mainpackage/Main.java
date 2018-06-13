@@ -118,7 +118,7 @@ public class Main extends javax.swing.JFrame  {
 
         }
 
-        return s.nextInt();
+        return 0;
     }
 
     public int vkl()
@@ -703,7 +703,7 @@ public class Main extends javax.swing.JFrame  {
     }//GEN-LAST:event_jButton_P2ActionPerformed
 
     public void jButtonHexActionPerformed() {//GEN-FIRST:event_jButton_E2ActionPerformed
-        num = Double.parseDouble(jTextField1.getText());
+       // num = Double.parseDouble(jTextField1.getText());
         calculation = "hex";
         mathematic();
     }//GEN-LAST:event_jButton_E2ActionPerformed
@@ -722,42 +722,42 @@ public class Main extends javax.swing.JFrame  {
         livesum();
     }//GEN-LAST:event_jButton_1ActionPerformed
 
-    private void jButton2ActionPerformed() {//GEN-FIRST:event_jButton_2ActionPerformed
+    public void jButton2ActionPerformed() {//GEN-FIRST:event_jButton_2ActionPerformed
         jTextField1.setText(jTextField1.getText() + "2");
         livesum();
     }//GEN-LAST:event_jButton_2ActionPerformed
 
-    private void jButton3ActionPerformed() {//GEN-FIRST:event_jButton_3ActionPerformed
+    public void jButton3ActionPerformed() {//GEN-FIRST:event_jButton_3ActionPerformed
         jTextField1.setText(jTextField1.getText() + "3");
         livesum();
     }//GEN-LAST:event_jButton_3ActionPerformed
 
-    private void jButton4ActionPerformed() {//GEN-FIRST:event_jButton_4ActionPerformed
+    public void jButton4ActionPerformed() {//GEN-FIRST:event_jButton_4ActionPerformed
         jTextField1.setText(jTextField1.getText() + "4");
         livesum();
     }//GEN-LAST:event_jButton_4ActionPerformed
 
-    private void jButton5ActionPerformed() {//GEN-FIRST:event_jButton_5ActionPerformed
+    public void jButton5ActionPerformed() {//GEN-FIRST:event_jButton_5ActionPerformed
         jTextField1.setText(jTextField1.getText() + "5");
         livesum();
     }//GEN-LAST:event_jButton_5ActionPerformed
 
-    private void jButton6ActionPerformed() {//GEN-FIRST:event_jButton_6ActionPerformed
+    public void jButton6ActionPerformed() {//GEN-FIRST:event_jButton_6ActionPerformed
         jTextField1.setText(jTextField1.getText() + "6");
         livesum();
     }//GEN-LAST:event_jButton_6ActionPerformed
 
-    private void jButton7ActionPerformed() {//GEN-FIRST:event_jButton_7ActionPerformed
+    public void jButton7ActionPerformed() {//GEN-FIRST:event_jButton_7ActionPerformed
         jTextField1.setText(jTextField1.getText() + "7");
         livesum();
     }//GEN-LAST:event_jButton_7ActionPerformed
 
-    private void jButton8ActionPerformed() {//GEN-FIRST:event_jButton_8ActionPerformed
+    public void jButton8ActionPerformed() {//GEN-FIRST:event_jButton_8ActionPerformed
         jTextField1.setText(jTextField1.getText() + "8");
         livesum();
     }//GEN-LAST:event_jButton_8ActionPerformed
 
-    private void jButton9ActionPerformed() {//GEN-FIRST:event_jButton_9ActionPerformed
+    public void jButton9ActionPerformed() {//GEN-FIRST:event_jButton_9ActionPerformed
         jTextField1.setText(jTextField1.getText() + "9");
         livesum();
     }//GEN-LAST:event_jButton_9ActionPerformed

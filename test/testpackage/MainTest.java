@@ -1,14 +1,10 @@
 package testpackage;
-import jdk.nashorn.internal.AssertsEnabled;
 import mainpackage.Main;
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 
-import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.util.Scanner;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
@@ -18,13 +14,13 @@ import static org.junit.Assert.*;
     Main component = new Main();
 
 
+
       @Test
       public void KeyPressedVK2(){
           String gt = component.getjTextFiel1().getText();
           component.setKey((char) KeyEvent.VK_2);
           if (component.getKey() == KeyEvent.VK_2){
               component.getjTextFiel1().setText("2");
-
           }
           else {
               component.getjTextFiel1().setText("3");
@@ -233,6 +229,10 @@ public void testans(){
    component.setAns(1 / component.getNum());
 assertEquals("ans = " , component.getAns() , 0,2);
 }
+      @Test
+      public void testlivesum(){
+          component.livesum();
+      }
 
 
 
