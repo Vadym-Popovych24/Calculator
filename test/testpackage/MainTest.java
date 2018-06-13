@@ -50,14 +50,14 @@ import static org.junit.Assert.*;
             assertEquals("Науковий", titleFrame);
         }
         */
-
+/*
     @Test
     public void testenablejt(){
       component.getjTextFiel1().setText("2-1");
       String str =component.getjTextFiel1().getText();
       assertEquals(str , "2-1");
     }
-
+*/
 
     @Test
     public void testmath() {
@@ -98,7 +98,7 @@ assertEquals("mess = " , mess , "Seccesfull");
           }
           assertEquals("mess = " , mess , "Seccesfull");
       }
-      
+
 
       @Test
       public void testroun() {

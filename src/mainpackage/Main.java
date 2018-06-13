@@ -88,7 +88,7 @@ public class Main extends javax.swing.JFrame  {
 
     }
 
-    
+
     public int livesum(){
         Calculation calclivesum = new Calculation();
         try {
@@ -174,6 +174,7 @@ public class Main extends javax.swing.JFrame  {
 
     public int vykl()
     {
+
         jTextField1.setEnabled(false);
         jMenuinfa.setEnabled(false);
 
@@ -628,7 +629,7 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButtonOctal);
         jButtonOctal.setBounds(380, 90, 60, 35);
 
-        jButtonHex.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonHex.setFont(new Font("Tahoma", 1, 11)); 
         jButtonHex.setText("hex");
         jButtonHex.setToolTipText("");
         jButtonHex.setMaximumSize(new Dimension(53, 33));
