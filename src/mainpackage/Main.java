@@ -1166,6 +1166,14 @@ return 0;
     }
 
     private javax.swing.JButton jButton1x;
+    public javax.swing.JButton getjButton1x() { return jButton1x;
+    }
+
+    public void setjButton1x(javax.swing.JButton button1x) {
+
+        this.jButton1x = button1x;
+    }
+
 
     private javax.swing.JButton jButton2;
     public javax.swing.JButton getjButton2() {
@@ -1244,11 +1252,53 @@ return 0;
         this.jButtonC = buttonC;
     }
     private javax.swing.JButton jButtonE;
+    public javax.swing.JButton getjButtonE() { return jButtonE;
+    }
+
+    public void setjButtonE(javax.swing.JButton buttonE) {
+
+        this.jButtonE = buttonE;
+    }
     private javax.swing.JButton jButtonLog10;
+    public javax.swing.JButton getjButtonLog10() { return jButtonLog10;
+    }
+
+    public void setjButtonLog10(javax.swing.JButton buttonLog10) {
+
+        this.jButtonLog10 = buttonLog10;
+    }
     private javax.swing.JButton jButtonHex;
+    public javax.swing.JButton getjButtonHex() { return jButtonHex;
+    }
+
+    public void setjButtonHex(javax.swing.JButton buttonHex) {
+
+        this.jButtonHex = buttonHex;
+    }
     private javax.swing.JButton jButtonP;
+    public javax.swing.JButton getjButtonP() { return jButtonP;
+    }
+
+    public void setjButtonP(javax.swing.JButton buttonP) {
+
+        this.jButtonP = buttonP;
+    }
     private javax.swing.JButton jButtonPRC;
+    public javax.swing.JButton getjButtonPRC() { return jButtonPRC;
+    }
+
+    public void setjButtonPRC(javax.swing.JButton buttonPRC) {
+
+        this.jButtonPRC = buttonPRC;
+    }
     private javax.swing.JButton jButtonOctal;
+    public javax.swing.JButton getjButtonOctal() { return jButtonOctal;
+    }
+
+    public void setjButtonOctal(javax.swing.JButton buttonOctal) {
+
+        this.jButtonOctal = buttonOctal;
+    }
     private javax.swing.JButton jButtonclean;
     public javax.swing.JButton getjButtonClean() { return jButtonclean;
     }
@@ -1258,7 +1308,23 @@ return 0;
         this.jButtonclean = buttonClean;
     }
     private javax.swing.JButton jButtoncos;
+    public javax.swing.JButton getjButtonCos() { return jButtoncos;
+    }
+
+    public void setjButtonCos(javax.swing.JButton buttoncos) {
+
+        this.jButtoncos = buttoncos;
+    }
+
+
     private javax.swing.JButton jButtoncosh;
+    public javax.swing.JButton getjButtonCosh() { return jButtoncosh;
+    }
+
+    public void setjButtonCosh(javax.swing.JButton buttoncosh) {
+
+        this.jButtoncosh = buttoncosh;
+    }
     private javax.swing.JButton jButtondivision;
     public javax.swing.JButton getjButtonDivision() { return jButtondivision;
     }
@@ -1276,11 +1342,53 @@ return 0;
         this.jButtonkorin = buttonKorin;
     }
     private javax.swing.JButton jButtonlog;
+    public javax.swing.JButton getjButtonLog() { return jButtonlog;
+    }
+
+    public void setjButtonLog(javax.swing.JButton buttonLog) {
+
+        this.jButtonlog = buttonLog;
+    }
     private javax.swing.JButton jButtonBracketfront;
+    public javax.swing.JButton getjButtonBracketfront() { return jButtonBracketfront;
+    }
+
+    public void setjButtonBracketfront(javax.swing.JButton buttonBracketfront) {
+
+        this.jButtonBracketfront = buttonBracketfront;
+    }
     private javax.swing.JButton jButtonBracketend;
+    public javax.swing.JButton getjButtonBracketend() { return jButtonBracketend;
+    }
+
+    public void setjButtonBracketend(javax.swing.JButton buttonBracketend) {
+
+        this.jButtonBracketend = buttonBracketend;
+    }
     private javax.swing.JButton jButtonRound;
+    public javax.swing.JButton getjButtonRound() { return jButtonRound;
+    }
+
+    public void setjButtonRound(javax.swing.JButton buttonRound) {
+
+        this.jButtonRound = buttonRound;
+    }
     private javax.swing.JButton jButtonBin;
+    public javax.swing.JButton getjButtonBin() { return jButtonBin;
+    }
+
+    public void setjButtonBin(javax.swing.JButton buttonBin) {
+
+        this.jButtonBin = buttonBin;
+    }
     private javax.swing.JButton jButtonFactorial;
+    public javax.swing.JButton getjButtonFactorial() { return jButtonFactorial;
+    }
+
+    public void setjButtonFactorial(javax.swing.JButton buttonFactorial) {
+
+        this.jButtonFactorial = buttonFactorial;
+    }
     private javax.swing.JButton jButtonminus;
     public javax.swing.JButton getjButtonMinus() { return jButtonminus;
     }
@@ -1322,8 +1430,29 @@ return 0;
         this.jButtonpower= buttonPower;
     }
     private javax.swing.JButton jButtonreverse;
+    public javax.swing.JButton getjButtonReverse() { return jButtonreverse;
+    }
+
+    public void setjButtonReverse(javax.swing.JButton buttonReverse) {
+
+        this.jButtonreverse = buttonReverse;
+    }
     private javax.swing.JButton jButtonsin;
+    public javax.swing.JButton getjButtonSin() { return jButtonsin;
+    }
+
+    public void setjButtonSin(javax.swing.JButton buttonSin) {
+
+        this.jButtonsin = buttonSin;
+    }
     private javax.swing.JButton jButtonsinh;
+    public javax.swing.JButton getjButtonSinh() { return jButtonsinh;
+    }
+
+    public void setjButtonSinh(javax.swing.JButton buttonSinh) {
+
+        this.jButtonsinh = buttonSinh;
+    }
     private javax.swing.JButton jButtonsum;
     public javax.swing.JButton getjButtonSum() { return jButtonsum;
     }
@@ -1333,7 +1462,21 @@ return 0;
         this.jButtonsum = buttonSum;
     }
     private javax.swing.JButton jButtontan;
+    public javax.swing.JButton getjButtonTan() { return jButtontan;
+    }
+
+    public void setjButtonTan(javax.swing.JButton buttonTan) {
+
+        this.jButtontan = buttonTan;
+    }
     private javax.swing.JButton jButtontanh;
+    public javax.swing.JButton getjButtonTanh() { return jButtontanh;
+    }
+
+    public void setjButtonTanh(javax.swing.JButton buttonTanh) {
+
+        this.jButtontanh = buttonTanh;
+    }
    private javax.swing.JLabel jLabel1;
     public javax.swing.JLabel getjLabel1() {
         return jLabel1;
@@ -1344,6 +1487,14 @@ return 0;
         this.jLabel1 = label1;
     }
   private javax.swing.JMenuItem jMenuItemOFF;
+    public javax.swing.JMenuItem getjMenuItemOFF() {
+        return jMenuItemOFF;
+    }
+
+    public void setjMenuItemOFF(javax.swing.JMenuItem jmenuItemOff) {
+
+        this.jMenuItemOFF = jmenuItemOff;
+    }
     private javax.swing.JMenuItem jMenuItemON;
     public javax.swing.JMenuItem getjMenuItemON() {
         return jMenuItemON;
@@ -1354,7 +1505,50 @@ return 0;
         this.jMenuItemON = jmenuItemOn;
     }
     private javax.swing.JMenuItem jMenuItemsientific;
+    public javax.swing.JMenuItem getjMenuItemSientific() {
+        return jMenuItemsientific;
+    }
+    public void setjMenuItemSientific(javax.swing.JMenuItem jMenuItemsientific) {
+
+        this.jMenuItemsientific = jMenuItemsientific;
+    }
+
+
+
+    private javax.swing.JMenuItem jMenuItemstandart;
+    public javax.swing.JMenuItem getjMenuItemStandart() {
+        return jMenuItemstandart;
+    }
+    public void setjMenuItemStandart(javax.swing.JMenuItem jMenuItemstandart) {
+
+        this.jMenuItemstandart = jMenuItemstandart;
+    }
+
+
+    private javax.swing.JMenuItem jMenuItemclose;
+    public javax.swing.JMenuItem getjMenuItemclose() {
+        return jMenuItemclose;
+    }
+
+    public void setjMenuItemclose(javax.swing.JMenuItem jMenuItemclose) {
+
+        this.jMenuItemclose = jMenuItemclose;
+    }
+
+
+
     private javax.swing.JMenu jMenuinfa;
+    public javax.swing.JMenu getjMenuInfa() {
+        return jMenuinfa;
+    }
+
+    public void setjMenuInfa(javax.swing.JMenu jMenuInfa) {
+
+        this.jMenuinfa = jMenuInfa;
+    }
+
+
+
     private  javax.swing.JTextField jTextField1;
 
     public javax.swing.JTextField getjTextFiel1() {
@@ -1364,7 +1558,16 @@ return 0;
     public void setjTextFiled1(javax.swing.JTextField field) {
         this.jTextField1 = field;
     }
-    // End of variables declaration//GEN-END:variables
 
+    // End of variables declaration//GEN-END:variables
+    private javax.swing.JMenu jMenuKalculator;
+    public javax.swing.JMenu getjMenuKalculator() {
+        return jMenuKalculator;
+    }
+
+    public void setjMenuKalculator(javax.swing.JMenu calculator) {
+
+        this.jMenuKalculator = calculator;
+    }
 }
 

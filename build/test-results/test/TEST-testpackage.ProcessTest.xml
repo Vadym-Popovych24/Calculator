@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.ProcessTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-12T21:03:27" hostname="Vadym" time="0.08">
+<testsuite name="testpackage.ProcessTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-13T13:03:38" hostname="Vadym" time="0.05">
   <properties/>
   <testcase name="testchase_plus" classname="testpackage.ProcessTest" time="0.0"/>
-  <testcase name="testisDelim" classname="testpackage.ProcessTest" time="0.001"/>
-  <testcase name="test_division_by_zero" classname="testpackage.ProcessTest" time="0.001"/>
+  <testcase name="testisDelim" classname="testpackage.ProcessTest" time="0.0"/>
+  <testcase name="test_division_by_zero" classname="testpackage.ProcessTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
