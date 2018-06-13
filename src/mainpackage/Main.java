@@ -171,7 +171,7 @@ public class Main extends javax.swing.JFrame  {
    return 0;
     }
 
-    public void vykl()
+    public int vykl()
     {
         jTextField1.setEnabled(false);
         jMenuinfa.setEnabled(false);
@@ -219,7 +219,7 @@ public class Main extends javax.swing.JFrame  {
         jButtonRound.setEnabled(false);
         jButtonBin.setEnabled(false);
         jButtonFactorial.setEnabled(false);
- 
+ return 0;
     }
 
     @SuppressWarnings("unchecked")

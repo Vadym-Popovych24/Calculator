@@ -204,6 +204,28 @@ assertEquals("mess = " , mess , "Seccesfull");
 
           assertEquals(b , "ON");
       }
+
+
+
+      @Test
+      public void testvykl() {
+          String vykl;
+          if (component.vykl() == 0) {
+              vykl = "on";
+          } else {
+              vykl = "off";
+          }
+          String b;
+          component.getjMenuItemOFF().setEnabled(false);
+          if (component.getjMenuItemOFF().isEnabled()){
+              b = "ON";
+          }
+          else {
+              b ="OFF";
+          }
+
+          assertEquals(b , "OFF");
+      }
 @Test
 public void testans(){
         component.setNum(5.0);
