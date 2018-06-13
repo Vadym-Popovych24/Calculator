@@ -703,7 +703,7 @@ public class Main extends javax.swing.JFrame  {
     }//GEN-LAST:event_jButton_P2ActionPerformed
 
     public void jButtonHexActionPerformed() {//GEN-FIRST:event_jButton_E2ActionPerformed
-       // num = Double.parseDouble(jTextField1.getText());
+        num = Double.parseDouble(jTextField1.getText());
         calculation = "hex";
         mathematic();
     }//GEN-LAST:event_jButton_E2ActionPerformed
@@ -872,7 +872,7 @@ public class Main extends javax.swing.JFrame  {
         jTextField1.setText(jTextField1.getText() + Math.PI);
     }//GEN-LAST:event_jButton_PActionPerformed
 
-    private void formWindowActivated() {//GEN-FIRST:event_formWindowActivated
+    public void formWindowActivated() {//GEN-FIRST:event_formWindowActivated
         this.setResizable(true);
         this.setSize(255, 380);
 

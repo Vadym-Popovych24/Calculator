@@ -47,4 +47,126 @@ else
 
 
 }
+
+
+    @Test
+    public void prioritys() {
+        String an ;
+        String mess;
+
+        if (prior.priority('s') == 3) {
+            an = "+";
+        } else {
+            an = "-";
+        }
+        assertEquals(an, "-");
+
+    }
+
+
+    @Test
+    public void priorityc() {
+        String an ;
+        String mess;
+
+        if (prior.priority('c') == 3) {
+            an = "+";
+        } else {
+            an = "-";
+        }
+        assertEquals(an, "-");
+
+    }
+
+    @Test
+    public void priorityt() {
+        String an ;
+        String mess;
+
+        if (prior.priority('t') == 3) {
+            an = "+";
+        } else {
+            an = "-";
+        }
+        assertEquals(an, "-");
+
+    }
+    @Test
+    public void priorityS() {
+        String an ;
+        String mess;
+
+        if (prior.priority('S') == 3) {
+            an = "+";
+        } else {
+            an = "-";
+        }
+        assertEquals(an, "-");
+
+    }
+    @Test
+    public void priorityC() {
+        String an ;
+        String mess;
+
+        if (prior.priority('C') == 3) {
+            an = "+";
+        } else {
+            an = "-";
+        }
+        assertEquals(an, "-");
+
+    }
+    @Test
+    public void priorityT() {
+        String an ;
+        String mess;
+
+        if (prior.priority('T') == 3) {
+            an = "+";
+        } else {
+            an = "-";
+        }
+        assertEquals(an, "-");
+
+    }
+    @Test
+    public void priorityl() {
+        String an ;
+        String mess;
+
+        if (prior.priority('l') == 3) {
+            an = "+";
+        } else {
+            an = "-";
+        }
+        assertEquals(an, "-");
+
+    }
+    @Test
+    public void priorityL() {
+        String an ;
+        String mess;
+
+        if (prior.priority('L') == 3) {
+            an = "+";
+        } else {
+            an = "-";
+        }
+        assertEquals(an, "-");
+
+    }
+    @Test
+    public void prioritypower() {
+        String an ;
+        String mess;
+
+        if (prior.priority('^') == 4) {
+            an = "+";
+        } else {
+            an = "-";
+        }
+        assertEquals(an, "+");
+
+    }
 }

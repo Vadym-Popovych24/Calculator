@@ -220,7 +220,15 @@ public class TestActionPerformed {
     public void testjMenuItemONActionPerformed(){
         component.jMenuItemONActionPerformed();
     }
-
+    @Test
+    public void testjButtonFactorialActionPerformed(){
+        component.jButtonFactorialActionPerformed();
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "!");
+    }
+    @Test
+    public void testformWindowActivated(){
+        component.formWindowActivated();
+    }
 
 }
 
