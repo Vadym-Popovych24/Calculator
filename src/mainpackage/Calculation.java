@@ -27,8 +27,8 @@ public class Calculation {
     char c;
 
 
- LinkedList<Double> st = new LinkedList<Double>();
-    LinkedList<Character> op = new LinkedList<Character>();
+ LinkedList<Double> st = new LinkedList<>();
+    LinkedList<Character> op = new LinkedList<>();
     public LinkedList<Character> getOp(){return op; }
     public void setOp(LinkedList<Character> op){
         this.op =op;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MainTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-06-14T19:39:39" hostname="Vadym" time="0.012">
+<testsuite name="MainTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-06-14T20:32:41" hostname="Vadym" time="0.007">
   <properties/>
-  <testcase name="isOperator" classname="MainTest" time="0.005"/>
+  <testcase name="isOperator" classname="MainTest" time="0.003"/>
   <testcase name="priority" classname="MainTest" time="0.0"/>
   <testcase name="livesumTest" classname="MainTest" time="0.0"/>
   <testcase name="vkl" classname="MainTest" time="0.001"/>

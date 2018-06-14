@@ -939,7 +939,6 @@ public class Main extends javax.swing.JFrame  {
                 double xl;
                 do{
                     StringBuilder a = new StringBuilder(b);
-                   // mny =calckeypressed.eval(a,Double.valueOf(a.indexOf(""+'(')));
                     mny =calckeypressed.eval(a);
                     String formattedDouble = String.format("%.1f", meansum);
                     xl = mny;
