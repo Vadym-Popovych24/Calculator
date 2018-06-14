@@ -27,7 +27,7 @@ public class Process {
                 || c == '!' || c == 'T' || c == 'S' || c == 'C' || c == 'L';
     }
 
-    public void processOperator(LinkedList<Double> st, char op) {
+     void processOperator(LinkedList<Double> st, char op) {
 
         switch (op) {
             case '+':
@@ -64,7 +64,6 @@ public class Process {
             case '!':
                 double ret = 1.0;
                 secondOperand = st.removeLast();
-
                 for (int i = 1; i <= secondOperand; ++i) ret *= i;
                 st.add(ret);
                 break;
@@ -113,7 +112,7 @@ public class Process {
                 secondOperand = st.removeLast();
                 st.add(Math.log10(secondOperand));
                 break;
-            default :
+                default :
        secondOperand = 0.0;
        firstOperand = 0.0;
                 break;

@@ -96,13 +96,13 @@ public class Main extends javax.swing.JFrame  {
             do {
 
                 StringBuilder a = new StringBuilder(b);
-                meansum = calclivesum.eval(a, Double.valueOf(a.indexOf("" + '(')));
+                meansum = calclivesum.eval(a);
                 String formattedDouble = String.format("%.1f", meansum);
                 x = meansum;
 
                 if (x % 1 == 0) {
 
-                    jLabel1.setText("" + calclivesum.eval(a, Double.valueOf(a.indexOf("" + '('))));
+                    jLabel1.setText("" + calclivesum.eval(a));
                 } else {
                     jLabel1.setText(formattedDouble);
                 }
@@ -823,13 +823,13 @@ public class Main extends javax.swing.JFrame  {
             do
             {
                 StringBuilder a = new StringBuilder(b);
-                Double summean = calcsumActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'(')));
+                Double summean = calcsumActionPerformed.eval(a);
                 String formattedDouble = String.format("%.1f", summean);
                 xt = summean;
 
                 if (xt % 1 == 0)
                 {
-                    jTextField1.setText(""+calcsumActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'(')))) ;
+                    jTextField1.setText(""+calcsumActionPerformed.eval(a)) ;
                     jLabel1.setText("");
                 }
 
@@ -939,13 +939,14 @@ public class Main extends javax.swing.JFrame  {
                 double xl;
                 do{
                     StringBuilder a = new StringBuilder(b);
-                    mny =calckeypressed.eval(a,Double.valueOf(a.indexOf(""+'(')));
+                   // mny =calckeypressed.eval(a,Double.valueOf(a.indexOf(""+'(')));
+                    mny =calckeypressed.eval(a);
                     String formattedDouble = String.format("%.1f", meansum);
                     xl = mny;
 
                     if (xl % 1 == 0)
                     {
-                        jTextField1.setText(""+calckeypressed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+                        jTextField1.setText(""+calckeypressed.eval(a)) ;
                         jLabel1.setText("");
                     }
 
@@ -1079,7 +1080,7 @@ return 0;
 
             do{
                 StringBuilder a = new StringBuilder(b);
-                jLabel1.setText(""+calcPRCActionPerformed.eval(a,Double.valueOf(a.indexOf(""+'('))) ) ;
+                jLabel1.setText(""+calcPRCActionPerformed.eval(a));
             }
             while ( (b = s.next()) != "null");
         }

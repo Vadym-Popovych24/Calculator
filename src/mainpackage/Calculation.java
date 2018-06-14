@@ -10,6 +10,7 @@ public class Calculation {
     public void setBeforeFirst(char beforeFirst){
         this.beforeFirst =beforeFirst;
     }
+
     char firstFront;
     public char getFirstFront(){return firstFront; }
     public void setFirstFront(char firstFront){
@@ -24,13 +25,15 @@ public class Calculation {
 
     Prioritet prior = new Prioritet();
     char c;
-  LinkedList<Double> st = new LinkedList<>();
- LinkedList<Character> op = new LinkedList<>();
+
+
+ LinkedList<Double> st = new LinkedList<Double>();
+    LinkedList<Character> op = new LinkedList<Character>();
     public LinkedList<Character> getOp(){return op; }
     public void setOp(LinkedList<Character> op){
         this.op =op;
     }
-    public Double eval(StringBuilder s, Double indexOf) {
+    public Double eval(StringBuilder s) {
         Main main = new Main();
         String operand = "";
 
