@@ -16,7 +16,7 @@ public class Calculation {
     public void setFirstFront(char firstFront){
         this.firstFront =firstFront;
     }
-     char secondFront;
+    char secondFront;
     public char getSecondFront(){return secondFront; }
     public void setSecondFront(char secondFront){
         this.secondFront =secondFront;
@@ -27,10 +27,10 @@ public class Calculation {
     char c;
 
 
- LinkedList<Double> st = new LinkedList<>();
+    LinkedList<Double> st = new LinkedList<>();
     LinkedList<Character> op = new LinkedList<>();
     public LinkedList<Character> getOp(){return op; }
-    public void setOp(LinkedList<Character> op){
+    void setOp(LinkedList<Character> op){
         this.op =op;
     }
     public Double eval(StringBuilder s) {
@@ -38,7 +38,7 @@ public class Calculation {
         String operand = "";
 
         for (int i = 0; i < s.length(); i++) {
-             c = s.charAt(i);
+            c = s.charAt(i);
             beforeFirst = ' ';
             firstFront = ' ';
             secondFront = ' ';
@@ -76,7 +76,7 @@ public class Calculation {
                 operand += s.charAt(i);
             }
             else if (secondFront == '-' && firstFront == '-' ){
-               op.add('-');
+                op.add('-');
             }
 
             else if (process.isOperator(c) && firstFront != '-') {

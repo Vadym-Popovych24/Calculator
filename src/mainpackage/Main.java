@@ -89,8 +89,9 @@ public class Main extends javax.swing.JFrame  {
 
     public int livesum(){
         Calculation calclivesum = new Calculation();
-        try {
-            s = new Scanner(jTextField1.getText());
+        try (
+                Scanner s = new Scanner(jTextField1.getText()))
+        {
             String b = s.next();
             double x;
             do {
@@ -106,17 +107,13 @@ public class Main extends javax.swing.JFrame  {
                 } else {
                     jLabel1.setText(formattedDouble);
                 }
-            }
-            while ((b = s.next()) != "null") ;
+            } while ((b = s.next()) != "null");
 
         }
         catch(Exception e){
           e.getMessage();
         }
-        finally{
-            s.close();
 
-        }
 
         return 0;
     }

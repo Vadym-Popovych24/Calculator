@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.PrioritetTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2018-06-14T20:32:48" hostname="Vadym" time="0.002">
+<testsuite name="testpackage.PrioritetTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2018-06-19T14:50:46" hostname="Vadym" time="0.002">
   <properties/>
   <testcase name="prioritet" classname="testpackage.PrioritetTest" time="0.0"/>
   <testcase name="priorityC" classname="testpackage.PrioritetTest" time="0.0"/>
-  <testcase name="priorityL" classname="testpackage.PrioritetTest" time="0.0"/>
+  <testcase name="priorityL" classname="testpackage.PrioritetTest" time="0.001"/>
   <testcase name="priorityS" classname="testpackage.PrioritetTest" time="0.0"/>
   <testcase name="priorityT" classname="testpackage.PrioritetTest" time="0.0"/>
   <testcase name="priorityc" classname="testpackage.PrioritetTest" time="0.0"/>
   <testcase name="priorityl" classname="testpackage.PrioritetTest" time="0.0"/>
   <testcase name="prioritys" classname="testpackage.PrioritetTest" time="0.0"/>
-  <testcase name="priorityt" classname="testpackage.PrioritetTest" time="0.0"/>
+  <testcase name="priorityt" classname="testpackage.PrioritetTest" time="0.001"/>
   <testcase name="priority" classname="testpackage.PrioritetTest" time="0.0"/>
   <testcase name="prioritypower" classname="testpackage.PrioritetTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
