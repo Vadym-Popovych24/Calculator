@@ -15,7 +15,7 @@ public class CalculationTest {
     char ny = calc.getBeforeFirst();
     char nx2 = calc.getSecondFront();
     Process pro = new Process();
-
+/*
     @Test
     public void test_eval(){
         LinkedList<Character> c2 =calc.getOp();
@@ -29,7 +29,7 @@ public class CalculationTest {
             e = "error";
         }
         Assert.assertEquals("There are no bracket" ,e , "success");
-    }
+    }*/
     @Test
     public void correctness_char() {
         String a;
@@ -50,7 +50,7 @@ public class CalculationTest {
         }
         Assert.assertEquals("correctness delimiter is :", b, "One delimeter");
     }
-
+/*
     @Test
     public void testeval(){
         int a;
@@ -66,6 +66,6 @@ public class CalculationTest {
             a = 0;
         }
         assertEquals("op = " ,0 ,a);
-    }
+    }*/
 
 }

@@ -29,7 +29,7 @@ public class Calculation {
 
     LinkedList<Double> st = new LinkedList<>();
     LinkedList<Character> op = new LinkedList<>();
-    public LinkedList<Character> getOp(){return op; }
+ LinkedList<Character> getOp(){return op; }
     void setOp(LinkedList<Character> op){
         this.op =op;
     }
