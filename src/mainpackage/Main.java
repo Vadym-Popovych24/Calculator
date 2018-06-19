@@ -813,8 +813,8 @@ public class Main extends javax.swing.JFrame  {
     @SuppressWarnings("empty-statement")
     public void jButtonsumActionPerformed() {//GEN-FIRST:event_jButton_sumActionPerformed
         Calculation calcsumActionPerformed = new Calculation();
-        try {
-            s = new Scanner(jTextField1.getText());
+        try (
+            Scanner s = new Scanner(jTextField1.getText())){
             String b = s.next();
 
             do
@@ -842,9 +842,7 @@ public class Main extends javax.swing.JFrame  {
         catch(Exception e){
            e.getMessage();
         }
-        finally{
-            s.close();
-        }
+
     }//GEN-LAST:event_jButton_sumActionPerformed
 
     public void jTextField1ActionPerformed() {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -930,8 +928,9 @@ public class Main extends javax.swing.JFrame  {
         Calculation calckeypressed = new Calculation();
         key = evt.getKeyChar();
         if (key == KeyEvent.VK_ENTER ){
-            try{
-                s = new Scanner(jTextField1.getText());
+            try(
+               Scanner s = new Scanner(jTextField1.getText()))
+                {
                 String b = s.next();
                 double xl;
                 do{
@@ -957,9 +956,7 @@ public class Main extends javax.swing.JFrame  {
             catch(Exception e){
               e.getMessage();
             }
-            finally{
-                s.close();
-            }
+
         }
         else if((evt.getKeyCode()==67 && (evt.isControlDown() ) )){
             jTextField1.setText("");
@@ -1069,9 +1066,9 @@ return 0;
 
     private void jButtonPRCActionPerformed() {//GEN-FIRST:event_jButton_P1ActionPerformed
         Calculation calcPRCActionPerformed = new Calculation();
-        try {
-            s = new Scanner(jTextField1.getText());
-
+        try (
+            Scanner s = new Scanner(jTextField1.getText()))
+        {
             String b = s.next();
 
             do{
@@ -1084,9 +1081,7 @@ return 0;
         catch(Exception e){
             e.getMessage();
         }
-        finally{
-            s.close();
-        }
+
     }//GEN-LAST:event_jButton_P1ActionPerformed
 
     public void jButtonLog10ActionPerformed() {//GEN-FIRST:event_jButton_E1ActionPerformed
