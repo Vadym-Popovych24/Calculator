@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.TestActionPerformed" tests="43" skipped="0" failures="0" errors="0" timestamp="2018-06-19T14:50:46" hostname="Vadym" time="0.721">
+<testsuite name="testpackage.TestActionPerformed" tests="43" skipped="0" failures="0" errors="0" timestamp="2018-06-19T15:18:03" hostname="Vadym" time="1.117">
   <properties/>
-  <testcase name="testjButtonmultiplicationActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
-  <testcase name="testjButton6ActionPerformed" classname="testpackage.TestActionPerformed" time="0.036"/>
+  <testcase name="testjButtonmultiplicationActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjButton6ActionPerformed" classname="testpackage.TestActionPerformed" time="0.085"/>
   <testcase name="testjButtonlogActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
   <testcase name="testjMenuItemONActionPerformed" classname="testpackage.TestActionPerformed" time="0.0"/>
   <testcase name="testjformWindowClosed" classname="testpackage.TestActionPerformed" time="0.0"/>
   <testcase name="testjMenuIteminfoActionPerformed" classname="testpackage.TestActionPerformed" time="0.0"/>
-  <testcase name="testjButtonkorinActionPerformed" classname="testpackage.TestActionPerformed" time="0.018"/>
-  <testcase name="testjButton5ActionPerformed" classname="testpackage.TestActionPerformed" time="0.019"/>
+  <testcase name="testjButtonkorinActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjButton5ActionPerformed" classname="testpackage.TestActionPerformed" time="0.028"/>
   <testcase name="testjButtonminusActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
   <testcase name="testformWindowActivated" classname="testpackage.TestActionPerformed" time="0.002"/>
   <testcase name="testjTextField1ActionPerformed" classname="testpackage.TestActionPerformed" time="0.0"/>
-  <testcase name="testjButtonEActionPerformed" classname="testpackage.TestActionPerformed" time="0.005"/>
-  <testcase name="testjButtondivisionActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
-  <testcase name="testjButton4ActionPerformed" classname="testpackage.TestActionPerformed" time="0.019"/>
-  <testcase name="testjButtontanhActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjButtonEActionPerformed" classname="testpackage.TestActionPerformed" time="0.006"/>
+  <testcase name="testjButtondivisionActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjButton4ActionPerformed" classname="testpackage.TestActionPerformed" time="0.028"/>
+  <testcase name="testjButtontanhActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
   <testcase name="testjButtonLog10ActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
-  <testcase name="testjButton3ActionPerformed" classname="testpackage.TestActionPerformed" time="0.018"/>
+  <testcase name="testjButton3ActionPerformed" classname="testpackage.TestActionPerformed" time="0.027"/>
   <testcase name="testjButtonplusActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
-  <testcase name="testjMenuItemOFFActionPerformed" classname="testpackage.TestActionPerformed" time="0.003"/>
-  <testcase name="testjButtonFactorialActionPerformed" classname="testpackage.TestActionPerformed" time="0.01"/>
-  <testcase name="testjButtonCActionPerformed" classname="testpackage.TestActionPerformed" time="0.029"/>
-  <testcase name="testjButton2ActionPerformed" classname="testpackage.TestActionPerformed" time="0.022"/>
+  <testcase name="testjMenuItemOFFActionPerformed" classname="testpackage.TestActionPerformed" time="0.005"/>
+  <testcase name="testjButtonFactorialActionPerformed" classname="testpackage.TestActionPerformed" time="0.016"/>
+  <testcase name="testjButtonCActionPerformed" classname="testpackage.TestActionPerformed" time="0.0"/>
+  <testcase name="testjButton2ActionPerformed" classname="testpackage.TestActionPerformed" time="0.032"/>
   <testcase name="testjMenuItemcloseActionPerformed" classname="testpackage.TestActionPerformed" time="0.0"/>
   <testcase name="testjButtonpointActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
   <testcase name="testjButtonsumActionPerformed" classname="testpackage.TestActionPerformed" time="0.0"/>
-  <testcase name="testjButton1ActionPerformed" classname="testpackage.TestActionPerformed" time="0.026"/>
-  <testcase name="testjButtonsinhActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
-  <testcase name="testjMenuItemstandartActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
-  <testcase name="testjButton9ActionPerformed" classname="testpackage.TestActionPerformed" time="0.02"/>
-  <testcase name="testjButtonsinActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
-  <testcase name="testjButtoncosActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjButton1ActionPerformed" classname="testpackage.TestActionPerformed" time="0.041"/>
+  <testcase name="testjButtonsinhActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjMenuItemstandartActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjButton9ActionPerformed" classname="testpackage.TestActionPerformed" time="0.028"/>
+  <testcase name="testjButtonsinActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjButtoncosActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
   <testcase name="testjButtonpowerActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
-  <testcase name="testjButtonBracketfrontActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
-  <testcase name="testjButton0ActionPerformed" classname="testpackage.TestActionPerformed" time="0.02"/>
-  <testcase name="testjButton8ActionPerformed" classname="testpackage.TestActionPerformed" time="0.019"/>
-  <testcase name="testjMenuItemsientificActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
-  <testcase name="testjButtonBracketendActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
+  <testcase name="testjButtonBracketfrontActionPerformed" classname="testpackage.TestActionPerformed" time="0.003"/>
+  <testcase name="testjButton0ActionPerformed" classname="testpackage.TestActionPerformed" time="0.033"/>
+  <testcase name="testjButton8ActionPerformed" classname="testpackage.TestActionPerformed" time="0.028"/>
+  <testcase name="testjMenuItemsientificActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjButtonBracketendActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
   <testcase name="testjTextField1KeyReleased" classname="testpackage.TestActionPerformed" time="0.0"/>
-  <testcase name="testjButton7ActionPerformed" classname="testpackage.TestActionPerformed" time="0.017"/>
+  <testcase name="testjButton7ActionPerformed" classname="testpackage.TestActionPerformed" time="0.029"/>
   <testcase name="testjButtontanActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
-  <testcase name="testjButtonPActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
+  <testcase name="testjButtonPActionPerformed" classname="testpackage.TestActionPerformed" time="0.0"/>
   <testcase name="testjButtoncleanActionPerformed" classname="testpackage.TestActionPerformed" time="0.0"/>
-  <testcase name="testjButtoncoshActionPerformed" classname="testpackage.TestActionPerformed" time="0.002"/>
+  <testcase name="testjButtoncoshActionPerformed" classname="testpackage.TestActionPerformed" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

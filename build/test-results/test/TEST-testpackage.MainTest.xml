@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.MainTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2018-06-19T14:50:43" hostname="Vadym" time="0.4">
+<testsuite name="testpackage.MainTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2018-06-19T15:17:59" hostname="Vadym" time="0.691">
   <properties/>
-  <testcase name="testlivesum" classname="testpackage.MainTest" time="0.02"/>
-  <testcase name="testans" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testbin" classname="testpackage.MainTest" time="0.1"/>
+  <testcase name="testlivesum" classname="testpackage.MainTest" time="0.009"/>
+  <testcase name="testans" classname="testpackage.MainTest" time="0.002"/>
+  <testcase name="testbin" classname="testpackage.MainTest" time="0.253"/>
   <testcase name="testhex" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testvkl" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="testvkl" classname="testpackage.MainTest" time="0.001"/>
   <testcase name="testoctal" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testmath" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testroun" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testvykl" classname="testpackage.MainTest" time="0.006"/>
-  <testcase name="test1x" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="test_division_by_one" classname="testpackage.MainTest" time="0.019"/>
+  <testcase name="testmath" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="testroun" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="testvykl" classname="testpackage.MainTest" time="0.021"/>
+  <testcase name="test1x" classname="testpackage.MainTest" time="0.001"/>
+  <testcase name="test_division_by_one" classname="testpackage.MainTest" time="0.023"/>
   <testcase name="KeyPressedVK2" classname="testpackage.MainTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
