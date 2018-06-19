@@ -34,8 +34,6 @@ public class Main extends javax.swing.JFrame  {
     public void setAns(double ans) {
         this.ans= ans;
     }
-   Scanner s = new Scanner("");
-
 
     public Main() {
         initComponents();
