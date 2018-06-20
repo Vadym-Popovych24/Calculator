@@ -278,7 +278,7 @@ public class Main extends javax.swing.JFrame  {
         jMenuItemsientific = new JMenuItem();
         jMenuinfa = new JMenu();
         jMenuItemON = new JMenuItem();
-
+        final String nameFont  = "Thames";
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
 
@@ -322,26 +322,26 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jTextField1);
         jTextField1.setBounds(10, 11, 220, 45);
 
-        jButtonclean.setFont(new Font("Thames", 1, 16)); // NOI18N
+        jButtonclean.setFont(new Font(nameFont, 1, 16)); // NOI18N
         jButtonclean.setText("<--");
         jButtonclean.addActionListener(evt -> jButtoncleanActionPerformed());
         getContentPane().add(jButtonclean);
         jButtonclean.setBounds(67, 90, 51, 56);
 
-        jButtonC.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonC.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonC.setText("C");
         jButtonC.setToolTipText("CTRL+C");
         jButtonC.addActionListener(evt -> jButtonCActionPerformed());
         getContentPane().add(jButtonC);
         jButtonC.setBounds(124, 90, 51, 56);
 
-        jButton1.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton1.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton1.setText("1");
         jButton1.addActionListener(evt -> jButton1ActionPerformed());
         getContentPane().add(jButton1);
         jButton1.setBounds(10, 152, 51, 33);
 
-        jButtonplus.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonplus.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonplus.setText("+");
         jButtonplus.setToolTipText("");
         jButtonplus.setRequestFocusEnabled(false);
@@ -355,123 +355,123 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButtonplus);
         jButtonplus.setBounds(181, 90, 51, 56);
 
-        jButton2.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton2.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton2.setText("2");
         jButton2.setToolTipText("");
         jButton2.addActionListener(evt -> jButton2ActionPerformed());
         getContentPane().add(jButton2);
         jButton2.setBounds(67, 152, 51, 33);
 
-        jButton3.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton3.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton3.setText("3");
         jButton3.addActionListener(evt -> jButton3ActionPerformed());
         getContentPane().add(jButton3);
         jButton3.setBounds(124, 152, 51, 33);
 
-        jButtonminus.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonminus.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonminus.setText("-");
         jButtonminus.addActionListener(evt -> jButtonminusActionPerformed());
         getContentPane().add(jButtonminus);
         jButtonminus.setBounds(181, 152, 51, 33);
 
-        jButton4.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton4.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton4.setText("4");
         jButton4.addActionListener(evt -> jButton4ActionPerformed());
         getContentPane().add(jButton4);
         jButton4.setBounds(10, 191, 51, 33);
 
-        jButton5.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton5.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton5.setText("5");
         jButton5.setToolTipText("");
         jButton5.addActionListener(evt -> jButton5ActionPerformed());
         getContentPane().add(jButton5);
         jButton5.setBounds(67, 191, 51, 33);
 
-        jButton6.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton6.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton6.setText("6");
         jButton6.setToolTipText("");
         jButton6.addActionListener(evt -> jButton6ActionPerformed());
         getContentPane().add(jButton6);
         jButton6.setBounds(124, 191, 51, 33);
 
-        jButtonmultiplication.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonmultiplication.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonmultiplication.setText("*");
         jButtonmultiplication.addActionListener(evt -> jButtonmultiplicationActionPerformed());
         getContentPane().add(jButtonmultiplication);
         jButtonmultiplication.setBounds(181, 191, 51, 33);
 
-        jButton7.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton7.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton7.setText("7");
         jButton7.addActionListener(evt -> jButton7ActionPerformed());
         getContentPane().add(jButton7);
         jButton7.setBounds(10, 230, 51, 33);
 
-        jButton8.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton8.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton8.setText("8");
         jButton8.addActionListener(evt -> jButton8ActionPerformed());
         getContentPane().add(jButton8);
         jButton8.setBounds(67, 230, 51, 33);
 
-        jButton9.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton9.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton9.setText("9");
         jButton9.addActionListener(evt -> jButton9ActionPerformed());
         getContentPane().add(jButton9);
         jButton9.setBounds(124, 230, 51, 33);
 
-        jButtondivision.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtondivision.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtondivision.setText("/");
         jButtondivision.addActionListener(evt -> jButtondivisionActionPerformed());
         getContentPane().add(jButtondivision);
         jButtondivision.setBounds(181, 230, 51, 33);
 
-        jButton0.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButton0.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButton0.setText("0");
         jButton0.addActionListener(evt -> jButton0ActionPerformed());
 
         getContentPane().add(jButton0);
         jButton0.setBounds(10, 269, 51, 33);
 
-        jButtonpoint.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonpoint.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonpoint.setText(".");
         jButtonpoint.addActionListener(evt -> jButtonpointActionPerformed());
         getContentPane().add(jButtonpoint);
         jButtonpoint.setBounds(67, 269, 51, 33);
 
-        jButtonsum.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonsum.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonsum.setText("=");
         jButtonsum.addActionListener(evt -> jButtonsumActionPerformed());
         getContentPane().add(jButtonsum);
         jButtonsum.setBounds(124, 269, 109, 33);
         jLabel1.setForeground(Color.black);
-        jLabel1.setFont(new Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setFont(new Font(nameFont, 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(SwingConstants.RIGHT);
         jLabel1.setText("0");
 
         getContentPane().add(jLabel1);
         jLabel1.setBounds(10, 62, 220, 22);
 
-        jButtonpower.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonpower.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonpower.setText("^");
         jButtonpower.setToolTipText("Shift+S");
         jButtonpower.addActionListener(evt -> jButtonpowerActionPerformed());
         getContentPane().add(jButtonpower);
         jButtonpower.setBounds(376, 222, 70, 37);
 
-        jButtonkorin.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonkorin.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonkorin.setText("√");
         jButtonkorin.setToolTipText("Shift+K");
         jButtonkorin.addActionListener(evt -> jButtonkorinActionPerformed());
         getContentPane().add(jButtonkorin);
         jButtonkorin.setBounds(450, 222, 61, 37);
 
-        jButtonreverse.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonreverse.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonreverse.setText("±");
         jButtonreverse.setToolTipText("Shift+F");
         jButtonreverse.addActionListener(evt -> jButtonreverseActionPerformed());
         getContentPane().add(jButtonreverse);
         jButtonreverse.setBounds(376, 265, 70, 37);
 
-        jButton1x.setFont(new Font("Tahoma", 1, 10)); // NOI18N
+        jButton1x.setFont(new Font(nameFont, 1, 10)); // NOI18N
         jButton1x.setText("1/x");
         jButton1x.setToolTipText("Shift+D");
         jButton1x.setAlignmentY(0.0F);
@@ -482,20 +482,20 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButton1x);
         jButton1x.setBounds(450, 265, 61, 37);
 
-        jButtonP.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonP.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonP.setText("П");
         jButtonP.setToolTipText("Ctrl+P");
         jButtonP.addActionListener(evt -> jButtonPActionPerformed());
         getContentPane().add(jButtonP);
         jButtonP.setBounds(450, 179, 61, 37);
 
-        jButtoncos.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtoncos.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtoncos.setText("cos");
         jButtoncos.addActionListener(evt -> jButtoncosActionPerformed());
         getContentPane().add(jButtoncos);
         jButtoncos.setBounds(239, 222, 65, 37);
 
-        jButtonsinh.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonsinh.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonsinh.setText("sinh");
         jButtonsinh.setMaximumSize(new Dimension(60, 23));
         jButtonsinh.setMinimumSize(new Dimension(60, 23));
@@ -504,34 +504,34 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButtonsinh);
         jButtonsinh.setBounds(310, 179, 60, 37);
 
-        jButtonlog.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonlog.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonlog.setText("log");
         jButtonlog.setPreferredSize(new Dimension(51, 23));
         jButtonlog.addActionListener(evt -> jButtonlogActionPerformed());
         getContentPane().add(jButtonlog);
         jButtonlog.setBounds(310, 131, 60, 42);
 
-        jButtontan.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtontan.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtontan.setText("tan");
         jButtontan.addActionListener(evt -> jButtontanActionPerformed());
         getContentPane().add(jButtontan);
         jButtontan.setBounds(239, 265, 65, 37); 
 
-        jButtontanh.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtontanh.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtontanh.setText("tanh");
         jButtontanh.setPreferredSize(new Dimension(60, 23));
         jButtontanh.addActionListener(evt -> jButtontanhActionPerformed());
         getContentPane().add(jButtontanh);
         jButtontanh.setBounds(310, 265, 60, 37);
 
-        jButtonsin.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonsin.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonsin.setText("sin");
         jButtonsin.setPreferredSize(new Dimension(51, 23));
         jButtonsin.addActionListener(evt -> jButtonsinActionPerformed());
         getContentPane().add(jButtonsin);
         jButtonsin.setBounds(239, 179, 65, 37);
 
-        jButtoncosh.setFont(new Font("Tahoma", 1, 11)); 
+        jButtoncosh.setFont(new Font(nameFont, 1, 11));
         jButtoncosh.setText("cosh");
         jButtoncosh.setMaximumSize(new Dimension(60, 23));
         jButtoncosh.setPreferredSize(new Dimension(51, 23));
@@ -543,7 +543,7 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jInternalFrame1);
         jInternalFrame1.setBounds(0, 0, 0, 0);
 
-        jButtonE.setFont(new Font("Tahoma", 1, 20)); // NOI18N
+        jButtonE.setFont(new Font(nameFont, 1, 20)); // NOI18N
         jButtonE.setText("e");
         jButtonE.setToolTipText("Ctrl+E");
         jButtonE.setMaximumSize(new Dimension(49, 33));
@@ -553,34 +553,34 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButtonE);
         jButtonE.setBounds(376, 179, 70, 37);
 
-        jButtonBracketfront.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonBracketfront.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonBracketfront.setText("(");
         jButtonBracketfront.addActionListener(evt -> jButtonBracketfrontActionPerformed());
         getContentPane().add(jButtonBracketfront);
         jButtonBracketfront.setBounds(10, 90, 51, 27);
 
-        jButtonBracketend.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonBracketend.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonBracketend.setText(")");
         jButtonBracketend.setMinimumSize(new Dimension(37, 27));
         jButtonBracketend.addActionListener(evt -> jButtonBracketendActionPerformed());
         getContentPane().add(jButtonBracketend);
         jButtonBracketend.setBounds(10, 123, 51, 23);
 
-        jButtonRound.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonRound.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonRound.setText("roun");
         jButtonRound.setPreferredSize(new Dimension(51, 23));
         jButtonRound.addActionListener(evt -> jButtonlog3ActionPerformed());
         getContentPane().add(jButtonRound);
         jButtonRound.setBounds(239, 131, 65, 42);
 
-        jButtonPRC.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonPRC.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonPRC.setText("PRC");
         jButtonPRC.setToolTipText("Точність суми");
         jButtonPRC.addActionListener(evt -> jButtonPRCActionPerformed());
         getContentPane().add(jButtonPRC);
         jButtonPRC.setBounds(450, 131, 61, 42);
 
-        jButtonLog10.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonLog10.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonLog10.setText("log10");
         jButtonLog10.setToolTipText("");
         jButtonLog10.setMaximumSize(new Dimension(49, 33));
@@ -590,14 +590,14 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButtonLog10);
         jButtonLog10.setBounds(376, 131, 70, 42);
 
-        jButtonBin.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonBin.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonBin.setText("bin");
         jButtonBin.setPreferredSize(new Dimension(51, 23));
         jButtonBin.addActionListener(evt -> jButtonBinActionPerformed());
         getContentPane().add(jButtonBin);
         jButtonBin.setBounds(310, 90, 60, 35);
 
-        jButtonOctal.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonOctal.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonOctal.setText("oct");
         jButtonOctal.setToolTipText("");
         jButtonOctal.setMaximumSize(new Dimension(53, 23));
@@ -607,7 +607,7 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButtonOctal);
         jButtonOctal.setBounds(380, 90, 60, 35);
 
-        jButtonHex.setFont(new Font("Tahoma", 1, 11)); 
+        jButtonHex.setFont(new Font(nameFont, 1, 11));
         jButtonHex.setText("hex");
         jButtonHex.setToolTipText("");
         jButtonHex.setMaximumSize(new Dimension(53, 33));
@@ -617,7 +617,7 @@ public class Main extends javax.swing.JFrame  {
         getContentPane().add(jButtonHex);
         jButtonHex.setBounds(450, 90, 60, 33);
 
-        jButtonFactorial.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jButtonFactorial.setFont(new Font(nameFont, 1, 11)); // NOI18N
         jButtonFactorial.setText("!n");
         jButtonFactorial.setPreferredSize(new Dimension(51, 23));
         jButtonFactorial.addActionListener(evt -> jButtonFactorialActionPerformed());

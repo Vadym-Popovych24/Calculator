@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.MainTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2018-06-19T15:46:12" hostname="Vadym" time="0.725">
+<testsuite name="testpackage.MainTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2018-06-20T10:33:21" hostname="Vadym" time="0.465">
   <properties/>
-  <testcase name="testlivesum" classname="testpackage.MainTest" time="0.156"/>
+  <testcase name="testlivesum" classname="testpackage.MainTest" time="0.02"/>
   <testcase name="testans" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="testbin" classname="testpackage.MainTest" time="0.251"/>
-  <testcase name="testhex" classname="testpackage.MainTest" time="0.004"/>
-  <testcase name="testvkl" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="testoctal" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testmath" classname="testpackage.MainTest" time="0.001"/>
+  <testcase name="testbin" classname="testpackage.MainTest" time="0.127"/>
+  <testcase name="testhex" classname="testpackage.MainTest" time="0.002"/>
+  <testcase name="testvkl" classname="testpackage.MainTest" time="0.001"/>
+  <testcase name="testoctal" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="testmath" classname="testpackage.MainTest" time="0.0"/>
   <testcase name="testroun" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testvykl" classname="testpackage.MainTest" time="0.018"/>
+  <testcase name="testvykl" classname="testpackage.MainTest" time="0.007"/>
   <testcase name="test1x" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="test_division_by_one" classname="testpackage.MainTest" time="0.018"/>
+  <testcase name="test_division_by_one" classname="testpackage.MainTest" time="0.019"/>
   <testcase name="KeyPressedVK2" classname="testpackage.MainTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
