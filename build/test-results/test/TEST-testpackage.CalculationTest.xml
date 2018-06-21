@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.CalculationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-06-20T10:33:19" hostname="Vadym" time="0.003">
+<testsuite name="testpackage.CalculationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-06-21T11:53:05" hostname="Vadym" time="0.018">
   <properties/>
   <testcase name="correctness_char" classname="testpackage.CalculationTest" time="0.001"/>
   <testcase name="delimeter" classname="testpackage.CalculationTest" time="0.001"/>

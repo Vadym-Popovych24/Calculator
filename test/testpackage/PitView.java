@@ -5,11 +5,17 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import javax.swing.event.AncestorListener;
+import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class PitView {
     Main component = new Main();
+    @Test
+    public void testTitleFrame() {
+        Main jf = new Main();
+        String titleFrame = jf.getjMenuItemSientific().getText();
+        Assert.assertEquals("Науковий", titleFrame);
+    }
     @Test
     public void test_jButton_0_height(){
         int height = component.getjButton0().getHeight();
@@ -28,12 +34,13 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "0");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButton0(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton0().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton0().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
+
 
 
     @Test
@@ -58,11 +65,11 @@ public class PitView {
         ActionListener[] listener = component.getjButton1().getActionListeners();
       Assert.assertEquals("Listener " , listener , component.getjButton1().getActionListeners());
     }
-    @Ignore
+    @Test
     public  void testfontjButton1(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton1().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton1().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -83,11 +90,17 @@ public class PitView {
         String text =  jtext.getjButton2().getText();
         Assert.assertEquals("Text button +" , text , "2");
     }
-    @Ignore
+    @Test
+    public void test_jButton_2_tooltip(){
+        Main jtext = new Main();
+        String text =  jtext.getjButton2().getToolTipText();
+        Assert.assertEquals("Text button +" , text , "");
+    }
+    @Test
     public  void testfontjButton2(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton2().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton2().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -108,11 +121,11 @@ public class PitView {
         String text =  jtext.getjButton3().getText();
         Assert.assertEquals("Text button +" , text , "3");
     }
-    @Ignore
+    @Test
     public  void testfontjButton3(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton3().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton3().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
     @Test
@@ -132,11 +145,11 @@ public class PitView {
         String text =  jtext.getjButton4().getText();
         Assert.assertEquals("Text button +" , text , "4");
     }
-    @Ignore
+    @Test
     public  void testfontjButton4(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton4().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton4().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
     @Test
@@ -151,16 +164,22 @@ public class PitView {
         Assert.assertEquals("Width button +" , width , 51);
     }
     @Test
+    public void test_jButton_5_tooltip(){
+        Main jtext = new Main();
+        String text =  jtext.getjButton5().getToolTipText();
+        Assert.assertEquals("Text button +" , text , "");
+    }
+    @Test
     public void test_jButton_5_text(){
         Main jtext = new Main();
         String text =  jtext.getjButton5().getText();
         Assert.assertEquals("Text button +" , text , "5");
     }
-    @Ignore
+    @Test
     public  void testfontjButton5(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton5().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton5().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
     @Test
@@ -175,16 +194,22 @@ public class PitView {
         Assert.assertEquals("Width button +" , width , 51);
     }
     @Test
+    public void test_jButton_6_tooltip(){
+        Main jtext = new Main();
+        String text =  jtext.getjButton6().getToolTipText();
+        Assert.assertEquals("Text button +" , text , "");
+    }
+    @Test
     public void test_jButton_6_text(){
         Main jtext = new Main();
         String text =  jtext.getjButton6().getText();
         Assert.assertEquals("Text button +" , text , "6");
     }
-    @Ignore
+    @Test
     public  void testfontjButton6(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton6().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton6().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -205,11 +230,11 @@ public class PitView {
         String text =  jtext.getjButton7().getText();
         Assert.assertEquals("Text button +" , text , "7");
     }
-    @Ignore
+    @Test
     public  void testfontjButton7(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton7().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton7().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -230,11 +255,11 @@ public class PitView {
         String text =  jtext.getjButton8().getText();
         Assert.assertEquals("Text button +" , text , "8");
     }
-    @Ignore
+    @Test
     public  void testfontjButton8(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton8().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton8().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -255,11 +280,11 @@ public class PitView {
         String text =  jtext.getjButton9().getText();
         Assert.assertEquals("Text button +" , text , "9");
     }
-    @Ignore
+    @Test
     public  void testfontjButton9(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton9().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton9().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -280,11 +305,11 @@ public class PitView {
         String text =  jtext.getjButtonMinus().getText();
         Assert.assertEquals("Text button +" , text , "-");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonminus(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonMinus().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonMinus().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -312,13 +337,19 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonplus(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonPlus().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonPlus().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
+    @Test
+    public  void testFocusablejButtonplus(){
+        Main setfont1 = new Main();
+        Boolean bool =  setfont1.getjButtonPlus().getFocusTraversalKeysEnabled();
+        Assert.assertEquals("Font button +" , bool , true) ;//Arial Narrow Полужирный Tahoma Bold
+    }
 
 
     @Test
@@ -338,11 +369,11 @@ public class PitView {
         String text =  jtext.getjButtonDivision().getText();
         Assert.assertEquals("Text button +" , text , "/");
     }
-    @Ignore
+    @Test
     public  void testfontjButtondivision(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonDivision().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonDivision().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -365,11 +396,11 @@ public class PitView {
         String text =  jtext.getjButtonmultiplication().getText();
         Assert.assertEquals("Text button +" , text , "*");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonmultiplicatio(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonmultiplication().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonmultiplication().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -398,11 +429,11 @@ public class PitView {
         String text =  jtext.getjButtonC().getToolTipText();
         Assert.assertEquals("Text button +" , text , "CTRL+C");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonC(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonC().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonC().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -425,11 +456,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "<--");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonclean(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonClean().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonClean().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -452,11 +483,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , ".");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonpoint(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonPoint().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonPoint().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -479,12 +510,12 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "=");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonsum(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonSum().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
-    }
+        String font2 =  setfont1.getjButtonSum().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
+}
 
 
 
@@ -512,11 +543,11 @@ public class PitView {
         String text =  jtext.getjButtonPower().getToolTipText();
         Assert.assertEquals("Text button +" , text , "Shift+S");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonpower(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonPower().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonPower().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -545,11 +576,11 @@ public class PitView {
         String text =  jtext.getjButtonKorin().getToolTipText();
         Assert.assertEquals("Text button +" , text , "Shift+K");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonkorin(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonKorin().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonKorin().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -574,14 +605,14 @@ public class PitView {
     @Test
     public void test_jButton_reverse_tooltip(){
         Main jtext = new Main();
-        String text =  jtext.getjButtonKorin().getToolTipText();
-        Assert.assertEquals("Text button +" , text , "Shift+K");
+        String text =  jtext.getjButtonReverse().getToolTipText();
+        Assert.assertEquals("Text button +" , text , "Shift+F");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonReverse(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonReverse().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonReverse().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -610,11 +641,11 @@ public class PitView {
         String text =  jtext.getjButton1x().getToolTipText();
         Assert.assertEquals("Text button +" , text , "Shift+D");
     }
-    @Ignore
+    @Test
     public  void testfontjButton1x(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButton1x().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButton1x().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -642,11 +673,11 @@ public class PitView {
         String text =  jtext.getjButtonP().getToolTipText();
         Assert.assertEquals("Text button +" , text , "Ctrl+P");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonP(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonP().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonP().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -669,11 +700,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "cos");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtoncos(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonCos().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonCos().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -696,11 +727,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "cosh");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtoncosh(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonCosh().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonCosh().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -723,11 +754,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "sinh");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonsinh(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonSinh().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonSinh().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -750,11 +781,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "sin");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonsin(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonSin().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonSin().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -777,11 +808,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "log");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonlog(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonLog().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonLog().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -804,11 +835,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "tan");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtontan(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonTan().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonTan().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -831,11 +862,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "tanh");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtontanh(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonTanh().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonTanh().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -863,11 +894,11 @@ public class PitView {
         String text =  jtext.getjButtonE().getToolTipText();
         Assert.assertEquals("Text button +" , text , "Ctrl+E");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonE(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonE().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonE().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -895,11 +926,11 @@ public class PitView {
         String text =  jtext.getjButtonPRC().getToolTipText();
         Assert.assertEquals("Text button +" , text , "Точність суми");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonPRC(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonPRC().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonPRC().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -922,11 +953,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "(");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonBracketfront(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonBracketfront().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonBracketfront().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -949,11 +980,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , ")");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonBracketend(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonBracketend().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonBracketend().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -976,11 +1007,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "roun");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonRound(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonRound().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonRound().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -997,17 +1028,23 @@ public class PitView {
         Assert.assertEquals("Width button +" , width , 70);
     }
     @Test
+    public void test_jButton_log10_tooltip(){
+        Main jtext = new Main();
+        String text =  jtext.getjButtonLog10().getToolTipText();
+        Assert.assertEquals("Text button +" , text , "");
+    }
+    @Test
     public void test_jButton_Log10_text(){
         Main jtext = new Main();
         String text =  jtext.getjButtonLog10().getText();
         Assert.assertEquals("Text button +" , text , "log10");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonLog10(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonLog10().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonLog10().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -1030,11 +1067,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "bin");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonBin(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonBin().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonBin().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -1062,11 +1099,11 @@ public class PitView {
         String text =  jtext.getjButtonOctal().getToolTipText();
         Assert.assertEquals("Text button +" , text , "");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonOctal(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonOctal().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonOctal().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -1094,11 +1131,11 @@ public class PitView {
         String text =  jtext.getjButtonHex().getToolTipText();
         Assert.assertEquals("Text button +" , text , "");
     }
-    @Ignore
+    @Test
     public  void testfontjButtonHex(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonHex().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonHex().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -1122,11 +1159,11 @@ public class PitView {
         Assert.assertEquals("Text button +" , text , "!n");
     }
 
-    @Ignore
+    @Test
     public  void testfontjButtonFactorial(){
         Main setfont1 = new Main();
-        String font2 =  setfont1.getjButtonFactorial().getFont().getFontName();
-        Assert.assertEquals("Font button +" , font2 , "Tahoma Полужирный") ;//Arial Narrow Полужирный Tahoma Bold
+        String font2 =  setfont1.getjButtonFactorial().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Thames") ;//Arial Narrow Полужирный Tahoma Bold
     }
 
 
@@ -1155,9 +1192,305 @@ public class PitView {
         String text =  jtext.getjMenuInfa().getText();
         Assert.assertEquals("Text button +" , text , "Інфо");
     }
+
+
+
+@Test
+public void testenab() {
+        component.vkl();
+        Assert.assertEquals("b is ", component.getjButton2().isDisplayable(), true);
+    }
     @Test
-    public void testenab(){
-     //   component.getjButton1().setEnabled(true);
-        Assert.assertEquals("b is " , component.getjButton1().isEnabled() , true);
+    public void testenabt() {
+        component.vkl();
+        Assert.assertEquals("b is ", component.getjButton7().isEnabled(), true);
+    }
+
+
+
+    @Test
+    public void testdisablejTextField() {
+        component.vykl();
+        Assert.assertEquals( component.getjTextFiel1().isEnabled(), false);
+    }
+    @Test
+    public void testdisablejMenuInfa() {
+        component.vykl();
+        Assert.assertEquals( component.getjMenuInfa().isEnabled(), false);
+}
+    @Test
+    public void testdisablejMenuItemOFF() {
+        component.vykl();
+        Assert.assertEquals( component.getjMenuItemOFF().isEnabled(), false);
+    }
+    @Test
+    public void testdisablejMenuItemON() {
+        component.vykl();
+        Assert.assertEquals( component.getjMenuItemON().isEnabled(), true);
+    }
+    @Test
+    public void testdisablejButtonclean() {
+        component.vykl();
+        Assert.assertEquals( component.getjButtonClean().isEnabled(), false);
+    }
+    @Test
+    public void testdisablejButtonC() {
+        component.vykl();
+        Assert.assertEquals( component.getjButtonC().isEnabled(), false);
+    }
+    @Test
+    public void testdisablejButtonPlus() {
+        component.vykl();
+        Assert.assertEquals( component.getjButtonPlus().isEnabled(), false);
+    }
+    @Test
+    public void testdisablejButtonMinus() {
+        component.vykl();
+        Assert.assertEquals( component.getjButtonMinus().isEnabled(), false);
+    }
+    @Test
+    public void testdisablejButtonMultiplication() {
+        component.vykl();
+        Assert.assertEquals( component.getjButtonmultiplication().isEnabled(), false);
+    }
+
+
+
+    @Test
+    public void testenable1() {
+        component.vykl();
+        Assert.assertEquals( component.getjButton1().isEnabled(), false);
+    }
+    @Test
+    public void testenable2() {
+        component.vykl();
+        Assert.assertEquals( component.getjButton2().isEnabled(), false);
+    }
+    @Test
+    public void testenable3() {
+        component.vykl();
+        Assert.assertEquals( component.getjButton3().isEnabled(), false);
+    }
+    @Test
+    public void testenable4() {
+        component.vykl();
+        Assert.assertEquals( component.getjButton4().isEnabled(), false);
+    }
+    @Test
+    public void testenable5() {
+        component.vykl();
+        Assert.assertEquals( component.getjButton5().isEnabled(), false);
+    }
+    @Test
+    public void testenable6() {
+        component.vykl();
+        Assert.assertEquals( component.getjButton6().isEnabled(), false);
+    }
+    @Test
+    public void testenable7() {
+        component.vykl();
+        Assert.assertEquals( component.getjButton7().isEnabled(), false);
+    }
+    @Test
+    public void testenable8() {
+        component.vykl();
+        Assert.assertEquals( component.getjButton8().isEnabled(), false);
+    }
+    @Test
+    public void testenable9() {
+        component.vykl();
+        Assert.assertEquals(component.getjButton9().isEnabled(), false);
+    }
+    @Test
+    public void testenabledisable0() {
+        component.vykl();
+        Assert.assertEquals(component.getjButton0().isEnabled(), false);
+    }
+    @Test
+    public void testdisabledivision() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonDivision().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonpoint() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonPoint().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonSum() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonSum().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonPower() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonPower().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonKorin() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonKorin().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonReverse() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonReverse().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButton1x() {
+        component.vykl();
+        Assert.assertEquals(component.getjButton1x().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonP() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonP().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonPRC() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonPRC().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonOctal() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonOctal().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonE() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonE().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonLog10() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonLog10().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonHex() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonHex().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonsinH() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonSinh().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonsin() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonSin().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtoncos() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonCos().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtoncosh() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonCosh().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtontan() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonTan().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtontanh() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonTanh().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonlog() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonLog().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonBracketfront() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonBracketfront().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonBracketend() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonBracketend().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonRound() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonRound().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonBin() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonBin().isEnabled(), false);
+    }
+    @Test
+    public void testenablejButtonFactorial() {
+        component.vykl();
+        Assert.assertEquals(component.getjButtonFactorial().isEnabled(), false);
+    }
+
+
+
+    @Test
+    public void testdisablet() {
+        component.vykl();
+        Assert.assertEquals(component.getjButton0().isEnabled(), false);
+    }
+
+    @Test
+    public void testreturnvykl0() {
+        component.vykl();
+        boolean zero;
+        if (component.vykl() == 0){
+            zero = true;
+        }
+        else {
+            zero = false;
+        }
+        Assert.assertEquals(zero, true);
+    }
+    @Test
+    public void testreturnvkl0(){
+        component.vkl();
+        boolean zero;
+        if (component.vkl() == 0){
+            zero = true;
+        }
+        else {
+            zero = false;
+        }
+        Assert.assertEquals(zero, true);
+    }
+
+
+    @Test
+    public void test_jTestField_height(){
+        int height = component.getjTextFiel1().getHeight();
+        Assert.assertEquals("Height button +" , height , 45);
+    }
+
+    @Test
+    public void test_jTestField_width(){
+        int width = component.getjTextFiel1().getWidth();
+        Assert.assertEquals("Width button +" , width , 220);
+    }
+    @Test
+    public void test_jTestField_sizeMax(){
+        Dimension size = component.getjTextFiel1().getMaximumSize();
+        Assert.assertEquals("MaximumSize +" , size , new Dimension(488, 45));
+    }
+    @Test
+    public void test_jTestField_sizeMin(){
+        Dimension size = component.getjTextFiel1().getMinimumSize();
+        Assert.assertEquals("MaximumSize +" , size , new Dimension(221, 45));
+    }
+    @Test
+    public  void testfontjTestField(){
+        Main setfont1 = new Main();
+        String font2 =  setfont1.getjTextFiel1().getFont().getName();
+        Assert.assertEquals("Font button +" , font2 , "Times New Roman") ;//Arial Narrow Полужирный Tahoma Bold
     }
 }

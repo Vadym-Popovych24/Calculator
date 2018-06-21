@@ -8,18 +8,16 @@ import java.awt.*;
 
 public class TestActionPerformed {
     Main component = new Main();
-    @Test
+@Test
     public void testjButtonCActionPerformed(){
-        if (component.jButtonCActionPerformed()==0){
-            component.getjTextFiel1().setText("");
+        component.jButtonCActionPerformed();
+
             component.getjLabel1().getForeground();
             component.getjLabel1().getText();
-        }
-        else{
-            component.getjTextFiel1().setText("Error");
-        }
-        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "");
 
+        Assert.assertEquals("text = " , component.getjTextFiel1().getText(), "");
+    Assert.assertEquals("text = " , component.getjLabel1().getText(), "");
+    Assert.assertEquals("text = " , component.getjLabel1().getForeground(), Color.black);
     }
 
     @Test

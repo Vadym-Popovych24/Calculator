@@ -778,15 +778,15 @@ public class Main extends javax.swing.JFrame  {
         jTextField1.setText(jTextField1.getText() + "-");
     }//GEN-LAST:event_jButton_minusActionPerformed
 
-    public int jButtonplusActionPerformed() {//GEN-FIRST:event_jButton_plusActionPerformed
+    public void jButtonplusActionPerformed() {//GEN-FIRST:event_jButton_plusActionPerformed
         jTextField1.setText(jTextField1.getText() + "+");
-    return 0;}//GEN-LAST:event_jButton_plusActionPerformed
+ }//GEN-LAST:event_jButton_plusActionPerformed
 
-    public int jButtonCActionPerformed() {//GEN-FIRST:event_jButton_CActionPerformed
+    public void jButtonCActionPerformed() {//GEN-FIRST:event_jButton_CActionPerformed
         jTextField1.setText("");
         jLabel1.setText("");
        jLabel1.setForeground(Color.black);
-   return 0; }//GEN-LAST:event_jButton_CActionPerformed
+    }//GEN-LAST:event_jButton_CActionPerformed
 
     public int jButtoncleanActionPerformed() {//GEN-FIRST:event_jButton_cleanActionPerformed
         int length = jTextField1.getText().length();
@@ -922,7 +922,7 @@ public class Main extends javax.swing.JFrame  {
         this.key =key;
     }
      double mny;
-    public int jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+    public void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         Calculation calckeypressed = new Calculation();
         key = evt.getKeyChar();
         if (key == KeyEvent.VK_ENTER ){
@@ -1018,7 +1018,6 @@ public class Main extends javax.swing.JFrame  {
             jTextField1.setText(jTextField1.getText());
              livesum();
         }
-return 0;
     }//GEN-LAST:event_jTextField1KeyPressed
     public void jTextField1KeyReleased() {//GEN-FIRST:event_jTextField1KeyReleased
     }//GEN-LAST:event_jTextField1KeyReleased

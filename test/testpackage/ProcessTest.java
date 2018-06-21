@@ -4,6 +4,7 @@ import mainpackage.Calculation;
 import mainpackage.Main;
 import mainpackage.Process;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.LinkedList;
@@ -17,7 +18,7 @@ public class ProcessTest {
     Calculation calc = new Calculation();
     Main main = new Main();
 
-    @Test /*expected = ArithmeticException.class)*/
+    @Ignore /*expected = ArithmeticException.class)*/
     public void test_division_by_zero() {
        double t2 = pro.getFirstOperand();
         double l2 = pro.getSecondOperand();
