@@ -1,161 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.PitView" tests="235" skipped="0" failures="0" errors="0" timestamp="2018-06-21T11:53:06" hostname="Vadym" time="4.537">
+<testsuite name="testpackage.PitView" tests="235" skipped="0" failures="0" errors="0" timestamp="2018-06-24T17:18:38" hostname="Vadym" time="4.936">
   <properties/>
-  <testcase name="test_jButton_Hex_tooltip" classname="testpackage.PitView" time="0.02"/>
-  <testcase name="test_jButton_sin_text" classname="testpackage.PitView" time="0.018"/>
-  <testcase name="test_jButton_multiplicatio_text" classname="testpackage.PitView" time="0.021"/>
+  <testcase name="test_jButton_Hex_tooltip" classname="testpackage.PitView" time="0.024"/>
+  <testcase name="test_jButton_sin_text" classname="testpackage.PitView" time="0.017"/>
+  <testcase name="test_jButton_multiplicatio_text" classname="testpackage.PitView" time="0.024"/>
   <testcase name="test_jButton_cosh_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_Octal_text" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="test_jButton_Octal_text" classname="testpackage.PitView" time="0.019"/>
   <testcase name="test_jButton_1x_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jTestField_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_division_text" classname="testpackage.PitView" time="0.016"/>
-  <testcase name="test_jButton_point_height" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_division_text" classname="testpackage.PitView" time="0.031"/>
+  <testcase name="test_jButton_point_height" classname="testpackage.PitView" time="0.001"/>
   <testcase name="testenablejButtonReverse" classname="testpackage.PitView" time="0.003"/>
-  <testcase name="testenablejButtonFactorial" classname="testpackage.PitView" time="0.003"/>
-  <testcase name="test_jButton_point_width" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="testenablejButtonFactorial" classname="testpackage.PitView" time="0.002"/>
+  <testcase name="test_jButton_point_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_tanh_width" classname="testpackage.PitView" time="0.001"/>
   <testcase name="test_jButton_1_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_Bin_text" classname="testpackage.PitView" time="0.017"/>
+  <testcase name="test_jButton_Bin_text" classname="testpackage.PitView" time="0.016"/>
   <testcase name="testdisabledivision" classname="testpackage.PitView" time="0.002"/>
   <testcase name="test_jButton_korin_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_Round_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_4_width" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jButton_power_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_6_height" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_4_width" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_power_width" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_6_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_Bracketend_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_minus_width" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_minus_width" classname="testpackage.PitView" time="0.001"/>
   <testcase name="test_jButton_log_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jTestField_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_clean_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="testenablejButtoncosh" classname="testpackage.PitView" time="0.002"/>
   <testcase name="testenablejButtonsinH" classname="testpackage.PitView" time="0.002"/>
   <testcase name="testenablejButtontanh" classname="testpackage.PitView" time="0.002"/>
-  <testcase name="test_jButton_Log10_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_9_width" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testreturnvkl0" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jButton_6_tooltip" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="test_jButton_Log10_height" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_9_width" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="testreturnvkl0" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_6_tooltip" classname="testpackage.PitView" time="0.013"/>
   <testcase name="test_jButton_korin_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testFocusablejButtonplus" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="testFocusablejButtonplus" classname="testpackage.PitView" time="0.017"/>
   <testcase name="test_jButton_Log10_width" classname="testpackage.PitView" time="0.001"/>
   <testcase name="test_jButton_jMenuInfa_text" classname="testpackage.PitView" time="0.015"/>
-  <testcase name="test_jButton_cos_height" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jButton_Bin_height" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testenabt" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jButton_sin_width" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_cos_height" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_Bin_height" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="testenabt" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_sin_width" classname="testpackage.PitView" time="0.001"/>
   <testcase name="test_jButton_1x_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="testenab" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_E_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testdisablejButtonPlus" classname="testpackage.PitView" time="0.003"/>
+  <testcase name="testdisablejButtonPlus" classname="testpackage.PitView" time="0.002"/>
   <testcase name="test_jButton_C_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_P_tooltip" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="test_jButton_P_tooltip" classname="testpackage.PitView" time="0.013"/>
   <testcase name="testfontjButtonBin" classname="testpackage.PitView" time="0.014"/>
   <testcase name="testfontjButtonHex" classname="testpackage.PitView" time="0.012"/>
-  <testcase name="testfontjButtonPRC" classname="testpackage.PitView" time="0.012"/>
-  <testcase name="testfontjButtoncos" classname="testpackage.PitView" time="0.031"/>
+  <testcase name="testfontjButtonPRC" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="testfontjButtoncos" classname="testpackage.PitView" time="0.014"/>
   <testcase name="testfontjButtonlog" classname="testpackage.PitView" time="0.019"/>
-  <testcase name="testfontjButtonsin" classname="testpackage.PitView" time="0.014"/>
-  <testcase name="testfontjButtonsum" classname="testpackage.PitView" time="0.023"/>
-  <testcase name="testfontjButtontan" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="testfontjButtonsin" classname="testpackage.PitView" time="0.015"/>
+  <testcase name="testfontjButtonsum" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="testfontjButtontan" classname="testpackage.PitView" time="0.015"/>
   <testcase name="test_jButton_tanh_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_clean_text" classname="testpackage.PitView" time="0.016"/>
   <testcase name="test_jButton_division_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_plus_text" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_sinh_text" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="test_jButton_plus_text" classname="testpackage.PitView" time="0.017"/>
+  <testcase name="test_jButton_sinh_text" classname="testpackage.PitView" time="0.019"/>
   <testcase name="test_jButton_Round_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_sinh_height" classname="testpackage.PitView" time="0.001"/>
   <testcase name="testenablejButtonKorin" classname="testpackage.PitView" time="0.004"/>
-  <testcase name="testenablejButtonLog10" classname="testpackage.PitView" time="0.002"/>
+  <testcase name="testenablejButtonLog10" classname="testpackage.PitView" time="0.003"/>
   <testcase name="testenablejButtonOctal" classname="testpackage.PitView" time="0.001"/>
   <testcase name="testenablejButtonPower" classname="testpackage.PitView" time="0.002"/>
-  <testcase name="testenablejButtonRound" classname="testpackage.PitView" time="0.002"/>
-  <testcase name="test_jButton_tan_height" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testenablejButtonpoint" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jButton_reverse_tooltip" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="testenablejButtonRound" classname="testpackage.PitView" time="0.004"/>
+  <testcase name="test_jButton_tan_height" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="testenablejButtonpoint" classname="testpackage.PitView" time="0.002"/>
+  <testcase name="test_jButton_reverse_tooltip" classname="testpackage.PitView" time="0.02"/>
   <testcase name="test_jButton_reverse_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_0_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_4_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_5_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testfontjButtonBracketfront" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_log_text" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="test_jButton_4_height" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_5_width" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="testfontjButtonBracketfront" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="test_jButton_log_text" classname="testpackage.PitView" time="0.013"/>
   <testcase name="test_jButton_9_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_Factorial_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_power_height" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jButton_jMenuSientific_text" classname="testpackage.PitView" time="0.043"/>
-  <testcase name="testdisablejButtonMinus" classname="testpackage.PitView" time="0.002"/>
+  <testcase name="test_jButton_power_height" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_jMenuSientific_text" classname="testpackage.PitView" time="0.013"/>
+  <testcase name="testdisablejButtonMinus" classname="testpackage.PitView" time="0.001"/>
   <testcase name="test_jButton_C_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testdisablejButtonclean" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="testdisablejButtonclean" classname="testpackage.PitView" time="0.002"/>
   <testcase name="test_jButton_cos_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_Octal_tooltip" classname="testpackage.PitView" time="0.025"/>
+  <testcase name="test_jButton_Octal_tooltip" classname="testpackage.PitView" time="0.015"/>
   <testcase name="testfontjButtonmultiplicatio" classname="testpackage.PitView" time="0.013"/>
-  <testcase name="test_jButton_sum_text" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="test_jButton_cosh_text" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_Bracketfront_height" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_sum_text" classname="testpackage.PitView" time="0.015"/>
+  <testcase name="test_jButton_cosh_text" classname="testpackage.PitView" time="0.017"/>
+  <testcase name="test_jButton_Bracketfront_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_reverse_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testdisablejButtonC" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jButton_Log10_text" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="testdisablejButtonC" classname="testpackage.PitView" time="0.003"/>
+  <testcase name="test_jButton_Log10_text" classname="testpackage.PitView" time="0.014"/>
   <testcase name="test_jButton_1_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testenablejButtonBracketend" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="testenablejButtonBracketend" classname="testpackage.PitView" time="0.002"/>
   <testcase name="test_jButton_2_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_sum_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_korin_tooltip" classname="testpackage.PitView" time="0.013"/>
-  <testcase name="test_jButton_Factorial_text" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="test_jButton_korin_tooltip" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="test_jButton_Factorial_text" classname="testpackage.PitView" time="0.02"/>
   <testcase name="test_jButton_korin_text" classname="testpackage.PitView" time="0.012"/>
-  <testcase name="test_jButton_power_text" classname="testpackage.PitView" time="0.013"/>
+  <testcase name="test_jButton_power_text" classname="testpackage.PitView" time="0.014"/>
   <testcase name="testenablejButtonBin" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testenablejButtonHex" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testenablejButtonPRC" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="testenablejButtonHex" classname="testpackage.PitView" time="0.005"/>
+  <testcase name="testenablejButtonPRC" classname="testpackage.PitView" time="0.003"/>
   <testcase name="testenablejButtonSum" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testenablejButtoncos" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testenablejButtonlog" classname="testpackage.PitView" time="0.003"/>
+  <testcase name="testenablejButtoncos" classname="testpackage.PitView" time="0.002"/>
+  <testcase name="testenablejButtonlog" classname="testpackage.PitView" time="0.002"/>
   <testcase name="testenablejButtonsin" classname="testpackage.PitView" time="0.002"/>
-  <testcase name="testenablejButtontan" classname="testpackage.PitView" time="0.002"/>
-  <testcase name="test_jButton_plus_tooltip" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="testenablejButtontan" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_plus_tooltip" classname="testpackage.PitView" time="0.014"/>
   <testcase name="test_jButton_7_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_6_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_jMenuItemOn_text" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="test_jButton_jMenuItemOn_text" classname="testpackage.PitView" time="0.013"/>
   <testcase name="test_jButton_tan_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_Bracketfront_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testenabledisable0" classname="testpackage.PitView" time="0.003"/>
+  <testcase name="testenabledisable0" classname="testpackage.PitView" time="0.001"/>
   <testcase name="test_jButton_division_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testfontjButtonLog10" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testfontjButtonOctal" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="testfontjButtonRound" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="testfontjButtonclean" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testfontjButtonkorin" classname="testpackage.PitView" time="0.013"/>
-  <testcase name="testfontjButtonminus" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testfontjButtonpoint" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testfontjButtonpower" classname="testpackage.PitView" time="0.009"/>
-  <testcase name="testfontjButtoncosh" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="testfontjButtonLog10" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="testfontjButtonOctal" classname="testpackage.PitView" time="0.015"/>
+  <testcase name="testfontjButtonRound" classname="testpackage.PitView" time="0.013"/>
+  <testcase name="testfontjButtonclean" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="testfontjButtonkorin" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="testfontjButtonminus" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="testfontjButtonpoint" classname="testpackage.PitView" time="0.015"/>
+  <testcase name="testfontjButtonpower" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="testfontjButtoncosh" classname="testpackage.PitView" time="0.013"/>
   <testcase name="testfontjButtonplus" classname="testpackage.PitView" time="0.012"/>
-  <testcase name="testfontjButtonsinh" classname="testpackage.PitView" time="0.012"/>
-  <testcase name="testfontjButtontanh" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_power_tooltip" classname="testpackage.PitView" time="0.01"/>
+  <testcase name="testfontjButtonsinh" classname="testpackage.PitView" time="0.013"/>
+  <testcase name="testfontjButtontanh" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="test_jButton_power_tooltip" classname="testpackage.PitView" time="0.012"/>
   <testcase name="test_jButton_multiplicatio_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_5_tooltip" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="test_jButton_5_tooltip" classname="testpackage.PitView" time="0.013"/>
   <testcase name="test_jButton_cosh_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_tanh_text" classname="testpackage.PitView" time="0.013"/>
-  <testcase name="testreturnvykl0" classname="testpackage.PitView" time="0.002"/>
-  <testcase name="testfontjButtonFactorial" classname="testpackage.PitView" time="0.009"/>
-  <testcase name="test_jButton_0_text" classname="testpackage.PitView" time="0.009"/>
-  <testcase name="test_jButton_1_text" classname="testpackage.PitView" time="0.052"/>
-  <testcase name="test_jButton_2_text" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_3_text" classname="testpackage.PitView" time="0.009"/>
+  <testcase name="test_jButton_tanh_text" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="testreturnvykl0" classname="testpackage.PitView" time="0.003"/>
+  <testcase name="testfontjButtonFactorial" classname="testpackage.PitView" time="0.01"/>
+  <testcase name="test_jButton_0_text" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="test_jButton_1_text" classname="testpackage.PitView" time="0.015"/>
+  <testcase name="test_jButton_2_text" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="test_jButton_3_text" classname="testpackage.PitView" time="0.012"/>
   <testcase name="testenable1" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testenable2" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="testenable2" classname="testpackage.PitView" time="0.002"/>
   <testcase name="testenable3" classname="testpackage.PitView" time="0.001"/>
   <testcase name="testenable4" classname="testpackage.PitView" time="0.002"/>
-  <testcase name="testenable5" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="testenable5" classname="testpackage.PitView" time="0.002"/>
   <testcase name="testenable6" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testenable7" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="testenable7" classname="testpackage.PitView" time="0.002"/>
   <testcase name="testenable8" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testenable9" classname="testpackage.PitView" time="0.003"/>
-  <testcase name="test_jButton_4_text" classname="testpackage.PitView" time="0.01"/>
+  <testcase name="testenable9" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_4_text" classname="testpackage.PitView" time="0.013"/>
   <testcase name="test_jButton_E_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_5_text" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_6_text" classname="testpackage.PitView" time="0.009"/>
+  <testcase name="test_jButton_6_text" classname="testpackage.PitView" time="0.011"/>
   <testcase name="testdisablejMenuInfa" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jButton_7_text" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_8_text" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="test_jButton_7_text" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="test_jButton_8_text" classname="testpackage.PitView" time="0.013"/>
   <testcase name="testdisablejMenuItemOFF" classname="testpackage.PitView" time="0.002"/>
   <testcase name="test_jButton_Bracketend_text" classname="testpackage.PitView" time="0.011"/>
   <testcase name="test_jButton_multiplicatio_height" classname="testpackage.PitView" time="0.0"/>
@@ -164,77 +164,77 @@
   <testcase name="test_jButton_Hex_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="testdisablejTextField" classname="testpackage.PitView" time="0.002"/>
   <testcase name="test_jButton_P_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testdisablejButtonMultiplication" classname="testpackage.PitView" time="0.002"/>
-  <testcase name="testdisablet" classname="testpackage.PitView" time="0.002"/>
+  <testcase name="testdisablejButtonMultiplication" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="testdisablet" classname="testpackage.PitView" time="0.001"/>
   <testcase name="test_jButton_0_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_C_tooltip" classname="testpackage.PitView" time="0.012"/>
-  <testcase name="test_jButton_log10_tooltip" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="test_jButton_Bracketfront_text" classname="testpackage.PitView" time="0.009"/>
-  <testcase name="test_jButton_2_width" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_C_tooltip" classname="testpackage.PitView" time="0.01"/>
+  <testcase name="test_jButton_log10_tooltip" classname="testpackage.PitView" time="0.013"/>
+  <testcase name="test_jButton_Bracketfront_text" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="test_jButton_2_width" classname="testpackage.PitView" time="0.001"/>
   <testcase name="test_jButton_PRC_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_5_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_point_text" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_C_text" classname="testpackage.PitView" time="0.009"/>
+  <testcase name="test_jButton_5_height" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_point_text" classname="testpackage.PitView" time="0.009"/>
+  <testcase name="test_jButton_C_text" classname="testpackage.PitView" time="0.01"/>
   <testcase name="test_jButton_Factorial_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_tan_text" classname="testpackage.PitView" time="0.013"/>
-  <testcase name="test_jButton_E_text" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="test_jButton_tan_text" classname="testpackage.PitView" time="0.014"/>
+  <testcase name="test_jButton_E_text" classname="testpackage.PitView" time="0.01"/>
   <testcase name="test_jButton_7_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_PRC_text" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="test_jButton_PRC_text" classname="testpackage.PitView" time="0.009"/>
   <testcase name="test_jButton_Hex_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_plus_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_sinh_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_cos_text" classname="testpackage.PitView" time="0.009"/>
-  <testcase name="test_jButton_Hex_text" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="test_jButton_cos_text" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="test_jButton_Hex_text" classname="testpackage.PitView" time="0.009"/>
   <testcase name="test_jButton_Bracketend_height" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_PRC_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_reverse_text" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="test_jButton_PRC_tooltip" classname="testpackage.PitView" time="0.012"/>
-  <testcase name="test_jTestField_sizeMax" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jTestField_sizeMin" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_reverse_text" classname="testpackage.PitView" time="0.05"/>
+  <testcase name="test_jButton_PRC_tooltip" classname="testpackage.PitView" time="0.017"/>
+  <testcase name="test_jTestField_sizeMax" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jTestField_sizeMin" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_Octal_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_P_text" classname="testpackage.PitView" time="0.11"/>
+  <testcase name="test_jButton_P_text" classname="testpackage.PitView" time="0.013"/>
   <testcase name="test_jButton_clean_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_Bin_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testenablejButton1x" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testfontjButtonReverse" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_2_tooltip" classname="testpackage.PitView" time="0.01"/>
+  <testcase name="testenablejButton1x" classname="testpackage.PitView" time="0.002"/>
+  <testcase name="testfontjButtonReverse" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="test_jButton_2_tooltip" classname="testpackage.PitView" time="0.011"/>
   <testcase name="test_jButton_E_tooltip" classname="testpackage.PitView" time="0.01"/>
   <testcase name="test_jButton_minus_text" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_Round_text" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testenablejButtonBracketfront" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_Round_text" classname="testpackage.PitView" time="0.009"/>
+  <testcase name="testenablejButtonBracketfront" classname="testpackage.PitView" time="0.002"/>
   <testcase name="test_jButton_sum_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_Octal_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_jMenuItemOFF_text" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testTitleFrame" classname="testpackage.PitView" time="0.009"/>
-  <testcase name="testfontjButtonBracketend" classname="testpackage.PitView" time="0.011"/>
-  <testcase name="test_jButton_minus_height" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="test_jButton_P_width" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_Octal_width" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_jMenuItemOFF_text" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="testTitleFrame" classname="testpackage.PitView" time="0.016"/>
+  <testcase name="testfontjButtonBracketend" classname="testpackage.PitView" time="0.009"/>
+  <testcase name="test_jButton_minus_height" classname="testpackage.PitView" time="0.0"/>
+  <testcase name="test_jButton_P_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_3_height" classname="testpackage.PitView" time="0.001"/>
-  <testcase name="testfontjButton0" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testfontjButton1" classname="testpackage.PitView" time="0.009"/>
-  <testcase name="testfontjButton2" classname="testpackage.PitView" time="0.009"/>
-  <testcase name="testfontjButton3" classname="testpackage.PitView" time="0.012"/>
-  <testcase name="testfontjButton4" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="testfontjButton0" classname="testpackage.PitView" time="0.009"/>
+  <testcase name="testfontjButton1" classname="testpackage.PitView" time="0.01"/>
+  <testcase name="testfontjButton2" classname="testpackage.PitView" time="0.013"/>
+  <testcase name="testfontjButton3" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="testfontjButton4" classname="testpackage.PitView" time="0.01"/>
   <testcase name="testfontjButton5" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testfontjButton6" classname="testpackage.PitView" time="0.009"/>
-  <testcase name="testfontjButton7" classname="testpackage.PitView" time="0.014"/>
-  <testcase name="testfontjButton8" classname="testpackage.PitView" time="0.012"/>
+  <testcase name="testfontjButton6" classname="testpackage.PitView" time="0.013"/>
+  <testcase name="testfontjButton7" classname="testpackage.PitView" time="0.015"/>
+  <testcase name="testfontjButton8" classname="testpackage.PitView" time="0.01"/>
   <testcase name="testfontjButton9" classname="testpackage.PitView" time="0.01"/>
   <testcase name="testfontjButtonC" classname="testpackage.PitView" time="0.01"/>
   <testcase name="testfontjButtonE" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testfontjButtonP" classname="testpackage.PitView" time="0.01"/>
+  <testcase name="testfontjButtonP" classname="testpackage.PitView" time="0.012"/>
   <testcase name="test_jButton_plus_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="test_jButton_3_width" classname="testpackage.PitView" time="0.001"/>
+  <testcase name="test_jButton_3_width" classname="testpackage.PitView" time="0.0"/>
   <testcase name="test_jButton_log_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testfontjButton1x" classname="testpackage.PitView" time="0.009"/>
+  <testcase name="testfontjButton1x" classname="testpackage.PitView" time="0.01"/>
   <testcase name="test_jButton_8_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testfontjTestField" classname="testpackage.PitView" time="0.01"/>
-  <testcase name="testenablejButtonE" classname="testpackage.PitView" time="0.002"/>
+  <testcase name="testfontjTestField" classname="testpackage.PitView" time="0.011"/>
+  <testcase name="testenablejButtonE" classname="testpackage.PitView" time="0.003"/>
   <testcase name="testenablejButtonP" classname="testpackage.PitView" time="0.001"/>
   <testcase name="test_jButton_8_width" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testfontjButtondivision" classname="testpackage.PitView" time="0.01"/>
+  <testcase name="testfontjButtondivision" classname="testpackage.PitView" time="0.009"/>
   <testcase name="test_jButton_sin_height" classname="testpackage.PitView" time="0.0"/>
-  <testcase name="testdisablejMenuItemON" classname="testpackage.PitView" time="0.004"/>
+  <testcase name="testdisablejMenuItemON" classname="testpackage.PitView" time="0.002"/>
   <testcase name="test_jButton_1x_tooltip" classname="testpackage.PitView" time="0.01"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

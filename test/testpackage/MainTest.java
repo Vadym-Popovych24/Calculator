@@ -169,7 +169,6 @@ import static org.junit.Assert.*;
       }
 
 
-
       @Test
       public void testans() {
           component.setNum(5.0);
@@ -187,10 +186,13 @@ import static org.junit.Assert.*;
       public void testKeyPressed1() {
           try {
               KeyEvent press = null;
+
               component.jTextField1KeyPressed(press);
+
               component.setKey((char) KeyEvent.VK_1);
+
               press.setKeyCode(75);
-             // component.setKey(press.getKeyChar());
+              // component.setKey(press.getKeyChar());
               if (component.getKey() == KeyEvent.VK_1) {
                   component.getjTextFiel1().setText("1");
               } else {
@@ -204,4 +206,5 @@ import static org.junit.Assert.*;
       }
 
 
-  }
+      }
+
