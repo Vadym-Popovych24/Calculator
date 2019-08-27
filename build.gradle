@@ -102,7 +102,7 @@ repositories {
         url "http://localhost:8081/nexus/content/repositories/calc/"
     }
  snapshotRepositories {
-      id "calcu"
+      //id "calcu"
       name "Calculator"
         url "http://localhost:8081/nexus/content/repositories/calcu/"
  }
