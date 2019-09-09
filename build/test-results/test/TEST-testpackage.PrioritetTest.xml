@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.PrioritetTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-06-24T17:18:43" hostname="Vadym" time="0.001">
+<testsuite name="testpackage.PrioritetTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-08-17T18:30:49" hostname="Vadym" time="0.001">
   <properties/>
   <testcase name="prioritet" classname="testpackage.PrioritetTest" time="0.0"/>
-  <testcase name="priorityC" classname="testpackage.PrioritetTest" time="0.0"/>
+  <testcase name="priorityC" classname="testpackage.PrioritetTest" time="0.001"/>
   <testcase name="priorityL" classname="testpackage.PrioritetTest" time="0.0"/>
   <testcase name="priorityS" classname="testpackage.PrioritetTest" time="0.0"/>
   <testcase name="priorityT" classname="testpackage.PrioritetTest" time="0.0"/>

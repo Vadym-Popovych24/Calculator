@@ -1487,10 +1487,10 @@ public void testenab() {
         Dimension size = component.getjTextFiel1().getMinimumSize();
         Assert.assertEquals("MaximumSize +" , size , new Dimension(221, 45));
     }
-    @Test
+  /*  @Test
     public  void testfontjTestField(){
         Main setfont1 = new Main();
         String font2 =  setfont1.getjTextFiel1().getFont().getName();
         Assert.assertEquals("Font button +" , font2 , "Times New Roman") ;//Arial Narrow Полужирный Tahoma Bold
-    }
+    }*/
 }

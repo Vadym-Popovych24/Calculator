@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testpackage.MainTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-06-24T17:18:37" hostname="Vadym" time="0.387">
+<testsuite name="testpackage.MainTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-08-17T18:30:40" hostname="Vadym" time="0.576">
   <properties/>
-  <testcase name="testlivesum" classname="testpackage.MainTest" time="0.009"/>
+  <testcase name="testlivesum" classname="testpackage.MainTest" time="0.01"/>
   <testcase name="testans" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="testbin" classname="testpackage.MainTest" time="0.092"/>
+  <testcase name="testbin" classname="testpackage.MainTest" time="0.112"/>
   <testcase name="testhex" classname="testpackage.MainTest" time="0.002"/>
   <testcase name="testoctal" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testmath" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testroun" classname="testpackage.MainTest" time="0.0"/>
-  <testcase name="test1x" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="KeyPressedVK2" classname="testpackage.MainTest" time="0.001"/>
-  <testcase name="testKeyPressed1" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="testmath" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="testroun" classname="testpackage.MainTest" time="0.001"/>
+  <testcase name="test1x" classname="testpackage.MainTest" time="0.0"/>
+  <testcase name="KeyPressedVK2" classname="testpackage.MainTest" time="0.002"/>
+  <testcase name="testKeyPressed1" classname="testpackage.MainTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
